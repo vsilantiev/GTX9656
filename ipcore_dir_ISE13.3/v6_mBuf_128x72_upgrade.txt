@@ -1,0 +1,5 @@
+Mon Mar 12 16:48:31 2012
+
+Upgraded v6_mBuf_128x72 from Fifo Generator 7.2 to Fifo Generator 8.3
+
+No changes made to parameter values.

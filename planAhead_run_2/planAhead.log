@@ -1,0 +1,403 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Fri Jan 30 09:22:59 2015
+# Process ID: 13275
+# Log file: /home/vladimir/SERGLAST/ad9656/cern/planAhead_run_2/planAhead.log
+# Journal file: /home/vladimir/SERGLAST/ad9656/cern/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -61 day(s)
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source /home/vladimir/SERGLAST/ad9656/cern/pa.fromHdl.tcl
+# create_project -name v6pcie -dir "/home/vladimir/SERGLAST/ad9656/cern/planAhead_run_2" -part xc7a200tfbg676-2
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "ABB3_pcie_4_lane_Emu_FIFO_elink.ucf" [current_fileset -constrset]
+Adding file '/home/vladimir/SERGLAST/ad9656/cern/ABB3_pcie_4_lane_Emu_FIFO_elink.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_sync_block.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_tx_startup_fsm.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_pcie_bram_7x.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_rxeq_scan.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_pcie_brams_7x.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_axi_basic_tx_thrtl_ctl.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_axi_basic_tx_pipeline.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_axi_basic_rx_pipeline.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_axi_basic_rx_null_gen.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_qpll_wrapper.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_qpll_reset.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_qpll_drp.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_pipe_user.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_pipe_sync.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_pipe_reset.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_pipe_rate.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_pipe_eq.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_pipe_drp.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_pipe_clock.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_pcie_pipe_misc.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_pcie_pipe_lane.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_pcie_bram_top_7x.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_gt_wrapper.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_gtp_pipe_reset.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_gtp_pipe_rate.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_gtp_pipe_drp.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_axi_basic_tx.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_axi_basic_rx.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {MySource/v6abb64Package_efifo_elink.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_pipe_wrapper.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_pcie_pipe_pipeline.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_pcie_7x.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_gt_rx_valid_filter_7x.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_axi_basic_top.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {MySource/FF_tagram64x36.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {MySource/DMA_FSM.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {MySource/DMA_Calculate.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir_ISE13.3/v6_sfifo_15x128.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_pcie_top.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie_gt_top.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {MySource/Tx_Output_Arbitor.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {MySource/tx_Mem_Reader.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {MySource/rx_usDMA_Channel.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {MySource/rx_MWr_Channel.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {MySource/rx_MRd_Channel.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {MySource/rx_dsDMA_Channel.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {MySource/rx_CplD_Channel.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {MySource/RxIn_Delays.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {MySource/Interrupts.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir_ISE13.3/v6_mBuf_128x72.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {v7_pcie.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {MySource/tx_Transact.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {MySource/rx_Transact.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {MySource/Registers.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir_ISE13.3/v6_eb_fifo_counted_resized.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir/jesd204b_rx4.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {pcie_axi_trn_bridge.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {MySource/tlpControl.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {MySource/FIFO_Wrapper.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {fmc_adc_100Ms_core.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {MySource/v6eb_pcie.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gt_usrclk_source.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gtrxreset_seq.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_rxpmarst_seq.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_rxrate_seq.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_rx_startup_fsm.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_recclk_monitor.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gt_frame_gen.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gt_frame_check.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir/jesd204b_rx4_gt.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# add_files [list {ipcore_dir_ISE13.3/v6_eb_fifo_counted_resized.ngc}]
+# add_files [list {ipcore_dir_ISE13.3/v6_mBuf_128x72.ngc}]
+# add_files [list {ipcore_dir_ISE13.3/v6_sfifo_15x128.ngc}]
+# set_property top v6pcieDMA $srcset
+# add_files [list {ABB3_pcie_4_lane_Emu_FIFO_elink.ucf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir_ISE13.3/v6_eb_fifo_counted_new.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir_ISE13.3/v6_bram4096x64.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir_ISE13.3/v6_mBuf_128x72.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir_ISE13.3/v6_prime_fifo_plain.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir_ISE13.3/v6_eb_fifo_counted_resized.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir_ISE13.3/v6_sfifo_15x128.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/fifomodule.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/jesd204b_rx4_TX_STARTUP_FSM.ncf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc7a200tfbg676-2
+Using Verific elaboration
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/v7_pcie_pcie_bram_7x.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/v7_pcie_pcie_brams_7x.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/v7_pcie_axi_basic_tx_thrtl_ctl.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/v7_pcie_axi_basic_tx_pipeline.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/v7_pcie_axi_basic_rx_pipeline.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/v7_pcie_axi_basic_rx_null_gen.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/v7_pcie_pcie_pipe_misc.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/v7_pcie_pcie_pipe_lane.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/v7_pcie_pcie_bram_top_7x.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/v7_pcie_axi_basic_tx.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/v7_pcie_axi_basic_rx.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6abb64Package_efifo_elink.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_sync_block.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/v7_pcie_pcie_pipe_pipeline.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/v7_pcie_pcie_7x.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/v7_pcie_gt_rx_valid_filter_7x.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/v7_pcie_axi_basic_top.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/MySource/FF_tagram64x36.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/MySource/DMA_FSM.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/MySource/DMA_Calculate.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gtrxreset_seq.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/v7_pcie_pcie_top.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/v7_pcie_gt_top.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/MySource/Tx_Output_Arbitor.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/MySource/tx_Mem_Reader.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/MySource/rx_usDMA_Channel.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/MySource/rx_MWr_Channel.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/MySource/rx_MRd_Channel.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/MySource/rx_dsDMA_Channel.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/MySource/rx_CplD_Channel.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/MySource/RxIn_Delays.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/MySource/Interrupts.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/v7_pcie.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/MySource/tx_Transact.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/MySource/rx_Transact.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/MySource/Registers.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/pcie_axi_trn_bridge.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/MySource/tlpControl.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/MySource/FIFO_Wrapper.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/fmc_adc_100Ms_core.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" into library work
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '2' specified for property 'TX_EIDLE_ASSERT_DELAY'. Expecting type 'binary' with possible values of '3'b000-3'b111'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/vladimir/SERGLAST/ad9656/cern/v7_pcie_gt_wrapper.v:742]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design v6_sfifo_15x128.ngc ...
+WARNING:NetListWriters:298 - No output is written to v6_sfifo_15x128.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file v6_sfifo_15x128.edif ...
+ngc2edif: Total memory usage is 104584 kilobytes
+
+Reading core file '/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir_ISE13.3/v6_sfifo_15x128.ngc' for (cell view 'v6_sfifo_15x128', library 'work', file 'rx_dsDMA_Channel.vhd')
+Parsing EDIF File [./.Xil/PlanAhead-13275-ubuntu/ngc2edif/v6_sfifo_15x128.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-13275-ubuntu/ngc2edif/v6_sfifo_15x128.edif]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design v6_mBuf_128x72.ngc ...
+WARNING:NetListWriters:298 - No output is written to v6_mBuf_128x72.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file v6_mBuf_128x72.edif ...
+ngc2edif: Total memory usage is 103900 kilobytes
+
+Reading core file '/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir_ISE13.3/v6_mBuf_128x72.ngc' for (cell view 'v6_mBuf_128x72', library 'work', file 'tx_Transact.vhd')
+Parsing EDIF File [./.Xil/PlanAhead-13275-ubuntu/ngc2edif/v6_mBuf_128x72.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-13275-ubuntu/ngc2edif/v6_mBuf_128x72.edif]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design v6_eb_fifo_counted_resized.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   v6_eb_fifo_counted_resized.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file v6_eb_fifo_counted_resized.edif ...
+ngc2edif: Total memory usage is 111528 kilobytes
+
+Reading core file '/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir_ISE13.3/v6_eb_fifo_counted_resized.ngc' for (cell view 'v6_eb_fifo_counted_resized', library 'work', file 'FIFO_Wrapper.vhd')
+Parsing EDIF File [./.Xil/PlanAhead-13275-ubuntu/ngc2edif/v6_eb_fifo_counted_resized.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-13275-ubuntu/ngc2edif/v6_eb_fifo_counted_resized.edif]
+CRITICAL WARNING: [Netlist 29-64] The value of SIM_DEVICE on instance 'theTlpControl/tx_Itf/ABB_Tx_MBuffer/U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1' of type 'FIFO36E1' has been changed from 'VIRTEX6' to '7SERIES' to correct post-unisim transformation and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file. For additional information on retargeting this primitive to 7SERIES, please see http://www.xilinx.com/support/documentation/sw_manuals/ug429_7Series_Migration.pdf
+INFO: [Netlist 29-17] Analyzing 359 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/artix7/artix7/xc7a200t/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/artix7/artix7/xc7a200t/ClockBuffers.xml
+Loading clock placement rules from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/artix7/PinFunctions.xml...
+Loading package from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/artix7/artix7/xc7a200t/fbg676/Package.xml
+Loading io standards from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/artix7/ConfigModes.xml
+Loading list of drcs for the architecture : /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/artix7/drc.xml
+Parsing UCF File [/home/vladimir/SERGLAST/ad9656/cern/ABB3_pcie_4_lane_Emu_FIFO_elink.ucf]
+INFO: [Designutils 20-22] PART constraint ignored, using PlanAhead selected device [/home/vladimir/SERGLAST/ad9656/cern/ABB3_pcie_4_lane_Emu_FIFO_elink.ucf:58]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'cmp_fmc_adc_125Ms_core/jesd204b/gtpe2_common_0_i' [/home/vladimir/SERGLAST/ad9656/cern/ABB3_pcie_4_lane_Emu_FIFO_elink.ucf:111]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'make4Lanes.pcieCore/v7_pcie_i/gt_top_i/pipe_wrapper_i/gtp_pipe_reset.gtp_pipe_reset_i/pllreset' [/home/vladimir/SERGLAST/ad9656/cern/ABB3_pcie_4_lane_Emu_FIFO_elink.ucf:168]
+CRITICAL WARNING: [Constraints 18-11] Could not find net 'cmp_fmc_adc_125Ms_core/ref_clk' [/home/vladimir/SERGLAST/ad9656/cern/ABB3_pcie_4_lane_Emu_FIFO_elink.ucf:191]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/gtpe2_i' [/home/vladimir/SERGLAST/ad9656/cern/ABB3_pcie_4_lane_Emu_FIFO_elink.ucf:208]
+Finished Parsing UCF File [/home/vladimir/SERGLAST/ad9656/cern/ABB3_pcie_4_lane_Emu_FIFO_elink.ucf]
+CRITICAL WARNING: [Constraints 18-329] No definition for group 'ref_clk', timing constraint is ignored [/home/vladimir/SERGLAST/ad9656/cern/ABB3_pcie_4_lane_Emu_FIFO_elink.ucf:192]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 292 instances were transformed.
+  FD => FDCE: 21 instances
+  FDC => FDCE: 216 instances
+  FDCP => FDCP (FDCE, FDPE, LDCE, LUT3, VCC): 2 instances
+  FDE => FDCE: 4 instances
+  FDP => FDPE: 49 instances
+
+Phase 0 | Netlist Checksum: 65441e86
+open_rtl_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:25 . Memory (MB): peak = 3112.707 ; gain = 425.691
+update_compile_order -fileset sim_1
+set_property iostandard LVCMOS18 [get_ports [list {adc_out_n_i[1]}]]
+set_property iostandard LVCMOS18 [get_ports [list {pci_exp_rxn[3]} {pci_exp_rxn[2]} {pci_exp_rxn[1]} {pci_exp_rxn[0]}]]
+set_property package_pin "" [get_ports [list  {adc_out_n_i[1]}]]
+set_property package_pin "" [get_ports [list  {adc_out_n_i[1]}]]
+set_property iostandard LVCMOS18 [get_ports [list {adc_out_p_i[1]}]]
+set_property iostandard LVCMOS18 [get_ports [list {pci_exp_rxp[3]} {pci_exp_rxp[2]} {pci_exp_rxp[1]} {pci_exp_rxp[0]}]]
+startgroup
+set_property package_pin AD14 [get_ports {adc_out_n_i[0]}]
+endgroup
+set_property is_loc_fixed false [get_ports [list  {adc_out_n_i[0]}]]
+exit
+ERROR: [#UNDEF] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See /home/vladimir/SERGLAST/ad9656/cern/planAhead_pid13275.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Fri Jan 30 09:30:10 2015...
+INFO: [Common 17-83] Releasing license: PlanAhead

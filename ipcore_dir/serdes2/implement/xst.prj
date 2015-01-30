@@ -1,0 +1,2 @@
+vhdl work ../../serdes2.vhd
+vhdl work ../example_design/serdes2_exdes.vhd

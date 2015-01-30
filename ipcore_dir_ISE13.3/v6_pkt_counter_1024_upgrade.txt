@@ -1,0 +1,5 @@
+Mon Mar 12 16:50:44 2012
+
+Upgraded v6_pkt_counter_1024 from Fifo Generator 7.2 to Fifo Generator 8.3
+
+No changes made to parameter values.

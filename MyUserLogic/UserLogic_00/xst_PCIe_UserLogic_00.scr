@@ -1,0 +1,1 @@
+run -ifn xst_PCIe_UserLogic_00.prj -ifmt mixed -ofn PCIe_UserLogic_00.ngc -ofmt NGC -p xc6vlx240t-1ff1156 -ent PCIe_UserLogic_00 -keep_hierarchy NO -iobuf YES -bus_delimiter () -top PCIe_UserLogic_00 -hierarchy_separator / -report_timing_constraint_problems warning -register_balancing no -iob Auto -uc PCIe_UserLogic_00.xcf -write_timing_constraints yes

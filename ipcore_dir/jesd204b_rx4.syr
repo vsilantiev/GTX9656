@@ -1,0 +1,714 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: jesd204b_rx4.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "jesd204b_rx4.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "jesd204b_rx4"
+Output Format                      : NGC
+Target Device                      : xc7a200t-2-fbg676
+
+---- Source Options
+Top Module Name                    : jesd204b_rx4
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"jesd204b_rx4/example_design"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_sync_block.vhd" into library work
+Parsing entity <jesd204b_rx4_sync_block>.
+Parsing architecture <structural> of entity <jesd204b_rx4_sync_block>.
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gtrxreset_seq.vhd" into library work
+Parsing entity <jesd204b_rx4_gtrxreset_seq>.
+Parsing architecture <Behavioral> of entity <jesd204b_rx4_gtrxreset_seq>.
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" into library work
+Parsing entity <jesd204b_rx4_GT>.
+Parsing architecture <RTL> of entity <jesd204b_rx4_gt>.
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4.vhd" into library work
+Parsing entity <jesd204b_rx4>.
+Parsing architecture <RTL> of entity <jesd204b_rx4>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <jesd204b_rx4> (architecture <RTL>) with generics from library <work>.
+
+Elaborating entity <jesd204b_rx4_GT> (architecture <RTL>) with generics from library <work>.
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 672: Assignment to rxchariscomma_float_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 674: Assignment to rxcharisk_float_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 676: Assignment to rxdisperr_float_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 678: Assignment to rxnotintable_float_i ignored, since the identifier is never used
+
+Elaborating entity <jesd204b_rx4_gtrxreset_seq> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <jesd204b_rx4_sync_block> (architecture <structural>) with generics from library <work>.
+INFO:HDLCompiler:679 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gtrxreset_seq.vhd" Line 229. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gtrxreset_seq.vhd" Line 297. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 928: Assignment to drpdo_pma_t ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 930: Assignment to drpdo_rate_t ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 942: Assignment to drprdy_pma_t ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 944: Assignment to drprdy_rate_t ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 221: Net <drpen_pma_t> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 222: Net <drpaddr_pma_t[8]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 223: Net <drpwe_pma_t> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 225: Net <drpdi_pma_t[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 227: Net <drpen_rate_t> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 228: Net <drpaddr_rate_t[8]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 229: Net <drpwe_rate_t> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 231: Net <drpdi_rate_t[15]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <jesd204b_rx4>.
+    Related source file is "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4.vhd".
+        WRAPPER_SIM_GTRESET_SPEEDUP = "FALSE"
+    Summary:
+	no macro.
+Unit <jesd204b_rx4> synthesized.
+
+Synthesizing Unit <jesd204b_rx4_GT>.
+    Related source file is "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd".
+        GT_SIM_GTRESET_SPEEDUP = "FALSE"
+        TXSYNC_OVRD_IN = '0'
+        TXSYNC_MULTILANE_IN = '0'
+WARNING:Xst:653 - Signal <drpaddr_pma_t> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <drpdi_pma_t> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <drpaddr_rate_t> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <drpdi_rate_t> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <drpen_pma_t> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <drpwe_pma_t> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <drpen_rate_t> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <drpwe_rate_t> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Register <drp_busy_i1> equivalent to <drp_busy_i2> has been removed
+    Found 1-bit register for signal <drp_busy_i2>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <jesd204b_rx4_GT> synthesized.
+
+Synthesizing Unit <jesd204b_rx4_gtrxreset_seq>.
+    Related source file is "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gtrxreset_seq.vhd".
+    Found 1-bit register for signal <drp_op_done_o>.
+    Found 1-bit register for signal <gtrxreset_s>.
+    Found 1-bit register for signal <gtrxreset_ss>.
+    Found 1-bit register for signal <rxpmaresetdone_sss>.
+    Found 1-bit register for signal <gtrxreset_o>.
+    Found 16-bit register for signal <rd_data>.
+    Found 3-bit register for signal <state>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 14                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 7                                              |
+    | Clock              | DRPCLK (rising_edge)                           |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  21 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <jesd204b_rx4_gtrxreset_seq> synthesized.
+
+Synthesizing Unit <jesd204b_rx4_sync_block>.
+    Related source file is "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_sync_block.vhd".
+        INITIALISE = "00"
+    Set property "ASYNC_REG = TRUE" for instance <data_sync>.
+    Set property "MSGON = FALSE" for instance <data_sync>.
+WARNING:Xst:3136 - Property "shreg_extract" (value "no") has not been applied on proper HDL object.
+    Set property "ASYNC_REG = TRUE" for instance <data_sync_reg>.
+    Set property "MSGON = FALSE" for instance <data_sync_reg>.
+WARNING:Xst:3136 - Property "shreg_extract" (value "no") has not been applied on proper HDL object.
+    Summary:
+	no macro.
+Unit <jesd204b_rx4_sync_block> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 28
+ 1-bit register                                        : 24
+ 16-bit register                                       : 4
+# Multiplexers                                         : 48
+ 1-bit 2-to-1 multiplexer                              : 20
+ 16-bit 2-to-1 multiplexer                             : 24
+ 9-bit 2-to-1 multiplexer                              : 4
+# FSMs                                                 : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 96
+ Flip-Flops                                            : 96
+# Multiplexers                                         : 48
+ 1-bit 2-to-1 multiplexer                              : 20
+ 16-bit 2-to-1 multiplexer                             : 24
+ 9-bit 2-to-1 multiplexer                              : 4
+# FSMs                                                 : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <gt0_jesd204b_rx4_i/gtrxreset_seq_i/FSM_0> on signal <state[1:3]> with user encoding.
+Optimizing FSM <gt1_jesd204b_rx4_i/gtrxreset_seq_i/FSM_0> on signal <state[1:3]> with user encoding.
+Optimizing FSM <gt2_jesd204b_rx4_i/gtrxreset_seq_i/FSM_0> on signal <state[1:3]> with user encoding.
+Optimizing FSM <gt3_jesd204b_rx4_i/gtrxreset_seq_i/FSM_0> on signal <state[1:3]> with user encoding.
+---------------------------
+ State         | Encoding
+---------------------------
+ idle          | 000
+ drp_rd        | 001
+ wait_rd_data  | 010
+ wr_16         | 011
+ wait_wr_done1 | 100
+ wait_pmareset | 101
+ wr_20         | 110
+ wait_wr_done2 | 111
+---------------------------
+
+Optimizing unit <jesd204b_rx4> ...
+
+Optimizing unit <jesd204b_rx4_GT> ...
+
+Optimizing unit <jesd204b_rx4_gtrxreset_seq> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block jesd204b_rx4, actual ratio is 0.
+FlipFlop gt0_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop gt1_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop gt2_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop gt3_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 112
+ Flip-Flops                                            : 112
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : jesd204b_rx4.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 206
+#      GND                         : 1
+#      INV                         : 8
+#      LUT2                        : 36
+#      LUT4                        : 12
+#      LUT5                        : 76
+#      LUT6                        : 72
+#      VCC                         : 1
+# FlipFlops/Latches                : 112
+#      FD                          : 12
+#      FDC                         : 32
+#      FDCE                        : 68
+# Clock Buffers                    : 13
+#      BUFGP                       : 13
+# IO Buffers                       : 336
+#      IBUF                        : 150
+#      OBUF                        : 186
+# GigabitIOs                       : 5
+#      GTPE2_CHANNEL               : 4
+#      GTPE2_COMMON                : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a200tfbg676-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             112  out of  269200     0%  
+ Number of Slice LUTs:                  204  out of  134600     0%  
+    Number used as Logic:               204  out of  134600     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    218
+   Number with an unused Flip Flop:     106  out of    218    48%  
+   Number with an unused LUT:            14  out of    218     6%  
+   Number of fully used LUT-FF pairs:    98  out of    218    44%  
+   Number of unique control sets:        16
+
+IO Utilization: 
+ Number of IOs:                         349
+ Number of bonded IOBs:                 349  out of    400    87%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:               13  out of     32    40%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+GT3_DRPCLK_IN                      | BUFGP                  | 28    |
+GT2_DRPCLK_IN                      | BUFGP                  | 28    |
+GT1_DRPCLK_IN                      | BUFGP                  | 28    |
+GT0_DRPCLK_IN                      | BUFGP                  | 28    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 1.634ns (Maximum Frequency: 611.845MHz)
+   Minimum input arrival time before clock: 0.879ns
+   Maximum output required time after clock: 0.737ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'GT3_DRPCLK_IN'
+  Clock period: 1.634ns (frequency: 611.845MHz)
+  Total number of paths / destination ports: 97 / 43
+-------------------------------------------------------------------------
+Delay:               1.634ns (Levels of Logic = 2)
+  Source:            gt3_jesd204b_rx4_i/gtrxreset_seq_i/rxpmaresetdone_sss (FF)
+  Destination:       gt3_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd3 (FF)
+  Source Clock:      GT3_DRPCLK_IN rising
+  Destination Clock: GT3_DRPCLK_IN rising
+
+  Data Path: gt3_jesd204b_rx4_i/gtrxreset_seq_i/rxpmaresetdone_sss to gt3_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.398   0.654  gt3_jesd204b_rx4_i/gtrxreset_seq_i/rxpmaresetdone_sss (gt3_jesd204b_rx4_i/gtrxreset_seq_i/rxpmaresetdone_sss)
+     LUT5:I1->O            1   0.105   0.357  gt3_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd3-In1 (gt3_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd3-In1)
+     LUT6:I5->O            1   0.105   0.000  gt3_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd3-In2 (gt3_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd3-In)
+     FDC:D                     0.015          gt3_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd3
+    ----------------------------------------
+    Total                      1.634ns (0.623ns logic, 1.011ns route)
+                                       (38.1% logic, 61.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'GT2_DRPCLK_IN'
+  Clock period: 1.634ns (frequency: 611.845MHz)
+  Total number of paths / destination ports: 97 / 43
+-------------------------------------------------------------------------
+Delay:               1.634ns (Levels of Logic = 2)
+  Source:            gt2_jesd204b_rx4_i/gtrxreset_seq_i/rxpmaresetdone_sss (FF)
+  Destination:       gt2_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd3 (FF)
+  Source Clock:      GT2_DRPCLK_IN rising
+  Destination Clock: GT2_DRPCLK_IN rising
+
+  Data Path: gt2_jesd204b_rx4_i/gtrxreset_seq_i/rxpmaresetdone_sss to gt2_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.398   0.654  gt2_jesd204b_rx4_i/gtrxreset_seq_i/rxpmaresetdone_sss (gt2_jesd204b_rx4_i/gtrxreset_seq_i/rxpmaresetdone_sss)
+     LUT5:I1->O            1   0.105   0.357  gt2_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd3-In1 (gt2_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd3-In1)
+     LUT6:I5->O            1   0.105   0.000  gt2_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd3-In2 (gt2_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd3-In)
+     FDC:D                     0.015          gt2_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd3
+    ----------------------------------------
+    Total                      1.634ns (0.623ns logic, 1.011ns route)
+                                       (38.1% logic, 61.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'GT1_DRPCLK_IN'
+  Clock period: 1.634ns (frequency: 611.845MHz)
+  Total number of paths / destination ports: 97 / 43
+-------------------------------------------------------------------------
+Delay:               1.634ns (Levels of Logic = 2)
+  Source:            gt1_jesd204b_rx4_i/gtrxreset_seq_i/rxpmaresetdone_sss (FF)
+  Destination:       gt1_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd3 (FF)
+  Source Clock:      GT1_DRPCLK_IN rising
+  Destination Clock: GT1_DRPCLK_IN rising
+
+  Data Path: gt1_jesd204b_rx4_i/gtrxreset_seq_i/rxpmaresetdone_sss to gt1_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.398   0.654  gt1_jesd204b_rx4_i/gtrxreset_seq_i/rxpmaresetdone_sss (gt1_jesd204b_rx4_i/gtrxreset_seq_i/rxpmaresetdone_sss)
+     LUT5:I1->O            1   0.105   0.357  gt1_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd3-In1 (gt1_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd3-In1)
+     LUT6:I5->O            1   0.105   0.000  gt1_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd3-In2 (gt1_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd3-In)
+     FDC:D                     0.015          gt1_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd3
+    ----------------------------------------
+    Total                      1.634ns (0.623ns logic, 1.011ns route)
+                                       (38.1% logic, 61.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'GT0_DRPCLK_IN'
+  Clock period: 1.634ns (frequency: 611.845MHz)
+  Total number of paths / destination ports: 97 / 43
+-------------------------------------------------------------------------
+Delay:               1.634ns (Levels of Logic = 2)
+  Source:            gt0_jesd204b_rx4_i/gtrxreset_seq_i/rxpmaresetdone_sss (FF)
+  Destination:       gt0_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd3 (FF)
+  Source Clock:      GT0_DRPCLK_IN rising
+  Destination Clock: GT0_DRPCLK_IN rising
+
+  Data Path: gt0_jesd204b_rx4_i/gtrxreset_seq_i/rxpmaresetdone_sss to gt0_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.398   0.654  gt0_jesd204b_rx4_i/gtrxreset_seq_i/rxpmaresetdone_sss (gt0_jesd204b_rx4_i/gtrxreset_seq_i/rxpmaresetdone_sss)
+     LUT5:I1->O            1   0.105   0.357  gt0_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd3-In1 (gt0_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd3-In1)
+     LUT6:I5->O            1   0.105   0.000  gt0_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd3-In2 (gt0_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd3-In)
+     FDC:D                     0.015          gt0_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd3
+    ----------------------------------------
+    Total                      1.634ns (0.623ns logic, 1.011ns route)
+                                       (38.1% logic, 61.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'GT0_DRPCLK_IN'
+  Total number of paths / destination ports: 26 / 26
+-------------------------------------------------------------------------
+Offset:              0.879ns (Levels of Logic = 1)
+  Source:            GT0_PLL0RESET_IN (PAD)
+  Destination:       gt0_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd1 (FF)
+  Destination Clock: GT0_DRPCLK_IN rising
+
+  Data Path: GT0_PLL0RESET_IN to gt0_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            96   0.001   0.481  GT0_PLL0RESET_IN_IBUF (GT0_PLL0RESET_IN_IBUF)
+     FDCE:CLR                  0.397          gt0_jesd204b_rx4_i/gtrxreset_seq_i/rd_data_0
+    ----------------------------------------
+    Total                      0.879ns (0.398ns logic, 0.481ns route)
+                                       (45.3% logic, 54.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'GT1_DRPCLK_IN'
+  Total number of paths / destination ports: 26 / 26
+-------------------------------------------------------------------------
+Offset:              0.879ns (Levels of Logic = 1)
+  Source:            GT0_PLL0RESET_IN (PAD)
+  Destination:       gt1_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd1 (FF)
+  Destination Clock: GT1_DRPCLK_IN rising
+
+  Data Path: GT0_PLL0RESET_IN to gt1_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            96   0.001   0.481  GT0_PLL0RESET_IN_IBUF (GT0_PLL0RESET_IN_IBUF)
+     FDCE:CLR                  0.397          gt1_jesd204b_rx4_i/gtrxreset_seq_i/rd_data_0
+    ----------------------------------------
+    Total                      0.879ns (0.398ns logic, 0.481ns route)
+                                       (45.3% logic, 54.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'GT2_DRPCLK_IN'
+  Total number of paths / destination ports: 26 / 26
+-------------------------------------------------------------------------
+Offset:              0.879ns (Levels of Logic = 1)
+  Source:            GT0_PLL0RESET_IN (PAD)
+  Destination:       gt2_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd1 (FF)
+  Destination Clock: GT2_DRPCLK_IN rising
+
+  Data Path: GT0_PLL0RESET_IN to gt2_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            96   0.001   0.481  GT0_PLL0RESET_IN_IBUF (GT0_PLL0RESET_IN_IBUF)
+     FDCE:CLR                  0.397          gt2_jesd204b_rx4_i/gtrxreset_seq_i/rd_data_0
+    ----------------------------------------
+    Total                      0.879ns (0.398ns logic, 0.481ns route)
+                                       (45.3% logic, 54.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'GT3_DRPCLK_IN'
+  Total number of paths / destination ports: 26 / 26
+-------------------------------------------------------------------------
+Offset:              0.879ns (Levels of Logic = 1)
+  Source:            GT0_PLL0RESET_IN (PAD)
+  Destination:       gt3_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd1 (FF)
+  Destination Clock: GT3_DRPCLK_IN rising
+
+  Data Path: GT0_PLL0RESET_IN to gt3_jesd204b_rx4_i/gtrxreset_seq_i/state_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            96   0.001   0.481  GT0_PLL0RESET_IN_IBUF (GT0_PLL0RESET_IN_IBUF)
+     FDCE:CLR                  0.397          gt3_jesd204b_rx4_i/gtrxreset_seq_i/rd_data_0
+    ----------------------------------------
+    Total                      0.879ns (0.398ns logic, 0.481ns route)
+                                       (45.3% logic, 54.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'GT0_DRPCLK_IN'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.737ns (Levels of Logic = 1)
+  Source:            gt0_jesd204b_rx4_i/drp_busy_i2 (FF)
+  Destination:       GT0_DRP_BUSY_OUT (PAD)
+  Source Clock:      GT0_DRPCLK_IN rising
+
+  Data Path: gt0_jesd204b_rx4_i/drp_busy_i2 to GT0_DRP_BUSY_OUT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.398   0.339  gt0_jesd204b_rx4_i/drp_busy_i2 (gt0_jesd204b_rx4_i/drp_busy_i2)
+     OBUF:I->O                 0.000          GT0_DRP_BUSY_OUT_OBUF (GT0_DRP_BUSY_OUT)
+    ----------------------------------------
+    Total                      0.737ns (0.398ns logic, 0.339ns route)
+                                       (54.0% logic, 46.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'GT1_DRPCLK_IN'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.737ns (Levels of Logic = 1)
+  Source:            gt1_jesd204b_rx4_i/drp_busy_i2 (FF)
+  Destination:       GT1_DRP_BUSY_OUT (PAD)
+  Source Clock:      GT1_DRPCLK_IN rising
+
+  Data Path: gt1_jesd204b_rx4_i/drp_busy_i2 to GT1_DRP_BUSY_OUT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.398   0.339  gt1_jesd204b_rx4_i/drp_busy_i2 (gt1_jesd204b_rx4_i/drp_busy_i2)
+     OBUF:I->O                 0.000          GT1_DRP_BUSY_OUT_OBUF (GT1_DRP_BUSY_OUT)
+    ----------------------------------------
+    Total                      0.737ns (0.398ns logic, 0.339ns route)
+                                       (54.0% logic, 46.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'GT2_DRPCLK_IN'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.737ns (Levels of Logic = 1)
+  Source:            gt2_jesd204b_rx4_i/drp_busy_i2 (FF)
+  Destination:       GT2_DRP_BUSY_OUT (PAD)
+  Source Clock:      GT2_DRPCLK_IN rising
+
+  Data Path: gt2_jesd204b_rx4_i/drp_busy_i2 to GT2_DRP_BUSY_OUT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.398   0.339  gt2_jesd204b_rx4_i/drp_busy_i2 (gt2_jesd204b_rx4_i/drp_busy_i2)
+     OBUF:I->O                 0.000          GT2_DRP_BUSY_OUT_OBUF (GT2_DRP_BUSY_OUT)
+    ----------------------------------------
+    Total                      0.737ns (0.398ns logic, 0.339ns route)
+                                       (54.0% logic, 46.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'GT3_DRPCLK_IN'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.737ns (Levels of Logic = 1)
+  Source:            gt3_jesd204b_rx4_i/drp_busy_i2 (FF)
+  Destination:       GT3_DRP_BUSY_OUT (PAD)
+  Source Clock:      GT3_DRPCLK_IN rising
+
+  Data Path: gt3_jesd204b_rx4_i/drp_busy_i2 to GT3_DRP_BUSY_OUT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.398   0.339  gt3_jesd204b_rx4_i/drp_busy_i2 (gt3_jesd204b_rx4_i/drp_busy_i2)
+     OBUF:I->O                 0.000          GT3_DRP_BUSY_OUT_OBUF (GT3_DRP_BUSY_OUT)
+    ----------------------------------------
+    Total                      0.737ns (0.398ns logic, 0.339ns route)
+                                       (54.0% logic, 46.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock GT0_DRPCLK_IN
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+GT0_DRPCLK_IN  |    1.634|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock GT1_DRPCLK_IN
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+GT1_DRPCLK_IN  |    1.634|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock GT2_DRPCLK_IN
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+GT2_DRPCLK_IN  |    1.634|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock GT3_DRPCLK_IN
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+GT3_DRPCLK_IN  |    1.634|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.16 secs
+ 
+--> 
+
+
+Total memory usage is 524052 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   26 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

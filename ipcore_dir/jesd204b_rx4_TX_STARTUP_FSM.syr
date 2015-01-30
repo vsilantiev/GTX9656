@@ -1,0 +1,567 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Reading design: jesd204b_rx4_TX_STARTUP_FSM.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "jesd204b_rx4_TX_STARTUP_FSM.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "jesd204b_rx4_TX_STARTUP_FSM"
+Output Format                      : NGC
+Target Device                      : xc7a200t-2-fbg676
+
+---- Source Options
+Top Module Name                    : jesd204b_rx4_TX_STARTUP_FSM
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"jesd204b_rx4/example_design"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_sync_block.vhd" into library work
+Parsing entity <jesd204b_rx4_sync_block>.
+Parsing architecture <structural> of entity <jesd204b_rx4_sync_block>.
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_tx_startup_fsm.vhd" into library work
+Parsing entity <jesd204b_rx4_TX_STARTUP_FSM>.
+Parsing architecture <RTL> of entity <jesd204b_rx4_tx_startup_fsm>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <jesd204b_rx4_TX_STARTUP_FSM> (architecture <RTL>) with generics from library <work>.
+
+Elaborating entity <jesd204b_rx4_sync_block> (architecture <structural>) with generics from library <work>.
+INFO:HDLCompiler:679 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_tx_startup_fsm.vhd" Line 558. Case statement is complete. others clause is never selected
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <jesd204b_rx4_TX_STARTUP_FSM>.
+    Related source file is "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_tx_startup_fsm.vhd".
+        GT_TYPE = "GTX"
+        STABLE_CLOCK_PERIOD = 8
+        RETRY_COUNTER_BITWIDTH = 8
+        TX_PLL0_USED = false
+        RX_PLL0_USED = false
+        PHASE_ALIGNMENT_MANUAL = true
+WARNING:Xst:647 - Input <PLL0REFCLKLOST> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 7-bit register for signal <init_wait_count>.
+    Found 18-bit register for signal <time_out_counter>.
+    Found 1-bit register for signal <time_out_2ms>.
+    Found 1-bit register for signal <time_tlock_max>.
+    Found 1-bit register for signal <time_out_500us>.
+    Found 10-bit register for signal <mmcm_lock_count>.
+    Found 1-bit register for signal <mmcm_lock_reclocked>.
+    Found 1-bit register for signal <run_phase_alignment_int_s3>.
+    Found 1-bit register for signal <tx_fsm_reset_done_int_s3>.
+    Found 1-bit register for signal <txresetdone_s3>.
+    Found 1-bit register for signal <time_out_wait_bypass_s3>.
+    Found 1-bit register for signal <pll1lock_prev>.
+    Found 1-bit register for signal <pll1lock_ris_edge>.
+    Found 17-bit register for signal <wait_bypass_count>.
+    Found 1-bit register for signal <time_out_wait_bypass>.
+    Found 3-bit register for signal <tx_state>.
+    Found 1-bit register for signal <TXUSERRDY>.
+    Found 1-bit register for signal <GTTXRESET>.
+    Found 1-bit register for signal <MMCM_RESET>.
+    Found 1-bit register for signal <tx_fsm_reset_done_int>.
+    Found 1-bit register for signal <PLL0_RESET>.
+    Found 1-bit register for signal <PLL1_RESET>.
+    Found 1-bit register for signal <pll_reset_asserted>.
+    Found 1-bit register for signal <reset_time_out>.
+    Found 8-bit register for signal <retry_counter_int>.
+    Found 1-bit register for signal <RUN_PHALIGNMENT>.
+    Found 1-bit register for signal <RESET_PHALIGNMENT>.
+    Found 1-bit register for signal <init_wait_done>.
+    Found finite state machine <FSM_0> for signal <tx_state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 21                                             |
+    | Inputs             | 12                                             |
+    | Outputs            | 12                                             |
+    | Clock              | STABLE_CLOCK (rising_edge)                     |
+    | Reset              | SOFT_RESET_GND_4_o_OR_44_o (positive)          |
+    | Reset type         | synchronous                                    |
+    | Reset State        | init                                           |
+    | Power Up State     | init                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 7-bit adder for signal <init_wait_count[6]_GND_4_o_add_2_OUT> created at line 208.
+    Found 18-bit adder for signal <time_out_counter[17]_GND_4_o_add_6_OUT> created at line 229.
+    Found 10-bit adder for signal <mmcm_lock_count[9]_GND_4_o_add_13_OUT> created at line 251.
+    Found 17-bit adder for signal <wait_bypass_count[16]_GND_4_o_add_22_OUT> created at line 383.
+    Found 8-bit adder for signal <retry_counter_int[7]_GND_4_o_add_51_OUT> created at line 549.
+    Found 1-bit 7-to-1 multiplexer for signal <tx_state[2]_X_4_o_Mux_56_o> created at line 427.
+    Found 10-bit comparator greater for signal <mmcm_lock_count[9]_PWR_4_o_LessThan_13_o> created at line 250
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred  82 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <jesd204b_rx4_TX_STARTUP_FSM> synthesized.
+
+Synthesizing Unit <jesd204b_rx4_sync_block>.
+    Related source file is "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_sync_block.vhd".
+        INITIALISE = "00"
+    Set property "ASYNC_REG = TRUE" for instance <data_sync>.
+    Set property "MSGON = FALSE" for instance <data_sync>.
+WARNING:Xst:3136 - Property "shreg_extract" (value "no") has not been applied on proper HDL object.
+    Set property "ASYNC_REG = TRUE" for instance <data_sync_reg>.
+    Set property "MSGON = FALSE" for instance <data_sync_reg>.
+WARNING:Xst:3136 - Property "shreg_extract" (value "no") has not been applied on proper HDL object.
+    Summary:
+	no macro.
+Unit <jesd204b_rx4_sync_block> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 5
+ 10-bit adder                                          : 1
+ 17-bit adder                                          : 1
+ 18-bit adder                                          : 1
+ 7-bit adder                                           : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 27
+ 1-bit register                                        : 22
+ 10-bit register                                       : 1
+ 17-bit register                                       : 1
+ 18-bit register                                       : 1
+ 7-bit register                                        : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 1
+ 10-bit comparator greater                             : 1
+# Multiplexers                                         : 4
+ 1-bit 2-to-1 multiplexer                              : 2
+ 1-bit 7-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <PLL0_RESET> has a constant value of 0 in block <jesd204b_rx4_TX_STARTUP_FSM>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <jesd204b_rx4_TX_STARTUP_FSM>.
+The following registers are absorbed into counter <init_wait_count>: 1 register on signal <init_wait_count>.
+The following registers are absorbed into counter <time_out_counter>: 1 register on signal <time_out_counter>.
+The following registers are absorbed into counter <mmcm_lock_count>: 1 register on signal <mmcm_lock_count>.
+The following registers are absorbed into counter <retry_counter_int>: 1 register on signal <retry_counter_int>.
+The following registers are absorbed into counter <wait_bypass_count>: 1 register on signal <wait_bypass_count>.
+Unit <jesd204b_rx4_TX_STARTUP_FSM> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 5
+ 10-bit up counter                                     : 1
+ 17-bit up counter                                     : 1
+ 18-bit up counter                                     : 1
+ 7-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 36
+ Flip-Flops                                            : 36
+# Comparators                                          : 1
+ 10-bit comparator greater                             : 1
+# Multiplexers                                         : 3
+ 1-bit 2-to-1 multiplexer                              : 2
+ 1-bit 7-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <PLL0_RESET> has a constant value of 0 in block <jesd204b_rx4_TX_STARTUP_FSM>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <tx_state[1:3]> with user encoding.
+--------------------------------
+ State              | Encoding
+--------------------------------
+ init               | 000
+ assert_all_resets  | 001
+ release_pll_reset  | 010
+ release_mmcm_reset | 011
+ wait_reset_done    | 100
+ do_phase_alignment | 101
+ reset_fsm_done     | 110
+--------------------------------
+
+Optimizing unit <jesd204b_rx4_TX_STARTUP_FSM> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block jesd204b_rx4_TX_STARTUP_FSM, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 98
+ Flip-Flops                                            : 98
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : jesd204b_rx4_TX_STARTUP_FSM.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 237
+#      GND                         : 1
+#      INV                         : 9
+#      LUT1                        : 42
+#      LUT2                        : 10
+#      LUT3                        : 11
+#      LUT4                        : 4
+#      LUT5                        : 9
+#      LUT6                        : 47
+#      MUXCY                       : 49
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 53
+# FlipFlops/Latches                : 98
+#      FD                          : 23
+#      FDE                         : 7
+#      FDR                         : 11
+#      FDRE                        : 55
+#      FDSE                        : 2
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 23
+#      IBUF                        : 7
+#      OBUF                        : 16
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a200tfbg676-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              98  out of  269200     0%  
+ Number of Slice LUTs:                  132  out of  134600     0%  
+    Number used as Logic:               132  out of  134600     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    149
+   Number with an unused Flip Flop:      51  out of    149    34%  
+   Number with an unused LUT:            17  out of    149    11%  
+   Number of fully used LUT-FF pairs:    81  out of    149    54%  
+   Number of unique control sets:        12
+
+IO Utilization: 
+ Number of IOs:                          26
+ Number of bonded IOBs:                  25  out of    400     6%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+STABLE_CLOCK                       | BUFGP                  | 74    |
+TXUSERCLK                          | BUFGP                  | 24    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 2.881ns (Maximum Frequency: 347.078MHz)
+   Minimum input arrival time before clock: 1.750ns
+   Maximum output required time after clock: 0.787ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'STABLE_CLOCK'
+  Clock period: 2.595ns (frequency: 385.319MHz)
+  Total number of paths / destination ports: 1431 / 167
+-------------------------------------------------------------------------
+Delay:               2.595ns (Levels of Logic = 10)
+  Source:            retry_counter_int_2 (FF)
+  Destination:       retry_counter_int_7 (FF)
+  Source Clock:      STABLE_CLOCK rising
+  Destination Clock: STABLE_CLOCK rising
+
+  Data Path: retry_counter_int_2 to retry_counter_int_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.398   0.611  retry_counter_int_2 (retry_counter_int_2)
+     LUT3:I0->O            9   0.105   0.402  PWR_4_o_retry_counter_int[7]_equal_51_o<7>_SW0 (N8)
+     LUT6:I5->O            1   0.105   0.000  Mcount_retry_counter_int_lut<0> (Mcount_retry_counter_int_lut<0>)
+     MUXCY:S->O            1   0.392   0.000  Mcount_retry_counter_int_cy<0> (Mcount_retry_counter_int_cy<0>)
+     MUXCY:CI->O           1   0.025   0.000  Mcount_retry_counter_int_cy<1> (Mcount_retry_counter_int_cy<1>)
+     MUXCY:CI->O           1   0.025   0.000  Mcount_retry_counter_int_cy<2> (Mcount_retry_counter_int_cy<2>)
+     MUXCY:CI->O           1   0.025   0.000  Mcount_retry_counter_int_cy<3> (Mcount_retry_counter_int_cy<3>)
+     MUXCY:CI->O           1   0.025   0.000  Mcount_retry_counter_int_cy<4> (Mcount_retry_counter_int_cy<4>)
+     MUXCY:CI->O           1   0.025   0.000  Mcount_retry_counter_int_cy<5> (Mcount_retry_counter_int_cy<5>)
+     MUXCY:CI->O           0   0.025   0.000  Mcount_retry_counter_int_cy<6> (Mcount_retry_counter_int_cy<6>)
+     XORCY:CI->O           1   0.417   0.000  Mcount_retry_counter_int_xor<7> (Mcount_retry_counter_int7)
+     FDRE:D                    0.015          retry_counter_int_7
+    ----------------------------------------
+    Total                      2.595ns (1.582ns logic, 1.013ns route)
+                                       (61.0% logic, 39.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'TXUSERCLK'
+  Clock period: 2.881ns (frequency: 347.078MHz)
+  Total number of paths / destination ports: 549 / 56
+-------------------------------------------------------------------------
+Delay:               2.881ns (Levels of Logic = 16)
+  Source:            wait_bypass_count_0 (FF)
+  Destination:       wait_bypass_count_13 (FF)
+  Source Clock:      TXUSERCLK rising
+  Destination Clock: TXUSERCLK rising
+
+  Data Path: wait_bypass_count_0 to wait_bypass_count_13
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.398   0.351  wait_bypass_count_0 (wait_bypass_count_0)
+     INV:I->O              1   0.123   0.000  Mcount_wait_bypass_count_lut<0>_INV_0 (Mcount_wait_bypass_count_lut<0>)
+     MUXCY:S->O            1   0.392   0.000  Mcount_wait_bypass_count_cy<0> (Mcount_wait_bypass_count_cy<0>)
+     MUXCY:CI->O           1   0.025   0.000  Mcount_wait_bypass_count_cy<1> (Mcount_wait_bypass_count_cy<1>)
+     MUXCY:CI->O           1   0.025   0.000  Mcount_wait_bypass_count_cy<2> (Mcount_wait_bypass_count_cy<2>)
+     MUXCY:CI->O           1   0.025   0.000  Mcount_wait_bypass_count_cy<3> (Mcount_wait_bypass_count_cy<3>)
+     MUXCY:CI->O           1   0.025   0.000  Mcount_wait_bypass_count_cy<4> (Mcount_wait_bypass_count_cy<4>)
+     MUXCY:CI->O           1   0.025   0.000  Mcount_wait_bypass_count_cy<5> (Mcount_wait_bypass_count_cy<5>)
+     MUXCY:CI->O           1   0.025   0.000  Mcount_wait_bypass_count_cy<6> (Mcount_wait_bypass_count_cy<6>)
+     MUXCY:CI->O           1   0.025   0.000  Mcount_wait_bypass_count_cy<7> (Mcount_wait_bypass_count_cy<7>)
+     MUXCY:CI->O           1   0.025   0.000  Mcount_wait_bypass_count_cy<8> (Mcount_wait_bypass_count_cy<8>)
+     MUXCY:CI->O           1   0.025   0.000  Mcount_wait_bypass_count_cy<9> (Mcount_wait_bypass_count_cy<9>)
+     MUXCY:CI->O           1   0.025   0.000  Mcount_wait_bypass_count_cy<10> (Mcount_wait_bypass_count_cy<10>)
+     MUXCY:CI->O           1   0.025   0.000  Mcount_wait_bypass_count_cy<11> (Mcount_wait_bypass_count_cy<11>)
+     MUXCY:CI->O           1   0.025   0.000  Mcount_wait_bypass_count_cy<12> (Mcount_wait_bypass_count_cy<12>)
+     XORCY:CI->O           1   0.417   0.780  Mcount_wait_bypass_count_xor<13> (Result<13>1)
+     LUT6:I1->O            1   0.105   0.000  wait_bypass_count_13_dpot (wait_bypass_count_13_dpot)
+     FDRE:D                    0.015          wait_bypass_count_13
+    ----------------------------------------
+    Total                      2.881ns (1.750ns logic, 1.131ns route)
+                                       (60.7% logic, 39.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'STABLE_CLOCK'
+  Total number of paths / destination ports: 49 / 27
+-------------------------------------------------------------------------
+Offset:              1.750ns (Levels of Logic = 4)
+  Source:            PLL1REFCLKLOST (PAD)
+  Destination:       tx_state_FSM_FFd2 (FF)
+  Destination Clock: STABLE_CLOCK rising
+
+  Data Path: PLL1REFCLKLOST to tx_state_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.001   0.611  PLL1REFCLKLOST_IBUF (PLL1REFCLKLOST_IBUF)
+     LUT3:I0->O            1   0.105   0.451  tx_state_FSM_FFd2-In2 (tx_state_FSM_FFd2-In3)
+     LUT6:I4->O            1   0.105   0.357  tx_state_FSM_FFd2-In3 (tx_state_FSM_FFd2-In4)
+     LUT5:I4->O            1   0.105   0.000  tx_state_FSM_FFd2-In4 (tx_state_FSM_FFd2-In)
+     FDR:D                     0.015          tx_state_FSM_FFd2
+    ----------------------------------------
+    Total                      1.750ns (0.331ns logic, 1.419ns route)
+                                       (18.9% logic, 81.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'STABLE_CLOCK'
+  Total number of paths / destination ports: 15 / 15
+-------------------------------------------------------------------------
+Offset:              0.787ns (Levels of Logic = 1)
+  Source:            retry_counter_int_7 (FF)
+  Destination:       RETRY_COUNTER<7> (PAD)
+  Source Clock:      STABLE_CLOCK rising
+
+  Data Path: retry_counter_int_7 to RETRY_COUNTER<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            10   0.398   0.389  retry_counter_int_7 (retry_counter_int_7)
+     OBUF:I->O                 0.000          RETRY_COUNTER_7_OBUF (RETRY_COUNTER<7>)
+    ----------------------------------------
+    Total                      0.787ns (0.398ns logic, 0.389ns route)
+                                       (50.6% logic, 49.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock STABLE_CLOCK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+STABLE_CLOCK   |    2.595|         |         |         |
+TXUSERCLK      |    0.757|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock TXUSERCLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+STABLE_CLOCK   |    0.764|         |         |         |
+TXUSERCLK      |    2.881|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.65 secs
+ 
+--> 
+
+
+Total memory usage is 523120 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

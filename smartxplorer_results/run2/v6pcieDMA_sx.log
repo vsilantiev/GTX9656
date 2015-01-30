@@ -1,0 +1,10 @@
+
+WARNING: The Trce option "-ucf" is either illegal or not supported by projNav and hence will not be added in the strategy file(maplogicopt.xds) created by Smartxplorer.
+
+Command Line : 
+-------------
+map C:\Users\vsilantiev\Documents\LASTWAC701\WRAPPERLASTAC701\smartxplorer_results\run2\v6pcieDMA.ngd -ol high -xe n -logic_opt on -t 2 -w -p xc7a200t-fbg676-2 -o v6pcieDMA_map.ncd C:\Users\vsilantiev\Documents\LASTWAC701\WRAPPERLASTAC701\smartxplorer_results\run2\v6pcieDMA.pcf
+
+Release 14.7 - Map P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Using target part "7a200tfbg676-2".

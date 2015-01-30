@@ -1,0 +1,5 @@
+Mon Mar 26 08:43:40 2012
+
+Upgraded v6_pcie_v1_6 from Virtex-6 Integrated Block for PCI Express 1.6 to Virtex-6 Integrated Block for PCI Express 1.7
+
+No changes made to parameter values.

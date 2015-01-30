@@ -1,0 +1,1 @@
+run -ifn xst_user_logic.prj -ifmt mixed -ofn user_logic_cw.ngc -ofmt NGC -p xc6vlx240t-1ff1156 -ent user_logic_cw -keep_hierarchy NO -iobuf YES -bus_delimiter () -top user_logic_cw -hierarchy_separator / -report_timing_constraint_problems warning -register_balancing no -iob Auto -uc user_logic_cw.xcf -write_timing_constraints yes

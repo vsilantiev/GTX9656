@@ -1,0 +1,1293 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: jesd204b_rx4_exdes.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "jesd204b_rx4_exdes.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "jesd204b_rx4_exdes"
+Output Format                      : NGC
+Target Device                      : xc7a200t-2-fbg676
+
+---- Source Options
+Top Module Name                    : jesd204b_rx4_exdes
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"jesd204b_rx4/example_design"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_sync_block.vhd" into library work
+Parsing entity <jesd204b_rx4_sync_block>.
+Parsing architecture <structural> of entity <jesd204b_rx4_sync_block>.
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gtrxreset_seq.vhd" into library work
+Parsing entity <jesd204b_rx4_gtrxreset_seq>.
+Parsing architecture <Behavioral> of entity <jesd204b_rx4_gtrxreset_seq>.
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" into library work
+Parsing entity <jesd204b_rx4_GT>.
+Parsing architecture <RTL> of entity <jesd204b_rx4_gt>.
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_rx_startup_fsm.vhd" into library work
+Parsing entity <jesd204b_rx4_RX_STARTUP_FSM>.
+Parsing architecture <RTL> of entity <jesd204b_rx4_rx_startup_fsm>.
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4.vhd" into library work
+Parsing entity <jesd204b_rx4>.
+Parsing architecture <RTL> of entity <jesd204b_rx4>.
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" into library work
+Parsing entity <jesd204b_rx4_init>.
+Parsing architecture <RTL> of entity <jesd204b_rx4_init>.
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gt_usrclk_source.vhd" into library work
+Parsing entity <jesd204b_rx4_GT_USRCLK_SOURCE>.
+Parsing architecture <RTL> of entity <jesd204b_rx4_gt_usrclk_source>.
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gt_frame_check.vhd" into library work
+Parsing entity <jesd204b_rx4_GT_FRAME_CHECK>.
+Parsing architecture <RTL> of entity <jesd204b_rx4_gt_frame_check>.
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" into library work
+Parsing entity <jesd204b_rx4_exdes>.
+Parsing architecture <RTL> of entity <jesd204b_rx4_exdes>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <jesd204b_rx4_exdes> (architecture <RTL>) with generics from library <work>.
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" Line 800: Assignment to tied_to_vcc_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" Line 801: Assignment to tied_to_vcc_vec_i ignored, since the identifier is never used
+
+Elaborating entity <jesd204b_rx4_GT_USRCLK_SOURCE> (architecture <RTL>) from library <work>.
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gt_usrclk_source.vhd" Line 154: Assignment to tied_to_vcc_i ignored, since the identifier is never used
+
+Elaborating entity <jesd204b_rx4_init> (architecture <RTL>) with generics from library <work>.
+
+Elaborating entity <jesd204b_rx4> (architecture <RTL>) with generics from library <work>.
+
+Elaborating entity <jesd204b_rx4_GT> (architecture <RTL>) with generics from library <work>.
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 672: Assignment to rxchariscomma_float_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 674: Assignment to rxcharisk_float_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 676: Assignment to rxdisperr_float_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 678: Assignment to rxnotintable_float_i ignored, since the identifier is never used
+
+Elaborating entity <jesd204b_rx4_gtrxreset_seq> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <jesd204b_rx4_sync_block> (architecture <structural>) with generics from library <work>.
+INFO:HDLCompiler:679 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gtrxreset_seq.vhd" Line 229. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gtrxreset_seq.vhd" Line 297. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 928: Assignment to drpdo_pma_t ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 930: Assignment to drpdo_rate_t ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 942: Assignment to drprdy_pma_t ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 944: Assignment to drprdy_rate_t ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 221: Net <drpen_pma_t> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 222: Net <drpaddr_pma_t[8]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 223: Net <drpwe_pma_t> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 225: Net <drpdi_pma_t[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 227: Net <drpen_rate_t> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 228: Net <drpaddr_rate_t[8]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 229: Net <drpwe_rate_t> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" Line 231: Net <drpdi_rate_t[15]> does not have a driver.
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" Line 807: Assignment to gt0_txuserrdy_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" Line 811: Assignment to gt1_txuserrdy_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" Line 815: Assignment to gt2_txuserrdy_i ignored, since the identifier is never used
+
+Elaborating entity <jesd204b_rx4_RX_STARTUP_FSM> (architecture <RTL>) with generics from library <work>.
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_rx_startup_fsm.vhd" Line 248: Assignment to time_out_500us ignored, since the identifier is never used
+INFO:HDLCompiler:679 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_rx_startup_fsm.vhd" Line 682. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" Line 520: Net <gt0_gttxreset_t> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" Line 534: Net <gt1_gttxreset_t> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" Line 548: Net <gt2_gttxreset_t> does not have a driver.
+
+Elaborating entity <jesd204b_rx4_GT_FRAME_CHECK> (architecture <RTL>) with generics from library <work>.
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gt_frame_check.vhd" Line 219: Assignment to tied_to_ground_vec_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gt_frame_check.vhd" Line 220: Assignment to tied_to_vcc_i ignored, since the identifier is never used
+WARNING:HDLCompiler:92 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gt_frame_check.vhd" Line 228: system_reset_r should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gt_frame_check.vhd" Line 237: reset_on_error_in_r should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gt_frame_check.vhd" Line 358: Assignment to rx_chanbond_seq_r3 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" Line 1453: Assignment to user_tx_reset_i ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" Line 448: Net <gt0_rxuserrdy_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" Line 467: Net <gt0_rxlpmhfhold_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" Line 468: Net <gt0_rxlpmlfhold_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" Line 472: Net <gt0_gtrxreset_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" Line 476: Net <gt0_gttxreset_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" Line 493: Net <gt1_rxuserrdy_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" Line 512: Net <gt1_rxlpmhfhold_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" Line 513: Net <gt1_rxlpmlfhold_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" Line 517: Net <gt1_gtrxreset_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" Line 521: Net <gt1_gttxreset_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" Line 538: Net <gt2_rxuserrdy_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" Line 557: Net <gt2_rxlpmhfhold_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" Line 558: Net <gt2_rxlpmlfhold_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" Line 562: Net <gt2_gtrxreset_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" Line 566: Net <gt2_gttxreset_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" Line 576: Net <gt0_pll0reset_i> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <jesd204b_rx4_exdes>.
+    Related source file is "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd".
+        EXAMPLE_CONFIG_INDEPENDENT_LANES = 1
+        STABLE_CLOCK_PERIOD = 10
+        EXAMPLE_LANE_WITH_START_CHAR = 0
+        EXAMPLE_WORDS_IN_BRAM = 512
+        EXAMPLE_SIM_GTRESET_SPEEDUP = "TRUE"
+        EXAMPLE_SIMULATION = 0
+        EXAMPLE_USE_CHIPSCOPE = 0
+    Set property "KEEP = TRUE" for signal <gt0_txusrclk_i>.
+    Set property "KEEP = TRUE" for signal <gt0_txusrclk2_i>.
+    Set property "KEEP = TRUE" for signal <gt0_rxusrclk_i>.
+    Set property "KEEP = TRUE" for signal <gt0_rxusrclk2_i>.
+    Set property "KEEP = TRUE" for signal <gt1_txusrclk_i>.
+    Set property "KEEP = TRUE" for signal <gt1_txusrclk2_i>.
+    Set property "KEEP = TRUE" for signal <gt1_rxusrclk_i>.
+    Set property "KEEP = TRUE" for signal <gt1_rxusrclk2_i>.
+    Set property "KEEP = TRUE" for signal <gt2_txusrclk_i>.
+    Set property "KEEP = TRUE" for signal <gt2_txusrclk2_i>.
+    Set property "KEEP = TRUE" for signal <gt2_rxusrclk_i>.
+    Set property "KEEP = TRUE" for signal <gt2_rxusrclk2_i>.
+WARNING:Xst:647 - Input <GTTX_RESET_IN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <GTRX_RESET_IN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLL0_RESET_IN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 810: Output port <GT0_RXUSRCLK2_OUT> of the instance <gt0_usrclk_source> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 810: Output port <GT1_RXUSRCLK2_OUT> of the instance <gt0_usrclk_source> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 810: Output port <GT2_RXUSRCLK2_OUT> of the instance <gt0_usrclk_source> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 842: Output port <GT0_DRPDO_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 842: Output port <GT0_RXCHARISCOMMA_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 842: Output port <GT0_RXDISPERR_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 842: Output port <GT0_RXNOTINTABLE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 842: Output port <GT1_DRPDO_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 842: Output port <GT1_RXCHARISCOMMA_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 842: Output port <GT1_RXDISPERR_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 842: Output port <GT1_RXNOTINTABLE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 842: Output port <GT2_DRPDO_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 842: Output port <GT2_RXCHARISCOMMA_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 842: Output port <GT2_RXDISPERR_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 842: Output port <GT2_RXNOTINTABLE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 842: Output port <GT0_TX_FSM_RESET_DONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 842: Output port <GT0_RX_FSM_RESET_DONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 842: Output port <GT1_TX_FSM_RESET_DONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 842: Output port <GT1_RX_FSM_RESET_DONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 842: Output port <GT2_TX_FSM_RESET_DONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 842: Output port <GT2_RX_FSM_RESET_DONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 842: Output port <GT0_DRPRDY_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 842: Output port <GT0_EYESCANDATAERROR_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 842: Output port <GT0_RXCDRLOCK_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 842: Output port <GT1_DRPRDY_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 842: Output port <GT1_EYESCANDATAERROR_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 842: Output port <GT1_RXCDRLOCK_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 842: Output port <GT2_DRPRDY_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 842: Output port <GT2_EYESCANDATAERROR_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 842: Output port <GT2_RXCDRLOCK_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 842: Output port <GT0_PLL0LOCK_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 1087: Output port <ERROR_COUNT_OUT> of the instance <gt0_frame_check> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 1087: Output port <RX_ENCHAN_SYNC_OUT> of the instance <gt0_frame_check> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 1087: Output port <INC_OUT> of the instance <gt0_frame_check> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 1124: Output port <ERROR_COUNT_OUT> of the instance <gt1_frame_check> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 1124: Output port <RX_ENCHAN_SYNC_OUT> of the instance <gt1_frame_check> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 1124: Output port <INC_OUT> of the instance <gt1_frame_check> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 1161: Output port <ERROR_COUNT_OUT> of the instance <gt2_frame_check> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 1161: Output port <RX_ENCHAN_SYNC_OUT> of the instance <gt2_frame_check> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" line 1161: Output port <INC_OUT> of the instance <gt2_frame_check> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <gt0_rxuserrdy_i> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <gt0_rxlpmhfhold_i> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <gt0_rxlpmlfhold_i> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <gt0_gtrxreset_i> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <gt0_gttxreset_i> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <gt1_rxuserrdy_i> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <gt1_rxlpmhfhold_i> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <gt1_rxlpmlfhold_i> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <gt1_gtrxreset_i> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <gt1_gttxreset_i> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <gt2_rxuserrdy_i> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <gt2_rxlpmhfhold_i> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <gt2_rxlpmlfhold_i> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <gt2_gtrxreset_i> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <gt2_gttxreset_i> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <gt0_pll0reset_i> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <gt0_rxresetdone_r2>.
+    Found 1-bit register for signal <gt0_rxresetdone_r>.
+    Found 1-bit register for signal <gt1_rxresetdone_r>.
+    Found 1-bit register for signal <gt1_rxresetdone_r2>.
+    Found 1-bit register for signal <gt2_rxresetdone_r>.
+    Found 1-bit register for signal <gt2_rxresetdone_r2>.
+    Found 1-bit register for signal <gt0_rxresetdone_r3>.
+    Found 1-bit register for signal <gt1_rxresetdone_r3>.
+    Found 1-bit register for signal <gt2_rxresetdone_r3>.
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal gt0_rxusrclk_i may hinder XST clustering optimizations.
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal gt1_rxusrclk_i may hinder XST clustering optimizations.
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal gt2_rxusrclk_i may hinder XST clustering optimizations.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+Unit <jesd204b_rx4_exdes> synthesized.
+
+Synthesizing Unit <jesd204b_rx4_GT_USRCLK_SOURCE>.
+    Related source file is "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gt_usrclk_source.vhd".
+    Set property "syn_noclockbuf = true" for signal <q0_clk1_gtrefclk>.
+    Summary:
+	no macro.
+Unit <jesd204b_rx4_GT_USRCLK_SOURCE> synthesized.
+
+Synthesizing Unit <jesd204b_rx4_init>.
+    Related source file is "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd".
+        EXAMPLE_SIM_GTRESET_SPEEDUP = "TRUE"
+        EXAMPLE_SIMULATION = 0
+        STABLE_CLOCK_PERIOD = 10
+        EXAMPLE_USE_CHIPSCOPE = 0
+WARNING:Xst:647 - Input <GT0_RXUSERRDY_IN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <GT0_GTRXRESET_IN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <GT0_GTTXRESET_IN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <GT1_RXUSERRDY_IN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <GT1_GTRXRESET_IN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <GT1_GTTXRESET_IN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <GT2_RXUSERRDY_IN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <GT2_GTRXRESET_IN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <GT2_GTTXRESET_IN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <GT0_PLL0RESET_IN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" line 605: Output port <GT0_DRP_BUSY_OUT> of the instance <jesd204b_rx4_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" line 605: Output port <GT1_DRP_BUSY_OUT> of the instance <jesd204b_rx4_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" line 605: Output port <GT2_DRP_BUSY_OUT> of the instance <jesd204b_rx4_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" line 825: Output port <RETRY_COUNTER> of the instance <gt0_rxresetfsm_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" line 825: Output port <MMCM_RESET> of the instance <gt0_rxresetfsm_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" line 825: Output port <PLL1_RESET> of the instance <gt0_rxresetfsm_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" line 825: Output port <RUN_PHALIGNMENT> of the instance <gt0_rxresetfsm_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" line 825: Output port <RESET_PHALIGNMENT> of the instance <gt0_rxresetfsm_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" line 865: Output port <RETRY_COUNTER> of the instance <gt1_rxresetfsm_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" line 865: Output port <MMCM_RESET> of the instance <gt1_rxresetfsm_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" line 865: Output port <PLL0_RESET> of the instance <gt1_rxresetfsm_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" line 865: Output port <PLL1_RESET> of the instance <gt1_rxresetfsm_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" line 865: Output port <RUN_PHALIGNMENT> of the instance <gt1_rxresetfsm_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" line 865: Output port <RESET_PHALIGNMENT> of the instance <gt1_rxresetfsm_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" line 905: Output port <RETRY_COUNTER> of the instance <gt2_rxresetfsm_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" line 905: Output port <MMCM_RESET> of the instance <gt2_rxresetfsm_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" line 905: Output port <PLL0_RESET> of the instance <gt2_rxresetfsm_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" line 905: Output port <PLL1_RESET> of the instance <gt2_rxresetfsm_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" line 905: Output port <RUN_PHALIGNMENT> of the instance <gt2_rxresetfsm_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" line 905: Output port <RESET_PHALIGNMENT> of the instance <gt2_rxresetfsm_i> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <GT0_TX_FSM_RESET_DONE_OUT> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <GT1_TX_FSM_RESET_DONE_OUT> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <GT2_TX_FSM_RESET_DONE_OUT> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <gt0_gttxreset_t> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <gt1_gttxreset_t> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <gt2_gttxreset_t> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 11-bit register for signal <rx_cdrlock_counter>.
+    Found 1-bit register for signal <rx_cdrlocked>.
+    Found 11-bit adder for signal <rx_cdrlock_counter[10]_GND_9_o_add_1_OUT> created at line 957.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  12 D-type flip-flop(s).
+Unit <jesd204b_rx4_init> synthesized.
+
+Synthesizing Unit <jesd204b_rx4>.
+    Related source file is "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4.vhd".
+        WRAPPER_SIM_GTRESET_SPEEDUP = "TRUE"
+    Summary:
+	no macro.
+Unit <jesd204b_rx4> synthesized.
+
+Synthesizing Unit <jesd204b_rx4_GT>.
+    Related source file is "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd".
+        GT_SIM_GTRESET_SPEEDUP = "TRUE"
+        TXSYNC_OVRD_IN = '0'
+        TXSYNC_MULTILANE_IN = '0'
+WARNING:Xst:653 - Signal <drpaddr_pma_t> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <drpdi_pma_t> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <drpaddr_rate_t> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <drpdi_rate_t> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <drpen_pma_t> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <drpwe_pma_t> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <drpen_rate_t> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <drpwe_rate_t> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Register <drp_busy_i1> equivalent to <drp_busy_i2> has been removed
+    Found 1-bit register for signal <drp_busy_i2>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <jesd204b_rx4_GT> synthesized.
+
+Synthesizing Unit <jesd204b_rx4_gtrxreset_seq>.
+    Related source file is "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gtrxreset_seq.vhd".
+    Found 1-bit register for signal <drp_op_done_o>.
+    Found 1-bit register for signal <gtrxreset_s>.
+    Found 1-bit register for signal <gtrxreset_ss>.
+    Found 1-bit register for signal <rxpmaresetdone_sss>.
+    Found 1-bit register for signal <gtrxreset_o>.
+    Found 16-bit register for signal <rd_data>.
+    Found 3-bit register for signal <state>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 14                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 7                                              |
+    | Clock              | DRPCLK (rising_edge)                           |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  21 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <jesd204b_rx4_gtrxreset_seq> synthesized.
+
+Synthesizing Unit <jesd204b_rx4_sync_block>.
+    Related source file is "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_sync_block.vhd".
+        INITIALISE = "00"
+    Set property "ASYNC_REG = TRUE" for instance <data_sync>.
+    Set property "MSGON = FALSE" for instance <data_sync>.
+WARNING:Xst:3136 - Property "shreg_extract" (value "no") has not been applied on proper HDL object.
+    Set property "ASYNC_REG = TRUE" for instance <data_sync_reg>.
+    Set property "MSGON = FALSE" for instance <data_sync_reg>.
+WARNING:Xst:3136 - Property "shreg_extract" (value "no") has not been applied on proper HDL object.
+    Summary:
+	no macro.
+Unit <jesd204b_rx4_sync_block> synthesized.
+
+Synthesizing Unit <jesd204b_rx4_RX_STARTUP_FSM>.
+    Related source file is "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_rx_startup_fsm.vhd".
+        EXAMPLE_SIMULATION = 0
+        GT_TYPE = "GTP"
+        STABLE_CLOCK_PERIOD = 10
+        RETRY_COUNTER_BITWIDTH = 8
+        TX_PLL0_USED = false
+        RX_PLL0_USED = true
+        PHASE_ALIGNMENT_MANUAL = false
+WARNING:Xst:647 - Input <PLL1REFCLKLOST> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 6-bit register for signal <init_wait_count>.
+    Found 2-bit register for signal <recclk_mon_restart_count>.
+    Found 19-bit register for signal <time_out_counter>.
+    Found 1-bit register for signal <time_out_2ms>.
+    Found 1-bit register for signal <time_tlock_max>.
+    Found 1-bit register for signal <time_out_1us>.
+    Found 1-bit register for signal <time_out_100us>.
+    Found 10-bit register for signal <mmcm_lock_count>.
+    Found 1-bit register for signal <mmcm_lock_reclocked>.
+    Found 1-bit register for signal <run_phase_alignment_int_s3>.
+    Found 1-bit register for signal <rx_fsm_reset_done_int_s3>.
+    Found 1-bit register for signal <rxresetdone_s3>.
+    Found 1-bit register for signal <time_out_wait_bypass_s3>.
+    Found 1-bit register for signal <pll0lock_prev>.
+    Found 1-bit register for signal <pll0lock_ris_edge>.
+    Found 13-bit register for signal <wait_bypass_count>.
+    Found 1-bit register for signal <time_out_wait_bypass>.
+    Found 4-bit register for signal <rx_state>.
+    Found 1-bit register for signal <RXUSERRDY>.
+    Found 1-bit register for signal <GTRXRESET>.
+    Found 1-bit register for signal <MMCM_RESET>.
+    Found 1-bit register for signal <rx_fsm_reset_done_int>.
+    Found 1-bit register for signal <PLL0_RESET>.
+    Found 1-bit register for signal <PLL1_RESET>.
+    Found 1-bit register for signal <pll_reset_asserted>.
+    Found 1-bit register for signal <reset_time_out>.
+    Found 8-bit register for signal <retry_counter_int>.
+    Found 1-bit register for signal <run_phase_alignment_int>.
+    Found 1-bit register for signal <check_tlock_max>.
+    Found 1-bit register for signal <RESET_PHALIGNMENT>.
+    Found 1-bit register for signal <recclk_mon_count_reset>.
+    Found 1-bit register for signal <init_wait_done>.
+    Found finite state machine <FSM_1> for signal <rx_state>.
+    -----------------------------------------------------------------------
+    | States             | 9                                              |
+    | Transitions        | 32                                             |
+    | Inputs             | 17                                             |
+    | Outputs            | 15                                             |
+    | Clock              | STABLE_CLOCK (rising_edge)                     |
+    | Reset              | SOFT_RESET_GND_122_o_OR_51_o (positive)        |
+    | Reset type         | synchronous                                    |
+    | Reset State        | init                                           |
+    | Power Up State     | init                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 6-bit adder for signal <init_wait_count[5]_GND_122_o_add_2_OUT> created at line 223.
+    Found 2-bit adder for signal <recclk_mon_restart_count[1]_GND_122_o_add_6_OUT> created at line 242.
+    Found 19-bit adder for signal <time_out_counter[18]_GND_122_o_add_12_OUT> created at line 265.
+    Found 10-bit adder for signal <mmcm_lock_count[9]_GND_122_o_add_21_OUT> created at line 302.
+    Found 13-bit adder for signal <wait_bypass_count[12]_GND_122_o_add_30_OUT> created at line 443.
+    Found 8-bit adder for signal <retry_counter_int[7]_GND_122_o_add_67_OUT> created at line 654.
+    Found 19-bit comparator greater for signal <GND_122_o_time_out_counter[18]_LessThan_15_o> created at line 268
+    Found 10-bit comparator greater for signal <mmcm_lock_count[9]_PWR_49_o_LessThan_21_o> created at line 301
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred  83 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  11 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <jesd204b_rx4_RX_STARTUP_FSM> synthesized.
+
+Synthesizing Unit <jesd204b_rx4_GT_FRAME_CHECK>.
+    Related source file is "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gt_frame_check.vhd".
+        RX_DATA_WIDTH = 16
+        RXCTRL_WIDTH = 2
+        WORDS_IN_BRAM = 512
+        CHANBOND_SEQ_LEN = 1
+        COMMA_DOUBLE = "0000001010111100"
+        START_OF_PACKET_CHAR = "0000001010111100"
+    Set property "KEEP = TRUE" for signal <system_reset_r>.
+WARNING:Xst:647 - Input <INC_IN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2999 - Signal 'ROM', unconnected in block 'jesd204b_rx4_GT_FRAME_CHECK', is tied to its initial value.
+    Found 512x80-bit single-port Read Only RAM <Mram_ROM> for signal <ROM>.
+    Register <RX_ENCHAN_SYNC_OUT> equivalent to <RXENPCOMMADET_OUT> has been removed
+    Register <RXENMCOMMADET_OUT> equivalent to <RXENPCOMMADET_OUT> has been removed
+    Found 1-bit register for signal <reset_on_error_in_r>.
+    Found 16-bit register for signal <rx_data_r>.
+    Found 16-bit register for signal <rx_data_r2>.
+    Found 2-bit register for signal <rxctrl_r>.
+    Found 1-bit register for signal <begin_r>.
+    Found 1-bit register for signal <track_data_r>.
+    Found 1-bit register for signal <data_error_detected_r>.
+    Found 1-bit register for signal <start_of_packet_detected_r>.
+    Found 1-bit register for signal <track_data_r2>.
+    Found 1-bit register for signal <track_data_r3>.
+    Found 16-bit register for signal <rx_data_r3>.
+    Found 16-bit register for signal <rx_data_r4>.
+    Found 16-bit register for signal <rx_data_r5>.
+    Found 16-bit register for signal <rx_data_r6>.
+    Found 16-bit register for signal <rx_data_r_track>.
+    Found 2-bit register for signal <rxctrl_r2>.
+    Found 2-bit register for signal <rxctrl_r3>.
+    Found 1-bit register for signal <rx_chanbond_seq_r>.
+    Found 1-bit register for signal <rx_chanbond_seq_r2>.
+    Found 2-bit register for signal <sel>.
+    Found 1-bit register for signal <RXENPCOMMADET_OUT>.
+    Found 1-bit register for signal <error_detected_r>.
+    Found 9-bit register for signal <error_count_r>.
+    Found 10-bit register for signal <read_counter_i>.
+    Found 16-bit register for signal <rx_data_ram_r<31:16>>.
+    Found 1-bit register for signal <system_reset_r>.
+    Found 9-bit adder for signal <error_count_r[8]_GND_125_o_add_30_OUT> created at line 1241.
+    Found 10-bit adder for signal <read_counter_i[9]_GND_125_o_add_36_OUT> created at line 1241.
+    Found 16-bit comparator not equal for signal <n0071> created at line 470
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred 167 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <jesd204b_rx4_GT_FRAME_CHECK> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 512x80-bit single-port Read Only RAM                  : 3
+# Adders/Subtractors                                   : 25
+ 10-bit adder                                          : 6
+ 11-bit adder                                          : 1
+ 13-bit adder                                          : 3
+ 19-bit adder                                          : 3
+ 2-bit adder                                           : 3
+ 6-bit adder                                           : 3
+ 8-bit adder                                           : 3
+ 9-bit adder                                           : 3
+# Registers                                            : 203
+ 1-bit register                                        : 139
+ 10-bit register                                       : 6
+ 11-bit register                                       : 1
+ 13-bit register                                       : 3
+ 16-bit register                                       : 27
+ 19-bit register                                       : 3
+ 2-bit register                                        : 15
+ 6-bit register                                        : 3
+ 8-bit register                                        : 3
+ 9-bit register                                        : 3
+# Comparators                                          : 9
+ 10-bit comparator greater                             : 3
+ 16-bit comparator not equal                           : 3
+ 19-bit comparator greater                             : 3
+# Multiplexers                                         : 75
+ 1-bit 2-to-1 multiplexer                              : 45
+ 10-bit 2-to-1 multiplexer                             : 3
+ 16-bit 2-to-1 multiplexer                             : 21
+ 8-bit 2-to-1 multiplexer                              : 3
+ 9-bit 2-to-1 multiplexer                              : 3
+# FSMs                                                 : 6
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <recclk_mon_restart_count_0> has a constant value of 0 in block <gt0_rxresetfsm_i>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <recclk_mon_restart_count_1> has a constant value of 0 in block <gt0_rxresetfsm_i>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <recclk_mon_restart_count_0> has a constant value of 0 in block <gt1_rxresetfsm_i>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <recclk_mon_restart_count_1> has a constant value of 0 in block <gt1_rxresetfsm_i>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <recclk_mon_restart_count_0> has a constant value of 0 in block <gt2_rxresetfsm_i>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <recclk_mon_restart_count_1> has a constant value of 0 in block <gt2_rxresetfsm_i>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <rx_chanbond_seq_r> (without init value) has a constant value of 0 in block <gt0_frame_check>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sel_1> (without init value) has a constant value of 0 in block <gt0_frame_check>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <rx_chanbond_seq_r> (without init value) has a constant value of 0 in block <gt1_frame_check>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sel_1> (without init value) has a constant value of 0 in block <gt1_frame_check>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <rx_chanbond_seq_r> (without init value) has a constant value of 0 in block <gt2_frame_check>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sel_1> (without init value) has a constant value of 0 in block <gt2_frame_check>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rx_chanbond_seq_r2> (without init value) has a constant value of 0 in block <gt0_frame_check>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rx_chanbond_seq_r2> (without init value) has a constant value of 0 in block <gt1_frame_check>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rx_chanbond_seq_r2> (without init value) has a constant value of 0 in block <gt2_frame_check>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <recclk_mon_count_reset> is unconnected in block <gt0_rxresetfsm_i>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <recclk_mon_count_reset> is unconnected in block <gt1_rxresetfsm_i>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <recclk_mon_count_reset> is unconnected in block <gt2_rxresetfsm_i>.
+WARNING:Xst:2404 -  FFs/Latches <sel<1:1>> (without init value) have a constant value of 0 in block <jesd204b_rx4_GT_FRAME_CHECK>.
+
+Synthesizing (advanced) Unit <jesd204b_rx4_GT_FRAME_CHECK>.
+The following registers are absorbed into counter <read_counter_i>: 1 register on signal <read_counter_i>.
+The following registers are absorbed into counter <error_count_r>: 1 register on signal <error_count_r>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ROM> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 512-word x 80-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <read_counter_i<8:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    -----------------------------------------------------------------------
+Unit <jesd204b_rx4_GT_FRAME_CHECK> synthesized (advanced).
+
+Synthesizing (advanced) Unit <jesd204b_rx4_RX_STARTUP_FSM>.
+The following registers are absorbed into counter <init_wait_count>: 1 register on signal <init_wait_count>.
+The following registers are absorbed into counter <time_out_counter>: 1 register on signal <time_out_counter>.
+The following registers are absorbed into counter <mmcm_lock_count>: 1 register on signal <mmcm_lock_count>.
+The following registers are absorbed into counter <retry_counter_int>: 1 register on signal <retry_counter_int>.
+The following registers are absorbed into counter <recclk_mon_restart_count>: 1 register on signal <recclk_mon_restart_count>.
+The following registers are absorbed into counter <wait_bypass_count>: 1 register on signal <wait_bypass_count>.
+Unit <jesd204b_rx4_RX_STARTUP_FSM> synthesized (advanced).
+
+Synthesizing (advanced) Unit <jesd204b_rx4_init>.
+The following registers are absorbed into counter <rx_cdrlock_counter>: 1 register on signal <rx_cdrlock_counter>.
+Unit <jesd204b_rx4_init> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 512x80-bit single-port distributed Read Only RAM      : 3
+# Counters                                             : 25
+ 10-bit up counter                                     : 6
+ 11-bit up counter                                     : 1
+ 13-bit up counter                                     : 3
+ 19-bit up counter                                     : 3
+ 2-bit up counter                                      : 3
+ 6-bit up counter                                      : 3
+ 8-bit up counter                                      : 3
+ 9-bit up counter                                      : 3
+# Registers                                            : 649
+ Flip-Flops                                            : 649
+# Comparators                                          : 9
+ 10-bit comparator greater                             : 3
+ 16-bit comparator not equal                           : 3
+ 19-bit comparator greater                             : 3
+# Multiplexers                                         : 69
+ 1-bit 2-to-1 multiplexer                              : 45
+ 16-bit 2-to-1 multiplexer                             : 21
+ 9-bit 2-to-1 multiplexer                              : 3
+# FSMs                                                 : 6
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <PLL1_RESET> has a constant value of 0 in block <jesd204b_rx4_RX_STARTUP_FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2716 - In unit jesd204b_rx4_exdes, both signals gt0_rxusrclk_i and gt0_rxusrclk2_i have a KEEP attribute, signal gt0_rxusrclk2_i will be lost.
+WARNING:Xst:2716 - In unit jesd204b_rx4_exdes, both signals gt1_rxusrclk_i and gt1_rxusrclk2_i have a KEEP attribute, signal gt1_rxusrclk2_i will be lost.
+WARNING:Xst:2716 - In unit jesd204b_rx4_exdes, both signals gt2_rxusrclk_i and gt2_rxusrclk2_i have a KEEP attribute, signal gt2_rxusrclk2_i will be lost.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <jesd204b_rx4_init_i/jesd204b_rx4_i/gt0_jesd204b_rx4_i/gtrxreset_seq_i/FSM_0> on signal <state[1:3]> with user encoding.
+Optimizing FSM <jesd204b_rx4_init_i/jesd204b_rx4_i/gt1_jesd204b_rx4_i/gtrxreset_seq_i/FSM_0> on signal <state[1:3]> with user encoding.
+Optimizing FSM <jesd204b_rx4_init_i/jesd204b_rx4_i/gt2_jesd204b_rx4_i/gtrxreset_seq_i/FSM_0> on signal <state[1:3]> with user encoding.
+---------------------------
+ State         | Encoding
+---------------------------
+ idle          | 000
+ drp_rd        | 001
+ wait_rd_data  | 010
+ wr_16         | 011
+ wait_wr_done1 | 100
+ wait_pmareset | 101
+ wr_20         | 110
+ wait_wr_done2 | 111
+---------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <jesd204b_rx4_init_i/gt0_rxresetfsm_i/FSM_1> on signal <rx_state[1:4]> with user encoding.
+Optimizing FSM <jesd204b_rx4_init_i/gt1_rxresetfsm_i/FSM_1> on signal <rx_state[1:4]> with user encoding.
+Optimizing FSM <jesd204b_rx4_init_i/gt2_rxresetfsm_i/FSM_1> on signal <rx_state[1:4]> with user encoding.
+----------------------------------
+ State                | Encoding
+----------------------------------
+ init                 | 0000
+ assert_all_resets    | 0001
+ release_pll_reset    | 0010
+ verify_recclk_stable | 0011
+ release_mmcm_reset   | 0100
+ wait_reset_done      | 0101
+ do_phase_alignment   | 0110
+ monitor_data_valid   | 0111
+ fsm_done             | 1000
+----------------------------------
+WARNING:Xst:1710 - FF/Latch <rx_data_ram_r_22> (without init value) has a constant value of 0 in block <jesd204b_rx4_GT_FRAME_CHECK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rx_data_ram_r_29> (without init value) has a constant value of 0 in block <jesd204b_rx4_GT_FRAME_CHECK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rx_data_ram_r_30> (without init value) has a constant value of 0 in block <jesd204b_rx4_GT_FRAME_CHECK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rx_data_ram_r_31> (without init value) has a constant value of 0 in block <jesd204b_rx4_GT_FRAME_CHECK>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <error_count_r_8> of sequential type is unconnected in block <jesd204b_rx4_GT_FRAME_CHECK>.
+
+Optimizing unit <jesd204b_rx4_exdes> ...
+
+Optimizing unit <jesd204b_rx4_GT> ...
+
+Optimizing unit <jesd204b_rx4_gtrxreset_seq> ...
+
+Optimizing unit <jesd204b_rx4_RX_STARTUP_FSM> ...
+
+Optimizing unit <jesd204b_rx4_GT_FRAME_CHECK> ...
+WARNING:Xst:1293 - FF/Latch <jesd204b_rx4_init_i/gt0_rxresetfsm_i/recclk_mon_restart_count_1> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <jesd204b_rx4_init_i/gt0_rxresetfsm_i/recclk_mon_restart_count_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <jesd204b_rx4_init_i/gt1_rxresetfsm_i/recclk_mon_restart_count_1> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <jesd204b_rx4_init_i/gt1_rxresetfsm_i/recclk_mon_restart_count_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <jesd204b_rx4_init_i/gt2_rxresetfsm_i/recclk_mon_restart_count_1> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <jesd204b_rx4_init_i/gt2_rxresetfsm_i/recclk_mon_restart_count_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <gt2_frame_check/rx_chanbond_seq_r> (without init value) has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <gt1_frame_check/rx_chanbond_seq_r> (without init value) has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <gt0_frame_check/rx_chanbond_seq_r> (without init value) has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gt2_frame_check/rx_chanbond_seq_r2> (without init value) has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gt1_frame_check/rx_chanbond_seq_r2> (without init value) has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gt0_frame_check/rx_chanbond_seq_r2> (without init value) has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/jesd204b_rx4_i/gt0_jesd204b_rx4_i/drp_busy_i2> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/jesd204b_rx4_i/gt1_jesd204b_rx4_i/drp_busy_i2> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/jesd204b_rx4_i/gt2_jesd204b_rx4_i/drp_busy_i2> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt0_rxresetfsm_i/retry_counter_int_7> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt0_rxresetfsm_i/retry_counter_int_6> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt0_rxresetfsm_i/retry_counter_int_5> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt0_rxresetfsm_i/retry_counter_int_4> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt0_rxresetfsm_i/retry_counter_int_3> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt0_rxresetfsm_i/retry_counter_int_2> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt0_rxresetfsm_i/retry_counter_int_1> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt0_rxresetfsm_i/retry_counter_int_0> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt0_rxresetfsm_i/RESET_PHALIGNMENT> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt0_rxresetfsm_i/MMCM_RESET> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt1_rxresetfsm_i/retry_counter_int_7> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt1_rxresetfsm_i/retry_counter_int_6> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt1_rxresetfsm_i/retry_counter_int_5> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt1_rxresetfsm_i/retry_counter_int_4> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt1_rxresetfsm_i/retry_counter_int_3> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt1_rxresetfsm_i/retry_counter_int_2> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt1_rxresetfsm_i/retry_counter_int_1> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt1_rxresetfsm_i/retry_counter_int_0> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt1_rxresetfsm_i/RESET_PHALIGNMENT> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt1_rxresetfsm_i/MMCM_RESET> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt1_rxresetfsm_i/PLL0_RESET> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt2_rxresetfsm_i/retry_counter_int_7> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt2_rxresetfsm_i/retry_counter_int_6> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt2_rxresetfsm_i/retry_counter_int_5> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt2_rxresetfsm_i/retry_counter_int_4> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt2_rxresetfsm_i/retry_counter_int_3> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt2_rxresetfsm_i/retry_counter_int_2> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt2_rxresetfsm_i/retry_counter_int_1> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt2_rxresetfsm_i/retry_counter_int_0> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt2_rxresetfsm_i/RESET_PHALIGNMENT> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt2_rxresetfsm_i/MMCM_RESET> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <jesd204b_rx4_init_i/gt2_rxresetfsm_i/PLL0_RESET> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <gt2_frame_check/error_count_r_7> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <gt2_frame_check/error_count_r_6> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <gt2_frame_check/error_count_r_5> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <gt2_frame_check/error_count_r_4> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <gt2_frame_check/error_count_r_3> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <gt2_frame_check/error_count_r_2> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <gt2_frame_check/error_count_r_1> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <gt2_frame_check/error_count_r_0> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <gt1_frame_check/error_count_r_7> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <gt1_frame_check/error_count_r_6> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <gt1_frame_check/error_count_r_5> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <gt1_frame_check/error_count_r_4> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <gt1_frame_check/error_count_r_3> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <gt1_frame_check/error_count_r_2> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <gt1_frame_check/error_count_r_1> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <gt1_frame_check/error_count_r_0> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <gt0_frame_check/error_count_r_7> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <gt0_frame_check/error_count_r_6> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <gt0_frame_check/error_count_r_5> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <gt0_frame_check/error_count_r_4> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <gt0_frame_check/error_count_r_3> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <gt0_frame_check/error_count_r_2> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <gt0_frame_check/error_count_r_1> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:2677 - Node <gt0_frame_check/error_count_r_0> of sequential type is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <jesd204b_rx4_init_i/gt0_rxresetfsm_i/recclk_mon_count_reset> is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <jesd204b_rx4_init_i/gt1_rxresetfsm_i/recclk_mon_count_reset> is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <jesd204b_rx4_init_i/gt2_rxresetfsm_i/recclk_mon_count_reset> is unconnected in block <jesd204b_rx4_exdes>.
+WARNING:Xst:1710 - FF/Latch <gt2_frame_check/read_counter_i_9> (without init value) has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <gt1_frame_check/read_counter_i_9> (without init value) has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <gt0_frame_check/read_counter_i_9> (without init value) has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <jesd204b_rx4_init_i/gt0_rxresetfsm_i/init_wait_count_0> in Unit <jesd204b_rx4_exdes> is equivalent to the following 2 FFs/Latches, which will be removed : <jesd204b_rx4_init_i/gt1_rxresetfsm_i/init_wait_count_0> <jesd204b_rx4_init_i/gt2_rxresetfsm_i/init_wait_count_0> 
+INFO:Xst:2261 - The FF/Latch <jesd204b_rx4_init_i/gt0_rxresetfsm_i/init_wait_count_1> in Unit <jesd204b_rx4_exdes> is equivalent to the following 2 FFs/Latches, which will be removed : <jesd204b_rx4_init_i/gt1_rxresetfsm_i/init_wait_count_1> <jesd204b_rx4_init_i/gt2_rxresetfsm_i/init_wait_count_1> 
+INFO:Xst:2261 - The FF/Latch <jesd204b_rx4_init_i/gt0_rxresetfsm_i/init_wait_count_2> in Unit <jesd204b_rx4_exdes> is equivalent to the following 2 FFs/Latches, which will be removed : <jesd204b_rx4_init_i/gt1_rxresetfsm_i/init_wait_count_2> <jesd204b_rx4_init_i/gt2_rxresetfsm_i/init_wait_count_2> 
+INFO:Xst:2261 - The FF/Latch <jesd204b_rx4_init_i/gt0_rxresetfsm_i/init_wait_count_3> in Unit <jesd204b_rx4_exdes> is equivalent to the following 2 FFs/Latches, which will be removed : <jesd204b_rx4_init_i/gt1_rxresetfsm_i/init_wait_count_3> <jesd204b_rx4_init_i/gt2_rxresetfsm_i/init_wait_count_3> 
+INFO:Xst:2261 - The FF/Latch <jesd204b_rx4_init_i/gt0_rxresetfsm_i/init_wait_count_4> in Unit <jesd204b_rx4_exdes> is equivalent to the following 2 FFs/Latches, which will be removed : <jesd204b_rx4_init_i/gt1_rxresetfsm_i/init_wait_count_4> <jesd204b_rx4_init_i/gt2_rxresetfsm_i/init_wait_count_4> 
+INFO:Xst:2261 - The FF/Latch <jesd204b_rx4_init_i/gt0_rxresetfsm_i/init_wait_count_5> in Unit <jesd204b_rx4_exdes> is equivalent to the following 2 FFs/Latches, which will be removed : <jesd204b_rx4_init_i/gt1_rxresetfsm_i/init_wait_count_5> <jesd204b_rx4_init_i/gt2_rxresetfsm_i/init_wait_count_5> 
+INFO:Xst:2261 - The FF/Latch <jesd204b_rx4_init_i/gt0_rxresetfsm_i/pll0lock_prev> in Unit <jesd204b_rx4_exdes> is equivalent to the following 2 FFs/Latches, which will be removed : <jesd204b_rx4_init_i/gt1_rxresetfsm_i/pll0lock_prev> <jesd204b_rx4_init_i/gt2_rxresetfsm_i/pll0lock_prev> 
+INFO:Xst:2261 - The FF/Latch <jesd204b_rx4_init_i/gt0_rxresetfsm_i/init_wait_done> in Unit <jesd204b_rx4_exdes> is equivalent to the following 2 FFs/Latches, which will be removed : <jesd204b_rx4_init_i/gt1_rxresetfsm_i/init_wait_done> <jesd204b_rx4_init_i/gt2_rxresetfsm_i/init_wait_done> 
+INFO:Xst:2261 - The FF/Latch <jesd204b_rx4_init_i/gt0_rxresetfsm_i/mmcm_lock_reclocked> in Unit <jesd204b_rx4_exdes> is equivalent to the following 2 FFs/Latches, which will be removed : <jesd204b_rx4_init_i/gt1_rxresetfsm_i/mmcm_lock_reclocked> <jesd204b_rx4_init_i/gt2_rxresetfsm_i/mmcm_lock_reclocked> 
+INFO:Xst:2261 - The FF/Latch <jesd204b_rx4_init_i/gt0_rxresetfsm_i/mmcm_lock_count_0> in Unit <jesd204b_rx4_exdes> is equivalent to the following 2 FFs/Latches, which will be removed : <jesd204b_rx4_init_i/gt1_rxresetfsm_i/mmcm_lock_count_0> <jesd204b_rx4_init_i/gt2_rxresetfsm_i/mmcm_lock_count_0> 
+INFO:Xst:2261 - The FF/Latch <jesd204b_rx4_init_i/gt0_rxresetfsm_i/mmcm_lock_count_1> in Unit <jesd204b_rx4_exdes> is equivalent to the following 2 FFs/Latches, which will be removed : <jesd204b_rx4_init_i/gt1_rxresetfsm_i/mmcm_lock_count_1> <jesd204b_rx4_init_i/gt2_rxresetfsm_i/mmcm_lock_count_1> 
+INFO:Xst:2261 - The FF/Latch <jesd204b_rx4_init_i/gt0_rxresetfsm_i/mmcm_lock_count_2> in Unit <jesd204b_rx4_exdes> is equivalent to the following 2 FFs/Latches, which will be removed : <jesd204b_rx4_init_i/gt1_rxresetfsm_i/mmcm_lock_count_2> <jesd204b_rx4_init_i/gt2_rxresetfsm_i/mmcm_lock_count_2> 
+INFO:Xst:2261 - The FF/Latch <jesd204b_rx4_init_i/gt0_rxresetfsm_i/mmcm_lock_count_3> in Unit <jesd204b_rx4_exdes> is equivalent to the following 2 FFs/Latches, which will be removed : <jesd204b_rx4_init_i/gt1_rxresetfsm_i/mmcm_lock_count_3> <jesd204b_rx4_init_i/gt2_rxresetfsm_i/mmcm_lock_count_3> 
+INFO:Xst:2261 - The FF/Latch <jesd204b_rx4_init_i/gt0_rxresetfsm_i/mmcm_lock_count_4> in Unit <jesd204b_rx4_exdes> is equivalent to the following 2 FFs/Latches, which will be removed : <jesd204b_rx4_init_i/gt1_rxresetfsm_i/mmcm_lock_count_4> <jesd204b_rx4_init_i/gt2_rxresetfsm_i/mmcm_lock_count_4> 
+INFO:Xst:2261 - The FF/Latch <jesd204b_rx4_init_i/gt0_rxresetfsm_i/mmcm_lock_count_5> in Unit <jesd204b_rx4_exdes> is equivalent to the following 2 FFs/Latches, which will be removed : <jesd204b_rx4_init_i/gt1_rxresetfsm_i/mmcm_lock_count_5> <jesd204b_rx4_init_i/gt2_rxresetfsm_i/mmcm_lock_count_5> 
+INFO:Xst:2261 - The FF/Latch <jesd204b_rx4_init_i/gt0_rxresetfsm_i/mmcm_lock_count_6> in Unit <jesd204b_rx4_exdes> is equivalent to the following 2 FFs/Latches, which will be removed : <jesd204b_rx4_init_i/gt1_rxresetfsm_i/mmcm_lock_count_6> <jesd204b_rx4_init_i/gt2_rxresetfsm_i/mmcm_lock_count_6> 
+INFO:Xst:2261 - The FF/Latch <jesd204b_rx4_init_i/gt0_rxresetfsm_i/mmcm_lock_count_7> in Unit <jesd204b_rx4_exdes> is equivalent to the following 2 FFs/Latches, which will be removed : <jesd204b_rx4_init_i/gt1_rxresetfsm_i/mmcm_lock_count_7> <jesd204b_rx4_init_i/gt2_rxresetfsm_i/mmcm_lock_count_7> 
+INFO:Xst:2261 - The FF/Latch <jesd204b_rx4_init_i/gt0_rxresetfsm_i/mmcm_lock_count_8> in Unit <jesd204b_rx4_exdes> is equivalent to the following 2 FFs/Latches, which will be removed : <jesd204b_rx4_init_i/gt1_rxresetfsm_i/mmcm_lock_count_8> <jesd204b_rx4_init_i/gt2_rxresetfsm_i/mmcm_lock_count_8> 
+INFO:Xst:2261 - The FF/Latch <jesd204b_rx4_init_i/gt0_rxresetfsm_i/mmcm_lock_count_9> in Unit <jesd204b_rx4_exdes> is equivalent to the following 2 FFs/Latches, which will be removed : <jesd204b_rx4_init_i/gt1_rxresetfsm_i/mmcm_lock_count_9> <jesd204b_rx4_init_i/gt2_rxresetfsm_i/mmcm_lock_count_9> 
+
+Mapping all equations...
+WARNING:Xst:1293 - FF/Latch <gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst - Unrecognized value IBUF. Accepted values for attribute buffer_type on local signal <q0_clk1_refclk_i> are: BUFG, BUFR, BUFIO, BUFH or NONE. Constraint is ignored.
+WARNING:Xst:1293 - FF/Latch <gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block jesd204b_rx4_exdes, actual ratio is 0.
+INFO:Xst:2260 - The FF/Latch <jesd204b_rx4_init_i/gt0_rxresetfsm_i/sync_mmcm_lock_reclocked/data_sync> in Unit <jesd204b_rx4_exdes> is equivalent to the following 5 FFs/Latches : <jesd204b_rx4_init_i/gt0_rxresetfsm_i/sync_PLL1LOCK/data_sync> <jesd204b_rx4_init_i/gt1_rxresetfsm_i/sync_mmcm_lock_reclocked/data_sync> <jesd204b_rx4_init_i/gt1_rxresetfsm_i/sync_PLL1LOCK/data_sync> <jesd204b_rx4_init_i/gt2_rxresetfsm_i/sync_mmcm_lock_reclocked/data_sync> <jesd204b_rx4_init_i/gt2_rxresetfsm_i/sync_PLL1LOCK/data_sync> 
+INFO:Xst:2260 - The FF/Latch <jesd204b_rx4_init_i/gt0_rxresetfsm_i/sync_PLL0LOCK/data_sync> in Unit <jesd204b_rx4_exdes> is equivalent to the following 2 FFs/Latches : <jesd204b_rx4_init_i/gt1_rxresetfsm_i/sync_PLL0LOCK/data_sync> <jesd204b_rx4_init_i/gt2_rxresetfsm_i/sync_PLL0LOCK/data_sync> 
+WARNING:Xst:1293 - FF/Latch <gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+
+Final Macro Processing ...
+
+Processing Unit <jesd204b_rx4_exdes> :
+	Found 4-bit shift register for signal <gt2_frame_check/rx_data_r_track_15>.
+	Found 4-bit shift register for signal <gt2_frame_check/rx_data_r_track_14>.
+	Found 4-bit shift register for signal <gt2_frame_check/rx_data_r_track_13>.
+	Found 4-bit shift register for signal <gt2_frame_check/rx_data_r_track_12>.
+	Found 4-bit shift register for signal <gt2_frame_check/rx_data_r_track_11>.
+	Found 4-bit shift register for signal <gt2_frame_check/rx_data_r_track_10>.
+	Found 4-bit shift register for signal <gt2_frame_check/rx_data_r_track_9>.
+	Found 4-bit shift register for signal <gt2_frame_check/rx_data_r_track_8>.
+	Found 4-bit shift register for signal <gt2_frame_check/rx_data_r_track_7>.
+	Found 4-bit shift register for signal <gt2_frame_check/rx_data_r_track_6>.
+	Found 4-bit shift register for signal <gt2_frame_check/rx_data_r_track_5>.
+	Found 4-bit shift register for signal <gt2_frame_check/rx_data_r_track_4>.
+	Found 4-bit shift register for signal <gt2_frame_check/rx_data_r_track_3>.
+	Found 4-bit shift register for signal <gt2_frame_check/rx_data_r_track_2>.
+	Found 4-bit shift register for signal <gt2_frame_check/rx_data_r_track_1>.
+	Found 4-bit shift register for signal <gt2_frame_check/rx_data_r_track_0>.
+	Found 2-bit shift register for signal <gt2_frame_check/track_data_r3>.
+	Found 4-bit shift register for signal <gt1_frame_check/rx_data_r_track_15>.
+	Found 4-bit shift register for signal <gt1_frame_check/rx_data_r_track_14>.
+	Found 4-bit shift register for signal <gt1_frame_check/rx_data_r_track_13>.
+	Found 4-bit shift register for signal <gt1_frame_check/rx_data_r_track_12>.
+	Found 4-bit shift register for signal <gt1_frame_check/rx_data_r_track_11>.
+	Found 4-bit shift register for signal <gt1_frame_check/rx_data_r_track_10>.
+	Found 4-bit shift register for signal <gt1_frame_check/rx_data_r_track_9>.
+	Found 4-bit shift register for signal <gt1_frame_check/rx_data_r_track_8>.
+	Found 4-bit shift register for signal <gt1_frame_check/rx_data_r_track_7>.
+	Found 4-bit shift register for signal <gt1_frame_check/rx_data_r_track_6>.
+	Found 4-bit shift register for signal <gt1_frame_check/rx_data_r_track_5>.
+	Found 4-bit shift register for signal <gt1_frame_check/rx_data_r_track_4>.
+	Found 4-bit shift register for signal <gt1_frame_check/rx_data_r_track_3>.
+	Found 4-bit shift register for signal <gt1_frame_check/rx_data_r_track_2>.
+	Found 4-bit shift register for signal <gt1_frame_check/rx_data_r_track_1>.
+	Found 4-bit shift register for signal <gt1_frame_check/rx_data_r_track_0>.
+	Found 2-bit shift register for signal <gt1_frame_check/track_data_r3>.
+	Found 4-bit shift register for signal <gt0_frame_check/rx_data_r_track_15>.
+	Found 4-bit shift register for signal <gt0_frame_check/rx_data_r_track_14>.
+	Found 4-bit shift register for signal <gt0_frame_check/rx_data_r_track_13>.
+	Found 4-bit shift register for signal <gt0_frame_check/rx_data_r_track_12>.
+	Found 4-bit shift register for signal <gt0_frame_check/rx_data_r_track_11>.
+	Found 4-bit shift register for signal <gt0_frame_check/rx_data_r_track_10>.
+	Found 4-bit shift register for signal <gt0_frame_check/rx_data_r_track_9>.
+	Found 4-bit shift register for signal <gt0_frame_check/rx_data_r_track_8>.
+	Found 4-bit shift register for signal <gt0_frame_check/rx_data_r_track_7>.
+	Found 4-bit shift register for signal <gt0_frame_check/rx_data_r_track_6>.
+	Found 4-bit shift register for signal <gt0_frame_check/rx_data_r_track_5>.
+	Found 4-bit shift register for signal <gt0_frame_check/rx_data_r_track_4>.
+	Found 4-bit shift register for signal <gt0_frame_check/rx_data_r_track_3>.
+	Found 4-bit shift register for signal <gt0_frame_check/rx_data_r_track_2>.
+	Found 4-bit shift register for signal <gt0_frame_check/rx_data_r_track_1>.
+	Found 4-bit shift register for signal <gt0_frame_check/rx_data_r_track_0>.
+	Found 2-bit shift register for signal <gt0_frame_check/track_data_r3>.
+Unit <jesd204b_rx4_exdes> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 581
+ Flip-Flops                                            : 581
+# Shift Registers                                      : 51
+ 2-bit shift register                                  : 3
+ 4-bit shift register                                  : 48
+
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0> has a constant value of 0 in block <jesd204b_rx4_exdes>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : jesd204b_rx4_exdes.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 899
+#      GND                         : 1
+#      INV                         : 25
+#      LUT1                        : 109
+#      LUT2                        : 74
+#      LUT3                        : 109
+#      LUT4                        : 67
+#      LUT5                        : 81
+#      LUT6                        : 131
+#      MUXCY                       : 154
+#      MUXF7                       : 3
+#      VCC                         : 1
+#      XORCY                       : 144
+# FlipFlops/Latches                : 689
+#      FD                          : 247
+#      FDC                         : 27
+#      FDCE                        : 51
+#      FDE                         : 57
+#      FDR                         : 130
+#      FDRE                        : 171
+#      FDS                         : 6
+# Shift Registers                  : 51
+#      SRLC16E                     : 51
+# Clock Buffers                    : 4
+#      BUFG                        : 4
+# IO Buffers                       : 11
+#      IBUF                        : 8
+#      IBUFDS_GTE2                 : 1
+#      IBUFG                       : 1
+#      OBUF                        : 1
+# GigabitIOs                       : 4
+#      GTPE2_CHANNEL               : 3
+#      GTPE2_COMMON                : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a200tfbg676-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             689  out of  269200     0%  
+ Number of Slice LUTs:                  647  out of  134600     0%  
+    Number used as Logic:               596  out of  134600     0%  
+    Number used as Memory:               51  out of  46200     0%  
+       Number used as SRL:               51
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    865
+   Number with an unused Flip Flop:     176  out of    865    20%  
+   Number with an unused LUT:           218  out of    865    25%  
+   Number of fully used LUT-FF pairs:   471  out of    865    54%  
+   Number of unique control sets:        41
+
+IO Utilization: 
+ Number of IOs:                          19
+ Number of bonded IOBs:                  10  out of    400     2%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                4  out of     32    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+gt0_rxoutclk_i                     | BUFG                   | 161   |
+gt1_rxoutclk_i                     | BUFG                   | 161   |
+gt2_rxoutclk_i                     | BUFG                   | 161   |
+DRP_CLK_IN                         | IBUFG+BUFG             | 257   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 2.532ns (Maximum Frequency: 395.007MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 1.525ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'gt0_rxoutclk_i'
+  Clock period: 2.532ns (frequency: 395.007MHz)
+  Total number of paths / destination ports: 867 / 211
+-------------------------------------------------------------------------
+Delay:               2.532ns (Levels of Logic = 2)
+  Source:            gt0_frame_check/read_counter_i_5 (FF)
+  Destination:       gt0_frame_check/read_counter_i_8 (FF)
+  Source Clock:      gt0_rxoutclk_i rising
+  Destination Clock: gt0_rxoutclk_i rising
+
+  Data Path: gt0_frame_check/read_counter_i_5 to gt0_frame_check/read_counter_i_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.398   0.785  gt0_frame_check/read_counter_i_5 (gt0_frame_check/read_counter_i_5)
+     LUT5:I0->O            1   0.105   0.357  gt0_frame_check/system_reset_r_read_counter_i[9]_OR_98_o_SW0 (N56)
+     LUT6:I5->O            9   0.105   0.384  gt0_frame_check/system_reset_r_read_counter_i[9]_OR_98_o (gt0_frame_check/system_reset_r_read_counter_i[9]_OR_98_o)
+     FDR:R                     0.397          gt0_frame_check/read_counter_i_1
+    ----------------------------------------
+    Total                      2.532ns (1.005ns logic, 1.527ns route)
+                                       (39.7% logic, 60.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'gt1_rxoutclk_i'
+  Clock period: 2.532ns (frequency: 395.007MHz)
+  Total number of paths / destination ports: 867 / 211
+-------------------------------------------------------------------------
+Delay:               2.532ns (Levels of Logic = 2)
+  Source:            gt1_frame_check/read_counter_i_5 (FF)
+  Destination:       gt1_frame_check/read_counter_i_8 (FF)
+  Source Clock:      gt1_rxoutclk_i rising
+  Destination Clock: gt1_rxoutclk_i rising
+
+  Data Path: gt1_frame_check/read_counter_i_5 to gt1_frame_check/read_counter_i_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.398   0.785  gt1_frame_check/read_counter_i_5 (gt1_frame_check/read_counter_i_5)
+     LUT5:I0->O            1   0.105   0.357  gt1_frame_check/system_reset_r_read_counter_i[9]_OR_98_o_SW0 (N50)
+     LUT6:I5->O            9   0.105   0.384  gt1_frame_check/system_reset_r_read_counter_i[9]_OR_98_o (gt1_frame_check/system_reset_r_read_counter_i[9]_OR_98_o)
+     FDR:R                     0.397          gt1_frame_check/read_counter_i_1
+    ----------------------------------------
+    Total                      2.532ns (1.005ns logic, 1.527ns route)
+                                       (39.7% logic, 60.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'gt2_rxoutclk_i'
+  Clock period: 2.532ns (frequency: 395.007MHz)
+  Total number of paths / destination ports: 867 / 211
+-------------------------------------------------------------------------
+Delay:               2.532ns (Levels of Logic = 2)
+  Source:            gt2_frame_check/read_counter_i_5 (FF)
+  Destination:       gt2_frame_check/read_counter_i_8 (FF)
+  Source Clock:      gt2_rxoutclk_i rising
+  Destination Clock: gt2_rxoutclk_i rising
+
+  Data Path: gt2_frame_check/read_counter_i_5 to gt2_frame_check/read_counter_i_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.398   0.785  gt2_frame_check/read_counter_i_5 (gt2_frame_check/read_counter_i_5)
+     LUT5:I0->O            1   0.105   0.357  gt2_frame_check/system_reset_r_read_counter_i[9]_OR_98_o_SW0 (N44)
+     LUT6:I5->O            9   0.105   0.384  gt2_frame_check/system_reset_r_read_counter_i[9]_OR_98_o (gt2_frame_check/system_reset_r_read_counter_i[9]_OR_98_o)
+     FDR:R                     0.397          gt2_frame_check/read_counter_i_1
+    ----------------------------------------
+    Total                      2.532ns (1.005ns logic, 1.527ns route)
+                                       (39.7% logic, 60.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DRP_CLK_IN'
+  Clock period: 2.425ns (frequency: 412.422MHz)
+  Total number of paths / destination ports: 3237 / 513
+-------------------------------------------------------------------------
+Delay:               2.425ns (Levels of Logic = 2)
+  Source:            jesd204b_rx4_init_i/gt0_rxresetfsm_i/time_out_counter_6 (FF)
+  Destination:       jesd204b_rx4_init_i/gt0_rxresetfsm_i/time_out_counter_18 (FF)
+  Source Clock:      DRP_CLK_IN rising
+  Destination Clock: DRP_CLK_IN rising
+
+  Data Path: jesd204b_rx4_init_i/gt0_rxresetfsm_i/time_out_counter_6 to jesd204b_rx4_init_i/gt0_rxresetfsm_i/time_out_counter_18
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             4   0.398   0.810  jesd204b_rx4_init_i/gt0_rxresetfsm_i/time_out_counter_6 (jesd204b_rx4_init_i/gt0_rxresetfsm_i/time_out_counter_6)
+     LUT6:I0->O            2   0.105   0.456  jesd204b_rx4_init_i/gt0_rxresetfsm_i/GND_122_o_time_out_counter[18]_equal_17_o<18>1_SW1 (N64)
+     LUT6:I4->O           19   0.105   0.440  jesd204b_rx4_init_i/gt0_rxresetfsm_i/PWR_49_o_time_out_counter[18]_equal_12_o_inv1 (jesd204b_rx4_init_i/gt0_rxresetfsm_i/PWR_49_o_time_out_counter[18]_equal_12_o_inv)
+     FDRE:CE                   0.110          jesd204b_rx4_init_i/gt0_rxresetfsm_i/time_out_counter_0
+    ----------------------------------------
+    Total                      2.425ns (0.718ns logic, 1.707ns route)
+                                       (29.6% logic, 70.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'gt0_rxoutclk_i'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.525ns (Levels of Logic = 2)
+  Source:            gt0_frame_check/track_data_r (FF)
+  Destination:       TRACK_DATA_OUT (PAD)
+  Source Clock:      gt0_rxoutclk_i rising
+
+  Data Path: gt0_frame_check/track_data_r to TRACK_DATA_OUT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             16   0.398   0.682  gt0_frame_check/track_data_r (gt0_frame_check/track_data_r)
+     LUT3:I0->O            1   0.105   0.339  TRACK_DATA_OUT1 (TRACK_DATA_OUT_OBUF)
+     OBUF:I->O                 0.000          TRACK_DATA_OUT_OBUF (TRACK_DATA_OUT)
+    ----------------------------------------
+    Total                      1.525ns (0.503ns logic, 1.022ns route)
+                                       (33.0% logic, 67.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'gt1_rxoutclk_i'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.377ns (Levels of Logic = 2)
+  Source:            gt1_frame_check/track_data_r (FF)
+  Destination:       TRACK_DATA_OUT (PAD)
+  Source Clock:      gt1_rxoutclk_i rising
+
+  Data Path: gt1_frame_check/track_data_r to TRACK_DATA_OUT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             16   0.398   0.534  gt1_frame_check/track_data_r (gt1_frame_check/track_data_r)
+     LUT3:I1->O            1   0.105   0.339  TRACK_DATA_OUT1 (TRACK_DATA_OUT_OBUF)
+     OBUF:I->O                 0.000          TRACK_DATA_OUT_OBUF (TRACK_DATA_OUT)
+    ----------------------------------------
+    Total                      1.377ns (0.503ns logic, 0.874ns route)
+                                       (36.5% logic, 63.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'gt2_rxoutclk_i'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.283ns (Levels of Logic = 2)
+  Source:            gt2_frame_check/track_data_r (FF)
+  Destination:       TRACK_DATA_OUT (PAD)
+  Source Clock:      gt2_rxoutclk_i rising
+
+  Data Path: gt2_frame_check/track_data_r to TRACK_DATA_OUT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             16   0.398   0.440  gt2_frame_check/track_data_r (gt2_frame_check/track_data_r)
+     LUT3:I2->O            1   0.105   0.339  TRACK_DATA_OUT1 (TRACK_DATA_OUT_OBUF)
+     OBUF:I->O                 0.000          TRACK_DATA_OUT_OBUF (TRACK_DATA_OUT)
+    ----------------------------------------
+    Total                      1.283ns (0.503ns logic, 0.780ns route)
+                                       (39.2% logic, 60.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock DRP_CLK_IN
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+DRP_CLK_IN     |    2.425|         |         |         |
+gt0_rxoutclk_i |    0.835|         |         |         |
+gt1_rxoutclk_i |    0.835|         |         |         |
+gt2_rxoutclk_i |    0.835|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock gt0_rxoutclk_i
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+DRP_CLK_IN     |    0.764|         |         |         |
+gt0_rxoutclk_i |    2.532|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock gt1_rxoutclk_i
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+DRP_CLK_IN     |    0.764|         |         |         |
+gt1_rxoutclk_i |    2.532|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock gt2_rxoutclk_i
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+DRP_CLK_IN     |    0.764|         |         |         |
+gt2_rxoutclk_i |    2.532|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.90 secs
+ 
+--> 
+
+
+Total memory usage is 529456 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  250 (   0 filtered)
+Number of infos    :   85 (   0 filtered)
+

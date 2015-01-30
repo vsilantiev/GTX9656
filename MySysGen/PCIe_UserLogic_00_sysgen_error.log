@@ -1,0 +1,19 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 12.3                   C:/Programmi/Xilinx/12.3/ISE_DS/ISE/sysgen
+Matlab 7.10.0.499 (R2010a)              C:/Programmi/MATLAB/R2010a
+ISE                                     C:/Programmi/Xilinx/12.3/ISE_DS/ISE
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Undriven input port
+     Block: 'PCIe_UserLogic_00/USER_LOGIC/Inverter5'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'PCIe_UserLogic_00/USER_LOGIC/Inverter5'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------

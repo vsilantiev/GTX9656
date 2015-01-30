@@ -1,0 +1,26 @@
+# Output products list for <v6_bram4096x64>
+_xmsgs\pn_parser.xmsgs
+blk_mem_gen_ds512.pdf
+blk_mem_gen_v6_2_readme.txt
+summary.log
+v6_bram4096x64.asy
+v6_bram4096x64.gise
+v6_bram4096x64.ngc
+v6_bram4096x64.sym
+v6_bram4096x64.vhd
+v6_bram4096x64.vho
+v6_bram4096x64.xco
+v6_bram4096x64.xise
+v6_bram4096x64_flist.txt
+v6_bram4096x64_ste\example_design\bmg_wrapper.vhd
+v6_bram4096x64_ste\example_design\v6_bram4096x64_top.ucf
+v6_bram4096x64_ste\example_design\v6_bram4096x64_top.vhd
+v6_bram4096x64_ste\example_design\v6_bram4096x64_top.xdc
+v6_bram4096x64_ste\implement\implement.bat
+v6_bram4096x64_ste\implement\implement.sh
+v6_bram4096x64_ste\implement\planAhead_rdn.bat
+v6_bram4096x64_ste\implement\planAhead_rdn.sh
+v6_bram4096x64_ste\implement\planAhead_rdn.tcl
+v6_bram4096x64_ste\implement\xst.prj
+v6_bram4096x64_ste\implement\xst.scr
+v6_bram4096x64_xmdf.tcl

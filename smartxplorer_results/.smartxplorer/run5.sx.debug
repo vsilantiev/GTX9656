@@ -1,0 +1,37 @@
+strategySpecString = ':oc:sqmap:sq:cl:sp:sq:sp:dsol:sphigh:sp:dsregister_duplication:spon:sp:dst:sp3:sp:dsw:sp:sq:cm:sp:sqpower:sq:cl:sp:sqoff:sq:cm:sp:sqbitgen:sq:cl:sp:sqon:sq:cm:sp:sqsynplify:sq:cl:sp:sq:sq:cm:sp:sqngdbuild:sq:cl:sp:sq:dssd:spC:clcl:clbslUsers:clbslvsilantiev:clbslDocuments:clbslLASTWAC701:clbslWRAPPERLASTAC701:sp:dsp:spxc7a200t:dsfbg676:ds2:sq:cm:sp:sqtrce:sq:cl:sp:sq:dsv:sp3:sp:dss:sp2:sp:dsn:sp3:sp:dsfastpaths:sp:dsxml:spv6pcieDMA.twx:sp:dsucf:spABB3_pcie_4_lane_Emu_FIFO_elink.ucf:sq:cm:sp:sqmax_score:sq:cl:spNone:cm:sp:sqindex:sq:cl:sp5:cm:sp:sqpar:sq:cl:sp:sq:sp:dsol:sphigh:sp:sq:cm:sp:sqname:sq:cl:sp:sqMapRegDup:sq:cm:sp:sqxst:sq:cl:sp:sq:sq:cm:sp:sqarea:sq:cl:sp:os:sqlut:sq:cm:sp:sqslice_reg:sq:cs:cm:sp:sqversion:sq:cl:sp:sq14.7:sq:cm:sp:sqenv:sq:cl:sp:sq:oc:cc:sq:cm:sp:sqsxLaunchDir:sq:cl:sp:sqC:cl:bsl:bslUsers:bsl:bslvsilantiev:bsl:bslDocuments:bsl:bslLASTWAC701:bsl:bslWRAPPERLASTAC701:sq:cc'
+Xilinx Environment Variables:
+
+{'XILINX': 'C:\\Xilinx\\14.7\\ISE_DS\\ISE\\'
+'PATH': 'C:\\Xilinx\\14.7\\ISE_DS\\ISE\\\\lib\\nt64;C:\\Xilinx\\14.7\\ISE_DS\\ISE\\\\bin\\nt64;C:\\Xilinx\\14.7\\ISE_DS\\ISE\\bin\\nt64;C:\\Xilinx\\14.7\\ISE_DS\\ISE\\lib\\nt64;C:\\Xilinx\\14.7\\ISE_DS\\ISE\\..\\..\\..\\DocNav;C:\\Xilinx\\14.7\\ISE_DS\\PlanAhead\\bin;C:\\Xilinx\\14.7\\ISE_DS\\EDK\\bin\\nt64;C:\\Xilinx\\14.7\\ISE_DS\\EDK\\lib\\nt64;C:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnu\\microblaze\\nt\\bin;C:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnu\\powerpc-eabi\\nt\\bin;C:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnuwin\\bin;C:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnu\\arm\\nt\\bin;C:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnu\\microblaze\\linux_toolchain\\nt64_be\\bin;C:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnu\\microblaze\\linux_toolchain\\nt64_le\\bin;C:\\Xilinx\\14.7\\ISE_DS\\common\\bin\\nt64;C:\\Xilinx\\14.7\\ISE_DS\\common\\lib\\nt64;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseGit\\bin'
+'XILINX_PLANAHEAD': 'C:\\Xilinx\\14.7\\ISE_DS\\PlanAhead'
+'XILINX_DSP': 'C:\\Xilinx\\14.7\\ISE_DS\\ISE'
+'XILINX_EDK': 'C:\\Xilinx\\14.7\\ISE_DS\\EDK'}
+envDict = {}
+vvs_4.stat:C:\Users\vsilantiev\Documents\LASTWAC701\WRAPPERLASTAC701\smartxplorer_results\.smartxplorer\.sx.keepAlive.vvs_4
+INFO: total number of threads running this host None
+...searching for file: mapregdup.xds
+Creating XDS file ... mapregdup.xds
+###################################
+
+      <property name = "Map:Placer Effort Level"
+               value = "High" />
+      <property name = "Map:Register Duplication"
+               value = "On" />
+      <property name = "Map:Starting Placer Cost Table (1-100)"
+               value = "3" />
+      <property name = "Place &amp; Route:Place &amp; Route Effort Level (Overall)"
+               value = "High" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Number of Paths in Error/Verbose Report"
+               value = "3" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Report Type"
+               value = "Verbose Report" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Change Device Speed To"
+               value = "-2" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Report Paths by Endpoint"
+               value = "3" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Report Fastest Path(s) in Each Constraint"
+               value = "true" />
+###################################
+launching map with options  -ol high -register_duplication on -t 3 -w  -p xc7a200t-fbg676-2 -o v6pcieDMA_map.ncd  C:cl:bslUsers:bslvsilantiev:bslDocuments:bslLASTWAC701:bslWRAPPERLASTAC701:bslsmartxplorer_results:bslrun5:bslv6pcieDMA.pcf...
+runTask: map v6pcieDMA.ngd -ol high -register_duplication on -t 3 -w -p xc7a200t-fbg676-2 -o v6pcieDMA_map.ncd C:\Users\vsilantiev\Documents\LASTWAC701\WRAPPERLASTAC701\smartxplorer_results\run5\v6pcieDMA.pcf
+args = ['map', 'v6pcieDMA.ngd', '-ol', 'high', '-register_duplication', 'on', '-t', '3', '-w', '-p', 'xc7a200t-fbg676-2', '-o', 'v6pcieDMA_map.ncd', 'C:\\Users\\vsilantiev\\Documents\\LASTWAC701\\WRAPPERLASTAC701\\smartxplorer_results\\run5\\v6pcieDMA.pcf']

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 986: Assignment to <arg fmt="%s" index="1">to_register10_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 987: Assignment to <arg fmt="%s" index="1">to_register11_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 988: Assignment to <arg fmt="%s" index="1">to_register12_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 989: Assignment to <arg fmt="%s" index="1">to_register13_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 990: Assignment to <arg fmt="%s" index="1">to_register14_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 991: Assignment to <arg fmt="%s" index="1">to_register15_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 992: Assignment to <arg fmt="%s" index="1">to_register16_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 993: Assignment to <arg fmt="%s" index="1">to_register17_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 994: Assignment to <arg fmt="%s" index="1">to_register18_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 995: Assignment to <arg fmt="%s" index="1">to_register19_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 996: Assignment to <arg fmt="%s" index="1">to_register1_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 997: Assignment to <arg fmt="%s" index="1">to_register20_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 998: Assignment to <arg fmt="%s" index="1">to_register21_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 999: Assignment to <arg fmt="%s" index="1">to_register22_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1000: Assignment to <arg fmt="%s" index="1">to_register23_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1001: Assignment to <arg fmt="%s" index="1">to_register24_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1002: Assignment to <arg fmt="%s" index="1">to_register25_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1003: Assignment to <arg fmt="%s" index="1">to_register26_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1004: Assignment to <arg fmt="%s" index="1">to_register27_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1005: Assignment to <arg fmt="%s" index="1">to_register28_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1006: Assignment to <arg fmt="%s" index="1">to_register29_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1007: Assignment to <arg fmt="%s" index="1">to_register2_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1008: Assignment to <arg fmt="%s" index="1">to_register30_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1009: Assignment to <arg fmt="%s" index="1">to_register31_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1010: Assignment to <arg fmt="%s" index="1">to_register32_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1011: Assignment to <arg fmt="%s" index="1">to_register33_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1012: Assignment to <arg fmt="%s" index="1">to_register34_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1013: Assignment to <arg fmt="%s" index="1">to_register3_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1014: Assignment to <arg fmt="%s" index="1">to_register4_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1015: Assignment to <arg fmt="%s" index="1">to_register5_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1016: Assignment to <arg fmt="%s" index="1">to_register6_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1017: Assignment to <arg fmt="%s" index="1">to_register7_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1018: Assignment to <arg fmt="%s" index="1">to_register8_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1019: Assignment to <arg fmt="%s" index="1">to_register9_dout_net</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic.vhd" Line 1727: &lt;<arg fmt="%s" index="1">fdre</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">preserve_signal</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register10_dout&lt;0:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register11_dout&lt;31:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register12_dout&lt;0:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register13_dout&lt;31:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register14_dout&lt;0:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register15_dout&lt;31:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register16_dout&lt;0:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register17_dout&lt;31:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register18_dout&lt;0:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register19_dout&lt;0:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register1_dout&lt;31:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register20_dout&lt;31:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register21_dout&lt;0:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register22_dout&lt;31:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register23_dout&lt;0:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register24_dout&lt;31:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register25_dout&lt;0:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register26_dout&lt;31:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register27_dout&lt;0:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register28_dout&lt;31:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register29_dout&lt;0:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register2_dout&lt;31:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register30_dout&lt;31:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register31_dout&lt;0:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register32_dout&lt;31:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register33_dout&lt;0:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register34_dout&lt;31:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register3_dout&lt;0:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register4_dout&lt;0:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register5_dout&lt;31:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register6_dout&lt;31:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register7_dout&lt;31:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register8_dout&lt;0:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">to_register9_dout&lt;31:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/temp/xilinx pci express/ml605_ise13.3/myuserlogic/userlogic_00/top_level_0_pcie_userlogic_00_inout_logic/synth_model/inout_logic_cw.vhd</arg>&quot; line <arg fmt="%s" index="2">378</arg>: Output port &lt;<arg fmt="%s" index="3">clr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">xlclockdriver</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/temp/xilinx pci express/ml605_ise13.3/myuserlogic/userlogic_00/top_level_0_pcie_userlogic_00_inout_logic/synth_model/inout_logic_cw.vhd</arg>&quot; line <arg fmt="%s" index="2">378</arg>: Output port &lt;<arg fmt="%s" index="3">ce_logic</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">xlclockdriver</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/temp/xilinx pci express/ml605_ise13.3/myuserlogic/userlogic_00/top_level_0_pcie_userlogic_00_inout_logic/synth_model/inout_logic_cw.vhd</arg>&quot; line <arg fmt="%s" index="2">254</arg>: Output port &lt;<arg fmt="%s" index="3">o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">clr_reg</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">inout_logic</arg>&gt;: instances &lt;<arg fmt="%s" index="2">constant1</arg>&gt;, &lt;<arg fmt="%s" index="3">constant5</arg>&gt; of unit &lt;<arg fmt="%s" index="4">constant_6293007044</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">default_clock_driver_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">inout_logic_cw</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">default_clock_driver_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">inout_logic_cw</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">default_clock_driver_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">inout_logic_cw</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">default_clock_driver_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">inout_logic_cw</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">default_clock_driver_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">inout_logic_cw</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">default_clock_driver_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">inout_logic_cw</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">default_clock_driver_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">inout_logic_cw</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">default_clock_driver_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">inout_logic_cw</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">default_clock_driver_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">inout_logic_cw</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">default_clock_driver_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">inout_logic_cw</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

@@ -1,0 +1,16 @@
+../../source/v7_pcie_gt_wrapper.v
+../../source/v7_pcie_gtp_pipe_rate.v
+../../source/v7_pcie_gtp_pipe_drp.v
+../../source/v7_pcie_gtp_pipe_reset.v
+../../source/v7_pcie_qpll_wrapper.v
+../../source/v7_pcie_qpll_drp.v
+../../source/v7_pcie_qpll_reset.v
+../../source/v7_pcie_rxeq_scan.v
+../../source/v7_pcie_pipe_eq.v
+../../source/v7_pcie_pipe_clock.v
+../../source/v7_pcie_pipe_drp.v
+../../source/v7_pcie_pipe_rate.v
+../../source/v7_pcie_pipe_reset.v
+../../source/v7_pcie_pipe_user.v
+../../source/v7_pcie_pipe_sync.v
+../../source/v7_pcie_pipe_wrapper.v

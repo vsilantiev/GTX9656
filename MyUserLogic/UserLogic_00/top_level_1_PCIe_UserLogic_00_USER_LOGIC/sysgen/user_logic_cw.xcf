@@ -1,0 +1,5 @@
+
+
+# Global period constraint
+NET "clk" TNM_NET = "clk_5cc36873";
+TIMESPEC "TS_clk_5cc36873" = PERIOD "clk_5cc36873" 5.0 ns HIGH 50 %;

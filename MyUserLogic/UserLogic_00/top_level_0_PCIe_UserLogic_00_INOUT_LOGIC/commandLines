@@ -1,0 +1,2 @@
+C:/Programmi/Xilinx/13.3/ISE_DS/ISE/sysgen/bin/nt/saferun.exe -a "C:/Temp/Xilinx PCI Express/ML605_ISE13.3/MyUserLogic/UserLogic_00/top_level_0_PCIe_UserLogic_00_INOUT_LOGIC/inout_logic_cw_import.log" -- c:/programmi/xilinx/13.3/ise_ds/ise//bin/nt/xtclsh.exe ProjectGeneration.tcl
+C:/Programmi/Xilinx/13.3/ISE_DS/ISE/sysgen/bin/nt/saferun.exe -a "C:/Temp/Xilinx PCI Express/ML605_ISE13.3/MyUserLogic/UserLogic_00/top_level_0_PCIe_UserLogic_00_INOUT_LOGIC/inout_logic_cw_import.log" -- c:/programmi/xilinx/13.3/ise_ds/ise//bin/nt/xtclsh.exe ProjectGeneration.tcl

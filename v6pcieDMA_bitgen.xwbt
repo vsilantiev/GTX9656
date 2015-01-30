@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.ncd
+OUTFILE=/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.bit
+FAMILY=Artix7
+PART=xc7a200t-2fbg676
+WORKINGDIR=/home/vladimir/SERGLAST/ad9656/cern
+LICENSE=WebPack
+USER_INFO=__0_0_0

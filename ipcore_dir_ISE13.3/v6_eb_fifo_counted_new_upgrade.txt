@@ -1,0 +1,5 @@
+Mon Mar 12 16:44:44 2012
+
+Upgraded v6_eb_fifo_counted_new from Fifo Generator 7.2 to Fifo Generator 8.3
+
+No changes made to parameter values.

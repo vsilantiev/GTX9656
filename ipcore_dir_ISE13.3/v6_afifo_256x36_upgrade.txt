@@ -1,0 +1,5 @@
+Mon Mar 12 16:32:32 2012
+
+Upgraded v6_afifo_256x36 from Fifo Generator 7.2 to Fifo Generator 8.3
+
+No changes made to parameter values.

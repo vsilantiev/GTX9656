@@ -1,0 +1,3 @@
+# Output products list for <adc_serdes>
+adc_serdes.xco
+adc_serdes_flist.txt

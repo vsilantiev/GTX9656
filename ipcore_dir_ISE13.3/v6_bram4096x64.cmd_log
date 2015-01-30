@@ -1,0 +1,4 @@
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6vlx240t-ff1156-1 v6_bram4096x64.ngc v6_bram4096x64.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o v6_bram4096x64_map.ncd v6_bram4096x64.ngd v6_bram4096x64.pcf 
+par -w -intstyle ise -ol high -mt off v6_bram4096x64_map.ncd v6_bram4096x64.ncd v6_bram4096x64.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml v6_bram4096x64.twx v6_bram4096x64.ncd -o v6_bram4096x64.twr v6_bram4096x64.pcf 

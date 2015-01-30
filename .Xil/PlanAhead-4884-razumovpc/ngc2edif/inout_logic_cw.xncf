@@ -1,0 +1,8 @@
+NET "to_register9_clk" TNM_NET = clk_54e96cfd ;
+
+// Timing Constraints
+TIMESPEC TS_clk_54e96cfd = PERIOD "clk_54e96cfd" 5000.000000 pS HIGH 50.000000 % ;
+
+// Timing Constraints
+TIMESPEC TS_clk_54e96cfd = PERIOD "clk_54e96cfd" 5000.000000000 pS HIGH 50.000000000 % ;
+

@@ -1,0 +1,28 @@
+NET "to_register_clk" TNM_NET = clk_5cc36873 ;
+NET "to_register_clk" TNM_NET = D_CLK ;
+
+NET "user_logic_x0/chipscope/i_icon_for_syn/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL" TNM_NET = J_CLK ;
+
+NET "user_logic_x0/chipscope/i_icon_for_syn/U0/iUPDATE_OUT" TNM_NET = U_CLK ;
+
+INST "user_logic_x0/chipscope/i_ila/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC" TNM = D2_CLK ;
+
+// Timing Constraints
+TIMESPEC TS_clk_5cc36873 = PERIOD "clk_5cc36873" 5000.000000 pS HIGH 50.000000 % ;
+
+// Timing Constraints
+TIMESPEC TS_D2_TO_T2 = FROM "D2_CLK" TO FFS TIG ;
+TIMESPEC TS_J2_TO_D2 = FROM FFS TO "D2_CLK" TIG ;
+TIMESPEC TS_J3_TO_D2 = FROM FFS TO "D2_CLK" TIG ;
+TIMESPEC TS_J4_TO_D2 = FROM FFS TO "D2_CLK" TIG ;
+
+// Timing Constraints
+TIMESPEC TS_J_CLK = PERIOD "J_CLK" 30000.000000000 pS HIGH 50.000000000 % ;
+TIMESPEC TS_U_TO_J = FROM "U_CLK" TO "J_CLK" 15000.000000000 pS ;
+TIMESPEC TS_U_TO_U = FROM "U_CLK" TO "U_CLK" 15000.000000000 pS ;
+TIMESPEC TS_J_TO_D = FROM "J_CLK" TO "D_CLK" TIG ;
+TIMESPEC TS_D_TO_J = FROM "D_CLK" TO "J_CLK" TIG ;
+
+// Timing Constraints
+TIMESPEC TS_clk_5cc36873 = PERIOD "clk_5cc36873" 5000.000000000 pS HIGH 50.000000000 % ;
+

@@ -1,0 +1,23 @@
+# Output products list for <v6_afifo_256x36c_fwft>
+_xmsgs\pn_parser.xmsgs
+fifo_generator_ug175.pdf
+fifo_generator_v8_3_readme.txt
+v6_afifo_256x36c_fwft.asy
+v6_afifo_256x36c_fwft.gise
+v6_afifo_256x36c_fwft.ngc
+v6_afifo_256x36c_fwft.vhd
+v6_afifo_256x36c_fwft.vho
+v6_afifo_256x36c_fwft.xco
+v6_afifo_256x36c_fwft.xise
+v6_afifo_256x36c_fwft_flist.txt
+v6_afifo_256x36c_fwft_ste\example_design\v6_afifo_256x36c_fwft_top.ucf
+v6_afifo_256x36c_fwft_ste\example_design\v6_afifo_256x36c_fwft_top.vhd
+v6_afifo_256x36c_fwft_ste\example_design\v6_afifo_256x36c_fwft_top.xdc
+v6_afifo_256x36c_fwft_ste\implement\implement.bat
+v6_afifo_256x36c_fwft_ste\implement\implement.sh
+v6_afifo_256x36c_fwft_ste\implement\planAhead_rdn.bat
+v6_afifo_256x36c_fwft_ste\implement\planAhead_rdn.sh
+v6_afifo_256x36c_fwft_ste\implement\planAhead_rdn.tcl
+v6_afifo_256x36c_fwft_ste\implement\xst.prj
+v6_afifo_256x36c_fwft_ste\implement\xst.scr
+v6_afifo_256x36c_fwft_xmdf.tcl

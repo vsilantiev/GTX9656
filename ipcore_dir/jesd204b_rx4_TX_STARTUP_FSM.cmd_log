@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_TX_STARTUP_FSM.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_TX_STARTUP_FSM.syr" 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_TX_STARTUP_FSM.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_TX_STARTUP_FSM.syr" 

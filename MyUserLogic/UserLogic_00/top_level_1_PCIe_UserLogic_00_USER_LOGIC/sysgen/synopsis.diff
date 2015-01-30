@@ -1,0 +1,26 @@
+{
+  'diff' => {
+    'attributes' => {
+      'added' => [
+      ],
+      'modified' => [
+        'package',
+        'speed',
+      ],
+      'removed' => [
+      ],
+    },
+    'changed' => 1,
+    'files' => {
+      'added' => [
+      ],
+      'common' => [
+        'user_logic_cw.vhd',
+        'user_logic.vhd',
+        'user_logic_cw.ucf',
+      ],
+      'removed' => [
+      ],
+    },
+  },
+}

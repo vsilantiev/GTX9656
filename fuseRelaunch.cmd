@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/vladimir/ml605tesst/port/tf64_pcie_trn_isim_beh.exe" -prj "/home/vladimir/ml605tesst/port/tf64_pcie_trn_beh.prj" "work.tf64_pcie_trn" "work.glbl" 

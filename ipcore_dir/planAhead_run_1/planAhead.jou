@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Thu Jan 29 14:47:28 2015
+# Process ID: 5362
+# Log file: /home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/planAhead_run_1/planAhead.log
+# Journal file: /home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/pa.fromNetlist.tcl

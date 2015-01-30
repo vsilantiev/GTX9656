@@ -1,0 +1,2 @@
+vhdtdtfi -lang verilog -prj v6pcie -o /home/vladimir/NEWDMA/ddrbramchange.vhi -lib work /home/vladimir/NEWDMA//ddrbramchange.v -module ddrbramchange -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 
+vhdtdtfi -lang verilog -prj v6pcie -o /home/vladimir/NEWDMA/ddrbramchange.vhi -lib work /home/vladimir/NEWDMA//ddrbramchange.v -module ddrbramchange -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 

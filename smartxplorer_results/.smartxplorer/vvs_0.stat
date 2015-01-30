@@ -1,0 +1,3 @@
+START:Strategy:1:MapRunTime
+REMOTE_PID:14584
+RUNNING:14584:7784:MapRunTime:map:v6pcieDMA.ngd: -ol high -w  -p xc7a200t-fbg676-2 -o v6pcieDMA_map.ncd  C:cl:bslUsers:bslvsilantiev:bslDocuments:bslLASTWAC701:bslWRAPPERLASTAC701:bslsmartxplorer_results:bslrun1:bslv6pcieDMA.pcf

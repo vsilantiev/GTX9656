@@ -1,0 +1,10 @@
+Mon Mar 12 17:07:10 2012
+
+Upgraded v6_bram4096x64_fast from Block Memory Generator 4.3 to Block Memory Generator 6.2
+
+Added parameter interface_type with value Native
+Added parameter axi_type with value AXI4_Full
+Added parameter axi_slave_type with value Memory_Slave
+Added parameter use_axi_id with value false
+Added parameter axi_id_width with value 4
+

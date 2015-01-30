@@ -1,0 +1,61 @@
+Release 13.3 ngcbuild O.76xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line: c:\programmi\xilinx\13.3\ise_ds\ise\bin\nt\unwrapped\ngcbuild.exe
+-p xc6vlx240t-1ff1156 user_logic_cw user_logic_cw_complete.ngc
+
+Reading NGO file "C:/Temp/Xilinx PCI
+Express/ML605_ISE13.3/MyUserLogic/UserLogic_00/top_level_1_PCIe_UserLogic_00_USE
+R_LOGIC/synth_model/user_logic_cw.ngc" ...
+Loading design module "C:\Temp\Xilinx PCI
+Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_1_PCIe_UserLogic_00_USE
+R_LOGIC\synth_model/xlpersistentdff.ngc"...
+Loading design module "C:\Temp\Xilinx PCI
+Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_1_PCIe_UserLogic_00_USE
+R_LOGIC\synth_model/ila_1_05_a_b6735eb4b876dee5.ngc"...
+Loading design module "C:\Temp\Xilinx PCI
+Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_1_PCIe_UserLogic_00_USE
+R_LOGIC\synth_model/icon_1_06_a_87e2f476e984e565.ngc"...
+Loading design module "C:\Temp\Xilinx PCI
+Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_1_PCIe_UserLogic_00_USE
+R_LOGIC\synth_model/cntr_11_0_341fbb8cfa0e669e.ngc"...
+
+Applying constraints in "user_logic_cw.ucf" to the design...
+WARNING:ConstraintSystem:191 - The TNM 'clk_5cc36873', does not directly or
+   indirectly drive any flip-flops, latches and/or RAMS and cannot be actively
+   used by the referencing Period constraint 'TS_clk_5cc36873'. If clock manager
+   blocks are directly or indirectly driven, a new TNM constraint will not be
+   derived even though the referencing constraint is a PERIOD constraint unless
+   an output of the clock manager drives flip-flops, latches or RAMs. This TNM
+   is used in the following user PERIOD specification:
+   <TIMESPEC "TS_clk_5cc36873" = PERIOD "clk_5cc36873" 5.0 ns HIGH 50 %;>
+   [user_logic_cw.ucf(5)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC "TS_clk_5cc36873" = PERIOD "clk_5cc36873" 5.0 ns HIGH 50 %;>
+   [user_logic_cw.ucf(5)]
+
+Checking Constraint Associations...
+WARNING:NgdBuild:981 - Could not find any associations for the following
+   constraint:
+       '<NET "clk" TNM_NET = "clk_5cc36873";> [user_logic_cw.ucf(4)]'
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   3
+
+Total memory usage is 105716 kilobytes
+
+Writing NGC file "user_logic_cw_complete.ngc" ...
+Total REAL time to NGCBUILD completion:  21 sec
+Total CPU time to NGCBUILD completion:   5 sec
+
+Writing NGCBUILD log file "user_logic_cw_complete.blc"...

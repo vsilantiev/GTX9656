@@ -1,0 +1,19 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'v6pcieDMA'
+
+Design Information
+------------------
+Command Line   : map -ol high -w -p xc7a200t-fbg676-2 -o v6pcieDMA_map.ncd
+v6pcieDMA.ngd
+C:\Users\vsilantiev\Documents\LASTWAC701\WRAPPERLASTAC701\smartxplorer_results\r
+un1\v6pcieDMA.pcf 
+Target Device  : xc7a200t
+Target Package : fbg676
+Target Speed   : -2
+Mapper Version : artix7 -- $Revision: 1.55 $
+Mapped Date    : Sun Oct 26 17:38:20 2014
+
+WARNING:LIT:701 - PAD symbol "pci_exp_rxp<3>" has an undefined IOSTANDARD.
+WARNING:LIT:702 - PAD symbol "pci_exp_rxp<3>" is not constrained (LOC) to a
+   specific location.
+Mapping design into LUTs...

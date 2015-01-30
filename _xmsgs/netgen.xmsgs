@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">wpipe_Qout</arg><arg fmt="%s" index="2">( 71 downto 0 )</arg> on block <arg fmt="%s" index="3">bram_DDRs_Control</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">rpipec_Qout</arg><arg fmt="%s" index="2">( 69 downto 2 )</arg> on block <arg fmt="%s" index="3">bram_DDRs_Control</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">rpiped_Din</arg><arg fmt="%s" index="2">( 66 downto 0 )</arg> on block <arg fmt="%s" index="3">bram_DDRs_Control</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">pRAM_weA</arg><arg fmt="%s" index="2">( 4 downto 0 )</arg> on block <arg fmt="%s" index="3">bram_DDRs_Control</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">wpipe_Qout_latch</arg><arg fmt="%s" index="2">( 69 downto 2 )</arg> on block <arg fmt="%s" index="3">bram_DDRs_Control</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">trn_rrem_n_r1</arg><arg fmt="%s" index="2">( 3 downto 0 )</arg> on block <arg fmt="%s" index="3">rx_CplD_Transact</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">RegAddr_us_Dex</arg><arg fmt="%s" index="2">( 6 downto 0 )</arg> on block <arg fmt="%s" index="3">rx_CplD_Transact</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">RegAddr_ds_Dex</arg><arg fmt="%s" index="2">( 6 downto 0 )</arg> on block <arg fmt="%s" index="3">rx_CplD_Transact</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">pioCplD_Qout_wire</arg><arg fmt="%s" index="2">( 127 downto 0 )</arg> on block <arg fmt="%s" index="3">rx_MRd_Transact</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">pioCplD_Qout_i</arg><arg fmt="%s" index="2">( 127 downto 0 )</arg> on block <arg fmt="%s" index="3">rx_MRd_Transact</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">pioCplD_Qout_reg</arg><arg fmt="%s" index="2">( 127 downto 0 )</arg> on block <arg fmt="%s" index="3">rx_MRd_Transact</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">ChBuf_WrDin_i</arg><arg fmt="%s" index="2">( 127 downto 0 )</arg> on block <arg fmt="%s" index="3">DMA_FSM_INST_1</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">NlwRenamedSignal_ChBuf_WrDin_i</arg><arg fmt="%s" index="2">( 25 downto 18 )</arg> on block <arg fmt="%s" index="3">DMA_FSM_INST_1</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">usTlp_Qout_i</arg><arg fmt="%s" index="2">( 127 downto 0 )</arg> on block <arg fmt="%s" index="3">usDMA_Transact</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">usTlp_Qout_wire</arg><arg fmt="%s" index="2">( 127 downto 0 )</arg> on block <arg fmt="%s" index="3">usDMA_Transact</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">DMA_Status_i</arg><arg fmt="%s" index="2">( 7 downto 0 )</arg> on block <arg fmt="%s" index="3">usDMA_Transact</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">usTlp_Qout_reg</arg><arg fmt="%s" index="2">( 127 downto 10 )</arg> on block <arg fmt="%s" index="3">usDMA_Transact</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">ChBuf_WrDin_i</arg><arg fmt="%s" index="2">( 127 downto 0 )</arg> on block <arg fmt="%s" index="3">DMA_FSM</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">DMA_Status_i</arg><arg fmt="%s" index="2">( 7 downto 0 )</arg> on block <arg fmt="%s" index="3">dsDMA_Transact</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">trn_rrem_n_r1</arg><arg fmt="%s" index="2">( 3 downto 0 )</arg> on block <arg fmt="%s" index="3">RxIn_Delay</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">DDR_rdc_din_i</arg><arg fmt="%s" index="2">( 43 downto 0 )</arg> on block <arg fmt="%s" index="3">tx_Mem_Reader</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">mbuf_Qout</arg><arg fmt="%s" index="2">( 70 downto 0 )</arg> on block <arg fmt="%s" index="3">tx_Transact</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">Irpt_Qout_to_TLP</arg><arg fmt="%s" index="2">( 58 downto 2 )</arg> on block <arg fmt="%s" index="3">tx_Transact</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">pioCplD_Qout_to_TLP</arg><arg fmt="%s" index="2">( 127 downto 0 )</arg> on block <arg fmt="%s" index="3">tx_Transact</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">dsMRd_Qout_to_TLP</arg><arg fmt="%s" index="2">( 127 downto 0 )</arg> on block <arg fmt="%s" index="3">tx_Transact</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">usTlp_Qout_to_TLP</arg><arg fmt="%s" index="2">( 127 downto 0 )</arg> on block <arg fmt="%s" index="3">tx_Transact</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">Trn_Qout_reg</arg><arg fmt="%s" index="2">( 127 downto 0 )</arg> on block <arg fmt="%s" index="3">tx_Transact</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">NlwRenamedSig_OI_trn_td_i</arg><arg fmt="%s" index="2">( 62 downto 32 )</arg> on block <arg fmt="%s" index="3">tx_Transact</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">trn_td_i</arg><arg fmt="%s" index="2">( 63 downto 0 )</arg> on block <arg fmt="%s" index="3">tx_Transact</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">GND_714_o_GND_714_o_mux_6_OUT</arg><arg fmt="%s" index="2">( 58 downto 2 )</arg> on block <arg fmt="%s" index="3">tx_Transact</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">Trn_Qout_wire</arg><arg fmt="%s" index="2">( 127 downto 0 )</arg> on block <arg fmt="%s" index="3">tx_Transact</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">Reg_WrMuxer_Hi</arg><arg fmt="%s" index="2">( 41 downto 0 )</arg> on block <arg fmt="%s" index="3">Regs_Group</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">Reg_RdMuxer_Hi</arg><arg fmt="%s" index="2">( 48 downto 0 )</arg> on block <arg fmt="%s" index="3">Regs_Group</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">Reg_RdMuxer_Lo</arg><arg fmt="%s" index="2">( 33 downto 0 )</arg> on block <arg fmt="%s" index="3">Regs_Group</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">eb_FIFO_Status_r1</arg><arg fmt="%s" index="2">( 17 downto 0 )</arg> on block <arg fmt="%s" index="3">Regs_Group</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">H2B_FIFO_Status_r1</arg><arg fmt="%s" index="2">( 17 downto 0 )</arg> on block <arg fmt="%s" index="3">Regs_Group</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">NlwRenamedSignal_din</arg><arg fmt="%s" index="2">( 11 downto 1 )</arg> on block <arg fmt="%s" index="3">GTX_DRP_CHANALIGN_FIX_3752_V6_INST_3</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">NlwRenamedSignal_din</arg><arg fmt="%s" index="2">( 11 downto 1 )</arg> on block <arg fmt="%s" index="3">GTX_DRP_CHANALIGN_FIX_3752_V6_INST_2</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">NlwRenamedSignal_din</arg><arg fmt="%s" index="2">( 11 downto 1 )</arg> on block <arg fmt="%s" index="3">GTX_DRP_CHANALIGN_FIX_3752_V6_INST_1</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">NlwRenamedSignal_din</arg><arg fmt="%s" index="2">( 11 downto 1 )</arg> on block <arg fmt="%s" index="3">GTX_DRP_CHANALIGN_FIX_3752_V6</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="0" delta="new" >Padding or triming the value for binary property <arg fmt="%s" index="1">REFCLKOUT_DLY</arg>:
+</msg>
+
+<msg type="info" file="NetListWriters" num="635" delta="old" >The generated VHDL netlist contains Xilinx <arg fmt="%s" index="1">UNISIM</arg> simulation primitives and has to be used with <arg fmt="%s" index="2">UNISIM</arg> library for correct compilation and simulation. 
+</msg>
+
+</messages>
+

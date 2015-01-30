@@ -1,0 +1,30 @@
+
+Release 14.7 SmartXplorer
+Copyright(c) 1995-2010 Xilinx, Inc. All rights reserved.
+"C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\smartxplorer.exe" -p xc7a200t-fbg676-2 -b -wd smartxplorer_results v6pcieDMA.ngd -to "-v 3 -s 2 -n 3 -fastpaths -xml v6pcieDMA.twx -ucf ABB3_pcie_4_lane_Emu_FIFO_elink.ucf" -host_list hostlistfile.txt -max_runs 7
+
+SmartXplorer Settings: 
+
+designName=C:\Users\vsilantiev\Documents\LASTWAC701\WRAPPERLASTAC701\v6pcieDMA.ngd 
+write_dir=C:\Users\vsilantiev\Documents\LASTWAC701\WRAPPERLASTAC701\smartxplorer_results 
+host_list=C:\Users\vsilantiev\Documents\LASTWAC701\WRAPPERLASTAC701\hostlistfile.txt 
+part=xc7a200t-fbg676-2 
+strategy_file=None 
+notify=None 
+source_dir=C:\Users\vsilantiev\Documents\LASTWAC701\WRAPPERLASTAC701 
+batch_mode=True 
+run_all_strategies=False 
+list_all_strategies=False 
+remote_command=rsh
+area_report="lut;slice_reg"
+power_options=off
+trce_options="-v 3 -s 2 -n 3 -fastpaths -xml v6pcieDMA.twx -ucf ABB3_pcie_4_lane_Emu_FIFO_elink.ucf"
+max_runs=7
+
+Starting SmartXplorer...
+See file 'smartxplorer.html' for real-time report.
+
+
+Running SmartXplorer strategies...
+
+

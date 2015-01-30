@@ -1,0 +1,2 @@
+C:/Programmi/Xilinx/13.3/ISE_DS/ISE/sysgen/bin/nt/saferun.exe -- c:/programmi/xilinx/13.3/ise_ds/ise//bin/nt/xst.exe -ifn xst_inout_logic.scr -ofn inout_logic_cw.syr
+C:/Programmi/Xilinx/13.3/ISE_DS/ISE/sysgen/bin/nt/saferun.exe -- c:/programmi/xilinx/13.3/ise_ds/ise//bin/nt/ngcbuild.exe -p xc6vlx240t-1ff1156 inout_logic_cw inout_logic_cw_complete.ngc

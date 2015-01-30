@@ -1,0 +1,457 @@
+Release 13.3 - xst O.76xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+Reading constraint file inout_logic_cw.xcf.
+XCF parsing done.
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "xst_inout_logic.prj"
+Input Format                       : mixed
+Synthesis Constraint File          : inout_logic_cw.xcf
+
+---- Target Parameters
+Output File Name                   : "inout_logic_cw.ngc"
+Output Format                      : NGC
+Target Device                      : xc6vlx240t-1ff1156
+
+---- Source Options
+Entity Name                        : inout_logic_cw
+Top Module Name                    : inout_logic_cw
+Automatic Register Balancing       : no
+
+---- Target Options
+Add IO Buffers                     : NO
+Pack IO Registers into IOBs        : Auto
+
+---- General Options
+Keep Hierarchy                     : NO
+Bus Delimiter                      : ()
+Hierarchy Separator                : /
+Write Timing Constraints           : yes
+
+---- Other Options
+report_timing_constraint_problems  : warning
+
+=========================================================================
+
+WARNING:Xst:29 - Optimization Effort not specified
+The following parameters have been added:
+Optimization Goal                  : SPEED
+
+=========================================================================
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic.vhd" into library work
+Parsing package <conv_pkg>.
+Parsing package body <conv_pkg>.
+Parsing entity <srl17e>.
+Parsing architecture <structural> of entity <srl17e>.
+Parsing entity <synth_reg>.
+Parsing architecture <structural> of entity <synth_reg>.
+Parsing entity <synth_reg_reg>.
+Parsing architecture <behav> of entity <synth_reg_reg>.
+Parsing entity <single_reg_w_init>.
+Parsing architecture <structural> of entity <single_reg_w_init>.
+Parsing entity <synth_reg_w_init>.
+Parsing architecture <structural> of entity <synth_reg_w_init>.
+Parsing entity <constant_6293007044>.
+Parsing architecture <behavior> of entity <constant_6293007044>.
+Parsing entity <inout_logic>.
+Parsing architecture <structural> of entity <inout_logic>.
+Parsing VHDL file "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" into library work
+Parsing entity <xlclockdriver>.
+Parsing architecture <behavior> of entity <xlclockdriver>.
+Parsing entity <default_clock_driver>.
+Parsing architecture <structural> of entity <default_clock_driver>.
+Parsing entity <inout_logic_cw>.
+Parsing architecture <structural> of entity <inout_logic_cw>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <inout_logic_cw> (architecture <structural>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 986: Assignment to to_register10_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 987: Assignment to to_register11_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 988: Assignment to to_register12_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 989: Assignment to to_register13_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 990: Assignment to to_register14_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 991: Assignment to to_register15_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 992: Assignment to to_register16_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 993: Assignment to to_register17_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 994: Assignment to to_register18_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 995: Assignment to to_register19_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 996: Assignment to to_register1_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 997: Assignment to to_register20_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 998: Assignment to to_register21_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 999: Assignment to to_register22_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1000: Assignment to to_register23_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1001: Assignment to to_register24_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1002: Assignment to to_register25_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1003: Assignment to to_register26_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1004: Assignment to to_register27_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1005: Assignment to to_register28_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1006: Assignment to to_register29_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1007: Assignment to to_register2_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1008: Assignment to to_register30_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1009: Assignment to to_register31_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1010: Assignment to to_register32_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1011: Assignment to to_register33_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1012: Assignment to to_register34_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1013: Assignment to to_register3_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1014: Assignment to to_register4_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1015: Assignment to to_register5_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1016: Assignment to to_register6_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1017: Assignment to to_register7_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1018: Assignment to to_register8_dout_net ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic_cw.vhd" Line 1019: Assignment to to_register9_dout_net ignored, since the identifier is never used
+
+Elaborating entity <default_clock_driver> (architecture <structural>) from library <work>.
+
+Elaborating entity <xlclockdriver> (architecture <behavior>) with generics from library <work>.
+
+Elaborating entity <synth_reg_w_init> (architecture <structural>) with generics from library <work>.
+
+Elaborating entity <single_reg_w_init> (architecture <structural>) with generics from library <work>.
+WARNING:HDLCompiler:89 - "C:\Temp\Xilinx PCI Express\ML605_ISE13.3\MyUserLogic\UserLogic_00\top_level_0_PCIe_UserLogic_00_INOUT_LOGIC\synth_model\inout_logic.vhd" Line 1727: <fdre> remains a black-box since it has no binding entity.
+
+Elaborating entity <inout_logic> (architecture <structural>) from library <work>.
+
+Elaborating entity <constant_6293007044> (architecture <behavior>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <inout_logic_cw>.
+    Related source file is "c:/temp/xilinx pci express/ml605_ise13.3/myuserlogic/userlogic_00/top_level_0_pcie_userlogic_00_inout_logic/synth_model/inout_logic_cw.vhd".
+    Set property "syn_black_box = true" for instance <persistentdff_inst>.
+    Set property "syn_noprune = true" for instance <persistentdff_inst>.
+    Set property "optimize_primitives = false" for instance <persistentdff_inst>.
+    Set property "dont_touch = true" for instance <persistentdff_inst>.
+    Set property "MAX_FANOUT = REDUCE" for signal <ce_1_sg>.
+    Set property "syn_keep = true" for signal <persistentdff_inst_q>.
+    Set property "KEEP = TRUE" for signal <persistentdff_inst_q>.
+WARNING:Xst:37 - Detected unknown constraint/property "preserve_signal". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:647 - Input <to_register10_dout<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register11_dout<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register12_dout<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register13_dout<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register14_dout<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register15_dout<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register16_dout<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register17_dout<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register18_dout<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register19_dout<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register1_dout<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register20_dout<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register21_dout<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register22_dout<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register23_dout<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register24_dout<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register25_dout<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register26_dout<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register27_dout<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register28_dout<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register29_dout<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register2_dout<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register30_dout<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register31_dout<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register32_dout<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register33_dout<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register34_dout<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register3_dout<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register4_dout<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register5_dout<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register6_dout<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register7_dout<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register8_dout<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <to_register9_dout<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <inout_logic_cw> synthesized.
+
+Synthesizing Unit <default_clock_driver>.
+    Related source file is "c:/temp/xilinx pci express/ml605_ise13.3/myuserlogic/userlogic_00/top_level_0_pcie_userlogic_00_inout_logic/synth_model/inout_logic_cw.vhd".
+    Set property "syn_noprune = true".
+    Set property "optimize_primitives = false".
+    Set property "dont_touch = true".
+INFO:Xst:3210 - "c:/temp/xilinx pci express/ml605_ise13.3/myuserlogic/userlogic_00/top_level_0_pcie_userlogic_00_inout_logic/synth_model/inout_logic_cw.vhd" line 378: Output port <clr> of the instance <xlclockdriver> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/temp/xilinx pci express/ml605_ise13.3/myuserlogic/userlogic_00/top_level_0_pcie_userlogic_00_inout_logic/synth_model/inout_logic_cw.vhd" line 378: Output port <ce_logic> of the instance <xlclockdriver> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <default_clock_driver> synthesized.
+
+Synthesizing Unit <xlclockdriver>.
+    Related source file is "c:/temp/xilinx pci express/ml605_ise13.3/myuserlogic/userlogic_00/top_level_0_pcie_userlogic_00_inout_logic/synth_model/inout_logic_cw.vhd".
+        period = 1
+        log_2_period = 1
+        pipeline_regs = 5
+        use_bufg = 0
+    Set property "MAX_FANOUT = REDUCE" for signal <ce_vec>.
+    Set property "MAX_FANOUT = REDUCE" for signal <ce_vec_logic>.
+INFO:Xst:3210 - "c:/temp/xilinx pci express/ml605_ise13.3/myuserlogic/userlogic_00/top_level_0_pcie_userlogic_00_inout_logic/synth_model/inout_logic_cw.vhd" line 254: Output port <o> of the instance <clr_reg> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <xlclockdriver> synthesized.
+
+Synthesizing Unit <synth_reg_w_init>.
+    Related source file is "c:/temp/xilinx pci express/ml605_ise13.3/myuserlogic/userlogic_00/top_level_0_pcie_userlogic_00_inout_logic/synth_model/inout_logic.vhd".
+        width = 1
+        init_index = 0
+        init_value = "0000"
+        latency = 1
+    Summary:
+	no macro.
+Unit <synth_reg_w_init> synthesized.
+
+Synthesizing Unit <single_reg_w_init>.
+    Related source file is "c:/temp/xilinx pci express/ml605_ise13.3/myuserlogic/userlogic_00/top_level_0_pcie_userlogic_00_inout_logic/synth_model/inout_logic.vhd".
+        width = 1
+        init_index = 0
+        init_value = "0000"
+    Set property "syn_black_box = true" for instance <fd_prim_array[0].bit_is_0.fdre_comp>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+    Summary:
+	no macro.
+Unit <single_reg_w_init> synthesized.
+
+Synthesizing Unit <inout_logic>.
+    Related source file is "c:/temp/xilinx pci express/ml605_ise13.3/myuserlogic/userlogic_00/top_level_0_pcie_userlogic_00_inout_logic/synth_model/inout_logic.vhd".
+    Summary:
+	no macro.
+Unit <inout_logic> synthesized.
+
+Synthesizing Unit <constant_6293007044>.
+    Related source file is "c:/temp/xilinx pci express/ml605_ise13.3/myuserlogic/userlogic_00/top_level_0_pcie_userlogic_00_inout_logic/synth_model/inout_logic.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <constant_6293007044> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <xlpersistentdff.ngc>.
+Loading core <xlpersistentdff> for timing and area information for instance <persistentdff_inst>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1989 - Unit <inout_logic>: instances <constant1>, <constant5> of unit <constant_6293007044> are equivalent, second instance is removed
+
+Optimizing unit <inout_logic_cw> ...
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <inout_logic_cw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <inout_logic_cw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <inout_logic_cw>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <inout_logic_cw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <inout_logic_cw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <inout_logic_cw>. This FF/Latch will be trimmed during the optimization process.
+Annotating constraints using XCF file 'inout_logic_cw.xcf'
+XCF parsing done.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block inout_logic_cw, actual ratio is 0.
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <inout_logic_cw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <inout_logic_cw>. This FF/Latch will be trimmed during the optimization process.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <inout_logic_cw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <inout_logic_cw>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : inout_logic_cw.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2
+#      GND                         : 1
+#      VCC                         : 1
+# FlipFlops/Latches                : 2
+#      FD                          : 1
+#      FDRE                        : 1
+# Others                           : 1
+#      TIMESPEC                    : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6vlx240tff1156-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               2  out of  301440     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      2
+   Number with an unused Flip Flop:       0  out of      2     0%  
+   Number with an unused LUT:             2  out of      2   100%  
+   Number of fully used LUT-FF pairs:     0  out of      2     0%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                        2838
+ Number of bonded IOBs:                   0  out of    600     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                                      | Load  |
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
+to_register9_clk                   | NONE(default_clock_driver_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp)| 2     |
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 0.785ns (Maximum Frequency: 1273.885MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 0.000ns
+
+=========================================================================
+Timing constraint: TS_clk_54e96cfd = PERIOD TIMEGRP "clk_54e96cfd" 5 nS HIGH 2.500 nS
+  Clock period: 0.785ns (frequency: 1273.885MHz)
+  Total number of paths / destination ports: 1 / 1
+  Number of failed paths / ports: 0 (0.00%) / 0 (0.00%)
+-------------------------------------------------------------------------
+Slack:                  4.215ns
+  Source:               persistentdff_inst/q (FF)
+  Destination:          persistentdff_inst/q (FF)
+  Data Path Delay:      0.785ns (Levels of Logic = 1)
+  Source Clock:         to_register9_clk rising at 0.000ns
+  Destination Clock:    to_register9_clk rising at 5.000ns
+
+  Data Path: persistentdff_inst/q (FF) to persistentdff_inst/q (FF)
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.375   0.399  q (q)
+     end scope: 'persistentdff_inst:q'
+     begin scope: 'persistentdff_inst:d'
+     FD:D                      0.011          q
+    ----------------------------------------
+    Total                      0.785ns (0.386ns logic, 0.399ns route)
+                                       (49.2% logic, 50.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock to_register9_clk
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+to_register9_clk|    0.785|         |         |         |
+----------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.78 secs
+ 
+--> 
+
+Total memory usage is 160616 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   87 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

@@ -1,0 +1,23 @@
+# Output products list for <v6_afifo_1024x72>
+_xmsgs\pn_parser.xmsgs
+fifo_generator_ug175.pdf
+fifo_generator_v8_3_readme.txt
+v6_afifo_1024x72.asy
+v6_afifo_1024x72.gise
+v6_afifo_1024x72.ngc
+v6_afifo_1024x72.vhd
+v6_afifo_1024x72.vho
+v6_afifo_1024x72.xco
+v6_afifo_1024x72.xise
+v6_afifo_1024x72_flist.txt
+v6_afifo_1024x72_ste\example_design\v6_afifo_1024x72_top.ucf
+v6_afifo_1024x72_ste\example_design\v6_afifo_1024x72_top.vhd
+v6_afifo_1024x72_ste\example_design\v6_afifo_1024x72_top.xdc
+v6_afifo_1024x72_ste\implement\implement.bat
+v6_afifo_1024x72_ste\implement\implement.sh
+v6_afifo_1024x72_ste\implement\planAhead_rdn.bat
+v6_afifo_1024x72_ste\implement\planAhead_rdn.sh
+v6_afifo_1024x72_ste\implement\planAhead_rdn.tcl
+v6_afifo_1024x72_ste\implement\xst.prj
+v6_afifo_1024x72_ste\implement\xst.scr
+v6_afifo_1024x72_xmdf.tcl

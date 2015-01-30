@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4.syr" 

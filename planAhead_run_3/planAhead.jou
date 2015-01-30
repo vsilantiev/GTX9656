@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Fri Jan 30 09:31:03 2015
+# Process ID: 13757
+# Log file: /home/vladimir/SERGLAST/ad9656/cern/planAhead_run_3/planAhead.log
+# Journal file: /home/vladimir/SERGLAST/ad9656/cern/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/vladimir/SERGLAST/ad9656/cern/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin AF13 [get_ports {adc_out_n_i[1]}]
+endgroup
+startgroup
+set_property package_pin AF13 [get_ports {adc_out_n_i[1]}]
+endgroup
+set_property iostandard LVCMOS18 [get_ports [list {pci_exp_rxn[1]}]]

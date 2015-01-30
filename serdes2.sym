@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="serdes2">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2014-11-28T5:0:28</timestamp>
+    <pin polarity="Input" x="0" y="112" name="data_in_from_pins_p[8:0]" />
+    <pin polarity="Input" x="0" y="144" name="data_in_from_pins_n[8:0]" />
+    <pin polarity="Input" x="0" y="464" name="clk_in" />
+    <pin polarity="Input" x="0" y="560" name="clk_div_in" />
+    <pin polarity="Input" x="0" y="656" name="clk_reset" />
+    <pin polarity="Input" x="0" y="688" name="io_reset" />
+    <pin polarity="Input" x="0" y="752" name="bitslip" />
+    <pin polarity="Output" x="704" y="80" name="data_in_to_device[71:0]" />
+    <graph>
+        <text style="fontsize:40;fontname:Arial" x="32" y="32">serdes2</text>
+        <rect width="640" x="32" y="32" height="928" />
+        <line x2="32" y1="112" y2="112" style="linewidth:W" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="112" type="pin data_in_from_pins_p[8:0]" />
+        <line x2="32" y1="144" y2="144" style="linewidth:W" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="144" type="pin data_in_from_pins_n[8:0]" />
+        <line x2="32" y1="464" y2="464" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="464" type="pin clk_in" />
+        <line x2="32" y1="560" y2="560" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="560" type="pin clk_div_in" />
+        <line x2="32" y1="656" y2="656" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="656" type="pin clk_reset" />
+        <line x2="32" y1="688" y2="688" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="688" type="pin io_reset" />
+        <line x2="32" y1="752" y2="752" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="752" type="pin bitslip" />
+        <line x2="672" y1="80" y2="80" style="linewidth:W" x1="704" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="668" y="80" type="pin data_in_to_device[71:0]" />
+    </graph>
+</symbol>

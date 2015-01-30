@@ -1,0 +1,1100 @@
+Release 14.7 Map P.20131013 (lin)
+Xilinx Mapping Report File for Design 'v6_bram4096x64'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o v6_bram4096x64_map.ncd v6_bram4096x64.ngd
+v6_bram4096x64.pcf 
+Target Device  : xc6vlx240t
+Target Package : ff1156
+Target Speed   : -1
+Mapper Version : virtex6 -- $Revision: 1.55 $
+Mapped Date    : Sun Aug 24 19:38:58 2014
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:  298
+Slice Logic Utilization:
+  Number of Slice Registers:                     0 out of 301,440    0%
+  Number of Slice LUTs:                          0 out of 150,720    0%
+
+Slice Logic Distribution:
+  Number of occupied Slices:                     0 out of  37,680    0%
+  Number of LUT Flip Flop pairs used:            0
+
+IO Utilization:
+  Number of bonded IOBs:                         0 out of     600    0%
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                  0 out of     416    0%
+  Number of RAMB18E1/FIFO18E1s:                  0 out of     832    0%
+  Number of BUFG/BUFGCTRLs:                      0 out of      32    0%
+  Number of ILOGICE1/ISERDESE1s:                 0 out of     720    0%
+  Number of OLOGICE1/OSERDESE1s:                 0 out of     720    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHCEs:                             0 out of     144    0%
+  Number of BUFIODQSs:                           0 out of      72    0%
+  Number of BUFRs:                               0 out of      36    0%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DSP48E1s:                            0 out of     768    0%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of GTXE1s:                              0 out of      20    0%
+  Number of IBUFDS_GTXE1s:                       0 out of      12    0%
+  Number of ICAPs:                               0 out of       2    0%
+  Number of IDELAYCTRLs:                         0 out of      18    0%
+  Number of IODELAYE1s:                          0 out of     720    0%
+  Number of MMCM_ADVs:                           0 out of      12    0%
+  Number of PCIE_2_0s:                           0 out of       2    0%
+  Number of STARTUPs:                            1 out of       1  100%
+  Number of SYSMONs:                             0 out of       1    0%
+  Number of TEMAC_SINGLEs:                       0 out of       4    0%
+
+Average Fanout of Non-Clock Nets:                40.00
+
+Peak Memory Usage:  433 MB
+Total REAL time to MAP completion:  40 secs 
+Total CPU time to MAP completion:   39 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:MapLib:701 - Signal clka connected to top level port clka has been
+   removed.
+WARNING:MapLib:701 - Signal clkb connected to top level port clkb has been
+   removed.
+WARNING:MapLib:701 - Signal addra<11> connected to top level port addra<11> has
+   been removed.
+WARNING:MapLib:701 - Signal addra<10> connected to top level port addra<10> has
+   been removed.
+WARNING:MapLib:701 - Signal addra<9> connected to top level port addra<9> has
+   been removed.
+WARNING:MapLib:701 - Signal addra<8> connected to top level port addra<8> has
+   been removed.
+WARNING:MapLib:701 - Signal addra<7> connected to top level port addra<7> has
+   been removed.
+WARNING:MapLib:701 - Signal addra<6> connected to top level port addra<6> has
+   been removed.
+WARNING:MapLib:701 - Signal addra<5> connected to top level port addra<5> has
+   been removed.
+WARNING:MapLib:701 - Signal addra<4> connected to top level port addra<4> has
+   been removed.
+WARNING:MapLib:701 - Signal addra<3> connected to top level port addra<3> has
+   been removed.
+WARNING:MapLib:701 - Signal addra<2> connected to top level port addra<2> has
+   been removed.
+WARNING:MapLib:701 - Signal addra<1> connected to top level port addra<1> has
+   been removed.
+WARNING:MapLib:701 - Signal addra<0> connected to top level port addra<0> has
+   been removed.
+WARNING:MapLib:701 - Signal addrb<11> connected to top level port addrb<11> has
+   been removed.
+WARNING:MapLib:701 - Signal addrb<10> connected to top level port addrb<10> has
+   been removed.
+WARNING:MapLib:701 - Signal addrb<9> connected to top level port addrb<9> has
+   been removed.
+WARNING:MapLib:701 - Signal addrb<8> connected to top level port addrb<8> has
+   been removed.
+WARNING:MapLib:701 - Signal addrb<7> connected to top level port addrb<7> has
+   been removed.
+WARNING:MapLib:701 - Signal addrb<6> connected to top level port addrb<6> has
+   been removed.
+WARNING:MapLib:701 - Signal addrb<5> connected to top level port addrb<5> has
+   been removed.
+WARNING:MapLib:701 - Signal addrb<4> connected to top level port addrb<4> has
+   been removed.
+WARNING:MapLib:701 - Signal addrb<3> connected to top level port addrb<3> has
+   been removed.
+WARNING:MapLib:701 - Signal addrb<2> connected to top level port addrb<2> has
+   been removed.
+WARNING:MapLib:701 - Signal addrb<1> connected to top level port addrb<1> has
+   been removed.
+WARNING:MapLib:701 - Signal addrb<0> connected to top level port addrb<0> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<63> connected to top level port dina<63> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<62> connected to top level port dina<62> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<61> connected to top level port dina<61> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<60> connected to top level port dina<60> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<59> connected to top level port dina<59> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<58> connected to top level port dina<58> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<57> connected to top level port dina<57> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<56> connected to top level port dina<56> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<63> connected to top level port dinb<63> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<62> connected to top level port dinb<62> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<61> connected to top level port dinb<61> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<60> connected to top level port dinb<60> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<59> connected to top level port dinb<59> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<58> connected to top level port dinb<58> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<57> connected to top level port dinb<57> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<56> connected to top level port dinb<56> has
+   been removed.
+WARNING:MapLib:701 - Signal wea<7> connected to top level port wea<7> has been
+   removed.
+WARNING:MapLib:701 - Signal web<7> connected to top level port web<7> has been
+   removed.
+WARNING:MapLib:701 - Signal douta<63> connected to top level port douta<63> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<62> connected to top level port douta<62> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<61> connected to top level port douta<61> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<60> connected to top level port douta<60> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<59> connected to top level port douta<59> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<58> connected to top level port douta<58> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<57> connected to top level port douta<57> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<56> connected to top level port douta<56> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<63> connected to top level port doutb<63> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<62> connected to top level port doutb<62> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<61> connected to top level port doutb<61> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<60> connected to top level port doutb<60> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<59> connected to top level port doutb<59> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<58> connected to top level port doutb<58> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<57> connected to top level port doutb<57> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<56> connected to top level port doutb<56> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<55> connected to top level port dina<55> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<54> connected to top level port dina<54> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<53> connected to top level port dina<53> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<52> connected to top level port dina<52> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<51> connected to top level port dina<51> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<50> connected to top level port dina<50> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<49> connected to top level port dina<49> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<48> connected to top level port dina<48> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<55> connected to top level port dinb<55> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<54> connected to top level port dinb<54> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<53> connected to top level port dinb<53> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<52> connected to top level port dinb<52> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<51> connected to top level port dinb<51> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<50> connected to top level port dinb<50> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<49> connected to top level port dinb<49> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<48> connected to top level port dinb<48> has
+   been removed.
+WARNING:MapLib:701 - Signal wea<6> connected to top level port wea<6> has been
+   removed.
+WARNING:MapLib:701 - Signal web<6> connected to top level port web<6> has been
+   removed.
+WARNING:MapLib:701 - Signal douta<55> connected to top level port douta<55> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<54> connected to top level port douta<54> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<53> connected to top level port douta<53> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<52> connected to top level port douta<52> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<51> connected to top level port douta<51> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<50> connected to top level port douta<50> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<49> connected to top level port douta<49> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<48> connected to top level port douta<48> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<55> connected to top level port doutb<55> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<54> connected to top level port doutb<54> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<53> connected to top level port doutb<53> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<52> connected to top level port doutb<52> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<51> connected to top level port doutb<51> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<50> connected to top level port doutb<50> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<49> connected to top level port doutb<49> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<48> connected to top level port doutb<48> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<47> connected to top level port dina<47> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<46> connected to top level port dina<46> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<45> connected to top level port dina<45> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<44> connected to top level port dina<44> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<43> connected to top level port dina<43> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<42> connected to top level port dina<42> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<41> connected to top level port dina<41> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<40> connected to top level port dina<40> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<47> connected to top level port dinb<47> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<46> connected to top level port dinb<46> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<45> connected to top level port dinb<45> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<44> connected to top level port dinb<44> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<43> connected to top level port dinb<43> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<42> connected to top level port dinb<42> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<41> connected to top level port dinb<41> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<40> connected to top level port dinb<40> has
+   been removed.
+WARNING:MapLib:701 - Signal wea<5> connected to top level port wea<5> has been
+   removed.
+WARNING:MapLib:701 - Signal web<5> connected to top level port web<5> has been
+   removed.
+WARNING:MapLib:701 - Signal douta<47> connected to top level port douta<47> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<46> connected to top level port douta<46> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<45> connected to top level port douta<45> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<44> connected to top level port douta<44> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<43> connected to top level port douta<43> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<42> connected to top level port douta<42> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<41> connected to top level port douta<41> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<40> connected to top level port douta<40> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<47> connected to top level port doutb<47> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<46> connected to top level port doutb<46> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<45> connected to top level port doutb<45> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<44> connected to top level port doutb<44> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<43> connected to top level port doutb<43> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<42> connected to top level port doutb<42> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<41> connected to top level port doutb<41> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<40> connected to top level port doutb<40> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<39> connected to top level port dina<39> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<38> connected to top level port dina<38> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<37> connected to top level port dina<37> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<36> connected to top level port dina<36> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<35> connected to top level port dina<35> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<34> connected to top level port dina<34> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<33> connected to top level port dina<33> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<32> connected to top level port dina<32> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<39> connected to top level port dinb<39> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<38> connected to top level port dinb<38> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<37> connected to top level port dinb<37> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<36> connected to top level port dinb<36> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<35> connected to top level port dinb<35> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<34> connected to top level port dinb<34> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<33> connected to top level port dinb<33> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<32> connected to top level port dinb<32> has
+   been removed.
+WARNING:MapLib:701 - Signal wea<4> connected to top level port wea<4> has been
+   removed.
+WARNING:MapLib:701 - Signal web<4> connected to top level port web<4> has been
+   removed.
+WARNING:MapLib:701 - Signal douta<39> connected to top level port douta<39> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<38> connected to top level port douta<38> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<37> connected to top level port douta<37> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<36> connected to top level port douta<36> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<35> connected to top level port douta<35> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<34> connected to top level port douta<34> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<33> connected to top level port douta<33> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<32> connected to top level port douta<32> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<39> connected to top level port doutb<39> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<38> connected to top level port doutb<38> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<37> connected to top level port doutb<37> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<36> connected to top level port doutb<36> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<35> connected to top level port doutb<35> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<34> connected to top level port doutb<34> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<33> connected to top level port doutb<33> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<32> connected to top level port doutb<32> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<31> connected to top level port dina<31> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<30> connected to top level port dina<30> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<29> connected to top level port dina<29> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<28> connected to top level port dina<28> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<27> connected to top level port dina<27> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<26> connected to top level port dina<26> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<25> connected to top level port dina<25> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<24> connected to top level port dina<24> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<31> connected to top level port dinb<31> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<30> connected to top level port dinb<30> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<29> connected to top level port dinb<29> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<28> connected to top level port dinb<28> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<27> connected to top level port dinb<27> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<26> connected to top level port dinb<26> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<25> connected to top level port dinb<25> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<24> connected to top level port dinb<24> has
+   been removed.
+WARNING:MapLib:701 - Signal wea<3> connected to top level port wea<3> has been
+   removed.
+WARNING:MapLib:701 - Signal web<3> connected to top level port web<3> has been
+   removed.
+WARNING:MapLib:701 - Signal douta<31> connected to top level port douta<31> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<30> connected to top level port douta<30> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<29> connected to top level port douta<29> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<28> connected to top level port douta<28> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<27> connected to top level port douta<27> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<26> connected to top level port douta<26> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<25> connected to top level port douta<25> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<24> connected to top level port douta<24> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<31> connected to top level port doutb<31> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<30> connected to top level port doutb<30> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<29> connected to top level port doutb<29> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<28> connected to top level port doutb<28> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<27> connected to top level port doutb<27> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<26> connected to top level port doutb<26> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<25> connected to top level port doutb<25> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<24> connected to top level port doutb<24> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<23> connected to top level port dina<23> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<22> connected to top level port dina<22> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<21> connected to top level port dina<21> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<20> connected to top level port dina<20> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<19> connected to top level port dina<19> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<18> connected to top level port dina<18> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<17> connected to top level port dina<17> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<16> connected to top level port dina<16> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<23> connected to top level port dinb<23> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<22> connected to top level port dinb<22> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<21> connected to top level port dinb<21> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<20> connected to top level port dinb<20> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<19> connected to top level port dinb<19> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<18> connected to top level port dinb<18> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<17> connected to top level port dinb<17> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<16> connected to top level port dinb<16> has
+   been removed.
+WARNING:MapLib:701 - Signal wea<2> connected to top level port wea<2> has been
+   removed.
+WARNING:MapLib:701 - Signal web<2> connected to top level port web<2> has been
+   removed.
+WARNING:MapLib:701 - Signal douta<23> connected to top level port douta<23> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<22> connected to top level port douta<22> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<21> connected to top level port douta<21> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<20> connected to top level port douta<20> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<19> connected to top level port douta<19> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<18> connected to top level port douta<18> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<17> connected to top level port douta<17> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<16> connected to top level port douta<16> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<23> connected to top level port doutb<23> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<22> connected to top level port doutb<22> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<21> connected to top level port doutb<21> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<20> connected to top level port doutb<20> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<19> connected to top level port doutb<19> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<18> connected to top level port doutb<18> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<17> connected to top level port doutb<17> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<16> connected to top level port doutb<16> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<15> connected to top level port dina<15> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<14> connected to top level port dina<14> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<13> connected to top level port dina<13> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<12> connected to top level port dina<12> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<11> connected to top level port dina<11> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<10> connected to top level port dina<10> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<9> connected to top level port dina<9> has been
+   removed.
+WARNING:MapLib:701 - Signal dina<8> connected to top level port dina<8> has been
+   removed.
+WARNING:MapLib:701 - Signal dinb<15> connected to top level port dinb<15> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<14> connected to top level port dinb<14> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<13> connected to top level port dinb<13> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<12> connected to top level port dinb<12> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<11> connected to top level port dinb<11> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<10> connected to top level port dinb<10> has
+   been removed.
+WARNING:MapLib:701 - Signal dinb<9> connected to top level port dinb<9> has been
+   removed.
+WARNING:MapLib:701 - Signal dinb<8> connected to top level port dinb<8> has been
+   removed.
+WARNING:MapLib:701 - Signal wea<1> connected to top level port wea<1> has been
+   removed.
+WARNING:MapLib:701 - Signal web<1> connected to top level port web<1> has been
+   removed.
+WARNING:MapLib:701 - Signal douta<15> connected to top level port douta<15> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<14> connected to top level port douta<14> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<13> connected to top level port douta<13> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<12> connected to top level port douta<12> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<11> connected to top level port douta<11> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<10> connected to top level port douta<10> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<9> connected to top level port douta<9> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<8> connected to top level port douta<8> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<15> connected to top level port doutb<15> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<14> connected to top level port doutb<14> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<13> connected to top level port doutb<13> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<12> connected to top level port doutb<12> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<11> connected to top level port doutb<11> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<10> connected to top level port doutb<10> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<9> connected to top level port doutb<9> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<8> connected to top level port doutb<8> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<7> connected to top level port dina<7> has been
+   removed.
+WARNING:MapLib:701 - Signal dina<6> connected to top level port dina<6> has been
+   removed.
+WARNING:MapLib:701 - Signal dina<5> connected to top level port dina<5> has been
+   removed.
+WARNING:MapLib:701 - Signal dina<4> connected to top level port dina<4> has been
+   removed.
+WARNING:MapLib:701 - Signal dina<3> connected to top level port dina<3> has been
+   removed.
+WARNING:MapLib:701 - Signal dina<2> connected to top level port dina<2> has been
+   removed.
+WARNING:MapLib:701 - Signal dina<1> connected to top level port dina<1> has been
+   removed.
+WARNING:MapLib:701 - Signal dina<0> connected to top level port dina<0> has been
+   removed.
+WARNING:MapLib:701 - Signal dinb<7> connected to top level port dinb<7> has been
+   removed.
+WARNING:MapLib:701 - Signal dinb<6> connected to top level port dinb<6> has been
+   removed.
+WARNING:MapLib:701 - Signal dinb<5> connected to top level port dinb<5> has been
+   removed.
+WARNING:MapLib:701 - Signal dinb<4> connected to top level port dinb<4> has been
+   removed.
+WARNING:MapLib:701 - Signal dinb<3> connected to top level port dinb<3> has been
+   removed.
+WARNING:MapLib:701 - Signal dinb<2> connected to top level port dinb<2> has been
+   removed.
+WARNING:MapLib:701 - Signal dinb<1> connected to top level port dinb<1> has been
+   removed.
+WARNING:MapLib:701 - Signal dinb<0> connected to top level port dinb<0> has been
+   removed.
+WARNING:MapLib:701 - Signal wea<0> connected to top level port wea<0> has been
+   removed.
+WARNING:MapLib:701 - Signal web<0> connected to top level port web<0> has been
+   removed.
+WARNING:MapLib:701 - Signal douta<7> connected to top level port douta<7> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<6> connected to top level port douta<6> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<5> connected to top level port douta<5> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<4> connected to top level port douta<4> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<3> connected to top level port douta<3> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<2> connected to top level port douta<2> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<1> connected to top level port douta<1> has
+   been removed.
+WARNING:MapLib:701 - Signal douta<0> connected to top level port douta<0> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<7> connected to top level port doutb<7> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<6> connected to top level port doutb<6> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<5> connected to top level port doutb<5> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<4> connected to top level port doutb<4> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<3> connected to top level port doutb<3> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<2> connected to top level port doutb<2> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<1> connected to top level port doutb<1> has
+   been removed.
+WARNING:MapLib:701 - Signal doutb<0> connected to top level port doutb<0> has
+   been removed.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network doutb<0> has no load.
+INFO:LIT:395 - The above info message is repeated 127 more times for the
+   following (max. 5 shown):
+   doutb<1>,
+   doutb<2>,
+   doutb<3>,
+   doutb<4>,
+   doutb<5>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 0.950 Volts. (default - Range: 0.950 to
+   1.050 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  10 block(s) removed
+ 300 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "doutb<0>" is loadless and has been removed.
+The signal "doutb<1>" is loadless and has been removed.
+The signal "doutb<2>" is loadless and has been removed.
+The signal "doutb<3>" is loadless and has been removed.
+The signal "doutb<4>" is loadless and has been removed.
+The signal "doutb<5>" is loadless and has been removed.
+The signal "doutb<6>" is loadless and has been removed.
+The signal "doutb<7>" is loadless and has been removed.
+The signal "doutb<8>" is loadless and has been removed.
+The signal "doutb<9>" is loadless and has been removed.
+The signal "doutb<10>" is loadless and has been removed.
+The signal "doutb<11>" is loadless and has been removed.
+The signal "doutb<12>" is loadless and has been removed.
+The signal "doutb<13>" is loadless and has been removed.
+The signal "doutb<14>" is loadless and has been removed.
+The signal "doutb<15>" is loadless and has been removed.
+The signal "doutb<16>" is loadless and has been removed.
+The signal "doutb<17>" is loadless and has been removed.
+The signal "doutb<18>" is loadless and has been removed.
+The signal "doutb<19>" is loadless and has been removed.
+The signal "doutb<20>" is loadless and has been removed.
+The signal "doutb<21>" is loadless and has been removed.
+The signal "doutb<22>" is loadless and has been removed.
+The signal "doutb<23>" is loadless and has been removed.
+The signal "doutb<24>" is loadless and has been removed.
+The signal "doutb<25>" is loadless and has been removed.
+The signal "doutb<26>" is loadless and has been removed.
+The signal "doutb<27>" is loadless and has been removed.
+The signal "doutb<28>" is loadless and has been removed.
+The signal "doutb<29>" is loadless and has been removed.
+The signal "doutb<30>" is loadless and has been removed.
+The signal "doutb<31>" is loadless and has been removed.
+The signal "doutb<32>" is loadless and has been removed.
+The signal "doutb<33>" is loadless and has been removed.
+The signal "doutb<34>" is loadless and has been removed.
+The signal "doutb<35>" is loadless and has been removed.
+The signal "doutb<36>" is loadless and has been removed.
+The signal "doutb<37>" is loadless and has been removed.
+The signal "doutb<38>" is loadless and has been removed.
+The signal "doutb<39>" is loadless and has been removed.
+The signal "doutb<40>" is loadless and has been removed.
+The signal "doutb<41>" is loadless and has been removed.
+The signal "doutb<42>" is loadless and has been removed.
+The signal "doutb<43>" is loadless and has been removed.
+The signal "doutb<44>" is loadless and has been removed.
+The signal "doutb<45>" is loadless and has been removed.
+The signal "doutb<46>" is loadless and has been removed.
+The signal "doutb<47>" is loadless and has been removed.
+The signal "doutb<48>" is loadless and has been removed.
+The signal "doutb<49>" is loadless and has been removed.
+The signal "doutb<50>" is loadless and has been removed.
+The signal "doutb<51>" is loadless and has been removed.
+The signal "doutb<52>" is loadless and has been removed.
+The signal "doutb<53>" is loadless and has been removed.
+The signal "doutb<54>" is loadless and has been removed.
+The signal "doutb<55>" is loadless and has been removed.
+The signal "doutb<56>" is loadless and has been removed.
+The signal "doutb<57>" is loadless and has been removed.
+The signal "doutb<58>" is loadless and has been removed.
+The signal "doutb<59>" is loadless and has been removed.
+The signal "doutb<60>" is loadless and has been removed.
+The signal "doutb<61>" is loadless and has been removed.
+The signal "doutb<62>" is loadless and has been removed.
+The signal "doutb<63>" is loadless and has been removed.
+The signal "douta<0>" is loadless and has been removed.
+The signal "douta<1>" is loadless and has been removed.
+The signal "douta<2>" is loadless and has been removed.
+The signal "douta<3>" is loadless and has been removed.
+The signal "douta<4>" is loadless and has been removed.
+The signal "douta<5>" is loadless and has been removed.
+The signal "douta<6>" is loadless and has been removed.
+The signal "douta<7>" is loadless and has been removed.
+The signal "douta<8>" is loadless and has been removed.
+The signal "douta<9>" is loadless and has been removed.
+The signal "douta<10>" is loadless and has been removed.
+The signal "douta<11>" is loadless and has been removed.
+The signal "douta<12>" is loadless and has been removed.
+The signal "douta<13>" is loadless and has been removed.
+The signal "douta<14>" is loadless and has been removed.
+The signal "douta<15>" is loadless and has been removed.
+The signal "douta<16>" is loadless and has been removed.
+The signal "douta<17>" is loadless and has been removed.
+The signal "douta<18>" is loadless and has been removed.
+The signal "douta<19>" is loadless and has been removed.
+The signal "douta<20>" is loadless and has been removed.
+The signal "douta<21>" is loadless and has been removed.
+The signal "douta<22>" is loadless and has been removed.
+The signal "douta<23>" is loadless and has been removed.
+The signal "douta<24>" is loadless and has been removed.
+The signal "douta<25>" is loadless and has been removed.
+The signal "douta<26>" is loadless and has been removed.
+The signal "douta<27>" is loadless and has been removed.
+The signal "douta<28>" is loadless and has been removed.
+The signal "douta<29>" is loadless and has been removed.
+The signal "douta<30>" is loadless and has been removed.
+The signal "douta<31>" is loadless and has been removed.
+The signal "douta<32>" is loadless and has been removed.
+The signal "douta<33>" is loadless and has been removed.
+The signal "douta<34>" is loadless and has been removed.
+The signal "douta<35>" is loadless and has been removed.
+The signal "douta<36>" is loadless and has been removed.
+The signal "douta<37>" is loadless and has been removed.
+The signal "douta<38>" is loadless and has been removed.
+The signal "douta<39>" is loadless and has been removed.
+The signal "douta<40>" is loadless and has been removed.
+The signal "douta<41>" is loadless and has been removed.
+The signal "douta<42>" is loadless and has been removed.
+The signal "douta<43>" is loadless and has been removed.
+The signal "douta<44>" is loadless and has been removed.
+The signal "douta<45>" is loadless and has been removed.
+The signal "douta<46>" is loadless and has been removed.
+The signal "douta<47>" is loadless and has been removed.
+The signal "douta<48>" is loadless and has been removed.
+The signal "douta<49>" is loadless and has been removed.
+The signal "douta<50>" is loadless and has been removed.
+The signal "douta<51>" is loadless and has been removed.
+The signal "douta<52>" is loadless and has been removed.
+The signal "douta<53>" is loadless and has been removed.
+The signal "douta<54>" is loadless and has been removed.
+The signal "douta<55>" is loadless and has been removed.
+The signal "douta<56>" is loadless and has been removed.
+The signal "douta<57>" is loadless and has been removed.
+The signal "douta<58>" is loadless and has been removed.
+The signal "douta<59>" is loadless and has been removed.
+The signal "douta<60>" is loadless and has been removed.
+The signal "douta<61>" is loadless and has been removed.
+The signal "douta<62>" is loadless and has been removed.
+The signal "douta<63>" is loadless and has been removed.
+The signal "clkb" is sourceless and has been removed.
+The signal "clka" is sourceless and has been removed.
+The signal "dinb<0>" is sourceless and has been removed.
+The signal "dinb<1>" is sourceless and has been removed.
+The signal "dinb<2>" is sourceless and has been removed.
+The signal "dinb<3>" is sourceless and has been removed.
+The signal "dinb<4>" is sourceless and has been removed.
+The signal "dinb<5>" is sourceless and has been removed.
+The signal "dinb<6>" is sourceless and has been removed.
+The signal "dinb<7>" is sourceless and has been removed.
+The signal "dinb<8>" is sourceless and has been removed.
+The signal "dinb<9>" is sourceless and has been removed.
+The signal "dinb<10>" is sourceless and has been removed.
+The signal "dinb<11>" is sourceless and has been removed.
+The signal "dinb<12>" is sourceless and has been removed.
+The signal "dinb<13>" is sourceless and has been removed.
+The signal "dinb<14>" is sourceless and has been removed.
+The signal "dinb<15>" is sourceless and has been removed.
+The signal "dinb<16>" is sourceless and has been removed.
+The signal "dinb<17>" is sourceless and has been removed.
+The signal "dinb<18>" is sourceless and has been removed.
+The signal "dinb<19>" is sourceless and has been removed.
+The signal "dinb<20>" is sourceless and has been removed.
+The signal "dinb<21>" is sourceless and has been removed.
+The signal "dinb<22>" is sourceless and has been removed.
+The signal "dinb<23>" is sourceless and has been removed.
+The signal "dinb<24>" is sourceless and has been removed.
+The signal "dinb<25>" is sourceless and has been removed.
+The signal "dinb<26>" is sourceless and has been removed.
+The signal "dinb<27>" is sourceless and has been removed.
+The signal "dinb<28>" is sourceless and has been removed.
+The signal "dinb<29>" is sourceless and has been removed.
+The signal "dinb<30>" is sourceless and has been removed.
+The signal "dinb<31>" is sourceless and has been removed.
+The signal "dinb<32>" is sourceless and has been removed.
+The signal "dinb<33>" is sourceless and has been removed.
+The signal "dinb<34>" is sourceless and has been removed.
+The signal "dinb<35>" is sourceless and has been removed.
+The signal "dinb<36>" is sourceless and has been removed.
+The signal "dinb<37>" is sourceless and has been removed.
+The signal "dinb<38>" is sourceless and has been removed.
+The signal "dinb<39>" is sourceless and has been removed.
+The signal "dinb<40>" is sourceless and has been removed.
+The signal "dinb<41>" is sourceless and has been removed.
+The signal "dinb<42>" is sourceless and has been removed.
+The signal "dinb<43>" is sourceless and has been removed.
+The signal "dinb<44>" is sourceless and has been removed.
+The signal "dinb<45>" is sourceless and has been removed.
+The signal "dinb<46>" is sourceless and has been removed.
+The signal "dinb<47>" is sourceless and has been removed.
+The signal "dinb<48>" is sourceless and has been removed.
+The signal "dinb<49>" is sourceless and has been removed.
+The signal "dinb<50>" is sourceless and has been removed.
+The signal "dinb<51>" is sourceless and has been removed.
+The signal "dinb<52>" is sourceless and has been removed.
+The signal "dinb<53>" is sourceless and has been removed.
+The signal "dinb<54>" is sourceless and has been removed.
+The signal "dinb<55>" is sourceless and has been removed.
+The signal "dinb<56>" is sourceless and has been removed.
+The signal "dinb<57>" is sourceless and has been removed.
+The signal "dinb<58>" is sourceless and has been removed.
+The signal "dinb<59>" is sourceless and has been removed.
+The signal "dinb<60>" is sourceless and has been removed.
+The signal "dinb<61>" is sourceless and has been removed.
+The signal "dinb<62>" is sourceless and has been removed.
+The signal "dinb<63>" is sourceless and has been removed.
+The signal "addrb<0>" is sourceless and has been removed.
+The signal "addrb<1>" is sourceless and has been removed.
+The signal "addrb<2>" is sourceless and has been removed.
+The signal "addrb<3>" is sourceless and has been removed.
+The signal "addrb<4>" is sourceless and has been removed.
+The signal "addrb<5>" is sourceless and has been removed.
+The signal "addrb<6>" is sourceless and has been removed.
+The signal "addrb<7>" is sourceless and has been removed.
+The signal "addrb<8>" is sourceless and has been removed.
+The signal "addrb<9>" is sourceless and has been removed.
+The signal "addrb<10>" is sourceless and has been removed.
+The signal "addrb<11>" is sourceless and has been removed.
+The signal "web<0>" is sourceless and has been removed.
+The signal "web<1>" is sourceless and has been removed.
+The signal "web<2>" is sourceless and has been removed.
+The signal "web<3>" is sourceless and has been removed.
+The signal "web<4>" is sourceless and has been removed.
+The signal "web<5>" is sourceless and has been removed.
+The signal "web<6>" is sourceless and has been removed.
+The signal "web<7>" is sourceless and has been removed.
+The signal "dina<0>" is sourceless and has been removed.
+The signal "dina<1>" is sourceless and has been removed.
+The signal "dina<2>" is sourceless and has been removed.
+The signal "dina<3>" is sourceless and has been removed.
+The signal "dina<4>" is sourceless and has been removed.
+The signal "dina<5>" is sourceless and has been removed.
+The signal "dina<6>" is sourceless and has been removed.
+The signal "dina<7>" is sourceless and has been removed.
+The signal "dina<8>" is sourceless and has been removed.
+The signal "dina<9>" is sourceless and has been removed.
+The signal "dina<10>" is sourceless and has been removed.
+The signal "dina<11>" is sourceless and has been removed.
+The signal "dina<12>" is sourceless and has been removed.
+The signal "dina<13>" is sourceless and has been removed.
+The signal "dina<14>" is sourceless and has been removed.
+The signal "dina<15>" is sourceless and has been removed.
+The signal "dina<16>" is sourceless and has been removed.
+The signal "dina<17>" is sourceless and has been removed.
+The signal "dina<18>" is sourceless and has been removed.
+The signal "dina<19>" is sourceless and has been removed.
+The signal "dina<20>" is sourceless and has been removed.
+The signal "dina<21>" is sourceless and has been removed.
+The signal "dina<22>" is sourceless and has been removed.
+The signal "dina<23>" is sourceless and has been removed.
+The signal "dina<24>" is sourceless and has been removed.
+The signal "dina<25>" is sourceless and has been removed.
+The signal "dina<26>" is sourceless and has been removed.
+The signal "dina<27>" is sourceless and has been removed.
+The signal "dina<28>" is sourceless and has been removed.
+The signal "dina<29>" is sourceless and has been removed.
+The signal "dina<30>" is sourceless and has been removed.
+The signal "dina<31>" is sourceless and has been removed.
+The signal "dina<32>" is sourceless and has been removed.
+The signal "dina<33>" is sourceless and has been removed.
+The signal "dina<34>" is sourceless and has been removed.
+The signal "dina<35>" is sourceless and has been removed.
+The signal "dina<36>" is sourceless and has been removed.
+The signal "dina<37>" is sourceless and has been removed.
+The signal "dina<38>" is sourceless and has been removed.
+The signal "dina<39>" is sourceless and has been removed.
+The signal "dina<40>" is sourceless and has been removed.
+The signal "dina<41>" is sourceless and has been removed.
+The signal "dina<42>" is sourceless and has been removed.
+The signal "dina<43>" is sourceless and has been removed.
+The signal "dina<44>" is sourceless and has been removed.
+The signal "dina<45>" is sourceless and has been removed.
+The signal "dina<46>" is sourceless and has been removed.
+The signal "dina<47>" is sourceless and has been removed.
+The signal "dina<48>" is sourceless and has been removed.
+The signal "dina<49>" is sourceless and has been removed.
+The signal "dina<50>" is sourceless and has been removed.
+The signal "dina<51>" is sourceless and has been removed.
+The signal "dina<52>" is sourceless and has been removed.
+The signal "dina<53>" is sourceless and has been removed.
+The signal "dina<54>" is sourceless and has been removed.
+The signal "dina<55>" is sourceless and has been removed.
+The signal "dina<56>" is sourceless and has been removed.
+The signal "dina<57>" is sourceless and has been removed.
+The signal "dina<58>" is sourceless and has been removed.
+The signal "dina<59>" is sourceless and has been removed.
+The signal "dina<60>" is sourceless and has been removed.
+The signal "dina<61>" is sourceless and has been removed.
+The signal "dina<62>" is sourceless and has been removed.
+The signal "dina<63>" is sourceless and has been removed.
+The signal "addra<0>" is sourceless and has been removed.
+The signal "addra<1>" is sourceless and has been removed.
+The signal "addra<2>" is sourceless and has been removed.
+The signal "addra<3>" is sourceless and has been removed.
+The signal "addra<4>" is sourceless and has been removed.
+The signal "addra<5>" is sourceless and has been removed.
+The signal "addra<6>" is sourceless and has been removed.
+The signal "addra<7>" is sourceless and has been removed.
+The signal "addra<8>" is sourceless and has been removed.
+The signal "addra<9>" is sourceless and has been removed.
+The signal "addra<10>" is sourceless and has been removed.
+The signal "addra<11>" is sourceless and has been removed.
+The signal "wea<0>" is sourceless and has been removed.
+The signal "wea<1>" is sourceless and has been removed.
+The signal "wea<2>" is sourceless and has been removed.
+The signal "wea<3>" is sourceless and has been removed.
+The signal "wea<4>" is sourceless and has been removed.
+The signal "wea<5>" is sourceless and has been removed.
+The signal "wea<6>" is sourceless and has been removed.
+The signal "wea<7>" is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "N0" is unused and has been removed.
+ Unused block "XST_VCC" (ONE) removed.
+The signal "N1" is unused and has been removed.
+ Unused block "XST_GND" (ZERO) removed.
+Unused block
+"U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ra
+m.r/v6_noinit.ram/TRUE_DP.SIMPLE_PRIM36.ram" (RAMB36E1) removed.
+Unused block
+"U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ra
+m.r/v6_noinit.ram/TRUE_DP.SIMPLE_PRIM36.ram" (RAMB36E1) removed.
+Unused block
+"U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ra
+m.r/v6_noinit.ram/TRUE_DP.SIMPLE_PRIM36.ram" (RAMB36E1) removed.
+Unused block
+"U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ra
+m.r/v6_noinit.ram/TRUE_DP.SIMPLE_PRIM36.ram" (RAMB36E1) removed.
+Unused block
+"U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ra
+m.r/v6_noinit.ram/TRUE_DP.SIMPLE_PRIM36.ram" (RAMB36E1) removed.
+Unused block
+"U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ra
+m.r/v6_noinit.ram/TRUE_DP.SIMPLE_PRIM36.ram" (RAMB36E1) removed.
+Unused block
+"U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ra
+m.r/v6_noinit.ram/TRUE_DP.SIMPLE_PRIM36.ram" (RAMB36E1) removed.
+Unused block
+"U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ra
+m.r/v6_noinit.ram/TRUE_DP.SIMPLE_PRIM36.ram" (RAMB36E1) removed.
+
+Section 6 - IOB Properties
+--------------------------
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.
