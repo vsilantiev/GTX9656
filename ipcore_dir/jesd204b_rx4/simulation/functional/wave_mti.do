@@ -69,6 +69,13 @@ add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/gt2_frame
 add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/gt2_frame_check/start_of_packet_detected_r
 add wave -noupdate -format Logic -radix hexadecimal /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/gt2_frame_check/RX_DATA_IN
 add wave -noupdate -format Logic -radix hexadecimal /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/gt2_frame_check/ERROR_COUNT_OUT
+add wave -noupdate -divider {FRAME CHECK MODULE gt3_frame_check }
+add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/gt3_frame_check/begin_r
+add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/gt3_frame_check/track_data_r
+add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/gt3_frame_check/data_error_detected_r
+add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/gt3_frame_check/start_of_packet_detected_r
+add wave -noupdate -format Logic -radix hexadecimal /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/gt3_frame_check/RX_DATA_IN
+add wave -noupdate -format Logic -radix hexadecimal /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/gt3_frame_check/ERROR_COUNT_OUT
 add wave -noupdate -divider {GT0_jesd204b_rx4 }
 add wave -noupdate -divider {Channel - DRP Ports  }
 add wave -noupdate -format Literal -radix hexadecimal /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt0_jesd204b_rx4_i/DRPADDR_IN
@@ -101,9 +108,6 @@ add wave -noupdate -format Literal -radix hexadecimal /jesd204b_rx4_TB/jesd204b_
 add wave -noupdate -divider {Receive Ports - RX AFE Ports }
 add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt0_jesd204b_rx4_i/GTPRXN_IN
 add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt0_jesd204b_rx4_i/GTPRXP_IN
-add wave -noupdate -divider {Receive Ports - RX Byte and Word Alignment Ports }
-add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt0_jesd204b_rx4_i/RXMCOMMAALIGNEN_IN
-add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt0_jesd204b_rx4_i/RXPCOMMAALIGNEN_IN
 add wave -noupdate -divider {Receive Ports - RX Equailizer Ports }
 add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt0_jesd204b_rx4_i/RXLPMHFHOLD_IN
 add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt0_jesd204b_rx4_i/RXLPMLFHOLD_IN
@@ -150,9 +154,6 @@ add wave -noupdate -format Literal -radix hexadecimal /jesd204b_rx4_TB/jesd204b_
 add wave -noupdate -divider {Receive Ports - RX AFE Ports }
 add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt1_jesd204b_rx4_i/GTPRXN_IN
 add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt1_jesd204b_rx4_i/GTPRXP_IN
-add wave -noupdate -divider {Receive Ports - RX Byte and Word Alignment Ports }
-add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt1_jesd204b_rx4_i/RXMCOMMAALIGNEN_IN
-add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt1_jesd204b_rx4_i/RXPCOMMAALIGNEN_IN
 add wave -noupdate -divider {Receive Ports - RX Equailizer Ports }
 add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt1_jesd204b_rx4_i/RXLPMHFHOLD_IN
 add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt1_jesd204b_rx4_i/RXLPMLFHOLD_IN
@@ -199,9 +200,6 @@ add wave -noupdate -format Literal -radix hexadecimal /jesd204b_rx4_TB/jesd204b_
 add wave -noupdate -divider {Receive Ports - RX AFE Ports }
 add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt2_jesd204b_rx4_i/GTPRXN_IN
 add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt2_jesd204b_rx4_i/GTPRXP_IN
-add wave -noupdate -divider {Receive Ports - RX Byte and Word Alignment Ports }
-add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt2_jesd204b_rx4_i/RXMCOMMAALIGNEN_IN
-add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt2_jesd204b_rx4_i/RXPCOMMAALIGNEN_IN
 add wave -noupdate -divider {Receive Ports - RX Equailizer Ports }
 add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt2_jesd204b_rx4_i/RXLPMHFHOLD_IN
 add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt2_jesd204b_rx4_i/RXLPMLFHOLD_IN
@@ -215,6 +213,52 @@ add wave -noupdate -divider {TX Initialization and Reset Ports }
 add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt2_jesd204b_rx4_i/GTTXRESET_IN
 add wave -noupdate -divider {Transmit Ports - TX Initialization and Reset Ports }
 add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt2_jesd204b_rx4_i/TXPCSRESET_IN
+
+add wave -noupdate -divider {GT3_jesd204b_rx4 }
+add wave -noupdate -divider {Channel - DRP Ports  }
+add wave -noupdate -format Literal -radix hexadecimal /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/DRPADDR_IN
+add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/DRPCLK_IN
+add wave -noupdate -format Literal -radix hexadecimal /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/DRPDI_IN
+add wave -noupdate -format Literal -radix hexadecimal /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/DRPDO_OUT
+add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/DRPEN_IN
+add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/DRPRDY_OUT
+add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/DRPWE_IN
+add wave -noupdate -divider {GTPE2_CHANNEL Clocking Ports }
+add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/PLL0CLK_IN
+add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/PLL0REFCLK_IN
+add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/PLL1CLK_IN
+add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/PLL1REFCLK_IN
+add wave -noupdate -divider {RX Initialization and Reset Ports }
+add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/RXUSERRDY_IN
+add wave -noupdate -divider {RX Margin Analysis Ports }
+add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/EYESCANDATAERROR_OUT
+add wave -noupdate -divider {Receive Ports - CDR Ports }
+add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/RXCDRLOCK_OUT
+add wave -noupdate -divider {Receive Ports - FPGA RX Interface Ports }
+add wave -noupdate -format Literal -radix hexadecimal /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/RXDATA_OUT
+add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/RXUSRCLK_IN
+add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/RXUSRCLK2_IN
+add wave -noupdate -divider {Receive Ports - RX 8B/10B Decoder Ports }
+add wave -noupdate -format Literal -radix hexadecimal /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/RXCHARISCOMMA_OUT
+add wave -noupdate -format Literal -radix hexadecimal /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/RXCHARISK_OUT
+add wave -noupdate -format Literal -radix hexadecimal /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/RXDISPERR_OUT
+add wave -noupdate -format Literal -radix hexadecimal /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/RXNOTINTABLE_OUT
+add wave -noupdate -divider {Receive Ports - RX AFE Ports }
+add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/GTPRXN_IN
+add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/GTPRXP_IN
+add wave -noupdate -divider {Receive Ports - RX Equailizer Ports }
+add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/RXLPMHFHOLD_IN
+add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/RXLPMLFHOLD_IN
+add wave -noupdate -divider {Receive Ports - RX Fabric Output Control Ports }
+add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/RXOUTCLK_OUT
+add wave -noupdate -divider {Receive Ports - RX Initialization and Reset Ports }
+add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/GTRXRESET_IN
+add wave -noupdate -divider {Receive Ports -RX Initialization and Reset Ports }
+add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/RXRESETDONE_OUT
+add wave -noupdate -divider {TX Initialization and Reset Ports }
+add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/GTTXRESET_IN
+add wave -noupdate -divider {Transmit Ports - TX Initialization and Reset Ports }
+add wave -noupdate -format Logic /jesd204b_rx4_TB/jesd204b_rx4_exdes_i/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/TXPCSRESET_IN
 
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {0 ps} 0}

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-01-30T10:29:22</DateModified>
+  <DateModified>2015-01-30T15:37:20</DateModified>
   <ModuleName>jesd204b_rx4_exdes</ModuleName>
   <SummaryTimeStamp>2015-01-29T16:18:33</SummaryTimeStamp>
   <SavedFilePath>/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/iseconfig/jesd204b_rx4_TX_STARTUP_FSM.xreport</SavedFilePath>
   <ImplementationReportsDirectory>/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/</ImplementationReportsDirectory>
-  <DateInitialized>2015-01-30T10:29:22</DateInitialized>
+  <DateInitialized>2015-01-30T15:37:20</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

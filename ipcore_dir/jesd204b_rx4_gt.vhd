@@ -112,9 +112,6 @@ port
     ------------------------ Receive Ports - RX AFE Ports ----------------------
     GTPRXN_IN                               : in   std_logic;
     GTPRXP_IN                               : in   std_logic;
-    -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
-    RXMCOMMAALIGNEN_IN                      : in   std_logic;
-    RXPCOMMAALIGNEN_IN                      : in   std_logic;
     -------------------- Receive Ports - RX Equailizer Ports -------------------
     RXLPMHFHOLD_IN                          : in   std_logic;
     RXLPMLFHOLD_IN                          : in   std_logic;
@@ -711,8 +708,8 @@ begin
         RXBYTEREALIGN                   =>      open,
         RXCOMMADET                      =>      open,
         RXCOMMADETEN                    =>      tied_to_vcc_i,
-        RXMCOMMAALIGNEN                 =>      RXMCOMMAALIGNEN_IN,
-        RXPCOMMAALIGNEN                 =>      RXPCOMMAALIGNEN_IN,
+        RXMCOMMAALIGNEN                 =>      tied_to_vcc_i,
+        RXPCOMMAALIGNEN                 =>      tied_to_vcc_i,
         RXSLIDE                         =>      tied_to_ground_i,
         ------------------ Receive Ports - RX Channel Bonding Ports ----------------
         RXCHANBONDSEQ                   =>      open,
@@ -751,7 +748,7 @@ begin
         RXOUTCLK                        =>      RXOUTCLK_OUT,
         RXOUTCLKFABRIC                  =>      open,
         RXOUTCLKPCS                     =>      open,
-        RXOUTCLKSEL                     =>      "010",
+        RXOUTCLKSEL                     =>      "011",
         ---------------------- Receive Ports - RX Gearbox Ports --------------------
         RXDATAVALID                     =>      open,
         RXHEADER                        =>      open,

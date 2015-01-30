@@ -86,6 +86,13 @@
   gui_sg_addsignal -group jesd204b_rx4_Group {:jesd204b_rx4_exdes_i:gt2_frame_check:start_of_packet_detected_r}
   gui_sg_addsignal -group jesd204b_rx4_Group {:jesd204b_rx4_exdes_i:gt2_frame_check:RX_DATA}
   gui_sg_addsignal -group jesd204b_rx4_Group {:jesd204b_rx4_exdes_i:gt2_frame_check:ERROR_COUNT}
+  gui_sg_addsignal -group jesd204b_rx4_Group {{FRAME_CHECK_MODULE}} -divider
+  gui_sg_addsignal -group jesd204b_rx4_Group {:jesd204b_rx4_exdes_i:gt3_frame_check:begin_r}
+  gui_sg_addsignal -group jesd204b_rx4_Group {:jesd204b_rx4_exdes_i:gt3_frame_check:track_data_r}
+  gui_sg_addsignal -group jesd204b_rx4_Group {:jesd204b_rx4_exdes_i:gt3_frame_check:data_error_detected_r}
+  gui_sg_addsignal -group jesd204b_rx4_Group {:jesd204b_rx4_exdes_i:gt3_frame_check:start_of_packet_detected_r}
+  gui_sg_addsignal -group jesd204b_rx4_Group {:jesd204b_rx4_exdes_i:gt3_frame_check:RX_DATA}
+  gui_sg_addsignal -group jesd204b_rx4_Group {:jesd204b_rx4_exdes_i:gt3_frame_check:ERROR_COUNT}
   gui_sg_addsignal -group jesd204b_rx4_Group {{GT0_jesd204b_rx4}} -divider
   gui_sg_addsignal -group jesd204b_rx4_Group {{Channel - DRP Ports }} -divider
   gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt0_jesd204b_rx4_i.DRPADDR_IN}
@@ -118,9 +125,6 @@
   gui_sg_addsignal -group jesd204b_rx4_Group {{Receive Ports - RX AFE Ports}} -divider
   gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt0_jesd204b_rx4_i.GTPRXN_IN}
   gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt0_jesd204b_rx4_i.GTPRXP_IN}
-  gui_sg_addsignal -group jesd204b_rx4_Group {{Receive Ports - RX Byte and Word Alignment Ports}} -divider
-  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt0_jesd204b_rx4_i.RXMCOMMAALIGNEN_IN}
-  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt0_jesd204b_rx4_i.RXPCOMMAALIGNEN_IN}
   gui_sg_addsignal -group jesd204b_rx4_Group {{Receive Ports - RX Equailizer Ports}} -divider
   gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt0_jesd204b_rx4_i.RXLPMHFHOLD_IN}
   gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt0_jesd204b_rx4_i.RXLPMLFHOLD_IN}
@@ -167,9 +171,6 @@
   gui_sg_addsignal -group jesd204b_rx4_Group {{Receive Ports - RX AFE Ports}} -divider
   gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt1_jesd204b_rx4_i.GTPRXN_IN}
   gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt1_jesd204b_rx4_i.GTPRXP_IN}
-  gui_sg_addsignal -group jesd204b_rx4_Group {{Receive Ports - RX Byte and Word Alignment Ports}} -divider
-  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt1_jesd204b_rx4_i.RXMCOMMAALIGNEN_IN}
-  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt1_jesd204b_rx4_i.RXPCOMMAALIGNEN_IN}
   gui_sg_addsignal -group jesd204b_rx4_Group {{Receive Ports - RX Equailizer Ports}} -divider
   gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt1_jesd204b_rx4_i.RXLPMHFHOLD_IN}
   gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt1_jesd204b_rx4_i.RXLPMLFHOLD_IN}
@@ -216,9 +217,6 @@
   gui_sg_addsignal -group jesd204b_rx4_Group {{Receive Ports - RX AFE Ports}} -divider
   gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.GTPRXN_IN}
   gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.GTPRXP_IN}
-  gui_sg_addsignal -group jesd204b_rx4_Group {{Receive Ports - RX Byte and Word Alignment Ports}} -divider
-  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.RXMCOMMAALIGNEN_IN}
-  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.RXPCOMMAALIGNEN_IN}
   gui_sg_addsignal -group jesd204b_rx4_Group {{Receive Ports - RX Equailizer Ports}} -divider
   gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.RXLPMHFHOLD_IN}
   gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.RXLPMLFHOLD_IN}
@@ -232,6 +230,52 @@
   gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.GTTXRESET_IN}
   gui_sg_addsignal -group jesd204b_rx4_Group {{Transmit Ports - TX Initialization and Reset Ports}} -divider
   gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.TXPCSRESET_IN}
+
+  gui_sg_addsignal -group jesd204b_rx4_Group {{GT3_jesd204b_rx4}} -divider
+  gui_sg_addsignal -group jesd204b_rx4_Group {{Channel - DRP Ports }} -divider
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.DRPADDR_IN}
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.DRPCLK_IN}
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.DRPDI_IN}
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.DRPDO_OUT}
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.DRPEN_IN}
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.DRPRDY_OUT}
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.DRPWE_IN}
+  gui_sg_addsignal -group jesd204b_rx4_Group {{GTPE2_CHANNEL Clocking Ports}} -divider
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.PLL0CLK_IN}
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.PLL0REFCLK_IN}
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.PLL1CLK_IN}
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.PLL1REFCLK_IN}
+  gui_sg_addsignal -group jesd204b_rx4_Group {{RX Initialization and Reset Ports}} -divider
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.RXUSERRDY_IN}
+  gui_sg_addsignal -group jesd204b_rx4_Group {{RX Margin Analysis Ports}} -divider
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.EYESCANDATAERROR_OUT}
+  gui_sg_addsignal -group jesd204b_rx4_Group {{Receive Ports - CDR Ports}} -divider
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.RXCDRLOCK_OUT}
+  gui_sg_addsignal -group jesd204b_rx4_Group {{Receive Ports - FPGA RX Interface Ports}} -divider
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.RXDATA_OUT}
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.RXUSRCLK_IN}
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.RXUSRCLK2_IN}
+  gui_sg_addsignal -group jesd204b_rx4_Group {{Receive Ports - RX 8B/10B Decoder Ports}} -divider
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.RXCHARISCOMMA_OUT}
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.RXCHARISK_OUT}
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.RXDISPERR_OUT}
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.RXNOTINTABLE_OUT}
+  gui_sg_addsignal -group jesd204b_rx4_Group {{Receive Ports - RX AFE Ports}} -divider
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.GTPRXN_IN}
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.GTPRXP_IN}
+  gui_sg_addsignal -group jesd204b_rx4_Group {{Receive Ports - RX Equailizer Ports}} -divider
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.RXLPMHFHOLD_IN}
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.RXLPMLFHOLD_IN}
+  gui_sg_addsignal -group jesd204b_rx4_Group {{Receive Ports - RX Fabric Output Control Ports}} -divider
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.RXOUTCLK_OUT}
+  gui_sg_addsignal -group jesd204b_rx4_Group {{Receive Ports - RX Initialization and Reset Ports}} -divider
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.GTRXRESET_IN}
+  gui_sg_addsignal -group jesd204b_rx4_Group {{Receive Ports -RX Initialization and Reset Ports}} -divider
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.RXRESETDONE_OUT}
+  gui_sg_addsignal -group jesd204b_rx4_Group {{TX Initialization and Reset Ports}} -divider
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.GTTXRESET_IN}
+  gui_sg_addsignal -group jesd204b_rx4_Group {{Transmit Ports - TX Initialization and Reset Ports}} -divider
+  gui_sg_addsignal -group jesd204b_rx4_Group {jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.TXPCSRESET_IN}
 
 
   gui_zoom -window Wave.1 -full

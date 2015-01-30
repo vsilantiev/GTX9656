@@ -69,7 +69,7 @@
 
 
 ####################### GT reference clock constraints #######################
-# create_clock -name q0_clk1_refclk_i -period 8.138 q0_clk1_refclk_i
+# create_clock -name q0_clk0_refclk_i -period 8.138 q0_clk0_refclk_i
 
     
 # DRP Clock Constraint
@@ -78,27 +78,32 @@ create_clock -name SYSCLK_IN -period 10.0 [get_ports SYSCLK_IN]
 
 # User Clock Constraints
 create_clock -name gt0_txusrclk_i -period 6.51 [get_pins -hier -filter {name=~*gt0_jesd204b_rx4_i*gtpe2_i*TXOUTCLK}]
-create_clock -name gt0_rxusrclk_i -period 6.51 [get_pins -hier -filter {name=~*gt0_jesd204b_rx4_i*gtpe2_i*RXOUTCLK}]
+create_clock -name gt0_rxusrclk_i -period 8.138 [get_pins -hier -filter {name=~*gt0_jesd204b_rx4_i*gtpe2_i*RXOUTCLK}]
 
 create_clock -name gt1_txusrclk_i -period 6.51 [get_pins -hier -filter {name=~*gt1_jesd204b_rx4_i*gtpe2_i*TXOUTCLK}]
-create_clock -name gt1_rxusrclk_i -period 6.51 [get_pins -hier -filter {name=~*gt1_jesd204b_rx4_i*gtpe2_i*RXOUTCLK}]
+create_clock -name gt1_rxusrclk_i -period 8.138 [get_pins -hier -filter {name=~*gt1_jesd204b_rx4_i*gtpe2_i*RXOUTCLK}]
 
 create_clock -name gt2_txusrclk_i -period 6.51 [get_pins -hier -filter {name=~*gt2_jesd204b_rx4_i*gtpe2_i*TXOUTCLK}]
-create_clock -name gt2_rxusrclk_i -period 6.51 [get_pins -hier -filter {name=~*gt2_jesd204b_rx4_i*gtpe2_i*RXOUTCLK}]
+create_clock -name gt2_rxusrclk_i -period 8.138 [get_pins -hier -filter {name=~*gt2_jesd204b_rx4_i*gtpe2_i*RXOUTCLK}]
+
+create_clock -name gt3_txusrclk_i -period 6.51 [get_pins -hier -filter {name=~*gt3_jesd204b_rx4_i*gtpe2_i*TXOUTCLK}]
+create_clock -name gt3_rxusrclk_i -period 8.138 [get_pins -hier -filter {name=~*gt3_jesd204b_rx4_i*gtpe2_i*RXOUTCLK}]
 
 
 ################################# RefClk Location constraints #####################
-set_property LOC AB11 [get_ports Q0_CLK1_GTREFCLK_PAD_N_IN ]
-set_property LOC AA11 [get_ports Q0_CLK1_GTREFCLK_PAD_P_IN ]
+set_property LOC AB13 [get_ports Q0_CLK0_GTREFCLK_PAD_N_IN ]
+set_property LOC AA13 [get_ports Q0_CLK0_GTREFCLK_PAD_P_IN ]
 
 ################################# mgt wrapper constraints #####################
 
 ##---------- Set placement for gt0_gtp_wrapper_i/GTPE2_CHANNEL ------
-set_property LOC GTPE2_CHANNEL_X0Y1 [get_cells jesd204b_rx4_init_i/jesd204b_rx4_i/gt0_jesd204b_rx4_i/gtpe2_i]
+set_property LOC GTPE2_CHANNEL_X0Y0 [get_cells jesd204b_rx4_init_i/jesd204b_rx4_i/gt0_jesd204b_rx4_i/gtpe2_i]
 ##---------- Set placement for gt1_gtp_wrapper_i/GTPE2_CHANNEL ------
-set_property LOC GTPE2_CHANNEL_X0Y2 [get_cells jesd204b_rx4_init_i/jesd204b_rx4_i/gt1_jesd204b_rx4_i/gtpe2_i]
+set_property LOC GTPE2_CHANNEL_X0Y1 [get_cells jesd204b_rx4_init_i/jesd204b_rx4_i/gt1_jesd204b_rx4_i/gtpe2_i]
 ##---------- Set placement for gt2_gtp_wrapper_i/GTPE2_CHANNEL ------
-set_property LOC GTPE2_CHANNEL_X0Y3 [get_cells jesd204b_rx4_init_i/jesd204b_rx4_i/gt2_jesd204b_rx4_i/gtpe2_i]
+set_property LOC GTPE2_CHANNEL_X0Y2 [get_cells jesd204b_rx4_init_i/jesd204b_rx4_i/gt2_jesd204b_rx4_i/gtpe2_i]
+##---------- Set placement for gt3_gtp_wrapper_i/GTPE2_CHANNEL ------
+set_property LOC GTPE2_CHANNEL_X0Y3 [get_cells jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/gtpe2_i]
 
 ##---------- Set ASYNC_REG for flop which have async input ----------
 set_property ASYNC_REG TRUE [get_cells -hier -filter {name=~*gt0_frame_gen*system_reset_r_reg}]
@@ -107,6 +112,8 @@ set_property ASYNC_REG TRUE [get_cells -hier -filter {name=~*gt1_frame_gen*syste
 set_property ASYNC_REG TRUE [get_cells -hier -filter {name=~*gt1_frame_check*system_reset_r_reg}]
 set_property ASYNC_REG TRUE [get_cells -hier -filter {name=~*gt2_frame_gen*system_reset_r_reg}]
 set_property ASYNC_REG TRUE [get_cells -hier -filter {name=~*gt2_frame_check*system_reset_r_reg}]
+set_property ASYNC_REG TRUE [get_cells -hier -filter {name=~*gt3_frame_gen*system_reset_r_reg}]
+set_property ASYNC_REG TRUE [get_cells -hier -filter {name=~*gt3_frame_check*system_reset_r_reg}]
 
 ##---------- Set False Path from one clock to other ----------
 set_false_path -from [get_clocks "SYSCLK_IN"] -to [get_clocks -include_generated_clocks "gt0_txusrclk_i"]
@@ -153,6 +160,21 @@ set_false_path -from [get_clocks -include_generated_clocks "gt2_rxusrclk_i"] -to
 
 ##set_false_path -from [get_clocks "gt2_rxusrclk_i"] -to [get_clocks "gt2_rxusrclk2_i"]
 ##set_false_path -from [get_clocks "gt2_rxusrclk2_i"] -to [get_clocks "gt2_rxusrclk_i"]
+
+set_false_path -from [get_clocks "SYSCLK_IN"] -to [get_clocks -include_generated_clocks "gt3_txusrclk_i"]
+set_false_path -from [get_clocks -include_generated_clocks "gt3_txusrclk_i"] -to [get_clocks "SYSCLK_IN"]
+
+set_false_path -from [get_clocks "SYSCLK_IN"] -to [get_clocks -include_generated_clocks "gt3_rxusrclk_i"]
+set_false_path -from [get_clocks -include_generated_clocks "gt3_rxusrclk_i"] -to [get_clocks "SYSCLK_IN"]
+
+set_false_path -from [get_clocks "drpclk_in_i"] -to [get_clocks -include_generated_clocks "gt3_txusrclk_i"]
+set_false_path -from [get_clocks -include_generated_clocks "gt3_txusrclk_i"] -to [get_clocks "drpclk_in_i"]
+
+set_false_path -from [get_clocks "drpclk_in_i"] -to [get_clocks -include_generated_clocks "gt3_rxusrclk_i"]
+set_false_path -from [get_clocks -include_generated_clocks "gt3_rxusrclk_i"] -to [get_clocks "drpclk_in_i"]
+
+##set_false_path -from [get_clocks "gt3_rxusrclk_i"] -to [get_clocks "gt3_rxusrclk2_i"]
+##set_false_path -from [get_clocks "gt3_rxusrclk2_i"] -to [get_clocks "gt3_rxusrclk_i"]
 
 
 

@@ -69,6 +69,7 @@
 define_attribute {n:gt0_rxusrclk_i} syn_keep {1} 
 define_attribute {n:gt1_rxusrclk_i} syn_keep {1} 
 define_attribute {n:gt2_rxusrclk_i} syn_keep {1} 
+define_attribute {n:gt3_rxusrclk_i} syn_keep {1} 
 
 
 

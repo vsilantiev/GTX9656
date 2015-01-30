@@ -87,17 +87,17 @@ architecture RTL of jesd204b_rx4_TB_IMP is
     component jesd204b_rx4_exdes 
     port
     (
-        Q0_CLK1_GTREFCLK_PAD_N_IN   :   in std_logic;
-        Q0_CLK1_GTREFCLK_PAD_P_IN   :   in std_logic;
+        Q0_CLK0_GTREFCLK_PAD_N_IN   :   in std_logic;
+        Q0_CLK0_GTREFCLK_PAD_P_IN   :   in std_logic;
         DRP_CLK_IN                        :   in std_logic;
         GTTX_RESET_IN                     :   in std_logic;
         GTRX_RESET_IN                     :   in std_logic;
         PLL0_RESET_IN                     :   in std_logic; 
         TRACK_DATA_OUT                    :   out std_logic;
-        RXN_IN                            :   in std_logic_vector(2 downto 0);
-        RXP_IN                            :   in std_logic_vector(2 downto 0);
-        TXN_OUT                           :   out std_logic_vector(2 downto 0);
-        TXP_OUT                           :   out std_logic_vector(2 downto 0)
+        RXN_IN                            :   in std_logic_vector(3 downto 0);
+        RXP_IN                            :   in std_logic_vector(3 downto 0);
+        TXN_OUT                           :   out std_logic_vector(3 downto 0);
+        TXP_OUT                           :   out std_logic_vector(3 downto 0)
     );
     end component;
 
@@ -112,17 +112,17 @@ architecture RTL of jesd204b_rx4_TB_IMP is
     );
     port
     (
-        Q0_CLK1_GTREFCLK_PAD_N_IN   :   in std_logic;
-        Q0_CLK1_GTREFCLK_PAD_P_IN   :   in std_logic;
+        Q0_CLK0_GTREFCLK_PAD_N_IN   :   in std_logic;
+        Q0_CLK0_GTREFCLK_PAD_P_IN   :   in std_logic;
         DRP_CLK_IN                        :   in std_logic;
         GTTX_RESET_IN                     :   in std_logic;
         GTRX_RESET_IN                     :   in std_logic;
         PLL0_RESET_IN                     :   in std_logic; 
         
-        RXN_IN                            :   in std_logic_vector(2 downto 0);
-        RXP_IN                            :   in std_logic_vector(2 downto 0);
-        TXN_OUT                           :   out std_logic_vector(2 downto 0);
-        TXP_OUT                           :   out std_logic_vector(2 downto 0)
+        RXN_IN                            :   in std_logic_vector(3 downto 0);
+        RXP_IN                            :   in std_logic_vector(3 downto 0);
+        TXN_OUT                           :   out std_logic_vector(3 downto 0);
+        TXP_OUT                           :   out std_logic_vector(3 downto 0)
     );
     end component;
     component SIM_RESET_GT_MODEL 
@@ -158,13 +158,13 @@ architecture RTL of jesd204b_rx4_TB_IMP is
     signal  rx_refclk_p_r           :   std_logic;    
     signal  tied_to_ground_i        :   std_logic;
     ---------------------------- Example Module Connections -------------------------
-    signal  rxn_in_i                :   std_logic_vector(2 downto 0);
-    signal  rxp_in_i                :   std_logic_vector(2 downto 0);
-    signal  txn_out_i               :   std_logic_vector(2 downto 0);
-    signal  txp_out_i               :   std_logic_vector(2 downto 0);
+    signal  rxn_in_i                :   std_logic_vector(3 downto 0);
+    signal  rxp_in_i                :   std_logic_vector(3 downto 0);
+    signal  txn_out_i               :   std_logic_vector(3 downto 0);
+    signal  txp_out_i               :   std_logic_vector(3 downto 0);
     
-    signal  rxn_tie_i               :   std_logic_vector(2 downto 0);
-    signal  rxp_tie_i               :   std_logic_vector(2 downto 0);
+    signal  rxn_tie_i               :   std_logic_vector(3 downto 0);
+    signal  rxp_tie_i               :   std_logic_vector(3 downto 0);
 
     signal  track_data_i            :   std_logic;
 
@@ -310,8 +310,8 @@ begin
     jesd204b_rx4_exdes_i : jesd204b_rx4_exdes
     port map
     (
-        Q0_CLK1_GTREFCLK_PAD_N_IN       =>  rx_refclk_n_r,
-        Q0_CLK1_GTREFCLK_PAD_P_IN       =>  rx_refclk_p_r,
+        Q0_CLK0_GTREFCLK_PAD_N_IN       =>  rx_refclk_n_r,
+        Q0_CLK0_GTREFCLK_PAD_P_IN       =>  rx_refclk_p_r,
         DRP_CLK_IN                  =>  drp_clk_r,
         GTTX_RESET_IN               =>  gttx_reset_i,
         GTRX_RESET_IN               =>  gtrx_reset_i,
@@ -326,8 +326,8 @@ begin
     tx_jesd204b_rx4_exdes_i : tx_jesd204b_rx4_exdes
     port map
     (
-        Q0_CLK1_GTREFCLK_PAD_N_IN       =>  rx_refclk_n_r,
-        Q0_CLK1_GTREFCLK_PAD_P_IN       =>  rx_refclk_p_r,
+        Q0_CLK0_GTREFCLK_PAD_N_IN       =>  rx_refclk_n_r,
+        Q0_CLK0_GTREFCLK_PAD_P_IN       =>  rx_refclk_p_r,
         DRP_CLK_IN                  =>  drp_clk_r,
         GTTX_RESET_IN               =>  gttx_reset_i,
         GTRX_RESET_IN               =>  gtrx_reset_i,

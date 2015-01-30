@@ -1,5 +1,202 @@
 INFO:sim:172 - Generating IP...
 Applying current project options...
 Finished applying current project options.
-Cancelled executing Tcl generator.
+WARNING:sim - A core named 'jesd204b_rx4' already exists in the project. Output
+   products for this core may be overwritten.
+Resolving generics for 'jesd204b_rx4'...
+WARNING:sim - A core named 'jesd204b_rx4' already exists in the project. Output
+   products for this core may be overwritten.
+Applying external generics to 'jesd204b_rx4'...
+Delivering associated files for 'jesd204b_rx4'...
+WARNING:sim - Component gtwizard_v2_7 does not have a valid model name for VHDL
+   synthesis
+Delivering EJava files for 'jesd204b_rx4'...
+Generating ASY schematic symbol...
+INFO:sim:993 - The selected IP does not support an ASY schematic symbol.
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+WARNING:sim - The chosen IP does not support an SYM schematic symbol.
+Generating metadata file...
+Generating ISE project...
+XCO file found: jesd204b_rx4.xco
+XMDF file found: jesd204b_rx4_xmdf.tcl
+Adding
+/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_desi
+gn/jesd204b_rx4_exdes.xcf -view all -origin_type imported
+Adding
+/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_desi
+gn/jesd204b_rx4_exdes.ucf -view all -origin_type created
+Adding
+/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_desi
+gn/jesd204b_rx4_gt_usrclk_source.vhd -view all -origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_
+   design/jesd204b_rx4_gt_usrclk_source.vhd" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_desi
+gn/jesd204b_rx4_gtrxreset_seq.vhd -view all -origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_
+   design/jesd204b_rx4_gtrxreset_seq.vhd" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_desi
+gn/jesd204b_rx4_rxpmarst_seq.vhd -view all -origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_
+   design/jesd204b_rx4_rxpmarst_seq.vhd" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_desi
+gn/jesd204b_rx4_rxrate_seq.vhd -view all -origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_
+   design/jesd204b_rx4_rxrate_seq.vhd" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_desi
+gn/jesd204b_rx4_init.vhd -view all -origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_
+   design/jesd204b_rx4_init.vhd" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_desi
+gn/jesd204b_rx4_sync_block.vhd -view all -origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_
+   design/jesd204b_rx4_sync_block.vhd" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_desi
+gn/jesd204b_rx4_tx_startup_fsm.vhd -view all -origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_
+   design/jesd204b_rx4_tx_startup_fsm.vhd" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_desi
+gn/jesd204b_rx4_rx_startup_fsm.vhd -view all -origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_
+   design/jesd204b_rx4_rx_startup_fsm.vhd" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_desi
+gn/jesd204b_rx4_recclk_monitor.vhd -view all -origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_
+   design/jesd204b_rx4_recclk_monitor.vhd" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_desi
+gn/jesd204b_rx4_gt_frame_gen.vhd -view all -origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_
+   design/jesd204b_rx4_gt_frame_gen.vhd" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_desi
+gn/jesd204b_rx4_gt_frame_check.vhd -view all -origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_
+   design/jesd204b_rx4_gt_frame_check.vhd" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_desi
+gn/jesd204b_rx4_clock_module.vhd -view all -origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_
+   design/jesd204b_rx4_clock_module.vhd" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4_gt.vhd -view
+all -origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4_gt.vhd"
+   into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding /home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4.vhd
+-view all -origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4.vhd"
+   into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_desi
+gn/jesd204b_rx4_exdes.vhd -view all -origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_
+   design/jesd204b_rx4_exdes.vhd" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding /home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4.vho
+-view all -origin_type imported
+Adding
+/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_desi
+gn/data_vio.ngc -view all -origin_type created
+Checking file
+"/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_des
+ign/data_vio.ngc" for project device match ...
+WARNING:ProjectMgmt - The file
+   "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_
+   design/data_vio.ngc" device information, 7v585tffg1157-2, does not match the
+   current project device, xc7a200tfbg676-2.
+Adding
+/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_desi
+gn/ila.ngc -view all -origin_type created
+Checking file
+"/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_des
+ign/ila.ngc" for project device match ...
+WARNING:ProjectMgmt - The file
+   "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_
+   design/ila.ngc" device information, 7v585tffg1157-2, does not match the
+   current project device, xc7a200tfbg676-2.
+Adding
+/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_desi
+gn/icon.ngc -view all -origin_type created
+Checking file
+"/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_des
+ign/icon.ngc" for project device match ...
+WARNING:ProjectMgmt - The file
+   "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_
+   design/icon.ngc" device information, 7v585tffg1157-2, does not match the
+   current project device, xc7a200tfbg676-2.
+Adding
+/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_desi
+gn/chipscope_vio.ngc -view all -origin_type created
+Checking file
+"/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_des
+ign/chipscope_vio.ngc" for project device match ...
+WARNING:coreutil - WARNING:ProjectMgmt - The file
+   "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_
+      design/chipscope_vio.ngc" device information, 7vx485tffg1761-2, does not
+      match the current project device, xc7a200tfbg676-2.
+Adding
+/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_desi
+gn/chipscope_ila.ngc -view all -origin_type created
+Checking file
+"/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_des
+ign/chipscope_ila.ngc" for project device match ...
+WARNING:ProjectMgmt - The file
+   "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_
+   design/chipscope_ila.ngc" device information, 7vx485tffg1761-2, does not
+   match the current project device, xc7a200tfbg676-2.
+Adding
+/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_desi
+gn/chipscope_icon.ngc -view all -origin_type created
+Checking file
+"/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_des
+ign/chipscope_icon.ngc" for project device match ...
+WARNING:ProjectMgmt - The file
+   "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_
+   design/chipscope_icon.ngc" device information, 7vx485tffg1761-2, does not
+   match the current project device, xc7a200tfbg676-2.
+WARNING: This core does not have a top level called "/jesd204b_rx4"
+WARNING: Top level has been set to "/jesd204b_rx4_TX_STARTUP_FSM"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Launching README viewer...
+Moving files to output directory...
+Finished moving files to output directory
 Wrote CGP file for project 'jesd204b_rx4'.

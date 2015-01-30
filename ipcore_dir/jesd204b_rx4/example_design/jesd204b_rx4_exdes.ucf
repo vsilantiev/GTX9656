@@ -68,8 +68,8 @@
 ################################## Clock Constraints ##########################
 
 
- NET "q0_clk1_refclk_i" TNM_NET = "q0_clk1_refclk_i";
- TIMESPEC "TS_q0_clk1_refclk_i" = PERIOD "q0_clk1_refclk_i" 8.138;
+ NET "q0_clk0_refclk_i" TNM_NET = "q0_clk0_refclk_i";
+ TIMESPEC "TS_q0_clk0_refclk_i" = PERIOD "q0_clk0_refclk_i" 8.138;
 
     
 # DRP Clock Constraint
@@ -86,26 +86,32 @@ TIMESPEC "TS_gt1_rxusrclk_i" = PERIOD "gt1_rxusrclk_i" 6.51;
 NET "gt2_rxusrclk_i" TNM_NET = "gt2_rxusrclk_i";
 TIMESPEC "TS_gt2_rxusrclk_i" = PERIOD "gt2_rxusrclk_i" 6.51;
 
+NET "gt3_rxusrclk_i" TNM_NET = "gt3_rxusrclk_i";
+TIMESPEC "TS_gt3_rxusrclk_i" = PERIOD "gt3_rxusrclk_i" 6.51;
+
 
 
 ####################### GT reference clock constraints #######################
 
-NET Q0_CLK1_GTREFCLK_PAD_N_IN  LOC=AB11;
-NET Q0_CLK1_GTREFCLK_PAD_P_IN  LOC=AA11;
+NET Q0_CLK0_GTREFCLK_PAD_N_IN  LOC=AB13;
+NET Q0_CLK0_GTREFCLK_PAD_P_IN  LOC=AA13;
 
-NET RXN_IN(0) LOC=AF13 |IOSTANDARD=LVDS_25 |DIFF_TERM=TRUE;
-NET RXP_IN(0) LOC=AE13 |IOSTANDARD=LVDS_25 |DIFF_TERM=TRUE;
+NET RXP_IN(0) LOC=AE13;
+NET RXN_IN(0) LOC=AF13;
 
 ################################# mgt wrapper constraints #####################
 
 ##---------- Set placement for gt0_gtp_wrapper_i/GTPE2_CHANNEL ------
-INST jesd204b_rx4_init_i/jesd204b_rx4_i/gt0_jesd204b_rx4_i/gtpe2_i LOC=GTPE2_CHANNEL_X0Y1;
+INST jesd204b_rx4_init_i/jesd204b_rx4_i/gt1_jesd204b_rx4_i/gtpe2_i LOC=GTPE2_CHANNEL_X0Y0;
 
 ##---------- Set placement for gt1_gtp_wrapper_i/GTPE2_CHANNEL ------
-INST jesd204b_rx4_init_i/jesd204b_rx4_i/gt1_jesd204b_rx4_i/gtpe2_i LOC=GTPE2_CHANNEL_X0Y2;
+INST jesd204b_rx4_init_i/jesd204b_rx4_i/gt0_jesd204b_rx4_i/gtpe2_i LOC=GTPE2_CHANNEL_X0Y1;
 
 ##---------- Set placement for gt2_gtp_wrapper_i/GTPE2_CHANNEL ------
-INST jesd204b_rx4_init_i/jesd204b_rx4_i/gt2_jesd204b_rx4_i/gtpe2_i LOC=GTPE2_CHANNEL_X0Y3;
+INST jesd204b_rx4_init_i/jesd204b_rx4_i/gt2_jesd204b_rx4_i/gtpe2_i LOC=GTPE2_CHANNEL_X0Y2;
+
+##---------- Set placement for gt3_gtp_wrapper_i/GTPE2_CHANNEL ------
+INST jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/gtpe2_i LOC=GTPE2_CHANNEL_X0Y3;
 
 
 

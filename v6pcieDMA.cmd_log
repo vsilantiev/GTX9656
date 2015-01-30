@@ -337,3 +337,10 @@ map -intstyle ise -p xc7a200t-fbg676-2 -w -logic_opt off -ol high -xe n -t 1 -xt
 par -w -intstyle ise -ol high -xe n -mt off v6pcieDMA_map.ncd v6pcieDMA.ncd v6pcieDMA.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml v6pcieDMA.twx v6pcieDMA.ncd -o v6pcieDMA.twr v6pcieDMA.pcf -ucf ABB3_pcie_4_lane_Emu_FIFO_elink.ucf 
 bitgen -intstyle ise -f v6pcieDMA.ut v6pcieDMA.ncd 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 

@@ -11,6 +11,9 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4.vhd&quot; into library work</arg>
 </msg>
 
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_clock_module.vhd&quot; into library work</arg>
+</msg>
+
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd&quot; into library work</arg>
 </msg>
 

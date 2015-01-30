@@ -70,6 +70,7 @@ BEGIN MODEL "jesd204b_rx4_exdes"
 NET "gt0_rxusrclk_i" keep=yes;
 NET "gt1_rxusrclk_i" keep=yes;
 NET "gt2_rxusrclk_i" keep=yes;
+NET "gt3_rxusrclk_i" keep=yes;
 
 END;
 

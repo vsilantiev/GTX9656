@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Fri Jan 30 14:38:02 2015
+Fri Jan 30 16:21:38 2015
 
 
 # NOTE: This file is designed to be imported into a spreadsheet program
@@ -55,9 +55,9 @@ AA7||IOB33S|IO_L19N_T3_VREF_33|UNUSED||33|||||||||
 AA8||IOB33S|IO_L23N_T3_33|UNUSED||33|||||||||
 AA9|||GND||||||||||||
 AA10|||MGTAVCC_G10||||||||||||
-AA11|Q0_CLK1_GTREFCLK_PAD_P_IN|IPAD|MGTREFCLK1P_213|||||||||LOCATED|NO||
+AA11||IPAD|MGTREFCLK1P_213|UNUSED|||||||||||
 AA12|||MGTAVCC_G10||||||||||||
-AA13||IPAD|MGTREFCLK0P_213|UNUSED|||||||||||
+AA13|Q0_CLK0_GTREFCLK_PAD_P_IN|IPAD|MGTREFCLK0P_213|||||||||LOCATED|NO||
 AA14|||GND||||||||||||
 AA15||IOB33S|IO_L23N_T3_12|UNUSED||12|||||||||
 AA16|||GND||||||||||||
@@ -81,9 +81,9 @@ AB7|||M0_0||||||||||||
 AB8|||GND||||||||||||
 AB9|||GND||||||||||||
 AB10|||GND||||||||||||
-AB11|Q0_CLK1_GTREFCLK_PAD_N_IN|IPAD|MGTREFCLK1N_213|||||||||LOCATED|NO||
+AB11||IPAD|MGTREFCLK1N_213|UNUSED|||||||||||
 AB12|||GND||||||||||||
-AB13||IPAD|MGTREFCLK0N_213|UNUSED|||||||||||
+AB13|Q0_CLK0_GTREFCLK_PAD_N_IN|IPAD|MGTREFCLK0N_213|||||||||LOCATED|NO||
 AB14|||GND||||||||||||
 AB15|||CFGBVS_0||||||||||||
 AB16||IOB33M|IO_L22P_T3_12|UNUSED||12|||||||||
@@ -108,9 +108,9 @@ AC8||OPAD|MGTPTXP2_213|UNUSED|||||||||||
 AC9|||MGTAVCC_G10||||||||||||
 AC10||OPAD|MGTPTXP0_213|UNUSED|||||||||||
 AC11|||MGTAVCC_G10||||||||||||
-AC12||IPAD|MGTPRXP0_213|UNUSED|||||||||||
+AC12|RXP_IN<1>|IPAD|MGTPRXP0_213||||||||||NO||
 AC13|||MGTAVCC_G10||||||||||||
-AC14|RXP_IN<1>|IPAD|MGTPRXP2_213||||||||||NO||
+AC14|RXP_IN<2>|IPAD|MGTPRXP2_213||||||||||NO||
 AC15|||GND||||||||||||
 AC16||IOB33S|IO_L22N_T3_12|UNUSED||12|||||||||
 AC17||IOB33M|IO_L20P_T3_12|UNUSED||12|||||||||
@@ -134,9 +134,9 @@ AD8||OPAD|MGTPTXN2_213|UNUSED|||||||||||
 AD9|||GND||||||||||||
 AD10||OPAD|MGTPTXN0_213|UNUSED|||||||||||
 AD11|||GND||||||||||||
-AD12||IPAD|MGTPRXN0_213|UNUSED|||||||||||
+AD12|RXN_IN<1>|IPAD|MGTPRXN0_213||||||||||NO||
 AD13|||GND||||||||||||
-AD14|RXN_IN<1>|IPAD|MGTPRXN2_213||||||||||NO||
+AD14|RXN_IN<2>|IPAD|MGTPRXN2_213||||||||||NO||
 AD15|||MGTAVTT_G10||||||||||||
 AD16|||GND||||||||||||
 AD17||IOB33S|IO_L20N_T3_12|UNUSED||12|||||||||
@@ -159,7 +159,7 @@ AE7||OPAD|MGTPTXP3_213|UNUSED|||||||||||
 AE8|||MGTAVTT_G10||||||||||||
 AE9||OPAD|MGTPTXP1_213|UNUSED|||||||||||
 AE10|||MGTAVTT_G10||||||||||||
-AE11|RXP_IN<2>|IPAD|MGTPRXP3_213||||||||||NO||
+AE11|RXP_IN<3>|IPAD|MGTPRXP3_213||||||||||NO||
 AE12|||MGTAVTT_G10||||||||||||
 AE13|RXP_IN<0>|IPAD|MGTPRXP1_213|||||||||LOCATED|NO||
 AE14|||MGTAVTT_G10||||||||||||
@@ -185,7 +185,7 @@ AF7||OPAD|MGTPTXN3_213|UNUSED|||||||||||
 AF8|||GND||||||||||||
 AF9||OPAD|MGTPTXN1_213|UNUSED|||||||||||
 AF10|||GND||||||||||||
-AF11|RXN_IN<2>|IPAD|MGTPRXN3_213||||||||||NO||
+AF11|RXN_IN<3>|IPAD|MGTPRXN3_213||||||||||NO||
 AF12|||GND||||||||||||
 AF13|RXN_IN<0>|IPAD|MGTPRXN1_213|||||||||LOCATED|NO||
 AF14|||GND||||||||||||

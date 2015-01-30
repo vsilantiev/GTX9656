@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-01-30T14:33:52</DateModified>
+  <DateModified>2015-01-30T16:19:34</DateModified>
   <ModuleName>jesd204b_rx4_exdes</ModuleName>
   <SummaryTimeStamp>2015-01-30T14:21:24</SummaryTimeStamp>
   <SavedFilePath>/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/iseconfig/jesd204b_rx4_exdes.xreport</SavedFilePath>

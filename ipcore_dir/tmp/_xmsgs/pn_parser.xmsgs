@@ -17,9 +17,6 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gt_frame_check.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gt_frame_gen.vhd&quot; into library work</arg>
-</msg>
-
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gt_usrclk_source.vhd&quot; into library work</arg>
 </msg>
 
@@ -29,22 +26,10 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_recclk_monitor.vhd&quot; into library work</arg>
-</msg>
-
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_rx_startup_fsm.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_rxpmarst_seq.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_rxrate_seq.vhd&quot; into library work</arg>
-</msg>
-
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_sync_block.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_tx_startup_fsm.vhd&quot; into library work</arg>
 </msg>
 
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd&quot; into library work</arg>

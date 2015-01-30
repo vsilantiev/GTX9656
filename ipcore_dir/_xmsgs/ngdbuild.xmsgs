@@ -5,19 +5,16 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt0_rxresetfsm_i/sync_PLL1LOCK/data_sync_reg</arg>&apos; has unconnected output pin
+<msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt3_rxresetfsm_i/sync_PLL1LOCK/data_sync_reg</arg>&apos; has unconnected output pin
 </msg>
 
-<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt1_rxresetfsm_i/sync_mmcm_lock_reclocked/data_sync_reg</arg>&apos; has unconnected output pin
+<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt2_rxresetfsm_i/sync_PLL1LOCK/data_sync_reg</arg>&apos; has unconnected output pin
 </msg>
 
 <msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt1_rxresetfsm_i/sync_PLL1LOCK/data_sync_reg</arg>&apos; has unconnected output pin
 </msg>
 
-<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt2_rxresetfsm_i/sync_mmcm_lock_reclocked/data_sync_reg</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt2_rxresetfsm_i/sync_PLL1LOCK/data_sync_reg</arg>&apos; has unconnected output pin
+<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt0_rxresetfsm_i/sync_PLL1LOCK/data_sync_reg</arg>&apos; has unconnected output pin
 </msg>
 
 </messages>

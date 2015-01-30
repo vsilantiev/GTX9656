@@ -102,8 +102,10 @@ ncvhdl -RELAX -V93 -work work  $SIMPLEX_PARTNER/tx_jesd204b_rx4_gt.vhd;
 
 
 
+ncvhdl -RELAX -V93 -work work  ../../example_design/jesd204b_rx4_clock_module.vhd; 
 ncvhdl -RELAX -V93 -work work  ../../example_design/jesd204b_rx4_gt_usrclk_source.vhd;
 
+ncvhdl -RELAX -V93 -work work  $SIMPLEX_PARTNER/tx_jesd204b_rx4/example_design/tx_jesd204b_rx4_clock_module.vhd; 
 ncvhdl -RELAX -V93 -work work  $SIMPLEX_PARTNER/tx_jesd204b_rx4/example_design/tx_jesd204b_rx4_gt_usrclk_source.vhd;
 
 

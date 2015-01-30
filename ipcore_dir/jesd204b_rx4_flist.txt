@@ -12,6 +12,7 @@ jesd204b_rx4/example_design/gtz_ila.ngc
 jesd204b_rx4/example_design/gtz_vio.ngc
 jesd204b_rx4/example_design/icon.ngc
 jesd204b_rx4/example_design/ila.ngc
+jesd204b_rx4/example_design/jesd204b_rx4_clock_module.vhd
 jesd204b_rx4/example_design/jesd204b_rx4_exdes.ucf
 jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd
 jesd204b_rx4/example_design/jesd204b_rx4_exdes.xcf

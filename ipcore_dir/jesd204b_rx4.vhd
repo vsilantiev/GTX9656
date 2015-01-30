@@ -80,7 +80,7 @@ port
 (
     --_________________________________________________________________________
     --_________________________________________________________________________
-    --GT0  (X0Y1)
+    --GT0  (X0Y0)
     --____________________________CHANNEL PORTS________________________________
     GT0_DRP_BUSY_OUT                        : out  std_logic; 
     ---------------------------- Channel - DRP Ports  --------------------------
@@ -109,9 +109,6 @@ port
     ------------------------ Receive Ports - RX AFE Ports ----------------------
     GT0_GTPRXN_IN                           : in   std_logic;
     GT0_GTPRXP_IN                           : in   std_logic;
-    -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
-    GT0_RXMCOMMAALIGNEN_IN                  : in   std_logic;
-    GT0_RXPCOMMAALIGNEN_IN                  : in   std_logic;
     -------------------- Receive Ports - RX Equailizer Ports -------------------
     GT0_RXLPMHFHOLD_IN                      : in   std_logic;
     GT0_RXLPMLFHOLD_IN                      : in   std_logic;
@@ -126,7 +123,7 @@ port
     ------------- Transmit Ports - TX Initialization and Reset Ports -----------
     GT0_TXPCSRESET_IN                       : in   std_logic;
 
-    --GT1  (X0Y2)
+    --GT1  (X0Y1)
     --____________________________CHANNEL PORTS________________________________
     GT1_DRP_BUSY_OUT                        : out  std_logic; 
     ---------------------------- Channel - DRP Ports  --------------------------
@@ -155,9 +152,6 @@ port
     ------------------------ Receive Ports - RX AFE Ports ----------------------
     GT1_GTPRXN_IN                           : in   std_logic;
     GT1_GTPRXP_IN                           : in   std_logic;
-    -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
-    GT1_RXMCOMMAALIGNEN_IN                  : in   std_logic;
-    GT1_RXPCOMMAALIGNEN_IN                  : in   std_logic;
     -------------------- Receive Ports - RX Equailizer Ports -------------------
     GT1_RXLPMHFHOLD_IN                      : in   std_logic;
     GT1_RXLPMLFHOLD_IN                      : in   std_logic;
@@ -172,7 +166,7 @@ port
     ------------- Transmit Ports - TX Initialization and Reset Ports -----------
     GT1_TXPCSRESET_IN                       : in   std_logic;
 
-    --GT2  (X0Y3)
+    --GT2  (X0Y2)
     --____________________________CHANNEL PORTS________________________________
     GT2_DRP_BUSY_OUT                        : out  std_logic; 
     ---------------------------- Channel - DRP Ports  --------------------------
@@ -201,9 +195,6 @@ port
     ------------------------ Receive Ports - RX AFE Ports ----------------------
     GT2_GTPRXN_IN                           : in   std_logic;
     GT2_GTPRXP_IN                           : in   std_logic;
-    -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
-    GT2_RXMCOMMAALIGNEN_IN                  : in   std_logic;
-    GT2_RXPCOMMAALIGNEN_IN                  : in   std_logic;
     -------------------- Receive Ports - RX Equailizer Ports -------------------
     GT2_RXLPMHFHOLD_IN                      : in   std_logic;
     GT2_RXLPMLFHOLD_IN                      : in   std_logic;
@@ -217,6 +208,49 @@ port
     GT2_GTTXRESET_IN                        : in   std_logic;
     ------------- Transmit Ports - TX Initialization and Reset Ports -----------
     GT2_TXPCSRESET_IN                       : in   std_logic;
+
+    --GT3  (X0Y3)
+    --____________________________CHANNEL PORTS________________________________
+    GT3_DRP_BUSY_OUT                        : out  std_logic; 
+    ---------------------------- Channel - DRP Ports  --------------------------
+    GT3_DRPADDR_IN                          : in   std_logic_vector(8 downto 0);
+    GT3_DRPCLK_IN                           : in   std_logic;
+    GT3_DRPDI_IN                            : in   std_logic_vector(15 downto 0);
+    GT3_DRPDO_OUT                           : out  std_logic_vector(15 downto 0);
+    GT3_DRPEN_IN                            : in   std_logic;
+    GT3_DRPRDY_OUT                          : out  std_logic;
+    GT3_DRPWE_IN                            : in   std_logic;
+    --------------------- RX Initialization and Reset Ports --------------------
+    GT3_RXUSERRDY_IN                        : in   std_logic;
+    -------------------------- RX Margin Analysis Ports ------------------------
+    GT3_EYESCANDATAERROR_OUT                : out  std_logic;
+    ------------------------- Receive Ports - CDR Ports ------------------------
+    GT3_RXCDRLOCK_OUT                       : out  std_logic;
+    ------------------ Receive Ports - FPGA RX Interface Ports -----------------
+    GT3_RXDATA_OUT                          : out  std_logic_vector(15 downto 0);
+    GT3_RXUSRCLK_IN                         : in   std_logic;
+    GT3_RXUSRCLK2_IN                        : in   std_logic;
+    ------------------ Receive Ports - RX 8B/10B Decoder Ports -----------------
+    GT3_RXCHARISCOMMA_OUT                   : out  std_logic_vector(1 downto 0);
+    GT3_RXCHARISK_OUT                       : out  std_logic_vector(1 downto 0);
+    GT3_RXDISPERR_OUT                       : out  std_logic_vector(1 downto 0);
+    GT3_RXNOTINTABLE_OUT                    : out  std_logic_vector(1 downto 0);
+    ------------------------ Receive Ports - RX AFE Ports ----------------------
+    GT3_GTPRXN_IN                           : in   std_logic;
+    GT3_GTPRXP_IN                           : in   std_logic;
+    -------------------- Receive Ports - RX Equailizer Ports -------------------
+    GT3_RXLPMHFHOLD_IN                      : in   std_logic;
+    GT3_RXLPMLFHOLD_IN                      : in   std_logic;
+    --------------- Receive Ports - RX Fabric Output Control Ports -------------
+    GT3_RXOUTCLK_OUT                        : out  std_logic;
+    ------------- Receive Ports - RX Initialization and Reset Ports ------------
+    GT3_GTRXRESET_IN                        : in   std_logic;
+    -------------- Receive Ports -RX Initialization and Reset Ports ------------
+    GT3_RXRESETDONE_OUT                     : out  std_logic;
+    --------------------- TX Initialization and Reset Ports --------------------
+    GT3_GTTXRESET_IN                        : in   std_logic;
+    ------------- Transmit Ports - TX Initialization and Reset Ports -----------
+    GT3_TXPCSRESET_IN                       : in   std_logic;
 
 
     --____________________________COMMON PORTS________________________________
@@ -264,6 +298,9 @@ architecture RTL of jesd204b_rx4 is
   
     signal  gt2_mgtrefclktx_i           :   std_logic_vector(1 downto 0);
     signal  gt2_mgtrefclkrx_i           :   std_logic_vector(1 downto 0);
+  
+    signal  gt3_mgtrefclktx_i           :   std_logic_vector(1 downto 0);
+    signal  gt3_mgtrefclkrx_i           :   std_logic_vector(1 downto 0);
  
 
     signal   gt0_pll0clk_i       :   std_logic;
@@ -285,6 +322,13 @@ architecture RTL of jesd204b_rx4 is
     signal   gt2_pll1clk_i       :   std_logic;
     signal   gt2_pll1refclk_i    :   std_logic;
     signal    gt2_rst_i                       : std_logic;
+      
+
+    signal   gt3_pll0clk_i       :   std_logic;
+    signal   gt3_pll0refclk_i    :   std_logic;
+    signal   gt3_pll1clk_i       :   std_logic;
+    signal   gt3_pll1refclk_i    :   std_logic;
+    signal    gt3_rst_i                       : std_logic;
       
 
 
@@ -334,9 +378,6 @@ port
     ------------------------ Receive Ports - RX AFE Ports ----------------------
     GTPRXN_IN                               : in   std_logic;
     GTPRXP_IN                               : in   std_logic;
-    -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
-    RXMCOMMAALIGNEN_IN                      : in   std_logic;
-    RXPCOMMAALIGNEN_IN                      : in   std_logic;
     -------------------- Receive Ports - RX Equailizer Ports -------------------
     RXLPMHFHOLD_IN                          : in   std_logic;
     RXLPMLFHOLD_IN                          : in   std_logic;
@@ -394,10 +435,18 @@ begin
       
    
     
+    gt3_pll0clk_i    <= gt0_pll0outclk_i;  
+    gt3_pll0refclk_i <= gt0_pll0outrefclk_i; 
+    gt3_pll1clk_i    <= gt0_pll1outclk_i;  
+    gt3_pll1refclk_i <= gt0_pll1outrefclk_i; 
+    gt3_rst_i        <= GT0_PLL0RESET_IN;
+      
+   
+    
     --------------------------- GT Instances  -------------------------------   
     --_________________________________________________________________________
     --_________________________________________________________________________
-    --GT0  (X0Y1)
+    --GT0  (X0Y0)
     gt0_jesd204b_rx4_i : jesd204b_rx4_GT
     generic map
     (
@@ -442,9 +491,6 @@ begin
         ------------------------ Receive Ports - RX AFE Ports ----------------------
         GTPRXN_IN                       =>      GT0_GTPRXN_IN,
         GTPRXP_IN                       =>      GT0_GTPRXP_IN,
-        -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
-        RXMCOMMAALIGNEN_IN              =>      GT0_RXMCOMMAALIGNEN_IN,
-        RXPCOMMAALIGNEN_IN              =>      GT0_RXPCOMMAALIGNEN_IN,
         -------------------- Receive Ports - RX Equailizer Ports -------------------
         RXLPMHFHOLD_IN                  =>      GT0_RXLPMHFHOLD_IN,
         RXLPMLFHOLD_IN                  =>      GT0_RXLPMLFHOLD_IN,
@@ -463,7 +509,7 @@ begin
 
     --_________________________________________________________________________
     --_________________________________________________________________________
-    --GT1  (X0Y2)
+    --GT1  (X0Y1)
     gt1_jesd204b_rx4_i : jesd204b_rx4_GT
     generic map
     (
@@ -508,9 +554,6 @@ begin
         ------------------------ Receive Ports - RX AFE Ports ----------------------
         GTPRXN_IN                       =>      GT1_GTPRXN_IN,
         GTPRXP_IN                       =>      GT1_GTPRXP_IN,
-        -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
-        RXMCOMMAALIGNEN_IN              =>      GT1_RXMCOMMAALIGNEN_IN,
-        RXPCOMMAALIGNEN_IN              =>      GT1_RXPCOMMAALIGNEN_IN,
         -------------------- Receive Ports - RX Equailizer Ports -------------------
         RXLPMHFHOLD_IN                  =>      GT1_RXLPMHFHOLD_IN,
         RXLPMLFHOLD_IN                  =>      GT1_RXLPMLFHOLD_IN,
@@ -529,7 +572,7 @@ begin
 
     --_________________________________________________________________________
     --_________________________________________________________________________
-    --GT2  (X0Y3)
+    --GT2  (X0Y2)
     gt2_jesd204b_rx4_i : jesd204b_rx4_GT
     generic map
     (
@@ -574,9 +617,6 @@ begin
         ------------------------ Receive Ports - RX AFE Ports ----------------------
         GTPRXN_IN                       =>      GT2_GTPRXN_IN,
         GTPRXP_IN                       =>      GT2_GTPRXP_IN,
-        -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
-        RXMCOMMAALIGNEN_IN              =>      GT2_RXMCOMMAALIGNEN_IN,
-        RXPCOMMAALIGNEN_IN              =>      GT2_RXPCOMMAALIGNEN_IN,
         -------------------- Receive Ports - RX Equailizer Ports -------------------
         RXLPMHFHOLD_IN                  =>      GT2_RXLPMHFHOLD_IN,
         RXLPMLFHOLD_IN                  =>      GT2_RXLPMLFHOLD_IN,
@@ -590,6 +630,69 @@ begin
         GTTXRESET_IN                    =>      GT2_GTTXRESET_IN,
         ------------- Transmit Ports - TX Initialization and Reset Ports -----------
         TXPCSRESET_IN                   =>      GT2_TXPCSRESET_IN
+
+    );
+
+    --_________________________________________________________________________
+    --_________________________________________________________________________
+    --GT3  (X0Y3)
+    gt3_jesd204b_rx4_i : jesd204b_rx4_GT
+    generic map
+    (
+        -- Simulation attributes
+        GT_SIM_GTRESET_SPEEDUP => WRAPPER_SIM_GTRESET_SPEEDUP,
+        TXSYNC_OVRD_IN         => ('0'),
+        TXSYNC_MULTILANE_IN    => ('0')
+    )
+    port map
+    (
+        RST_IN                          =>      gt3_rst_i,
+        DRP_BUSY_OUT                    =>      GT3_DRP_BUSY_OUT,
+    
+        ---------------------------- Channel - DRP Ports  --------------------------
+        DRPADDR_IN                      =>      GT3_DRPADDR_IN,
+        DRPCLK_IN                       =>      GT3_DRPCLK_IN,
+        DRPDI_IN                        =>      GT3_DRPDI_IN,
+        DRPDO_OUT                       =>      GT3_DRPDO_OUT,
+        DRPEN_IN                        =>      GT3_DRPEN_IN,
+        DRPRDY_OUT                      =>      GT3_DRPRDY_OUT,
+        DRPWE_IN                        =>      GT3_DRPWE_IN,
+        ------------------------ GTPE2_CHANNEL Clocking Ports ----------------------
+        PLL0CLK_IN                      =>      gt3_pll0clk_i,
+        PLL0REFCLK_IN                   =>      gt3_pll0refclk_i,
+        PLL1CLK_IN                      =>      gt3_pll1clk_i,
+        PLL1REFCLK_IN                   =>      gt3_pll1refclk_i,
+        --------------------- RX Initialization and Reset Ports --------------------
+        RXUSERRDY_IN                    =>      GT3_RXUSERRDY_IN,
+        -------------------------- RX Margin Analysis Ports ------------------------
+        EYESCANDATAERROR_OUT            =>      GT3_EYESCANDATAERROR_OUT,
+        ------------------------- Receive Ports - CDR Ports ------------------------
+        RXCDRLOCK_OUT                   =>      GT3_RXCDRLOCK_OUT,
+        ------------------ Receive Ports - FPGA RX Interface Ports -----------------
+        RXDATA_OUT                      =>      GT3_RXDATA_OUT,
+        RXUSRCLK_IN                     =>      GT3_RXUSRCLK_IN,
+        RXUSRCLK2_IN                    =>      GT3_RXUSRCLK2_IN,
+        ------------------ Receive Ports - RX 8B/10B Decoder Ports -----------------
+        RXCHARISCOMMA_OUT               =>      GT3_RXCHARISCOMMA_OUT,
+        RXCHARISK_OUT                   =>      GT3_RXCHARISK_OUT,
+        RXDISPERR_OUT                   =>      GT3_RXDISPERR_OUT,
+        RXNOTINTABLE_OUT                =>      GT3_RXNOTINTABLE_OUT,
+        ------------------------ Receive Ports - RX AFE Ports ----------------------
+        GTPRXN_IN                       =>      GT3_GTPRXN_IN,
+        GTPRXP_IN                       =>      GT3_GTPRXP_IN,
+        -------------------- Receive Ports - RX Equailizer Ports -------------------
+        RXLPMHFHOLD_IN                  =>      GT3_RXLPMHFHOLD_IN,
+        RXLPMLFHOLD_IN                  =>      GT3_RXLPMLFHOLD_IN,
+        --------------- Receive Ports - RX Fabric Output Control Ports -------------
+        RXOUTCLK_OUT                    =>      GT3_RXOUTCLK_OUT,
+        ------------- Receive Ports - RX Initialization and Reset Ports ------------
+        GTRXRESET_IN                    =>      GT3_GTRXRESET_IN,
+        -------------- Receive Ports -RX Initialization and Reset Ports ------------
+        RXRESETDONE_OUT                 =>      GT3_RXRESETDONE_OUT,
+        --------------------- TX Initialization and Reset Ports --------------------
+        GTTXRESET_IN                    =>      GT3_GTTXRESET_IN,
+        ------------- Transmit Ports - TX Initialization and Reset Ports -----------
+        TXPCSRESET_IN                   =>      GT3_TXPCSRESET_IN
 
     );
 

@@ -8,5 +8,32 @@
 <msg type="info" file="sim" num="172" delta="old" >Generating IP...
 </msg>
 
+<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">A core named &apos;jesd204b_rx4&apos; already exists in the project. Output products for this core may be overwritten.</arg>
+</msg>
+
+<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">A core named &apos;jesd204b_rx4&apos; already exists in the project. Output products for this core may be overwritten.</arg>
+</msg>
+
+<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Component gtwizard_v2_7 does not have a valid model name for VHDL synthesis</arg>
+</msg>
+
+<msg type="info" file="sim" num="993" delta="new" >The selected IP does not support an ASY schematic symbol.
+</msg>
+
+<msg type="info" file="sim" num="949" delta="new" >Finished generation of ASY schematic symbol.
+</msg>
+
+<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">The chosen IP does not support an SYM schematic symbol.</arg>
+</msg>
+
+<msg type="warning" file="coreutil" num="0" delta="new" >WARNING:ProjectMgmt - The file
+   &quot;/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_
+   design/chipscope_vio.ngc&quot; device information, 7vx485tffg1761-2, does not
+   match the current project device, xc7a200tfbg676-2.
+</msg>
+
+<msg type="info" file="sim" num="948" delta="new" >Finished FLIST file generation.
+</msg>
+
 </messages>
 

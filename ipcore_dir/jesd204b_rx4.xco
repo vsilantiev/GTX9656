@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Thu Jan 29 19:18:37 2015
+# Date: Fri Jan 30 12:35:23 2015
 #
 ##############################################################
 #
@@ -51,7 +51,7 @@ CSET gt0_pll1_fbdiv_45=4
 CSET gt0_pll1_refclk_div=1
 CSET gt0_pll1_rxout_div=2
 CSET gt0_pll1_txout_div=2
-CSET gt0_val=false
+CSET gt0_val=true
 CSET gt0_val_agc_mode=Auto
 CSET gt0_val_align_comma_double=false
 CSET gt0_val_align_comma_enable=1111111111
@@ -177,9 +177,9 @@ CSET gt0_val_port_rxelecidle=true
 CSET gt0_val_port_rxlpmen=false
 CSET gt0_val_port_rxlpmhfovrden=false
 CSET gt0_val_port_rxlpmlfklovrden=false
-CSET gt0_val_port_rxmcommaalignen=true
+CSET gt0_val_port_rxmcommaalignen=false
 CSET gt0_val_port_rxoutclk=true
-CSET gt0_val_port_rxpcommaalignen=true
+CSET gt0_val_port_rxpcommaalignen=false
 CSET gt0_val_port_rxpcsreset=false
 CSET gt0_val_port_rxpmareset=false
 CSET gt0_val_port_rxpolarity=false
@@ -229,12 +229,12 @@ CSET gt0_val_rx_data_width=16
 CSET gt0_val_rx_equalizer=false
 CSET gt0_val_rx_int_datawidth=20
 CSET gt0_val_rx_line_rate=3.072
-CSET gt0_val_rx_refclk=REFCLK1_Q0
+CSET gt0_val_rx_refclk=REFCLK0_Q0
 CSET gt0_val_rx_reference_clock=122.880
 CSET gt0_val_rx_termination_voltage=Programmable
 CSET gt0_val_rxbuf_en=true
 CSET gt0_val_rxcomma_deten=true
-CSET gt0_val_rxoutclk_source=false
+CSET gt0_val_rxoutclk_source=true
 CSET gt0_val_rxprbs_err_loopback=false
 CSET gt0_val_rxslide_mode=OFF
 CSET gt0_val_rxusrclk=RXOUTCLK
@@ -285,7 +285,7 @@ CSET gt19_val=false
 CSET gt19_val_rx_refclk=REFCLK1_Q4
 CSET gt19_val_tx_refclk=REFCLK1_Q4
 CSET gt1_val=true
-CSET gt1_val_rx_refclk=REFCLK1_Q0
+CSET gt1_val_rx_refclk=REFCLK0_Q0
 CSET gt1_val_tx_refclk=REFCLK1_Q0
 CSET gt20_val=false
 CSET gt20_val_rx_refclk=REFCLK1_Q5
@@ -318,7 +318,7 @@ CSET gt29_val=false
 CSET gt29_val_rx_refclk=REFCLK1_Q7
 CSET gt29_val_tx_refclk=REFCLK1_Q7
 CSET gt2_val=true
-CSET gt2_val_rx_refclk=REFCLK1_Q0
+CSET gt2_val_rx_refclk=REFCLK0_Q0
 CSET gt2_val_tx_refclk=REFCLK1_Q0
 CSET gt30_val=false
 CSET gt30_val_rx_refclk=REFCLK1_Q7
@@ -351,7 +351,7 @@ CSET gt39_val=false
 CSET gt39_val_rx_refclk=REFCLK1_Q9
 CSET gt39_val_tx_refclk=REFCLK1_Q9
 CSET gt3_val=true
-CSET gt3_val_rx_refclk=REFCLK1_Q0
+CSET gt3_val_rx_refclk=REFCLK0_Q0
 CSET gt3_val_tx_refclk=REFCLK1_Q0
 CSET gt40_val=false
 CSET gt40_val_rx_refclk=REFCLK1_Q10
@@ -584,4 +584,4 @@ CSET use_gtz7=true
 MISC pkg_timestamp=2013-02-08T11:27:36Z
 # END Extra information
 GENERATE
-# CRC: cd86cdae
+# CRC: 4a7b6498
