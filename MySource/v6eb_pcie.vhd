@@ -52,10 +52,10 @@ entity v6pcieDMA is
 			 adc_clk_n_i          : in  std_logic;
 			 adc_clk_p_i          : in  std_logic;
 
-			 adc_out_p_i : in std_logic_vector(0 downto 0);  -- ADC CML data 
-			 adc_out_n_i : in std_logic_vector(0 downto 0)
-
-
+			 adc_out_p_i : in std_logic_vector(3 downto 0);  -- ADC CML data 
+			 adc_out_n_i : in std_logic_vector(3 downto 0);
+			userclk_200MHz_p : in std_logic;
+			userclk_200MHz_n : in std_logic
           );                       
 
 end entity v6pcieDMA;
@@ -927,7 +927,7 @@ architecture Behavioral of v6pcieDMA is
 
 	signal  user_rst_o          : std_logic;
 
-	--  signal  clk_200MHz          : std_logic;
+	  signal  clk_200MHz          : std_logic;
 
 	signal  DMA_Host2Board_Busy : std_logic;
 	signal  DMA_Host2Board_Done : std_logic;
@@ -940,104 +940,6 @@ architecture Behavioral of v6pcieDMA is
 
 begin
 
-		----------------adc_gpio_si570_oe_o <= '1';
--- PART ADC
-
-----   adc: anyADC
-----	  port map (
-----			trn_clk		=> trn_clk,
-----			adc_clk_in_p => adc_clk_in_p,          
-----			adc_clk_in_n => adc_clk_in_n,          
-----			adc_data_in_p => adc_data_in_p,        
-----			adc_data_in_n => adc_data_in_n,         
-----			adc_data_or_p => adc_data_or_p,         
-----			adc_data_or_n => adc_data_or_n,        
-----			delay_clk => clk_200MHz,--delay_clk,            
-		
-----			bram_wr_din =>  user_wr_dinA,
-----		   bram_wr_addr =>  user_wr_addrA,
-----			reg01_td 		=> reg01_td,					        
-----      reg01_tv 		=> reg01_tv,
-----			reg02_td 		=> reg02_td,					        
-----         reg02_tv 		=> reg02_tv,
-----			reg03_td 		=> reg03_td,					        
-----         reg03_tv 		=> reg03_tv,			
-----			reg04_td 		=> reg04_td,					        
-----         reg04_tv 		=> reg04_tv,			
-----			reg05_td 		=> reg05_td,					        
-----         reg05_tv 		=> reg05_tv,			
-----			reg06_td 		=> reg06_td,                      
-----         reg06_tv 		=> reg06_tv ,
-----			reg07_td 		=> reg07_td,					        
-----         reg07_tv 		=> reg07_tv,			
-----			reg08_td 		=> reg08_td,					        
-----         reg08_tv 		=> reg08_tv,
-----         reg09_tv 		=> reg09_tv,			
-----			reg09_td 		=> reg09_td,                      
-----         reg10_tv 		=> reg10_tv ,
-----			reg10_td 		=> reg10_td,					        
-----         reg11_tv 		=> reg11_tv,			
-----			reg11_td 		=> reg11_td,					        
-----         reg12_tv 		=> reg12_tv,
-----         reg12_td 		=> reg12_td,
-----         reg13_tv 		=> reg13_tv,
-----         reg13_td 		=> reg13_td,
-----         reg14_tv 		=> reg14_tv,
-----         reg14_td 		=> reg14_td,
-
-----			reg01_rd 		=> reg01_rd,					        
-----         reg01_rv 		=> reg01_rv,
-----			reg02_rd 		=> reg02_rd,					        
-----         reg02_rv 		=> reg02_rv,
-----			reg03_rd 		=> reg03_rd,					        
-----         reg03_rv 		=> reg03_rv,			
-----			reg04_rd 		=> reg04_rd,					        
-----         reg04_rv 		=> reg04_rv,			
-----			reg05_rd 		=> reg05_rd,					        
-----         reg05_rv 		=> reg05_rv,			
-----			reg06_rd 		=> reg06_rd,                      
-----         reg06_rv 		=> reg06_rv ,
-----			reg07_rd 		=> reg07_rd,					        
-----         reg07_rv 		=> reg07_rv,			
-----			reg08_rd 		=> reg08_rd,					        
-----         reg08_rv 		=> reg08_rv,
-----         reg09_rv 		=> reg09_rv,			
-----			reg09_rd 		=> reg09_rd,                      
-----         reg10_rv 		=> reg10_rv ,
-----			reg10_rd 		=> reg10_rd,					        
-----         reg11_rv 		=> reg11_rv,			
-----			reg11_rd 		=> reg11_rd,					        
-----         reg12_rv 		=> reg12_rv,
-----         reg12_rd 		=> reg12_rd,
-----         reg13_rv 		=> reg13_rv,
-----         reg13_rd 		=> reg13_rd,
-----         reg14_rv 		=> reg14_rv,
-----         reg14_rd 		=> reg14_rd,			
-			
-			
-----			reset => sys_reset_n_c,
-----			strobe_adc => strobe_adc,--,
-			--bram_wr_en 		=> user_wr_weA,
-----			user_int_1o    => CTL_irq,
-----			user_int_2o    => DAQ_irq,
-----			user_int_3o    => DLM_irq,
-----			adcclock			=> adcclock,
-			
-----			fifowr_clk =>fifowr_clk   ,
-----			fifowr_en     =>fifowr_en,
-----			fifodin       =>fifodin,
-----			fifofull      => fifofull,
-----			fifoprog_full => fifoprog_full,
-			
-----			 real_strobe_signal => open,--real_strobe_signal,
-----			 real_soa_signal => open,--real_soa_signal,
-----			resetfifo => resetfifo
-			
-			--DMA_Host2Board_Busy => DMA_Host2Board_Busy,
-			--DMA_Host2Board_Done => DMA_Host2Board_Done
-----			);
-
--- END PART ADC
 
 cmp_fmc_adc_125Ms_core : fmc_adc_125Ms_core
     port map(
@@ -1111,17 +1013,10 @@ cmp_fmc_adc_125Ms_core : fmc_adc_125Ms_core
       adc_clk_p_i  => adc_clk_p_i,
       adc_clk_n_i  => adc_clk_n_i,
 
-      --adc_out_p_i(3 downto 0) => "1" & "1" & adc_out_p_i(0) & "1",
-		--adc_out_n_i(3 downto 0) => "1" & "1" & adc_out_n_i(0) & "1"
+      adc_out_p_i => adc_out_p_i,
+		adc_out_n_i => adc_out_n_i
 		
-		adc_out_p_i(0) => '1',
-		adc_out_p_i(1) => adc_out_p_i(0),
-		adc_out_p_i(2) => '1',
-		adc_out_p_i(3) => '1',
-		adc_out_n_i(0) => '1',
-		adc_out_n_i(1) => adc_out_n_i(0),
-		adc_out_n_i(2) => '1',
-		adc_out_n_i(3) => '1'
+
 
 
       );
@@ -1152,12 +1047,12 @@ cmp_fmc_adc_125Ms_core : fmc_adc_125Ms_core
                  CEB    =>  '0'
                 );
 
----   userclk_ibuf : IBUFDS 
----     port map (
----                 O  => clk_200MHz,
----                 I  => userclk_200MHz_p,
----                 IB => userclk_200MHz_n
----                );
+   userclk_ibuf : IBUFDS 
+     port map (
+                 O  => clk_200MHz,
+                I  => userclk_200MHz_p,
+                 IB => userclk_200MHz_n
+               );
 
 
 
@@ -1631,7 +1526,7 @@ make4Lanes: if pcieLanes = 4 generate
          H2B_wr_full      		=> eb_full   				,
          H2B_wr_data_count    => H2B_wr_data_count(C_EMU_FIFO_DC_WIDTH-1+1 downto 1) ,
 
-         H2B_rd_clk           => '0',--clk_200MHz       		,
+         H2B_rd_clk           => clk_200MHz       		,
 			H2B_rd_en            => user_rd_en        	,
          H2B_rd_dout          => user_rd_dout      	,
          H2B_rd_pempty        => user_rd_pempty    	,

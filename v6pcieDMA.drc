@@ -1,7 +1,7 @@
 Release 14.7 Drc P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Sat Jan 31 00:58:36 2015
+Sat Jan 31 23:04:38 2015
 
 drc -z v6pcieDMA.ncd v6pcieDMA.pcf
 
@@ -12,10 +12,6 @@ WARNING:PhysDesignRules:367 - The signal <ila0_trig0<16>> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <trn_reset_n> is incomplete. The signal
    does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <make4Lanes.pcieCore/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_lane[3].pipe_user
-   _i/USER_OOBCLK_IN> is incomplete. The signal does not drive any load pins in
-   the design.
 WARNING:PhysDesignRules:367 - The signal
    <make4Lanes.pcieCore/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_lane[1].pipe_user
    _i/USER_OOBCLK_IN> is incomplete. The signal does not drive any load pins in
@@ -32,6 +28,10 @@ WARNING:PhysDesignRules:367 - The signal
    <make4Lanes.pcieCore/v7_pcie_i/pcie_top_i/axi_basic_top_i/rx_inst/rx_pipeline
    _inst/NULL_RX_tkeep<4>> is incomplete. The signal does not drive any load
    pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <make4Lanes.pcieCore/v7_pcie_i/pcie_top_i/axi_basic_top_i/rx_inst/rx_pipeline
+   _inst/NULL_RDST_RDY> is incomplete. The signal does not drive any load pins
+   in the design.
 WARNING:PhysDesignRules:367 - The signal
    <make4Lanes.pcieCore/v7_pcie_i/pcie_top_i/pcie_7x_i/mim_rx_raddr<12>> is
    incomplete. The signal does not drive any load pins in the design.
@@ -75,5 +75,15 @@ WARNING:PhysDesignRules:367 - The signal
 WARNING:PhysDesignRules:367 - The signal
    <theTlpControl/rx_Itf/Rx_Input_Delays/trn_rrem_n<0>> is incomplete. The
    signal does not drive any load pins in the design.
-DRC detected 0 errors and 21 warnings.  Please see the previously displayed
+WARNING:PhysDesignRules:2452 - The IOB userclk_200MHz_n is either not
+   constrained (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB userclk_200MHz_p is either not
+   constrained (LOC) to a specific location and/or has an undefined I/O Standard
+   (IOSTANDARD). This condition may seriously affect the device and will be an
+   error in bitstream creation. It should be corrected by properly specifying
+   the pin location and I/O Standard.
+DRC detected 0 errors and 23 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

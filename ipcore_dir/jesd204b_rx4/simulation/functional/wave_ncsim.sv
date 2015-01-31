@@ -90,6 +90,8 @@
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt0_jesd204b_rx4_i.PLL0REFCLK_IN
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt0_jesd204b_rx4_i.PLL1CLK_IN
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt0_jesd204b_rx4_i.PLL1REFCLK_IN
+  waveform  add  -label Loopback_Ports  -comment  Loopback_Ports
+  waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt0_jesd204b_rx4_i.LOOPBACK_IN
   waveform  add  -label RX_Initialization_and_Reset_Ports  -comment  RX_Initialization_and_Reset_Ports
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt0_jesd204b_rx4_i.RXUSERRDY_IN
   waveform  add  -label RX_Margin_Analysis_Ports  -comment  RX_Margin_Analysis_Ports
@@ -101,13 +103,14 @@
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt0_jesd204b_rx4_i.RXUSRCLK_IN
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt0_jesd204b_rx4_i.RXUSRCLK2_IN
   waveform  add  -label Receive_Ports_-_RX_8B/10B_Decoder_Ports  -comment  Receive_Ports_-_RX_8B/10B_Decoder_Ports
-  waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt0_jesd204b_rx4_i.RXCHARISCOMMA_OUT
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt0_jesd204b_rx4_i.RXCHARISK_OUT
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt0_jesd204b_rx4_i.RXDISPERR_OUT
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt0_jesd204b_rx4_i.RXNOTINTABLE_OUT
   waveform  add  -label Receive_Ports_-_RX_AFE_Ports  -comment  Receive_Ports_-_RX_AFE_Ports
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt0_jesd204b_rx4_i.GTPRXN_IN
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt0_jesd204b_rx4_i.GTPRXP_IN
+  waveform  add  -label Receive_Ports_-_RX_Byte_and_Word_Alignment_Ports  -comment  Receive_Ports_-_RX_Byte_and_Word_Alignment_Ports
+  waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt0_jesd204b_rx4_i.RXSLIDE_IN
   waveform  add  -label Receive_Ports_-_RX_Equailizer_Ports  -comment  Receive_Ports_-_RX_Equailizer_Ports
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt0_jesd204b_rx4_i.RXLPMHFHOLD_IN
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt0_jesd204b_rx4_i.RXLPMLFHOLD_IN
@@ -115,6 +118,11 @@
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt0_jesd204b_rx4_i.RXOUTCLK_OUT
   waveform  add  -label Receive_Ports_-_RX_Initialization_and_Reset_Ports  -comment  Receive_Ports_-_RX_Initialization_and_Reset_Ports
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt0_jesd204b_rx4_i.GTRXRESET_IN
+  waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt0_jesd204b_rx4_i.RXPCSRESET_IN
+  waveform  add  -label Receive_Ports_-_RX_OOB_signalling_Ports  -comment  Receive_Ports_-_RX_OOB_signalling_Ports
+  waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt0_jesd204b_rx4_i.RXELECIDLE_OUT
+  waveform  add  -label Receive_Ports_-_RX_Polarity_Control_Ports  -comment  Receive_Ports_-_RX_Polarity_Control_Ports
+  waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt0_jesd204b_rx4_i.RXPOLARITY_IN
   waveform  add  -label Receive_Ports_-RX_Initialization_and_Reset_Ports  -comment  Receive_Ports_-RX_Initialization_and_Reset_Ports
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt0_jesd204b_rx4_i.RXRESETDONE_OUT
   waveform  add  -label TX_Initialization_and_Reset_Ports  -comment  TX_Initialization_and_Reset_Ports
@@ -136,6 +144,8 @@
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt1_jesd204b_rx4_i.PLL0REFCLK_IN
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt1_jesd204b_rx4_i.PLL1CLK_IN
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt1_jesd204b_rx4_i.PLL1REFCLK_IN
+  waveform  add  -label Loopback_Ports  -comment  Loopback_Ports
+  waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt1_jesd204b_rx4_i.LOOPBACK_IN
   waveform  add  -label RX_Initialization_and_Reset_Ports  -comment  RX_Initialization_and_Reset_Ports
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt1_jesd204b_rx4_i.RXUSERRDY_IN
   waveform  add  -label RX_Margin_Analysis_Ports  -comment  RX_Margin_Analysis_Ports
@@ -147,13 +157,14 @@
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt1_jesd204b_rx4_i.RXUSRCLK_IN
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt1_jesd204b_rx4_i.RXUSRCLK2_IN
   waveform  add  -label Receive_Ports_-_RX_8B/10B_Decoder_Ports  -comment  Receive_Ports_-_RX_8B/10B_Decoder_Ports
-  waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt1_jesd204b_rx4_i.RXCHARISCOMMA_OUT
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt1_jesd204b_rx4_i.RXCHARISK_OUT
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt1_jesd204b_rx4_i.RXDISPERR_OUT
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt1_jesd204b_rx4_i.RXNOTINTABLE_OUT
   waveform  add  -label Receive_Ports_-_RX_AFE_Ports  -comment  Receive_Ports_-_RX_AFE_Ports
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt1_jesd204b_rx4_i.GTPRXN_IN
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt1_jesd204b_rx4_i.GTPRXP_IN
+  waveform  add  -label Receive_Ports_-_RX_Byte_and_Word_Alignment_Ports  -comment  Receive_Ports_-_RX_Byte_and_Word_Alignment_Ports
+  waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt1_jesd204b_rx4_i.RXSLIDE_IN
   waveform  add  -label Receive_Ports_-_RX_Equailizer_Ports  -comment  Receive_Ports_-_RX_Equailizer_Ports
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt1_jesd204b_rx4_i.RXLPMHFHOLD_IN
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt1_jesd204b_rx4_i.RXLPMLFHOLD_IN
@@ -161,6 +172,11 @@
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt1_jesd204b_rx4_i.RXOUTCLK_OUT
   waveform  add  -label Receive_Ports_-_RX_Initialization_and_Reset_Ports  -comment  Receive_Ports_-_RX_Initialization_and_Reset_Ports
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt1_jesd204b_rx4_i.GTRXRESET_IN
+  waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt1_jesd204b_rx4_i.RXPCSRESET_IN
+  waveform  add  -label Receive_Ports_-_RX_OOB_signalling_Ports  -comment  Receive_Ports_-_RX_OOB_signalling_Ports
+  waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt1_jesd204b_rx4_i.RXELECIDLE_OUT
+  waveform  add  -label Receive_Ports_-_RX_Polarity_Control_Ports  -comment  Receive_Ports_-_RX_Polarity_Control_Ports
+  waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt1_jesd204b_rx4_i.RXPOLARITY_IN
   waveform  add  -label Receive_Ports_-RX_Initialization_and_Reset_Ports  -comment  Receive_Ports_-RX_Initialization_and_Reset_Ports
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt1_jesd204b_rx4_i.RXRESETDONE_OUT
   waveform  add  -label TX_Initialization_and_Reset_Ports  -comment  TX_Initialization_and_Reset_Ports
@@ -182,6 +198,8 @@
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.PLL0REFCLK_IN
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.PLL1CLK_IN
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.PLL1REFCLK_IN
+  waveform  add  -label Loopback_Ports  -comment  Loopback_Ports
+  waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.LOOPBACK_IN
   waveform  add  -label RX_Initialization_and_Reset_Ports  -comment  RX_Initialization_and_Reset_Ports
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.RXUSERRDY_IN
   waveform  add  -label RX_Margin_Analysis_Ports  -comment  RX_Margin_Analysis_Ports
@@ -193,13 +211,14 @@
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.RXUSRCLK_IN
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.RXUSRCLK2_IN
   waveform  add  -label Receive_Ports_-_RX_8B/10B_Decoder_Ports  -comment  Receive_Ports_-_RX_8B/10B_Decoder_Ports
-  waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.RXCHARISCOMMA_OUT
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.RXCHARISK_OUT
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.RXDISPERR_OUT
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.RXNOTINTABLE_OUT
   waveform  add  -label Receive_Ports_-_RX_AFE_Ports  -comment  Receive_Ports_-_RX_AFE_Ports
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.GTPRXN_IN
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.GTPRXP_IN
+  waveform  add  -label Receive_Ports_-_RX_Byte_and_Word_Alignment_Ports  -comment  Receive_Ports_-_RX_Byte_and_Word_Alignment_Ports
+  waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.RXSLIDE_IN
   waveform  add  -label Receive_Ports_-_RX_Equailizer_Ports  -comment  Receive_Ports_-_RX_Equailizer_Ports
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.RXLPMHFHOLD_IN
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.RXLPMLFHOLD_IN
@@ -207,6 +226,11 @@
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.RXOUTCLK_OUT
   waveform  add  -label Receive_Ports_-_RX_Initialization_and_Reset_Ports  -comment  Receive_Ports_-_RX_Initialization_and_Reset_Ports
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.GTRXRESET_IN
+  waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.RXPCSRESET_IN
+  waveform  add  -label Receive_Ports_-_RX_OOB_signalling_Ports  -comment  Receive_Ports_-_RX_OOB_signalling_Ports
+  waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.RXELECIDLE_OUT
+  waveform  add  -label Receive_Ports_-_RX_Polarity_Control_Ports  -comment  Receive_Ports_-_RX_Polarity_Control_Ports
+  waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.RXPOLARITY_IN
   waveform  add  -label Receive_Ports_-RX_Initialization_and_Reset_Ports  -comment  Receive_Ports_-RX_Initialization_and_Reset_Ports
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt2_jesd204b_rx4_i.RXRESETDONE_OUT
   waveform  add  -label TX_Initialization_and_Reset_Ports  -comment  TX_Initialization_and_Reset_Ports
@@ -228,6 +252,8 @@
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.PLL0REFCLK_IN
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.PLL1CLK_IN
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.PLL1REFCLK_IN
+  waveform  add  -label Loopback_Ports  -comment  Loopback_Ports
+  waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.LOOPBACK_IN
   waveform  add  -label RX_Initialization_and_Reset_Ports  -comment  RX_Initialization_and_Reset_Ports
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.RXUSERRDY_IN
   waveform  add  -label RX_Margin_Analysis_Ports  -comment  RX_Margin_Analysis_Ports
@@ -239,13 +265,14 @@
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.RXUSRCLK_IN
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.RXUSRCLK2_IN
   waveform  add  -label Receive_Ports_-_RX_8B/10B_Decoder_Ports  -comment  Receive_Ports_-_RX_8B/10B_Decoder_Ports
-  waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.RXCHARISCOMMA_OUT
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.RXCHARISK_OUT
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.RXDISPERR_OUT
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.RXNOTINTABLE_OUT
   waveform  add  -label Receive_Ports_-_RX_AFE_Ports  -comment  Receive_Ports_-_RX_AFE_Ports
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.GTPRXN_IN
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.GTPRXP_IN
+  waveform  add  -label Receive_Ports_-_RX_Byte_and_Word_Alignment_Ports  -comment  Receive_Ports_-_RX_Byte_and_Word_Alignment_Ports
+  waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.RXSLIDE_IN
   waveform  add  -label Receive_Ports_-_RX_Equailizer_Ports  -comment  Receive_Ports_-_RX_Equailizer_Ports
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.RXLPMHFHOLD_IN
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.RXLPMLFHOLD_IN
@@ -253,6 +280,11 @@
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.RXOUTCLK_OUT
   waveform  add  -label Receive_Ports_-_RX_Initialization_and_Reset_Ports  -comment  Receive_Ports_-_RX_Initialization_and_Reset_Ports
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.GTRXRESET_IN
+  waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.RXPCSRESET_IN
+  waveform  add  -label Receive_Ports_-_RX_OOB_signalling_Ports  -comment  Receive_Ports_-_RX_OOB_signalling_Ports
+  waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.RXELECIDLE_OUT
+  waveform  add  -label Receive_Ports_-_RX_Polarity_Control_Ports  -comment  Receive_Ports_-_RX_Polarity_Control_Ports
+  waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.RXPOLARITY_IN
   waveform  add  -label Receive_Ports_-RX_Initialization_and_Reset_Ports  -comment  Receive_Ports_-RX_Initialization_and_Reset_Ports
   waveform  add  -signals  jesd204b_rx4_TB.jesd204b_rx4_exdes_i.jesd204b_rx4_init_i.jesd204b_rx4_i.gt3_jesd204b_rx4_i.RXRESETDONE_OUT
   waveform  add  -label TX_Initialization_and_Reset_Ports  -comment  TX_Initialization_and_Reset_Ports

@@ -1,3 +1,4 @@
+-g UnconstrainedPins:Allow
 -w
 -g DebugBitstream:No
 -g Binary:no

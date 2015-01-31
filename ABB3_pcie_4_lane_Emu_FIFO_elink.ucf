@@ -179,8 +179,8 @@ NET "make4Lanes.pcieCore/v7_pcie_i/gt_top_i/pipe_wrapper_i/qpll_reset.qpll_reset
 NET adc_clk_n_i LOC = "AB13";#"AB13"; #AA11       
 NET adc_clk_p_i LOC = "AA13";#"AA13"; #AB11
 
-NET adc_out_p_i<0> LOC="AE13" |IOSTANDARD=LVDS_25 |DIFF_TERM=TRUE;
-NET adc_out_n_i<0> LOC="AF13" |IOSTANDARD=LVDS_25 |DIFF_TERM=TRUE;
+NET adc_out_p_i(1) LOC="AE13";# |IOSTANDARD=LVDS_25 |DIFF_TERM=TRUE;
+NET adc_out_n_i(1) LOC="AF13";# |IOSTANDARD=LVDS_25 |DIFF_TERM=TRUE;
 #NET adc_out_p_i<1> LOC="AE13" |IOSTANDARD=LVDS_25 |DIFF_TERM=TRUE;
 #NET adc_out_n_i<1> LOC="AF13" |IOSTANDARD=LVDS_25 |DIFF_TERM=TRUE;
 #NET adc_out_p_i<2> LOC="AE13" |IOSTANDARD=LVDS_25 |DIFF_TERM=TRUE;
@@ -223,11 +223,14 @@ INST cmp_fmc_adc_125Ms_core/jesd204b/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd
 ##---------- Set placement for gt3_gtp_wrapper_i/GTPE2_CHANNEL ------
 #INST cmp_fmc_adc_125Ms_core/jesd204b/gt3_jesd204b_rx4_i/gtpe2_i LOC=GTPE2_CHANNEL_X0Y3;
 #NET "userclk_200MHz_n" TIG;
-#NET "userclk_200MHz_n" LOC = P3;
+NET "userclk_200MHz_n" LOC = P3;
 #NET "userclk_200MHz_n" IOSTANDARD = LVDS_25;
 #NET "userclk_200MHz_n" DIFF_TERM = "TRUE";
 #NET "userclk_200MHz_p" TIG;
-#NET "userclk_200MHz_p" LOC = R3;
+NET "userclk_200MHz_p" LOC = R3;
+
+NET "clk_200MHz" TNM_NET = "clk_200MHz";
+TIMESPEC "TS_clk_200MHz" = PERIOD "clk_200MHz" 200 MHz HIGH 50 %;
 #NET "userclk_200MHz_p" IOSTANDARD = LVDS_25;
 #NET "userclk_200MHz_p" DIFF_TERM = "TRUE";
 #NET "userclk_200MHz_p" TNM_NET = "userclk_200MHz_p";

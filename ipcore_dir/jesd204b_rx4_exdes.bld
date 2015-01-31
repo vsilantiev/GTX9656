@@ -4,10 +4,10 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
 ise -dd _ngo -sd jesd204b_rx4/example_design -nt timestamp -uc
 jesd204b_rx4/example_design/jesd204b_rx4_exdes.ucf -p xc7a200t-fbg676-2
-jesd204b_rx4_exdes.ngc jesd204b_rx4_exdes.ngd
+jesd204b_rx4_exdes_cs.ngc jesd204b_rx4_exdes.ngd
 
 Reading NGO file
-"/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_exdes.ngc" ...
+"/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_exdes_cs.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -42,10 +42,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   4
 
-Total memory usage is 465900 kilobytes
+Total memory usage is 518196 kilobytes
 
 Writing NGD file "jesd204b_rx4_exdes.ngd" ...
-Total REAL time to NGDBUILD completion:  8 sec
-Total CPU time to NGDBUILD completion:   8 sec
+Total REAL time to NGDBUILD completion:  10 sec
+Total CPU time to NGDBUILD completion:   9 sec
 
 Writing NGDBUILD log file "jesd204b_rx4_exdes.bld"...

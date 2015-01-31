@@ -1,0 +1,100 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Sat Jan 31 14:49:04 2015
+# Process ID: 6139
+# Log file: /home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/planAhead_run_2/planAhead.log
+# Journal file: /home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -62 day(s)
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source /home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/pa.fromHdl.tcl
+# create_project -name jesd204b_rx4 -dir "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/planAhead_run_2" -part xc7a200tfbg676-2
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.ucf" [current_fileset -constrset]
+Adding file '/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {jesd204b_rx4/example_design/jesd204b_rx4_sync_block.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {jesd204b_rx4/example_design/jesd204b_rx4_gtrxreset_seq.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {jesd204b_rx4_gt.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {jesd204b_rx4/example_design/jesd204b_rx4_rx_startup_fsm.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {jesd204b_rx4/example_design/jesd204b_rx4_clock_module.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {jesd204b_rx4.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {jesd204b_rx4/example_design/jesd204b_rx4_init.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {jesd204b_rx4/example_design/jesd204b_rx4_gt_usrclk_source.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {jesd204b_rx4/example_design/jesd204b_rx4_gt_frame_check.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# add_files [list {jesd204b_rx4/example_design/ila.ngc}]
+# add_files [list {jesd204b_rx4/example_design/icon.ngc}]
+# add_files [list {jesd204b_rx4/example_design/data_vio.ngc}]
+# set hdlfile [add_files [list {jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top jesd204b_rx4_exdes $srcset
+# add_files [list {/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.ucf}] -fileset [get_property constrset [current_run]]
+# add_files [list {/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_exdes.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/fifomodule.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_TX_STARTUP_FSM.ncf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc7a200tfbg676-2
+Using Verific elaboration
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_sync_block.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gtrxreset_seq.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_gt.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_rx_startup_fsm.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_clock_module.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gt_usrclk_source.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gt_frame_check.vhd" into library work
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd" into library work
+INFO: [Netlist 29-17] Analyzing 80 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/artix7/artix7/xc7a200t/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/artix7/artix7/xc7a200t/ClockBuffers.xml
+Loading clock placement rules from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/artix7/PinFunctions.xml...
+Loading package from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/artix7/artix7/xc7a200t/fbg676/Package.xml
+Loading io standards from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/artix7/ConfigModes.xml
+Loading list of drcs for the architecture : /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/artix7/drc.xml
+Parsing UCF File [/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.ucf]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'jesd204b_rx4_init_i/jesd204b_rx4_i/gt0_jesd204b_rx4_i/gtpe2_i' [/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.ucf:105]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'jesd204b_rx4_init_i/jesd204b_rx4_i/gt1_jesd204b_rx4_i/gtpe2_i' [/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.ucf:108]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'jesd204b_rx4_init_i/jesd204b_rx4_i/gt2_jesd204b_rx4_i/gtpe2_i' [/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.ucf:111]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/gtpe2_i' [/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.ucf:114]
+Finished Parsing UCF File [/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 76 instances were transformed.
+  FD => FDCE: 76 instances
+
+Phase 0 | Netlist Checksum: f07474ce
+open_rtl_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:16 . Memory (MB): peak = 3039.645 ; gain = 380.539
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1

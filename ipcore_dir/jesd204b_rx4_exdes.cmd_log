@@ -60,3 +60,14 @@ xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_
 xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_exdes.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_exdes.syr" 
 xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_exdes.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_exdes.syr" 
 xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_exdes.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_exdes.syr" 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_exdes.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_exdes.syr" 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_exdes.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_exdes.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd jesd204b_rx4/example_design -nt timestamp -uc jesd204b_rx4/example_design/jesd204b_rx4_exdes.ucf -p xc7a200t-fbg676-2 jesd204b_rx4_exdes.ngc jesd204b_rx4_exdes.ngd  
+map -intstyle ise -p xc7a200t-fbg676-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o jesd204b_rx4_exdes_map.ncd jesd204b_rx4_exdes.ngd jesd204b_rx4_exdes.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd jesd204b_rx4/example_design -nt timestamp -uc jesd204b_rx4/example_design/jesd204b_rx4_exdes.ucf -p xc7a200t-fbg676-2 jesd204b_rx4_exdes_cs.ngc jesd204b_rx4_exdes.ngd  
+map -intstyle ise -p xc7a200t-fbg676-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o jesd204b_rx4_exdes_map.ncd jesd204b_rx4_exdes.ngd jesd204b_rx4_exdes.pcf 
+par -w -intstyle ise -ol high -mt off jesd204b_rx4_exdes_map.ncd jesd204b_rx4_exdes.ncd jesd204b_rx4_exdes.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml jesd204b_rx4_exdes.twx jesd204b_rx4_exdes.ncd -o jesd204b_rx4_exdes.twr jesd204b_rx4_exdes.pcf 
+bitgen -intstyle ise -f jesd204b_rx4_exdes.ut jesd204b_rx4_exdes.ncd 
+bitgen -intstyle ise -f jesd204b_rx4_exdes.ut jesd204b_rx4_exdes.ncd 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_exdes.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4_exdes.syr" 

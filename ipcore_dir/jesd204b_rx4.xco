@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Fri Jan 30 12:35:23 2015
+# Date: Sat Jan 31 19:15:00 2015
 #
 ##############################################################
 #
@@ -39,18 +39,18 @@ SET vhdlsim = true
 SELECT 7_Series_FPGAs_Transceivers_Wizard xilinx.com:ip:gtwizard:2.7
 # END Select
 # BEGIN Parameters
-CSET advanced_clocking=false
+CSET advanced_clocking=true
 CSET component_name=jesd204b_rx4
 CSET gt0_pll0_fbdiv=5
 CSET gt0_pll0_fbdiv_45=5
 CSET gt0_pll0_refclk_div=1
-CSET gt0_pll0_rxout_div=2
-CSET gt0_pll0_txout_div=2
+CSET gt0_pll0_rxout_div=1
+CSET gt0_pll0_txout_div=1
 CSET gt0_pll1_fbdiv=1
 CSET gt0_pll1_fbdiv_45=4
 CSET gt0_pll1_refclk_div=1
-CSET gt0_pll1_rxout_div=2
-CSET gt0_pll1_txout_div=2
+CSET gt0_pll1_rxout_div=1
+CSET gt0_pll1_txout_div=1
 CSET gt0_val=true
 CSET gt0_val_agc_mode=Auto
 CSET gt0_val_align_comma_double=false
@@ -149,7 +149,7 @@ CSET gt0_val_encoding=8B/10B
 CSET gt0_val_max_cb_level=7
 CSET gt0_val_no_rx=false
 CSET gt0_val_no_tx=true
-CSET gt0_val_oob=false
+CSET gt0_val_oob=true
 CSET gt0_val_pcs_pcie_en=false
 CSET gt0_val_pd_trans_time_from_p2=60
 CSET gt0_val_pd_trans_time_non_p2=60
@@ -158,7 +158,7 @@ CSET gt0_val_port_cominitdet=false
 CSET gt0_val_port_comsasdet=false
 CSET gt0_val_port_comwakedet=false
 CSET gt0_val_port_cpllpd=false
-CSET gt0_val_port_loopback=false
+CSET gt0_val_port_loopback=true
 CSET gt0_val_port_phystatus=false
 CSET gt0_val_port_pll0pd=false
 CSET gt0_val_port_pll1pd=false
@@ -168,7 +168,7 @@ CSET gt0_val_port_rxbufstatus=false
 CSET gt0_val_port_rxbyteisaligned=false
 CSET gt0_val_port_rxbyterealign=false
 CSET gt0_val_port_rxcdrhold=false
-CSET gt0_val_port_rxchariscomma=true
+CSET gt0_val_port_rxchariscomma=false
 CSET gt0_val_port_rxcharisk=true
 CSET gt0_val_port_rxcommadet=false
 CSET gt0_val_port_rxdfeagcovrden=false
@@ -180,15 +180,15 @@ CSET gt0_val_port_rxlpmlfklovrden=false
 CSET gt0_val_port_rxmcommaalignen=false
 CSET gt0_val_port_rxoutclk=true
 CSET gt0_val_port_rxpcommaalignen=false
-CSET gt0_val_port_rxpcsreset=false
+CSET gt0_val_port_rxpcsreset=true
 CSET gt0_val_port_rxpmareset=false
-CSET gt0_val_port_rxpolarity=false
+CSET gt0_val_port_rxpolarity=true
 CSET gt0_val_port_rxpowerdown=false
 CSET gt0_val_port_rxqpien=false
 CSET gt0_val_port_rxqpisenn=false
 CSET gt0_val_port_rxqpisenp=false
 CSET gt0_val_port_rxrate=false
-CSET gt0_val_port_rxslide=false
+CSET gt0_val_port_rxslide=true
 CSET gt0_val_port_rxstartofseq=false
 CSET gt0_val_port_rxstatus=false
 CSET gt0_val_port_rxsysclksel=false
@@ -228,24 +228,24 @@ CSET gt0_val_rx_cm_trim=800
 CSET gt0_val_rx_data_width=16
 CSET gt0_val_rx_equalizer=false
 CSET gt0_val_rx_int_datawidth=20
-CSET gt0_val_rx_line_rate=3.072
+CSET gt0_val_rx_line_rate=6.25
 CSET gt0_val_rx_refclk=REFCLK0_Q0
-CSET gt0_val_rx_reference_clock=122.880
+CSET gt0_val_rx_reference_clock=125.000
 CSET gt0_val_rx_termination_voltage=Programmable
 CSET gt0_val_rxbuf_en=true
 CSET gt0_val_rxcomma_deten=true
-CSET gt0_val_rxoutclk_source=true
+CSET gt0_val_rxoutclk_source=false
 CSET gt0_val_rxprbs_err_loopback=false
-CSET gt0_val_rxslide_mode=OFF
+CSET gt0_val_rxslide_mode=PCS
 CSET gt0_val_rxusrclk=RXOUTCLK
 CSET gt0_val_sata_e_idle_val=7
 CSET gt0_val_sata_rx_burst_val=7
 CSET gt0_val_tx_buffer_bypass_mode=Auto
 CSET gt0_val_tx_data_width=32
 CSET gt0_val_tx_int_datawidth=20
-CSET gt0_val_tx_line_rate=3.072
+CSET gt0_val_tx_line_rate=6.25
 CSET gt0_val_tx_refclk=REFCLK1_Q0
-CSET gt0_val_tx_reference_clock=122.880
+CSET gt0_val_tx_reference_clock=125.000
 CSET gt0_val_txbuf_en=true
 CSET gt0_val_txdiff_emph_mode=Custom
 CSET gt0_val_txdiffctrl=false
@@ -526,10 +526,10 @@ CSET identical_config=true
 CSET identical_protocol_file=JESD204
 CSET identical_val_no_rx=false
 CSET identical_val_no_tx=true
-CSET identical_val_rx_line_rate=3.072
-CSET identical_val_rx_reference_clock=122.880
-CSET identical_val_tx_line_rate=3.072
-CSET identical_val_tx_reference_clock=122.880
+CSET identical_val_rx_line_rate=6.25
+CSET identical_val_rx_reference_clock=125.000
+CSET identical_val_tx_line_rate=6.25
+CSET identical_val_tx_reference_clock=125.000
 CSET octal0_val=true
 CSET octal0_val_drpclk_source=DRPCLK0
 CSET octal0_val_identical_config=true
@@ -584,4 +584,4 @@ CSET use_gtz7=true
 MISC pkg_timestamp=2013-02-08T11:27:36Z
 # END Extra information
 GENERATE
-# CRC: 4a7b6498
+# CRC: c52a5fe1

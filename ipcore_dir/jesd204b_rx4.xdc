@@ -69,6 +69,6 @@
 
 ####################### GT reference clock constraints #######################
 
-create_clock -name GT0_GTREFCLK0_IN -period 8.138 [get_pins -hier -filter {name=~*gtpe2_common_0_i*GTREFCLK0}]
+create_clock -name GT0_GTREFCLK0_IN -period 8.0 [get_pins -hier -filter {name=~*gtpe2_common_0_i*GTREFCLK0}]
 
 

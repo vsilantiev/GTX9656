@@ -92,8 +92,7 @@ port
     RXN_IN                                  : in   std_logic_vector(3 downto 0);
     RXP_IN                                  : in   std_logic_vector(3 downto 0);
     TXN_OUT                                 : out  std_logic_vector(3 downto 0);
-    TXP_OUT                                 : out  std_logic_vector(3 downto 0);
-	 RX												  : out  std_logic_vector (15 downto 0)
+    TXP_OUT                                 : out  std_logic_vector(3 downto 0)
 );
 
 
@@ -122,23 +121,15 @@ port
     GT0_TX_FSM_RESET_DONE_OUT               : out  std_logic;
     GT0_RX_FSM_RESET_DONE_OUT               : out  std_logic;
     GT0_DATA_VALID_IN                       : in   std_logic;
-    GT0_RX_MMCM_LOCK_IN                     : in   std_logic;
-    GT0_RX_MMCM_RESET_OUT                   : out  std_logic;
     GT1_TX_FSM_RESET_DONE_OUT               : out  std_logic;
     GT1_RX_FSM_RESET_DONE_OUT               : out  std_logic;
     GT1_DATA_VALID_IN                       : in   std_logic;
-    GT1_RX_MMCM_LOCK_IN                     : in   std_logic;
-    GT1_RX_MMCM_RESET_OUT                   : out  std_logic;
     GT2_TX_FSM_RESET_DONE_OUT               : out  std_logic;
     GT2_RX_FSM_RESET_DONE_OUT               : out  std_logic;
     GT2_DATA_VALID_IN                       : in   std_logic;
-    GT2_RX_MMCM_LOCK_IN                     : in   std_logic;
-    GT2_RX_MMCM_RESET_OUT                   : out  std_logic;
     GT3_TX_FSM_RESET_DONE_OUT               : out  std_logic;
     GT3_RX_FSM_RESET_DONE_OUT               : out  std_logic;
     GT3_DATA_VALID_IN                       : in   std_logic;
-    GT3_RX_MMCM_LOCK_IN                     : in   std_logic;
-    GT3_RX_MMCM_RESET_OUT                   : out  std_logic;
 
     --_________________________________________________________________________
     --_________________________________________________________________________
@@ -152,6 +143,8 @@ port
     GT0_DRPEN_IN                            : in   std_logic;
     GT0_DRPRDY_OUT                          : out  std_logic;
     GT0_DRPWE_IN                            : in   std_logic;
+    ------------------------------- Loopback Ports -----------------------------
+    GT0_LOOPBACK_IN                         : in   std_logic_vector(2 downto 0);
     --------------------- RX Initialization and Reset Ports --------------------
     GT0_RXUSERRDY_IN                        : in   std_logic;
     -------------------------- RX Margin Analysis Ports ------------------------
@@ -163,13 +156,14 @@ port
     GT0_RXUSRCLK_IN                         : in   std_logic;
     GT0_RXUSRCLK2_IN                        : in   std_logic;
     ------------------ Receive Ports - RX 8B/10B Decoder Ports -----------------
-    GT0_RXCHARISCOMMA_OUT                   : out  std_logic_vector(1 downto 0);
     GT0_RXCHARISK_OUT                       : out  std_logic_vector(1 downto 0);
     GT0_RXDISPERR_OUT                       : out  std_logic_vector(1 downto 0);
     GT0_RXNOTINTABLE_OUT                    : out  std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX AFE Ports ----------------------
     GT0_GTPRXN_IN                           : in   std_logic;
     GT0_GTPRXP_IN                           : in   std_logic;
+    -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
+    GT0_RXSLIDE_IN                          : in   std_logic;
     -------------------- Receive Ports - RX Equailizer Ports -------------------
     GT0_RXLPMHFHOLD_IN                      : in   std_logic;
     GT0_RXLPMLFHOLD_IN                      : in   std_logic;
@@ -177,6 +171,10 @@ port
     GT0_RXOUTCLK_OUT                        : out  std_logic;
     ------------- Receive Ports - RX Initialization and Reset Ports ------------
     GT0_GTRXRESET_IN                        : in   std_logic;
+    ------------------ Receive Ports - RX OOB signalling Ports -----------------
+    GT0_RXELECIDLE_OUT                      : out  std_logic;
+    ----------------- Receive Ports - RX Polarity Control Ports ----------------
+    GT0_RXPOLARITY_IN                       : in   std_logic;
     -------------- Receive Ports -RX Initialization and Reset Ports ------------
     GT0_RXRESETDONE_OUT                     : out  std_logic;
     --------------------- TX Initialization and Reset Ports --------------------
@@ -194,6 +192,8 @@ port
     GT1_DRPEN_IN                            : in   std_logic;
     GT1_DRPRDY_OUT                          : out  std_logic;
     GT1_DRPWE_IN                            : in   std_logic;
+    ------------------------------- Loopback Ports -----------------------------
+    GT1_LOOPBACK_IN                         : in   std_logic_vector(2 downto 0);
     --------------------- RX Initialization and Reset Ports --------------------
     GT1_RXUSERRDY_IN                        : in   std_logic;
     -------------------------- RX Margin Analysis Ports ------------------------
@@ -205,13 +205,14 @@ port
     GT1_RXUSRCLK_IN                         : in   std_logic;
     GT1_RXUSRCLK2_IN                        : in   std_logic;
     ------------------ Receive Ports - RX 8B/10B Decoder Ports -----------------
-    GT1_RXCHARISCOMMA_OUT                   : out  std_logic_vector(1 downto 0);
     GT1_RXCHARISK_OUT                       : out  std_logic_vector(1 downto 0);
     GT1_RXDISPERR_OUT                       : out  std_logic_vector(1 downto 0);
     GT1_RXNOTINTABLE_OUT                    : out  std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX AFE Ports ----------------------
     GT1_GTPRXN_IN                           : in   std_logic;
     GT1_GTPRXP_IN                           : in   std_logic;
+    -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
+    GT1_RXSLIDE_IN                          : in   std_logic;
     -------------------- Receive Ports - RX Equailizer Ports -------------------
     GT1_RXLPMHFHOLD_IN                      : in   std_logic;
     GT1_RXLPMLFHOLD_IN                      : in   std_logic;
@@ -219,6 +220,10 @@ port
     GT1_RXOUTCLK_OUT                        : out  std_logic;
     ------------- Receive Ports - RX Initialization and Reset Ports ------------
     GT1_GTRXRESET_IN                        : in   std_logic;
+    ------------------ Receive Ports - RX OOB signalling Ports -----------------
+    GT1_RXELECIDLE_OUT                      : out  std_logic;
+    ----------------- Receive Ports - RX Polarity Control Ports ----------------
+    GT1_RXPOLARITY_IN                       : in   std_logic;
     -------------- Receive Ports -RX Initialization and Reset Ports ------------
     GT1_RXRESETDONE_OUT                     : out  std_logic;
     --------------------- TX Initialization and Reset Ports --------------------
@@ -236,6 +241,8 @@ port
     GT2_DRPEN_IN                            : in   std_logic;
     GT2_DRPRDY_OUT                          : out  std_logic;
     GT2_DRPWE_IN                            : in   std_logic;
+    ------------------------------- Loopback Ports -----------------------------
+    GT2_LOOPBACK_IN                         : in   std_logic_vector(2 downto 0);
     --------------------- RX Initialization and Reset Ports --------------------
     GT2_RXUSERRDY_IN                        : in   std_logic;
     -------------------------- RX Margin Analysis Ports ------------------------
@@ -247,13 +254,14 @@ port
     GT2_RXUSRCLK_IN                         : in   std_logic;
     GT2_RXUSRCLK2_IN                        : in   std_logic;
     ------------------ Receive Ports - RX 8B/10B Decoder Ports -----------------
-    GT2_RXCHARISCOMMA_OUT                   : out  std_logic_vector(1 downto 0);
     GT2_RXCHARISK_OUT                       : out  std_logic_vector(1 downto 0);
     GT2_RXDISPERR_OUT                       : out  std_logic_vector(1 downto 0);
     GT2_RXNOTINTABLE_OUT                    : out  std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX AFE Ports ----------------------
     GT2_GTPRXN_IN                           : in   std_logic;
     GT2_GTPRXP_IN                           : in   std_logic;
+    -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
+    GT2_RXSLIDE_IN                          : in   std_logic;
     -------------------- Receive Ports - RX Equailizer Ports -------------------
     GT2_RXLPMHFHOLD_IN                      : in   std_logic;
     GT2_RXLPMLFHOLD_IN                      : in   std_logic;
@@ -261,6 +269,10 @@ port
     GT2_RXOUTCLK_OUT                        : out  std_logic;
     ------------- Receive Ports - RX Initialization and Reset Ports ------------
     GT2_GTRXRESET_IN                        : in   std_logic;
+    ------------------ Receive Ports - RX OOB signalling Ports -----------------
+    GT2_RXELECIDLE_OUT                      : out  std_logic;
+    ----------------- Receive Ports - RX Polarity Control Ports ----------------
+    GT2_RXPOLARITY_IN                       : in   std_logic;
     -------------- Receive Ports -RX Initialization and Reset Ports ------------
     GT2_RXRESETDONE_OUT                     : out  std_logic;
     --------------------- TX Initialization and Reset Ports --------------------
@@ -278,6 +290,8 @@ port
     GT3_DRPEN_IN                            : in   std_logic;
     GT3_DRPRDY_OUT                          : out  std_logic;
     GT3_DRPWE_IN                            : in   std_logic;
+    ------------------------------- Loopback Ports -----------------------------
+    GT3_LOOPBACK_IN                         : in   std_logic_vector(2 downto 0);
     --------------------- RX Initialization and Reset Ports --------------------
     GT3_RXUSERRDY_IN                        : in   std_logic;
     -------------------------- RX Margin Analysis Ports ------------------------
@@ -289,13 +303,14 @@ port
     GT3_RXUSRCLK_IN                         : in   std_logic;
     GT3_RXUSRCLK2_IN                        : in   std_logic;
     ------------------ Receive Ports - RX 8B/10B Decoder Ports -----------------
-    GT3_RXCHARISCOMMA_OUT                   : out  std_logic_vector(1 downto 0);
     GT3_RXCHARISK_OUT                       : out  std_logic_vector(1 downto 0);
     GT3_RXDISPERR_OUT                       : out  std_logic_vector(1 downto 0);
     GT3_RXNOTINTABLE_OUT                    : out  std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX AFE Ports ----------------------
     GT3_GTPRXN_IN                           : in   std_logic;
     GT3_GTPRXP_IN                           : in   std_logic;
+    -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
+    GT3_RXSLIDE_IN                          : in   std_logic;
     -------------------- Receive Ports - RX Equailizer Ports -------------------
     GT3_RXLPMHFHOLD_IN                      : in   std_logic;
     GT3_RXLPMLFHOLD_IN                      : in   std_logic;
@@ -303,6 +318,10 @@ port
     GT3_RXOUTCLK_OUT                        : out  std_logic;
     ------------- Receive Ports - RX Initialization and Reset Ports ------------
     GT3_GTRXRESET_IN                        : in   std_logic;
+    ------------------ Receive Ports - RX OOB signalling Ports -----------------
+    GT3_RXELECIDLE_OUT                      : out  std_logic;
+    ----------------- Receive Ports - RX Polarity Control Ports ----------------
+    GT3_RXPOLARITY_IN                       : in   std_logic;
     -------------- Receive Ports -RX Initialization and Reset Ports ------------
     GT3_RXRESETDONE_OUT                     : out  std_logic;
     --------------------- TX Initialization and Reset Ports --------------------
@@ -311,11 +330,19 @@ port
 
     --____________________________COMMON PORTS________________________________
     ----------------- Common Block - GTPE2_COMMON Clocking Ports ---------------
+    GT0_GTEASTREFCLK0_IN                    : in   std_logic;
+    GT0_GTEASTREFCLK1_IN                    : in   std_logic;
+    GT0_GTGREFCLK1_IN                       : in   std_logic;
     GT0_GTREFCLK0_IN                        : in   std_logic;
+    GT0_GTREFCLK1_IN                        : in   std_logic;
+    GT0_GTWESTREFCLK0_IN                    : in   std_logic;
+    GT0_GTWESTREFCLK1_IN                    : in   std_logic;
     -------------------------- Common Block - PLL Ports ------------------------
     GT0_PLL0LOCK_OUT                        : out  std_logic;
     GT0_PLL0LOCKDETCLK_IN                   : in   std_logic;
-    GT0_PLL0RESET_IN                        : in   std_logic
+    GT0_PLL0RESET_IN                        : in   std_logic;
+    ---------------------------- Common Block - Ports --------------------------
+    GT0_GTGREFCLK0_IN                       : in   std_logic
 
 
 );
@@ -331,26 +358,18 @@ port
     GT0_RXUSRCLK_OUT             : out std_logic;
     GT0_RXUSRCLK2_OUT            : out std_logic;
     GT0_RXOUTCLK_IN              : in  std_logic;
-    GT0_RXCLK_LOCK_OUT           : out std_logic;
-    GT0_RX_MMCM_RESET_IN         : in std_logic;
  
     GT1_RXUSRCLK_OUT             : out std_logic;
     GT1_RXUSRCLK2_OUT            : out std_logic;
     GT1_RXOUTCLK_IN              : in  std_logic;
-    GT1_RXCLK_LOCK_OUT           : out std_logic;
-    GT1_RX_MMCM_RESET_IN         : in std_logic;
  
     GT2_RXUSRCLK_OUT             : out std_logic;
     GT2_RXUSRCLK2_OUT            : out std_logic;
     GT2_RXOUTCLK_IN              : in  std_logic;
-    GT2_RXCLK_LOCK_OUT           : out std_logic;
-    GT2_RX_MMCM_RESET_IN         : in std_logic;
  
     GT3_RXUSRCLK_OUT             : out std_logic;
     GT3_RXUSRCLK2_OUT            : out std_logic;
     GT3_RXOUTCLK_IN              : in  std_logic;
-    GT3_RXCLK_LOCK_OUT           : out std_logic;
-    GT3_RX_MMCM_RESET_IN         : in std_logic;
     DRPCLK_IN                          : in  std_logic;
     DRPCLK_OUT                         : out std_logic
 );
@@ -408,6 +427,8 @@ port
     -- Track Data
     TRACK_DATA_OUT           : out std_logic;
 
+    RX_SLIDE                 : out std_logic;
+
  
 
     -- System Interface
@@ -415,12 +436,50 @@ port
     SYSTEM_RESET             : in std_logic
 );
 end component;
---My signal
+
+-- Chipscope modules
+attribute syn_black_box                : boolean;
+attribute syn_noprune                  : boolean;
 
 
---
+component data_vio
+port
+(
+    control                 : inout std_logic_vector(35 downto 0);
+    clk                     : in    std_logic;
+    async_in                : in    std_logic_vector(31 downto 0);
+    async_out               : out   std_logic_vector(31 downto 0);
+    sync_in                 : in    std_logic_vector(31 downto 0);
+    sync_out                : out   std_logic_vector(31 downto 0)
+);
+end component;
+attribute syn_black_box of data_vio : component is TRUE;
+attribute syn_noprune of data_vio   : component is TRUE;
 
 
+component icon
+port
+(
+    control0                : inout std_logic_vector(35 downto 0);
+    control1                : inout std_logic_vector(35 downto 0);
+    control2                : inout std_logic_vector(35 downto 0);
+    control3                : inout std_logic_vector(35 downto 0);
+    control4                : inout std_logic_vector(35 downto 0);
+    control5                : inout std_logic_vector(35 downto 0)
+);
+end component;
+attribute syn_black_box of icon : component is TRUE;
+attribute syn_noprune of icon   : component is TRUE;
+
+
+component ila
+port
+(
+    control                 : inout std_logic_vector(35 downto 0);
+    clk                     : in    std_logic;
+    trig0                   : in    std_logic_vector(163 downto 0)
+);
+end component;
 
 --***********************************Parameter Declarations********************
 
@@ -470,6 +529,8 @@ end component;
     signal  gt0_drpen_i                     : std_logic;
     signal  gt0_drprdy_i                    : std_logic;
     signal  gt0_drpwe_i                     : std_logic;
+    ------------------------------- Loopback Ports -----------------------------
+    signal  gt0_loopback_i                  : std_logic_vector(2 downto 0);
     --------------------- RX Initialization and Reset Ports --------------------
     signal  gt0_rxuserrdy_i                 : std_logic;
     -------------------------- RX Margin Analysis Ports ------------------------
@@ -479,13 +540,14 @@ end component;
     ------------------ Receive Ports - FPGA RX Interface Ports -----------------
     signal  gt0_rxdata_i                    : std_logic_vector(15 downto 0);
     ------------------ Receive Ports - RX 8B/10B Decoder Ports -----------------
-    signal  gt0_rxchariscomma_i             : std_logic_vector(1 downto 0);
     signal  gt0_rxcharisk_i                 : std_logic_vector(1 downto 0);
     signal  gt0_rxdisperr_i                 : std_logic_vector(1 downto 0);
     signal  gt0_rxnotintable_i              : std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX AFE Ports ----------------------
     signal  gt0_gtprxn_i                    : std_logic;
     signal  gt0_gtprxp_i                    : std_logic;
+    -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
+    signal  gt0_rxslide_i                   : std_logic;
     -------------------- Receive Ports - RX Equailizer Ports -------------------
     signal  gt0_rxlpmhfhold_i               : std_logic;
     signal  gt0_rxlpmlfhold_i               : std_logic;
@@ -493,6 +555,11 @@ end component;
     signal  gt0_rxoutclk_i                  : std_logic;
     ------------- Receive Ports - RX Initialization and Reset Ports ------------
     signal  gt0_gtrxreset_i                 : std_logic;
+    signal  gt0_rxpcsreset_i                : std_logic;
+    ------------------ Receive Ports - RX OOB signalling Ports -----------------
+    signal  gt0_rxelecidle_i                : std_logic;
+    ----------------- Receive Ports - RX Polarity Control Ports ----------------
+    signal  gt0_rxpolarity_i                : std_logic;
     -------------- Receive Ports -RX Initialization and Reset Ports ------------
     signal  gt0_rxresetdone_i               : std_logic;
     --------------------- TX Initialization and Reset Ports --------------------
@@ -512,6 +579,8 @@ end component;
     signal  gt1_drpen_i                     : std_logic;
     signal  gt1_drprdy_i                    : std_logic;
     signal  gt1_drpwe_i                     : std_logic;
+    ------------------------------- Loopback Ports -----------------------------
+    signal  gt1_loopback_i                  : std_logic_vector(2 downto 0);
     --------------------- RX Initialization and Reset Ports --------------------
     signal  gt1_rxuserrdy_i                 : std_logic;
     -------------------------- RX Margin Analysis Ports ------------------------
@@ -521,13 +590,14 @@ end component;
     ------------------ Receive Ports - FPGA RX Interface Ports -----------------
     signal  gt1_rxdata_i                    : std_logic_vector(15 downto 0);
     ------------------ Receive Ports - RX 8B/10B Decoder Ports -----------------
-    signal  gt1_rxchariscomma_i             : std_logic_vector(1 downto 0);
     signal  gt1_rxcharisk_i                 : std_logic_vector(1 downto 0);
     signal  gt1_rxdisperr_i                 : std_logic_vector(1 downto 0);
     signal  gt1_rxnotintable_i              : std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX AFE Ports ----------------------
     signal  gt1_gtprxn_i                    : std_logic;
     signal  gt1_gtprxp_i                    : std_logic;
+    -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
+    signal  gt1_rxslide_i                   : std_logic;
     -------------------- Receive Ports - RX Equailizer Ports -------------------
     signal  gt1_rxlpmhfhold_i               : std_logic;
     signal  gt1_rxlpmlfhold_i               : std_logic;
@@ -535,6 +605,11 @@ end component;
     signal  gt1_rxoutclk_i                  : std_logic;
     ------------- Receive Ports - RX Initialization and Reset Ports ------------
     signal  gt1_gtrxreset_i                 : std_logic;
+    signal  gt1_rxpcsreset_i                : std_logic;
+    ------------------ Receive Ports - RX OOB signalling Ports -----------------
+    signal  gt1_rxelecidle_i                : std_logic;
+    ----------------- Receive Ports - RX Polarity Control Ports ----------------
+    signal  gt1_rxpolarity_i                : std_logic;
     -------------- Receive Ports -RX Initialization and Reset Ports ------------
     signal  gt1_rxresetdone_i               : std_logic;
     --------------------- TX Initialization and Reset Ports --------------------
@@ -554,6 +629,8 @@ end component;
     signal  gt2_drpen_i                     : std_logic;
     signal  gt2_drprdy_i                    : std_logic;
     signal  gt2_drpwe_i                     : std_logic;
+    ------------------------------- Loopback Ports -----------------------------
+    signal  gt2_loopback_i                  : std_logic_vector(2 downto 0);
     --------------------- RX Initialization and Reset Ports --------------------
     signal  gt2_rxuserrdy_i                 : std_logic;
     -------------------------- RX Margin Analysis Ports ------------------------
@@ -563,13 +640,14 @@ end component;
     ------------------ Receive Ports - FPGA RX Interface Ports -----------------
     signal  gt2_rxdata_i                    : std_logic_vector(15 downto 0);
     ------------------ Receive Ports - RX 8B/10B Decoder Ports -----------------
-    signal  gt2_rxchariscomma_i             : std_logic_vector(1 downto 0);
     signal  gt2_rxcharisk_i                 : std_logic_vector(1 downto 0);
     signal  gt2_rxdisperr_i                 : std_logic_vector(1 downto 0);
     signal  gt2_rxnotintable_i              : std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX AFE Ports ----------------------
     signal  gt2_gtprxn_i                    : std_logic;
     signal  gt2_gtprxp_i                    : std_logic;
+    -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
+    signal  gt2_rxslide_i                   : std_logic;
     -------------------- Receive Ports - RX Equailizer Ports -------------------
     signal  gt2_rxlpmhfhold_i               : std_logic;
     signal  gt2_rxlpmlfhold_i               : std_logic;
@@ -577,6 +655,11 @@ end component;
     signal  gt2_rxoutclk_i                  : std_logic;
     ------------- Receive Ports - RX Initialization and Reset Ports ------------
     signal  gt2_gtrxreset_i                 : std_logic;
+    signal  gt2_rxpcsreset_i                : std_logic;
+    ------------------ Receive Ports - RX OOB signalling Ports -----------------
+    signal  gt2_rxelecidle_i                : std_logic;
+    ----------------- Receive Ports - RX Polarity Control Ports ----------------
+    signal  gt2_rxpolarity_i                : std_logic;
     -------------- Receive Ports -RX Initialization and Reset Ports ------------
     signal  gt2_rxresetdone_i               : std_logic;
     --------------------- TX Initialization and Reset Ports --------------------
@@ -596,6 +679,8 @@ end component;
     signal  gt3_drpen_i                     : std_logic;
     signal  gt3_drprdy_i                    : std_logic;
     signal  gt3_drpwe_i                     : std_logic;
+    ------------------------------- Loopback Ports -----------------------------
+    signal  gt3_loopback_i                  : std_logic_vector(2 downto 0);
     --------------------- RX Initialization and Reset Ports --------------------
     signal  gt3_rxuserrdy_i                 : std_logic;
     -------------------------- RX Margin Analysis Ports ------------------------
@@ -605,13 +690,14 @@ end component;
     ------------------ Receive Ports - FPGA RX Interface Ports -----------------
     signal  gt3_rxdata_i                    : std_logic_vector(15 downto 0);
     ------------------ Receive Ports - RX 8B/10B Decoder Ports -----------------
-    signal  gt3_rxchariscomma_i             : std_logic_vector(1 downto 0);
     signal  gt3_rxcharisk_i                 : std_logic_vector(1 downto 0);
     signal  gt3_rxdisperr_i                 : std_logic_vector(1 downto 0);
     signal  gt3_rxnotintable_i              : std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX AFE Ports ----------------------
     signal  gt3_gtprxn_i                    : std_logic;
     signal  gt3_gtprxp_i                    : std_logic;
+    -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
+    signal  gt3_rxslide_i                   : std_logic;
     -------------------- Receive Ports - RX Equailizer Ports -------------------
     signal  gt3_rxlpmhfhold_i               : std_logic;
     signal  gt3_rxlpmlfhold_i               : std_logic;
@@ -619,6 +705,11 @@ end component;
     signal  gt3_rxoutclk_i                  : std_logic;
     ------------- Receive Ports - RX Initialization and Reset Ports ------------
     signal  gt3_gtrxreset_i                 : std_logic;
+    signal  gt3_rxpcsreset_i                : std_logic;
+    ------------------ Receive Ports - RX OOB signalling Ports -----------------
+    signal  gt3_rxelecidle_i                : std_logic;
+    ----------------- Receive Ports - RX Polarity Control Ports ----------------
+    signal  gt3_rxpolarity_i                : std_logic;
     -------------- Receive Ports -RX Initialization and Reset Ports ------------
     signal  gt3_rxresetdone_i               : std_logic;
     --------------------- TX Initialization and Reset Ports --------------------
@@ -629,10 +720,19 @@ end component;
 
 
     --____________________________COMMON PORTS________________________________
+    ----------------- Common Block - GTPE2_COMMON Clocking Ports ---------------
+    signal  gt0_gteastrefclk0_i             : std_logic;
+    signal  gt0_gteastrefclk1_i             : std_logic;
+    signal  gt0_gtgrefclk1_i                : std_logic;
+    signal  gt0_gtrefclk1_i                 : std_logic;
+    signal  gt0_gtwestrefclk0_i             : std_logic;
+    signal  gt0_gtwestrefclk1_i             : std_logic;
     -------------------------- Common Block - PLL Ports ------------------------
     signal  gt0_pll0lock_i                  : std_logic;
     signal  gt0_pll0refclklost_i            : std_logic;
     signal  gt0_pll0reset_i                 : std_logic;
+    ---------------------------- Common Block - Ports --------------------------
+    signal  gt0_gtgrefclk0_i                : std_logic;
 
 
 
@@ -691,14 +791,6 @@ end component;
     attribute keep of gt3_rxusrclk_i : signal is "true";
     attribute keep of gt3_rxusrclk2_i : signal is "true";
  
-    signal    gt0_rxmmcm_lock_i               : std_logic; 
-    signal    gt0_rxmmcm_reset_i              : std_logic;
-    signal    gt1_rxmmcm_lock_i               : std_logic; 
-    signal    gt1_rxmmcm_reset_i              : std_logic;
-    signal    gt2_rxmmcm_lock_i               : std_logic; 
-    signal    gt2_rxmmcm_reset_i              : std_logic;
-    signal    gt3_rxmmcm_lock_i               : std_logic; 
-    signal    gt3_rxmmcm_reset_i              : std_logic;
  
 
     ----------------------------- Reference Clocks ----------------------------
@@ -889,6 +981,7 @@ end component;
     signal    pll0pd_i                        : std_logic;
     signal    pll1pd_i                        : std_logic;
 
+    signal    q0_clk0_refclk_i_i : std_logic_vector(1 downto 0);
 
    function and_reduce(arg: std_logic_vector) return std_logic is
    variable result: std_logic;
@@ -929,26 +1022,18 @@ begin
         GT0_RXUSRCLK_OUT                =>      gt0_rxusrclk_i,
         GT0_RXUSRCLK2_OUT               =>      gt0_rxusrclk2_i,
         GT0_RXOUTCLK_IN                 =>      gt0_rxoutclk_i,
-        GT0_RXCLK_LOCK_OUT              =>      gt0_rxmmcm_lock_i,
-        GT0_RX_MMCM_RESET_IN            =>      gt0_rxmmcm_reset_i,
  
         GT1_RXUSRCLK_OUT                =>      gt1_rxusrclk_i,
         GT1_RXUSRCLK2_OUT               =>      gt1_rxusrclk2_i,
         GT1_RXOUTCLK_IN                 =>      gt1_rxoutclk_i,
-        GT1_RXCLK_LOCK_OUT              =>      gt1_rxmmcm_lock_i,
-        GT1_RX_MMCM_RESET_IN            =>      gt1_rxmmcm_reset_i,
  
         GT2_RXUSRCLK_OUT                =>      gt2_rxusrclk_i,
         GT2_RXUSRCLK2_OUT               =>      gt2_rxusrclk2_i,
         GT2_RXOUTCLK_IN                 =>      gt2_rxoutclk_i,
-        GT2_RXCLK_LOCK_OUT              =>      gt2_rxmmcm_lock_i,
-        GT2_RX_MMCM_RESET_IN            =>      gt2_rxmmcm_reset_i,
  
         GT3_RXUSRCLK_OUT                =>      gt3_rxusrclk_i,
         GT3_RXUSRCLK2_OUT               =>      gt3_rxusrclk2_i,
         GT3_RXOUTCLK_IN                 =>      gt3_rxoutclk_i,
-        GT3_RXCLK_LOCK_OUT              =>      gt3_rxmmcm_lock_i,
-        GT3_RX_MMCM_RESET_IN            =>      gt3_rxmmcm_reset_i,
         DRPCLK_IN                       =>      DRP_CLK_IN,
         DRPCLK_OUT                      =>      drpclk_in_i
 
@@ -976,23 +1061,15 @@ begin
         SYSCLK_IN                       =>      drpclk_in_i,
         SOFT_RESET_IN                   =>      tied_to_ground_i,
         DONT_RESET_ON_DATA_ERROR_IN     =>      tied_to_ground_i,
-        GT0_RX_MMCM_LOCK_IN             =>      gt0_rxmmcm_lock_i,
-        GT0_RX_MMCM_RESET_OUT           =>      gt0_rxmmcm_reset_i,
         GT0_TX_FSM_RESET_DONE_OUT       =>      gt0_txfsmresetdone_i,
         GT0_RX_FSM_RESET_DONE_OUT       =>      gt0_rxfsmresetdone_i,
         GT0_DATA_VALID_IN               =>      gt0_track_data_i,
-        GT1_RX_MMCM_LOCK_IN             =>      gt1_rxmmcm_lock_i,
-        GT1_RX_MMCM_RESET_OUT           =>      gt1_rxmmcm_reset_i,
         GT1_TX_FSM_RESET_DONE_OUT       =>      gt1_txfsmresetdone_i,
         GT1_RX_FSM_RESET_DONE_OUT       =>      gt1_rxfsmresetdone_i,
         GT1_DATA_VALID_IN               =>      gt1_track_data_i,
-        GT2_RX_MMCM_LOCK_IN             =>      gt2_rxmmcm_lock_i,
-        GT2_RX_MMCM_RESET_OUT           =>      gt2_rxmmcm_reset_i,
         GT2_TX_FSM_RESET_DONE_OUT       =>      gt2_txfsmresetdone_i,
         GT2_RX_FSM_RESET_DONE_OUT       =>      gt2_rxfsmresetdone_i,
         GT2_DATA_VALID_IN               =>      gt2_track_data_i,
-        GT3_RX_MMCM_LOCK_IN             =>      gt3_rxmmcm_lock_i,
-        GT3_RX_MMCM_RESET_OUT           =>      gt3_rxmmcm_reset_i,
         GT3_TX_FSM_RESET_DONE_OUT       =>      gt3_txfsmresetdone_i,
         GT3_RX_FSM_RESET_DONE_OUT       =>      gt3_rxfsmresetdone_i,
         GT3_DATA_VALID_IN               =>      gt3_track_data_i,
@@ -1010,6 +1087,8 @@ begin
         GT0_DRPEN_IN                    =>      gt0_drpen_i,
         GT0_DRPRDY_OUT                  =>      gt0_drprdy_i,
         GT0_DRPWE_IN                    =>      gt0_drpwe_i,
+        ------------------------------- Loopback Ports -----------------------------
+        GT0_LOOPBACK_IN                 =>      gt0_loopback_i,
         --------------------- RX Initialization and Reset Ports --------------------
         GT0_RXUSERRDY_IN                =>      gt0_rxuserrdy_i,
         -------------------------- RX Margin Analysis Ports ------------------------
@@ -1021,13 +1100,14 @@ begin
         GT0_RXUSRCLK_IN                 =>      gt0_rxusrclk_i,
         GT0_RXUSRCLK2_IN                =>      gt0_rxusrclk_i,
         ------------------ Receive Ports - RX 8B/10B Decoder Ports -----------------
-        GT0_RXCHARISCOMMA_OUT           =>      gt0_rxchariscomma_i,
         GT0_RXCHARISK_OUT               =>      gt0_rxcharisk_i,
         GT0_RXDISPERR_OUT               =>      gt0_rxdisperr_i,
         GT0_RXNOTINTABLE_OUT            =>      gt0_rxnotintable_i,
         ------------------------ Receive Ports - RX AFE Ports ----------------------
         GT0_GTPRXN_IN                   =>      RXN_IN(0),
         GT0_GTPRXP_IN                   =>      RXP_IN(0),
+        -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
+        GT0_RXSLIDE_IN                  =>      gt0_rxslide_i,
         -------------------- Receive Ports - RX Equailizer Ports -------------------
         GT0_RXLPMHFHOLD_IN              =>      gt0_rxlpmhfhold_i,
         GT0_RXLPMLFHOLD_IN              =>      gt0_rxlpmlfhold_i,
@@ -1035,6 +1115,10 @@ begin
         GT0_RXOUTCLK_OUT                =>      gt0_rxoutclk_i,
         ------------- Receive Ports - RX Initialization and Reset Ports ------------
         GT0_GTRXRESET_IN                =>      gt0_gtrxreset_i,
+        ------------------ Receive Ports - RX OOB signalling Ports -----------------
+        GT0_RXELECIDLE_OUT              =>      gt0_rxelecidle_i,
+        ----------------- Receive Ports - RX Polarity Control Ports ----------------
+        GT0_RXPOLARITY_IN               =>      gt0_rxpolarity_i,
         -------------- Receive Ports -RX Initialization and Reset Ports ------------
         GT0_RXRESETDONE_OUT             =>      gt0_rxresetdone_i,
         --------------------- TX Initialization and Reset Ports --------------------
@@ -1055,6 +1139,8 @@ begin
         GT1_DRPEN_IN                    =>      gt1_drpen_i,
         GT1_DRPRDY_OUT                  =>      gt1_drprdy_i,
         GT1_DRPWE_IN                    =>      gt1_drpwe_i,
+        ------------------------------- Loopback Ports -----------------------------
+        GT1_LOOPBACK_IN                 =>      gt1_loopback_i,
         --------------------- RX Initialization and Reset Ports --------------------
         GT1_RXUSERRDY_IN                =>      gt1_rxuserrdy_i,
         -------------------------- RX Margin Analysis Ports ------------------------
@@ -1066,13 +1152,14 @@ begin
         GT1_RXUSRCLK_IN                 =>      gt1_rxusrclk_i,
         GT1_RXUSRCLK2_IN                =>      gt1_rxusrclk_i,
         ------------------ Receive Ports - RX 8B/10B Decoder Ports -----------------
-        GT1_RXCHARISCOMMA_OUT           =>      gt1_rxchariscomma_i,
         GT1_RXCHARISK_OUT               =>      gt1_rxcharisk_i,
         GT1_RXDISPERR_OUT               =>      gt1_rxdisperr_i,
         GT1_RXNOTINTABLE_OUT            =>      gt1_rxnotintable_i,
         ------------------------ Receive Ports - RX AFE Ports ----------------------
         GT1_GTPRXN_IN                   =>      RXN_IN(1),
         GT1_GTPRXP_IN                   =>      RXP_IN(1),
+        -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
+        GT1_RXSLIDE_IN                  =>      gt1_rxslide_i,
         -------------------- Receive Ports - RX Equailizer Ports -------------------
         GT1_RXLPMHFHOLD_IN              =>      gt1_rxlpmhfhold_i,
         GT1_RXLPMLFHOLD_IN              =>      gt1_rxlpmlfhold_i,
@@ -1080,6 +1167,10 @@ begin
         GT1_RXOUTCLK_OUT                =>      gt1_rxoutclk_i,
         ------------- Receive Ports - RX Initialization and Reset Ports ------------
         GT1_GTRXRESET_IN                =>      gt1_gtrxreset_i,
+        ------------------ Receive Ports - RX OOB signalling Ports -----------------
+        GT1_RXELECIDLE_OUT              =>      gt1_rxelecidle_i,
+        ----------------- Receive Ports - RX Polarity Control Ports ----------------
+        GT1_RXPOLARITY_IN               =>      gt1_rxpolarity_i,
         -------------- Receive Ports -RX Initialization and Reset Ports ------------
         GT1_RXRESETDONE_OUT             =>      gt1_rxresetdone_i,
         --------------------- TX Initialization and Reset Ports --------------------
@@ -1100,6 +1191,8 @@ begin
         GT2_DRPEN_IN                    =>      gt2_drpen_i,
         GT2_DRPRDY_OUT                  =>      gt2_drprdy_i,
         GT2_DRPWE_IN                    =>      gt2_drpwe_i,
+        ------------------------------- Loopback Ports -----------------------------
+        GT2_LOOPBACK_IN                 =>      gt2_loopback_i,
         --------------------- RX Initialization and Reset Ports --------------------
         GT2_RXUSERRDY_IN                =>      gt2_rxuserrdy_i,
         -------------------------- RX Margin Analysis Ports ------------------------
@@ -1111,13 +1204,14 @@ begin
         GT2_RXUSRCLK_IN                 =>      gt2_rxusrclk_i,
         GT2_RXUSRCLK2_IN                =>      gt2_rxusrclk_i,
         ------------------ Receive Ports - RX 8B/10B Decoder Ports -----------------
-        GT2_RXCHARISCOMMA_OUT           =>      gt2_rxchariscomma_i,
         GT2_RXCHARISK_OUT               =>      gt2_rxcharisk_i,
         GT2_RXDISPERR_OUT               =>      gt2_rxdisperr_i,
         GT2_RXNOTINTABLE_OUT            =>      gt2_rxnotintable_i,
         ------------------------ Receive Ports - RX AFE Ports ----------------------
         GT2_GTPRXN_IN                   =>      RXN_IN(2),
         GT2_GTPRXP_IN                   =>      RXP_IN(2),
+        -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
+        GT2_RXSLIDE_IN                  =>      gt2_rxslide_i,
         -------------------- Receive Ports - RX Equailizer Ports -------------------
         GT2_RXLPMHFHOLD_IN              =>      gt2_rxlpmhfhold_i,
         GT2_RXLPMLFHOLD_IN              =>      gt2_rxlpmlfhold_i,
@@ -1125,6 +1219,10 @@ begin
         GT2_RXOUTCLK_OUT                =>      gt2_rxoutclk_i,
         ------------- Receive Ports - RX Initialization and Reset Ports ------------
         GT2_GTRXRESET_IN                =>      gt2_gtrxreset_i,
+        ------------------ Receive Ports - RX OOB signalling Ports -----------------
+        GT2_RXELECIDLE_OUT              =>      gt2_rxelecidle_i,
+        ----------------- Receive Ports - RX Polarity Control Ports ----------------
+        GT2_RXPOLARITY_IN               =>      gt2_rxpolarity_i,
         -------------- Receive Ports -RX Initialization and Reset Ports ------------
         GT2_RXRESETDONE_OUT             =>      gt2_rxresetdone_i,
         --------------------- TX Initialization and Reset Ports --------------------
@@ -1145,6 +1243,8 @@ begin
         GT3_DRPEN_IN                    =>      gt3_drpen_i,
         GT3_DRPRDY_OUT                  =>      gt3_drprdy_i,
         GT3_DRPWE_IN                    =>      gt3_drpwe_i,
+        ------------------------------- Loopback Ports -----------------------------
+        GT3_LOOPBACK_IN                 =>      gt3_loopback_i,
         --------------------- RX Initialization and Reset Ports --------------------
         GT3_RXUSERRDY_IN                =>      gt3_rxuserrdy_i,
         -------------------------- RX Margin Analysis Ports ------------------------
@@ -1156,13 +1256,14 @@ begin
         GT3_RXUSRCLK_IN                 =>      gt3_rxusrclk_i,
         GT3_RXUSRCLK2_IN                =>      gt3_rxusrclk_i,
         ------------------ Receive Ports - RX 8B/10B Decoder Ports -----------------
-        GT3_RXCHARISCOMMA_OUT           =>      gt3_rxchariscomma_i,
         GT3_RXCHARISK_OUT               =>      gt3_rxcharisk_i,
         GT3_RXDISPERR_OUT               =>      gt3_rxdisperr_i,
         GT3_RXNOTINTABLE_OUT            =>      gt3_rxnotintable_i,
         ------------------------ Receive Ports - RX AFE Ports ----------------------
         GT3_GTPRXN_IN                   =>      RXN_IN(3),
         GT3_GTPRXP_IN                   =>      RXP_IN(3),
+        -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
+        GT3_RXSLIDE_IN                  =>      gt3_rxslide_i,
         -------------------- Receive Ports - RX Equailizer Ports -------------------
         GT3_RXLPMHFHOLD_IN              =>      gt3_rxlpmhfhold_i,
         GT3_RXLPMLFHOLD_IN              =>      gt3_rxlpmlfhold_i,
@@ -1170,6 +1271,10 @@ begin
         GT3_RXOUTCLK_OUT                =>      gt3_rxoutclk_i,
         ------------- Receive Ports - RX Initialization and Reset Ports ------------
         GT3_GTRXRESET_IN                =>      gt3_gtrxreset_i,
+        ------------------ Receive Ports - RX OOB signalling Ports -----------------
+        GT3_RXELECIDLE_OUT              =>      gt3_rxelecidle_i,
+        ----------------- Receive Ports - RX Polarity Control Ports ----------------
+        GT3_RXPOLARITY_IN               =>      gt3_rxpolarity_i,
         -------------- Receive Ports -RX Initialization and Reset Ports ------------
         GT3_RXRESETDONE_OUT             =>      gt3_rxresetdone_i,
         --------------------- TX Initialization and Reset Ports --------------------
@@ -1181,11 +1286,19 @@ begin
     --____________________________COMMON PORTS________________________________
     
         ----------------- Common Block - GTPE2_COMMON Clocking Ports ---------------
+        GT0_GTEASTREFCLK0_IN            =>      gt0_gteastrefclk0_i,
+        GT0_GTEASTREFCLK1_IN            =>      gt0_gteastrefclk1_i,
+        GT0_GTGREFCLK1_IN               =>      gt0_gtgrefclk1_i,
         GT0_GTREFCLK0_IN                =>      q0_clk0_refclk_i,
+        GT0_GTREFCLK1_IN                =>      gt0_gtrefclk1_i,
+        GT0_GTWESTREFCLK0_IN            =>      gt0_gtwestrefclk0_i,
+        GT0_GTWESTREFCLK1_IN            =>      gt0_gtwestrefclk1_i,
         -------------------------- Common Block - PLL Ports ------------------------
         GT0_PLL0LOCK_OUT                =>      gt0_pll0lock_i,
         GT0_PLL0LOCKDETCLK_IN           =>      drpclk_in_i,
-        GT0_PLL0RESET_IN                =>      gt0_pll0reset_i
+        GT0_PLL0RESET_IN                =>      gt0_pll0reset_i,
+        ---------------------------- Common Block - Ports --------------------------
+        GT0_GTGREFCLK0_IN               =>      gt0_gtgrefclk0_i
 
     );
 
@@ -1294,6 +1407,7 @@ begin
         USER_CLK                        =>      gt0_rxusrclk_i,
         SYSTEM_RESET                    =>      gt0_rx_system_reset_c,
         ERROR_COUNT_OUT                 =>      gt0_error_count_i,
+        RX_SLIDE                        =>      gt0_rxslide_i,
         TRACK_DATA_OUT                  =>      gt0_track_data_i
     );
 
@@ -1331,6 +1445,7 @@ begin
         USER_CLK                        =>      gt1_rxusrclk_i,
         SYSTEM_RESET                    =>      gt1_rx_system_reset_c,
         ERROR_COUNT_OUT                 =>      gt1_error_count_i,
+        RX_SLIDE                        =>      gt1_rxslide_i,
         TRACK_DATA_OUT                  =>      gt1_track_data_i
     );
 
@@ -1368,6 +1483,7 @@ begin
         USER_CLK                        =>      gt2_rxusrclk_i,
         SYSTEM_RESET                    =>      gt2_rx_system_reset_c,
         ERROR_COUNT_OUT                 =>      gt2_error_count_i,
+        RX_SLIDE                        =>      gt2_rxslide_i,
         TRACK_DATA_OUT                  =>      gt2_track_data_i
     );
 
@@ -1405,6 +1521,7 @@ begin
         USER_CLK                        =>      gt3_rxusrclk_i,
         SYSTEM_RESET                    =>      gt3_rx_system_reset_c,
         ERROR_COUNT_OUT                 =>      gt3_error_count_i,
+        RX_SLIDE                        =>      gt3_rxslide_i,
         TRACK_DATA_OUT                  =>      gt3_track_data_i
     );
 
@@ -1418,7 +1535,330 @@ begin
                                 gt1_track_data_i  and
                                 gt2_track_data_i  and
                                 gt3_track_data_i ;
-		RX <= gt0_rxdata_i;
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------
+----------------------------- Chipscope Connections -----------------------
+
+
+
+----------------------------- Chipscope Connections -----------------------
+    -- When the example design is run in hardware, it uses chipscope to allow the
+    -- example design and GT wrapper to be controlled and monitored. The 
+    -- EXAMPLE_USE_CHIPSCOPE parameter allows chipscope to be removed for simulation.
+
+chipscope : if EXAMPLE_USE_CHIPSCOPE = 1 generate
+    
+    -- ICON for all VIOs 
+    icon_i : icon
+    port map
+    (
+        control0                        =>      shared_vio_control_i,
+        control1                        =>      tx_data_vio_control_i,
+        control2                        =>      rx_data_vio_control_i,
+        control3                        =>      ila_control_i,
+        control4                        =>      channel_drp_vio_control_i,
+        control5                        =>      common_drp_vio_control_i
+    );
+
+    -- Shared VIO for Channel DRP  
+    channel_drp_i : data_vio 
+    port map
+    (
+        control                         =>      channel_drp_vio_control_i,
+        async_in                        =>      channel_drp_vio_async_in_i,
+        async_out                       =>      channel_drp_vio_async_out_i,
+        sync_in                         =>      channel_drp_vio_sync_in_i,
+        sync_out                        =>      channel_drp_vio_sync_out_i,
+        clk                             =>      drpclk_in_i
+    );
+
+    -- Shared VIO for Quad common DRP  
+    common_drp_i : data_vio 
+    port map
+    (
+        control                         =>      common_drp_vio_control_i,
+        async_in                        =>      common_drp_vio_async_in_i,
+        async_out                       =>      common_drp_vio_async_out_i,
+        sync_in                         =>      common_drp_vio_sync_in_i,
+        sync_out                        =>      common_drp_vio_sync_out_i,
+        clk                             =>      drpclk_in_i
+    );
+
+    -- Shared VIO for all transcievers 
+    shared_vio_i : data_vio
+    port map
+    (
+        control                         =>      shared_vio_control_i,
+        clk                             =>      tied_to_ground_i,
+        async_in                        =>      shared_vio_in_i,
+        async_out                       =>      shared_vio_out_i,
+        sync_in                         =>      tied_to_ground_vec_i(31 downto 0),
+        sync_out                        =>      open
+    );
+    
+    
+    -- TX VIO 
+    tx_data_vio_i : data_vio
+    port map
+    (
+        control                         =>      tx_data_vio_control_i,
+        clk                             =>      rx_vio_ila_clk_i,
+        async_in                        =>      tx_data_vio_async_in_i,
+        async_out                       =>      tx_data_vio_async_out_i,
+        sync_in                         =>      tx_data_vio_sync_in_i,
+        sync_out                        =>      tx_data_vio_sync_out_i
+    );
+    
+    -- RX VIO 
+    rx_data_vio_i : data_vio
+    port map
+    (
+        control                         =>      rx_data_vio_control_i,
+        clk                             =>      rx_vio_ila_clk_i,
+        async_in                        =>      rx_data_vio_async_in_i,
+        async_out                       =>      rx_data_vio_async_out_i,
+        sync_in                         =>      rx_data_vio_sync_in_i,
+        sync_out                        =>      rx_data_vio_sync_out_i
+    );
+    
+    -- RX ILA
+    ila_i : ila
+    port map
+    (
+        control                         =>      ila_control_i,
+        clk                             =>      rx_vio_ila_clk_i,
+        trig0                           =>      ila_in_i
+    );
+
+
+    -- The RX VIO and ILA uses GT0's RXUSRCLK2
+    rx_vio_ila_clk_i <= gt0_rxusrclk_i;
+
+    -- assign resets for frame_gen modules
+
+    -- assign resets for frame_check modules
+    gt0_rx_system_reset_c                        <= not gt0_rxresetdone_r3 or user_rx_reset_i;
+    gt1_rx_system_reset_c                        <= not gt1_rxresetdone_r3 or user_rx_reset_i;
+    gt2_rx_system_reset_c                        <= not gt2_rxresetdone_r3 or user_rx_reset_i;
+    gt3_rx_system_reset_c                        <= not gt3_rxresetdone_r3 or user_rx_reset_i;
+
+    gt0_gtrxreset_i                              <= gtrxreset_i or not gt0_pll0lock_i;
+    gt1_gtrxreset_i                              <= gtrxreset_i or not gt0_pll0lock_i;
+    gt2_gtrxreset_i                              <= gtrxreset_i or not gt0_pll0lock_i;
+    gt3_gtrxreset_i                              <= gtrxreset_i or not gt0_pll0lock_i;
+
+    gt0_pll0reset_i                              <= pll0reset_i;
+
+
+    -- Shared VIO Outputs
+    gtrxreset_i                                  <= shared_vio_out_i(31);
+    user_tx_reset_i                              <= shared_vio_out_i(30);
+    user_rx_reset_i                              <= shared_vio_out_i(29);
+    mux_sel_i                                    <= shared_vio_out_i(28 downto 27);
+    pll0reset_i                                  <= shared_vio_out_i(26);
+
+    -- Shared VIO Inputs
+    shared_vio_in_i(31 downto 0)                 <= "00000000000000000000000000000000";
+
+    -- Chipscope connections on GT 0
+    gt0_tx_data_vio_async_in_i(31 downto 0)      <= "00000000000000000000000000000000";
+    gt0_tx_data_vio_sync_in_i(31 downto 0)       <= "00000000000000000000000000000000";
+    gt0_loopback_i                               <= tx_data_vio_async_out_i(31 downto 29);
+    gt0_rx_data_vio_async_in_i(31 downto 0)      <= "00000000000000000000000000000000";
+    gt0_rx_data_vio_sync_in_i(31)                <= gt0_rxresetdone_i;
+    gt0_rx_data_vio_sync_in_i(30 downto 0)       <= "0000000000000000000000000000000";
+    gt0_rxuserrdy_i                              <= rx_data_vio_async_out_i(31);
+    gt0_rxpolarity_i                             <= rx_data_vio_sync_out_i(31);
+    gt0_ila_in_i(163 downto 162)                 <= gt0_rxcharisk_i;
+    gt0_ila_in_i(161 downto 160)                 <= gt0_rxdisperr_i;
+    gt0_ila_in_i(159 downto 158)                 <= gt0_rxnotintable_i;
+    gt0_ila_in_i(157 downto 142)                 <= gt0_rxdata_i;
+    gt0_ila_in_i(141 downto 134)                 <= gt0_error_count_i;
+    gt0_ila_in_i(133)                            <= gt0_track_data_i;
+    gt0_ila_in_i(132 downto 0)                   <= "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000";
+    gt0_channel_drp_vio_async_in_i(31)           <= gt0_drprdy_i;
+    gt0_channel_drp_vio_async_in_i(30 downto 15) <= gt0_drpdo_i;
+    gt0_channel_drp_vio_async_in_i(14 downto 0)  <= "000000000000000";
+    gt0_channel_drp_vio_sync_in_i(31 downto 0)   <= "00000000000000000000000000000000";
+    gt0_drpaddr_i                                <= channel_drp_vio_async_out_i(31 downto 23);
+    gt0_drpdi_i                                  <= channel_drp_vio_async_out_i(22 downto 7);
+    gt0_drpen_i                                  <= channel_drp_vio_async_out_i(6);
+    gt0_drpwe_i                                  <= channel_drp_vio_async_out_i(5);
+    gt0_common_drp_vio_async_in_i(31 downto 0)   <= "00000000000000000000000000000000";
+    gt0_common_drp_vio_sync_in_i(31 downto 0)    <= "00000000000000000000000000000000";
+
+    -- Chipscope connections on GT 1
+    gt1_tx_data_vio_async_in_i(31 downto 0)      <= "00000000000000000000000000000000";
+    gt1_tx_data_vio_sync_in_i(31 downto 0)       <= "00000000000000000000000000000000";
+    gt1_loopback_i                               <= tx_data_vio_async_out_i(31 downto 29);
+    gt1_rx_data_vio_async_in_i(31 downto 0)      <= "00000000000000000000000000000000";
+    gt1_rx_data_vio_sync_in_i(31)                <= gt1_rxresetdone_i;
+    gt1_rx_data_vio_sync_in_i(30 downto 0)       <= "0000000000000000000000000000000";
+    gt1_rxuserrdy_i                              <= rx_data_vio_async_out_i(31);
+    gt1_rxpolarity_i                             <= rx_data_vio_sync_out_i(31);
+    gt1_ila_in_i(163 downto 162)                 <= gt1_rxcharisk_i;
+    gt1_ila_in_i(161 downto 160)                 <= gt1_rxdisperr_i;
+    gt1_ila_in_i(159 downto 158)                 <= gt1_rxnotintable_i;
+    gt1_ila_in_i(157 downto 142)                 <= gt1_rxdata_i;
+    gt1_ila_in_i(141 downto 134)                 <= gt1_error_count_i;
+    gt1_ila_in_i(133)                            <= gt1_track_data_i;
+    gt1_ila_in_i(132 downto 0)                   <= "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000";
+    gt1_channel_drp_vio_async_in_i(31)           <= gt1_drprdy_i;
+    gt1_channel_drp_vio_async_in_i(30 downto 15) <= gt1_drpdo_i;
+    gt1_channel_drp_vio_async_in_i(14 downto 0)  <= "000000000000000";
+    gt1_channel_drp_vio_sync_in_i(31 downto 0)   <= "00000000000000000000000000000000";
+    gt1_drpaddr_i                                <= channel_drp_vio_async_out_i(31 downto 23);
+    gt1_drpdi_i                                  <= channel_drp_vio_async_out_i(22 downto 7);
+    gt1_drpen_i                                  <= channel_drp_vio_async_out_i(6);
+    gt1_drpwe_i                                  <= channel_drp_vio_async_out_i(5);
+
+    -- Chipscope connections on GT 2
+    gt2_tx_data_vio_async_in_i(31 downto 0)      <= "00000000000000000000000000000000";
+    gt2_tx_data_vio_sync_in_i(31 downto 0)       <= "00000000000000000000000000000000";
+    gt2_loopback_i                               <= tx_data_vio_async_out_i(31 downto 29);
+    gt2_rx_data_vio_async_in_i(31 downto 0)      <= "00000000000000000000000000000000";
+    gt2_rx_data_vio_sync_in_i(31)                <= gt2_rxresetdone_i;
+    gt2_rx_data_vio_sync_in_i(30 downto 0)       <= "0000000000000000000000000000000";
+    gt2_rxuserrdy_i                              <= rx_data_vio_async_out_i(31);
+    gt2_rxpolarity_i                             <= rx_data_vio_sync_out_i(31);
+    gt2_ila_in_i(163 downto 162)                 <= gt2_rxcharisk_i;
+    gt2_ila_in_i(161 downto 160)                 <= gt2_rxdisperr_i;
+    gt2_ila_in_i(159 downto 158)                 <= gt2_rxnotintable_i;
+    gt2_ila_in_i(157 downto 142)                 <= gt2_rxdata_i;
+    gt2_ila_in_i(141 downto 134)                 <= gt2_error_count_i;
+    gt2_ila_in_i(133)                            <= gt2_track_data_i;
+    gt2_ila_in_i(132 downto 0)                   <= "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000";
+    gt2_channel_drp_vio_async_in_i(31)           <= gt2_drprdy_i;
+    gt2_channel_drp_vio_async_in_i(30 downto 15) <= gt2_drpdo_i;
+    gt2_channel_drp_vio_async_in_i(14 downto 0)  <= "000000000000000";
+    gt2_channel_drp_vio_sync_in_i(31 downto 0)   <= "00000000000000000000000000000000";
+    gt2_drpaddr_i                                <= channel_drp_vio_async_out_i(31 downto 23);
+    gt2_drpdi_i                                  <= channel_drp_vio_async_out_i(22 downto 7);
+    gt2_drpen_i                                  <= channel_drp_vio_async_out_i(6);
+    gt2_drpwe_i                                  <= channel_drp_vio_async_out_i(5);
+
+    -- Chipscope connections on GT 3
+    gt3_tx_data_vio_async_in_i(31 downto 0)      <= "00000000000000000000000000000000";
+    gt3_tx_data_vio_sync_in_i(31 downto 0)       <= "00000000000000000000000000000000";
+    gt3_loopback_i                               <= tx_data_vio_async_out_i(31 downto 29);
+    gt3_rx_data_vio_async_in_i(31 downto 0)      <= "00000000000000000000000000000000";
+    gt3_rx_data_vio_sync_in_i(31)                <= gt3_rxresetdone_i;
+    gt3_rx_data_vio_sync_in_i(30 downto 0)       <= "0000000000000000000000000000000";
+    gt3_rxuserrdy_i                              <= rx_data_vio_async_out_i(31);
+    gt3_rxpolarity_i                             <= rx_data_vio_sync_out_i(31);
+    gt3_ila_in_i(163 downto 162)                 <= gt3_rxcharisk_i;
+    gt3_ila_in_i(161 downto 160)                 <= gt3_rxdisperr_i;
+    gt3_ila_in_i(159 downto 158)                 <= gt3_rxnotintable_i;
+    gt3_ila_in_i(157 downto 142)                 <= gt3_rxdata_i;
+    gt3_ila_in_i(141 downto 134)                 <= gt3_error_count_i;
+    gt3_ila_in_i(133)                            <= gt3_track_data_i;
+    gt3_ila_in_i(132 downto 0)                   <= "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000";
+    gt3_channel_drp_vio_async_in_i(31)           <= gt3_drprdy_i;
+    gt3_channel_drp_vio_async_in_i(30 downto 15) <= gt3_drpdo_i;
+    gt3_channel_drp_vio_async_in_i(14 downto 0)  <= "000000000000000";
+    gt3_channel_drp_vio_sync_in_i(31 downto 0)   <= "00000000000000000000000000000000";
+    gt3_drpaddr_i                                <= channel_drp_vio_async_out_i(31 downto 23);
+    gt3_drpdi_i                                  <= channel_drp_vio_async_out_i(22 downto 7);
+    gt3_drpen_i                                  <= channel_drp_vio_async_out_i(6);
+    gt3_drpwe_i                                  <= channel_drp_vio_async_out_i(5);
+
+
+    tx_data_vio_async_in_i              <=      gt0_tx_data_vio_async_in_i when (mux_sel_i = "00")
+                                        else    gt1_tx_data_vio_async_in_i when (mux_sel_i = "01")
+                                        else    gt2_tx_data_vio_async_in_i when (mux_sel_i = "10")
+                                        else    gt3_tx_data_vio_async_in_i;
+
+    tx_data_vio_sync_in_i               <=      gt0_tx_data_vio_sync_in_i when (mux_sel_i = "00")
+                                        else    gt1_tx_data_vio_sync_in_i when (mux_sel_i = "01")
+                                        else    gt2_tx_data_vio_sync_in_i when (mux_sel_i = "10")
+                                        else    gt3_tx_data_vio_sync_in_i;
+
+
+    rx_data_vio_async_in_i              <=      gt0_rx_data_vio_async_in_i when (mux_sel_i = "00")
+                                        else    gt1_rx_data_vio_async_in_i when (mux_sel_i = "01")
+                                        else    gt2_rx_data_vio_async_in_i when (mux_sel_i = "10")
+                                        else    gt3_rx_data_vio_async_in_i;
+
+    rx_data_vio_sync_in_i               <=      gt0_rx_data_vio_sync_in_i when (mux_sel_i = "00")
+                                        else    gt1_rx_data_vio_sync_in_i when (mux_sel_i = "01")
+                                        else    gt2_rx_data_vio_sync_in_i when (mux_sel_i = "10")
+                                        else    gt3_rx_data_vio_sync_in_i;
+
+    ila_in_i                            <=      gt0_ila_in_i when (mux_sel_i = "00")
+                                        else    gt1_ila_in_i when (mux_sel_i = "01")
+                                        else    gt2_ila_in_i when (mux_sel_i = "10")
+                                        else    gt3_ila_in_i;
+
+
+    channel_drp_vio_async_in_i          <=      gt0_channel_drp_vio_async_in_i when (mux_sel_i = "00")
+                                        else    gt1_channel_drp_vio_async_in_i when (mux_sel_i = "01")
+                                        else    gt2_channel_drp_vio_async_in_i when (mux_sel_i = "10")
+                                        else    gt3_channel_drp_vio_async_in_i;
+
+    channel_drp_vio_sync_in_i           <=      gt0_channel_drp_vio_sync_in_i when (mux_sel_i = "00")
+                                        else    gt1_channel_drp_vio_sync_in_i when (mux_sel_i = "01")
+                                        else    gt2_channel_drp_vio_sync_in_i when (mux_sel_i = "10")
+                                        else    gt3_channel_drp_vio_sync_in_i;
+
+    common_drp_vio_async_in_i <= (others => '0');
+    common_drp_vio_sync_in_i  <= (others => '0');
+
+end generate chipscope;
+
+no_chipscope : if EXAMPLE_USE_CHIPSCOPE = 0 generate
+
+    -- assign resets for frame_gen modules
+
+    -- assign resets for frame_check modules
+    gt0_rx_system_reset_c                        <= not gt0_rxresetdone_r3;
+    gt1_rx_system_reset_c                        <= not gt1_rxresetdone_r3;
+    gt2_rx_system_reset_c                        <= not gt2_rxresetdone_r3;
+    gt3_rx_system_reset_c                        <= not gt3_rxresetdone_r3;
+
+    gtrxreset_i                                  <= tied_to_ground_i;
+    user_tx_reset_i                              <= tied_to_ground_i;
+    user_rx_reset_i                              <= tied_to_ground_i;
+    mux_sel_i                                    <= tied_to_ground_vec_i(1 downto 0);
+    pll0reset_i                                  <= tied_to_ground_i;
+    gt0_loopback_i                               <= tied_to_ground_vec_i(2 downto 0);
+    gt0_rxpolarity_i                             <= tied_to_ground_i;
+    gt0_drpaddr_i                                <= tied_to_ground_vec_i(8 downto 0);
+    gt0_drpdi_i                                  <= tied_to_ground_vec_i(15 downto 0);
+    gt0_drpen_i                                  <= tied_to_ground_i;
+    gt0_drpwe_i                                  <= tied_to_ground_i;
+    gt1_loopback_i                               <= tied_to_ground_vec_i(2 downto 0);
+    gt1_rxpolarity_i                             <= tied_to_ground_i;
+    gt1_drpaddr_i                                <= tied_to_ground_vec_i(8 downto 0);
+    gt1_drpdi_i                                  <= tied_to_ground_vec_i(15 downto 0);
+    gt1_drpen_i                                  <= tied_to_ground_i;
+    gt1_drpwe_i                                  <= tied_to_ground_i;
+    gt2_loopback_i                               <= tied_to_ground_vec_i(2 downto 0);
+    gt2_rxpolarity_i                             <= tied_to_ground_i;
+    gt2_drpaddr_i                                <= tied_to_ground_vec_i(8 downto 0);
+    gt2_drpdi_i                                  <= tied_to_ground_vec_i(15 downto 0);
+    gt2_drpen_i                                  <= tied_to_ground_i;
+    gt2_drpwe_i                                  <= tied_to_ground_i;
+    gt3_loopback_i                               <= tied_to_ground_vec_i(2 downto 0);
+    gt3_rxpolarity_i                             <= tied_to_ground_i;
+    gt3_drpaddr_i                                <= tied_to_ground_vec_i(8 downto 0);
+    gt3_drpdi_i                                  <= tied_to_ground_vec_i(15 downto 0);
+    gt3_drpen_i                                  <= tied_to_ground_i;
+    gt3_drpwe_i                                  <= tied_to_ground_i;
+
+
+end generate no_chipscope;
 end RTL;
 
 

@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Sat Jan 31 01:23:01 2015">
+<application name="pn" timeStamp="Sat Jan 31 22:58:48 2015">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="2F64AA255D4543289C50EFE80FFB0AA4" type="project"/>
-<property name="ProjectIteration" value="147" type="project"/>
+<property name="ProjectIteration" value="158" type="project"/>
 <property name="ProjectFile" value="/home/vladimir/SERGLAST/ad9656/cern/v6pcie.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2012-03-26T13:51:49" type="project"/>
 </section>
@@ -25,12 +25,13 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_bitg_SetSPIConfigBusWidth" value="4" type="process"/>
 <property name="PROP_bitg_UseSPIFallingEdge" value="Yes" type="process"/>
 <property name="PROP_bitg_extMasterClockEnable" value="Divide by 1" type="process"/>
-<property name="PROP_bitgen_otherCmdLineOptions_virtex5" value="-g spi_opcode:0x6B" type="process"/>
+<property name="PROP_bitgen_otherCmdLineOptions_virtex5" value="-g UnconstrainedPins:Allow" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2012-03-26T13:51:49" type="design"/>
 <property name="PROP_intWbtProjectID" value="2F64AA255D4543289C50EFE80FFB0AA4" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="147" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="158" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
+<property name="PROP_lastSelectedUcfFile" value="/home/vladimir/SERGLAST/ad9656/cern/ABB3_pcie_4_lane_Emu_FIFO_elink.ucf" type="process"/>
 <property name="PROP_selectedSimRootSourceNode_behav" value="work.v6pcieDMA" type="process"/>
 <property name="PROP_selectedSimRootSourceNode_translate" value="work.tf64_pcie_trn" type="process"/>
 <property name="PROP_xilxBitgCfg_GenOpt_Compress_virtex5" value="true" type="process"/>
@@ -52,6 +53,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_PreferredLanguage" value="VHDL" type="design"/>
 <property name="FILE_CDC" value="1" type="source"/>
 <property name="FILE_COREGEN" value="4" type="source"/>
+<property name="FILE_NGC" value="9" type="source"/>
 <property name="FILE_UCF" value="1" type="source"/>
 <property name="FILE_VERILOG" value="18" type="source"/>
 <property name="FILE_VHDL" value="45" type="source"/>

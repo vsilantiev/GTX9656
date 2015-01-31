@@ -1049,253 +1049,253 @@
 <msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt0_rxresetfsm_i/recclk_mon_count_reset</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">jesd204b_rx4_exdes</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/read_counter_i_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/read_counter_i_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/read_counter_i_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/read_counter_i_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/read_counter_i_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/read_counter_i_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/read_counter_i_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/read_counter_i_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt3_rxresetfsm_i/init_wait_count_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">jesd204b_rx4_exdes</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;jesd204b_rx4_init_i/gt2_rxresetfsm_i/init_wait_count_0&gt; &lt;jesd204b_rx4_init_i/gt1_rxresetfsm_i/init_wait_count_0&gt; &lt;jesd204b_rx4_init_i/gt0_rxresetfsm_i/init_wait_count_0&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt3_rxresetfsm_i/init_wait_count_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">jesd204b_rx4_exdes</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;jesd204b_rx4_init_i/gt2_rxresetfsm_i/init_wait_count_0&gt; &lt;jesd204b_rx4_init_i/gt1_rxresetfsm_i/init_wait_count_0&gt; &lt;jesd204b_rx4_init_i/gt0_rxresetfsm_i/init_wait_count_0&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt3_rxresetfsm_i/init_wait_count_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">jesd204b_rx4_exdes</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;jesd204b_rx4_init_i/gt2_rxresetfsm_i/init_wait_count_1&gt; &lt;jesd204b_rx4_init_i/gt1_rxresetfsm_i/init_wait_count_1&gt; &lt;jesd204b_rx4_init_i/gt0_rxresetfsm_i/init_wait_count_1&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt3_rxresetfsm_i/init_wait_count_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">jesd204b_rx4_exdes</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;jesd204b_rx4_init_i/gt2_rxresetfsm_i/init_wait_count_1&gt; &lt;jesd204b_rx4_init_i/gt1_rxresetfsm_i/init_wait_count_1&gt; &lt;jesd204b_rx4_init_i/gt0_rxresetfsm_i/init_wait_count_1&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt3_rxresetfsm_i/init_wait_count_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">jesd204b_rx4_exdes</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;jesd204b_rx4_init_i/gt2_rxresetfsm_i/init_wait_count_2&gt; &lt;jesd204b_rx4_init_i/gt1_rxresetfsm_i/init_wait_count_2&gt; &lt;jesd204b_rx4_init_i/gt0_rxresetfsm_i/init_wait_count_2&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt3_rxresetfsm_i/init_wait_count_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">jesd204b_rx4_exdes</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;jesd204b_rx4_init_i/gt2_rxresetfsm_i/init_wait_count_2&gt; &lt;jesd204b_rx4_init_i/gt1_rxresetfsm_i/init_wait_count_2&gt; &lt;jesd204b_rx4_init_i/gt0_rxresetfsm_i/init_wait_count_2&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt3_rxresetfsm_i/init_wait_count_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">jesd204b_rx4_exdes</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;jesd204b_rx4_init_i/gt2_rxresetfsm_i/init_wait_count_3&gt; &lt;jesd204b_rx4_init_i/gt1_rxresetfsm_i/init_wait_count_3&gt; &lt;jesd204b_rx4_init_i/gt0_rxresetfsm_i/init_wait_count_3&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt3_rxresetfsm_i/init_wait_count_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">jesd204b_rx4_exdes</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;jesd204b_rx4_init_i/gt2_rxresetfsm_i/init_wait_count_3&gt; &lt;jesd204b_rx4_init_i/gt1_rxresetfsm_i/init_wait_count_3&gt; &lt;jesd204b_rx4_init_i/gt0_rxresetfsm_i/init_wait_count_3&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt3_rxresetfsm_i/init_wait_count_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">jesd204b_rx4_exdes</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;jesd204b_rx4_init_i/gt2_rxresetfsm_i/init_wait_count_4&gt; &lt;jesd204b_rx4_init_i/gt1_rxresetfsm_i/init_wait_count_4&gt; &lt;jesd204b_rx4_init_i/gt0_rxresetfsm_i/init_wait_count_4&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt3_rxresetfsm_i/init_wait_count_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">jesd204b_rx4_exdes</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;jesd204b_rx4_init_i/gt2_rxresetfsm_i/init_wait_count_4&gt; &lt;jesd204b_rx4_init_i/gt1_rxresetfsm_i/init_wait_count_4&gt; &lt;jesd204b_rx4_init_i/gt0_rxresetfsm_i/init_wait_count_4&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt3_rxresetfsm_i/init_wait_count_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">jesd204b_rx4_exdes</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;jesd204b_rx4_init_i/gt2_rxresetfsm_i/init_wait_count_5&gt; &lt;jesd204b_rx4_init_i/gt1_rxresetfsm_i/init_wait_count_5&gt; &lt;jesd204b_rx4_init_i/gt0_rxresetfsm_i/init_wait_count_5&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt3_rxresetfsm_i/init_wait_count_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">jesd204b_rx4_exdes</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;jesd204b_rx4_init_i/gt2_rxresetfsm_i/init_wait_count_5&gt; &lt;jesd204b_rx4_init_i/gt1_rxresetfsm_i/init_wait_count_5&gt; &lt;jesd204b_rx4_init_i/gt0_rxresetfsm_i/init_wait_count_5&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt3_rxresetfsm_i/pll0lock_prev</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">jesd204b_rx4_exdes</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;jesd204b_rx4_init_i/gt2_rxresetfsm_i/pll0lock_prev&gt; &lt;jesd204b_rx4_init_i/gt1_rxresetfsm_i/pll0lock_prev&gt; &lt;jesd204b_rx4_init_i/gt0_rxresetfsm_i/pll0lock_prev&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt3_rxresetfsm_i/pll0lock_prev</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">jesd204b_rx4_exdes</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;jesd204b_rx4_init_i/gt2_rxresetfsm_i/pll0lock_prev&gt; &lt;jesd204b_rx4_init_i/gt1_rxresetfsm_i/pll0lock_prev&gt; &lt;jesd204b_rx4_init_i/gt0_rxresetfsm_i/pll0lock_prev&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt3_rxresetfsm_i/init_wait_done</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">jesd204b_rx4_exdes</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;jesd204b_rx4_init_i/gt2_rxresetfsm_i/init_wait_done&gt; &lt;jesd204b_rx4_init_i/gt1_rxresetfsm_i/init_wait_done&gt; &lt;jesd204b_rx4_init_i/gt0_rxresetfsm_i/init_wait_done&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt3_rxresetfsm_i/init_wait_done</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">jesd204b_rx4_exdes</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;jesd204b_rx4_init_i/gt2_rxresetfsm_i/init_wait_done&gt; &lt;jesd204b_rx4_init_i/gt1_rxresetfsm_i/init_wait_done&gt; &lt;jesd204b_rx4_init_i/gt0_rxresetfsm_i/init_wait_done&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="3203" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt3_rxresetfsm_i/MMCM_RESET</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">jesd204b_rx4_exdes</arg>&gt; is the opposite to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;jesd204b_rx4_init_i/gt3_rxresetfsm_i/check_tlock_max&gt; </arg>
+<msg type="info" file="Xst" num="3203" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt3_rxresetfsm_i/MMCM_RESET</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">jesd204b_rx4_exdes</arg>&gt; is the opposite to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;jesd204b_rx4_init_i/gt3_rxresetfsm_i/check_tlock_max&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="3203" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt2_rxresetfsm_i/MMCM_RESET</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">jesd204b_rx4_exdes</arg>&gt; is the opposite to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;jesd204b_rx4_init_i/gt2_rxresetfsm_i/check_tlock_max&gt; </arg>
+<msg type="info" file="Xst" num="3203" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt2_rxresetfsm_i/MMCM_RESET</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">jesd204b_rx4_exdes</arg>&gt; is the opposite to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;jesd204b_rx4_init_i/gt2_rxresetfsm_i/check_tlock_max&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="3203" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt0_rxresetfsm_i/MMCM_RESET</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">jesd204b_rx4_exdes</arg>&gt; is the opposite to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;jesd204b_rx4_init_i/gt0_rxresetfsm_i/check_tlock_max&gt; </arg>
+<msg type="info" file="Xst" num="3203" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt0_rxresetfsm_i/MMCM_RESET</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">jesd204b_rx4_exdes</arg>&gt; is the opposite to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;jesd204b_rx4_init_i/gt0_rxresetfsm_i/check_tlock_max&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="3203" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt1_rxresetfsm_i/MMCM_RESET</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">jesd204b_rx4_exdes</arg>&gt; is the opposite to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;jesd204b_rx4_init_i/gt1_rxresetfsm_i/check_tlock_max&gt; </arg>
+<msg type="info" file="Xst" num="3203" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt1_rxresetfsm_i/MMCM_RESET</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">jesd204b_rx4_exdes</arg>&gt; is the opposite to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;jesd204b_rx4_init_i/gt1_rxresetfsm_i/check_tlock_max&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="0" delta="new" >Unrecognized value <arg fmt="%s" index="1">IBUF</arg>. Accepted values for attribute buffer_type on local signal &lt;<arg fmt="%s" index="2">q0_clk0_refclk_i</arg>&gt; are: BUFG, BUFR, BUFIO, BUFH or NONE. Constraint is ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt3_rxresetfsm_i/sync_PLL1LOCK/data_sync</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">jesd204b_rx4_exdes</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;jesd204b_rx4_init_i/gt2_rxresetfsm_i/sync_PLL1LOCK/data_sync&gt; &lt;jesd204b_rx4_init_i/gt1_rxresetfsm_i/sync_PLL1LOCK/data_sync&gt; &lt;jesd204b_rx4_init_i/gt0_rxresetfsm_i/sync_PLL1LOCK/data_sync&gt; </arg>
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt3_rxresetfsm_i/sync_PLL1LOCK/data_sync</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">jesd204b_rx4_exdes</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;jesd204b_rx4_init_i/gt2_rxresetfsm_i/sync_PLL1LOCK/data_sync&gt; &lt;jesd204b_rx4_init_i/gt1_rxresetfsm_i/sync_PLL1LOCK/data_sync&gt; &lt;jesd204b_rx4_init_i/gt0_rxresetfsm_i/sync_PLL1LOCK/data_sync&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt3_rxresetfsm_i/sync_PLL0LOCK/data_sync</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">jesd204b_rx4_exdes</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;jesd204b_rx4_init_i/gt2_rxresetfsm_i/sync_PLL0LOCK/data_sync&gt; &lt;jesd204b_rx4_init_i/gt1_rxresetfsm_i/sync_PLL0LOCK/data_sync&gt; &lt;jesd204b_rx4_init_i/gt0_rxresetfsm_i/sync_PLL0LOCK/data_sync&gt; </arg>
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">jesd204b_rx4_init_i/gt3_rxresetfsm_i/sync_PLL0LOCK/data_sync</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">jesd204b_rx4_exdes</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;jesd204b_rx4_init_i/gt2_rxresetfsm_i/sync_PLL0LOCK/data_sync&gt; &lt;jesd204b_rx4_init_i/gt1_rxresetfsm_i/sync_PLL0LOCK/data_sync&gt; &lt;jesd204b_rx4_init_i/gt0_rxresetfsm_i/sync_PLL0LOCK/data_sync&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt3_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt2_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt1_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">gt0_frame_check/register_chan_seq[0].case_i_equal_to_0.rx_chanbond_reg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">jesd204b_rx4_exdes</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 </messages>

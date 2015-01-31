@@ -69,7 +69,7 @@
 
 
 ####################### GT reference clock constraints #######################
-# create_clock -name q0_clk0_refclk_i -period 8.138 q0_clk0_refclk_i
+# create_clock -name q0_clk0_refclk_i -period 8.0 q0_clk0_refclk_i
 
     
 # DRP Clock Constraint
@@ -77,17 +77,17 @@ create_clock -name drpclk_in_i -period 10.0 [get_ports DRP_CLK_IN]
 create_clock -name SYSCLK_IN -period 10.0 [get_ports SYSCLK_IN]
 
 # User Clock Constraints
-create_clock -name gt0_txusrclk_i -period 6.51 [get_pins -hier -filter {name=~*gt0_jesd204b_rx4_i*gtpe2_i*TXOUTCLK}]
-create_clock -name gt0_rxusrclk_i -period 8.138 [get_pins -hier -filter {name=~*gt0_jesd204b_rx4_i*gtpe2_i*RXOUTCLK}]
+create_clock -name gt0_txusrclk_i -period 3.2 [get_pins -hier -filter {name=~*gt0_jesd204b_rx4_i*gtpe2_i*TXOUTCLK}]
+create_clock -name gt0_rxusrclk_i -period 3.2 [get_pins -hier -filter {name=~*gt0_jesd204b_rx4_i*gtpe2_i*RXOUTCLK}]
 
-create_clock -name gt1_txusrclk_i -period 6.51 [get_pins -hier -filter {name=~*gt1_jesd204b_rx4_i*gtpe2_i*TXOUTCLK}]
-create_clock -name gt1_rxusrclk_i -period 8.138 [get_pins -hier -filter {name=~*gt1_jesd204b_rx4_i*gtpe2_i*RXOUTCLK}]
+create_clock -name gt1_txusrclk_i -period 3.2 [get_pins -hier -filter {name=~*gt1_jesd204b_rx4_i*gtpe2_i*TXOUTCLK}]
+create_clock -name gt1_rxusrclk_i -period 3.2 [get_pins -hier -filter {name=~*gt1_jesd204b_rx4_i*gtpe2_i*RXOUTCLK}]
 
-create_clock -name gt2_txusrclk_i -period 6.51 [get_pins -hier -filter {name=~*gt2_jesd204b_rx4_i*gtpe2_i*TXOUTCLK}]
-create_clock -name gt2_rxusrclk_i -period 8.138 [get_pins -hier -filter {name=~*gt2_jesd204b_rx4_i*gtpe2_i*RXOUTCLK}]
+create_clock -name gt2_txusrclk_i -period 3.2 [get_pins -hier -filter {name=~*gt2_jesd204b_rx4_i*gtpe2_i*TXOUTCLK}]
+create_clock -name gt2_rxusrclk_i -period 3.2 [get_pins -hier -filter {name=~*gt2_jesd204b_rx4_i*gtpe2_i*RXOUTCLK}]
 
-create_clock -name gt3_txusrclk_i -period 6.51 [get_pins -hier -filter {name=~*gt3_jesd204b_rx4_i*gtpe2_i*TXOUTCLK}]
-create_clock -name gt3_rxusrclk_i -period 8.138 [get_pins -hier -filter {name=~*gt3_jesd204b_rx4_i*gtpe2_i*RXOUTCLK}]
+create_clock -name gt3_txusrclk_i -period 3.2 [get_pins -hier -filter {name=~*gt3_jesd204b_rx4_i*gtpe2_i*TXOUTCLK}]
+create_clock -name gt3_rxusrclk_i -period 3.2 [get_pins -hier -filter {name=~*gt3_jesd204b_rx4_i*gtpe2_i*RXOUTCLK}]
 
 
 ################################# RefClk Location constraints #####################

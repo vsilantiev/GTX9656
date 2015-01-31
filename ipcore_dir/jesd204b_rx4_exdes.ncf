@@ -69,7 +69,7 @@
 
 
  NET "q0_clk0_refclk_i" TNM_NET = "q0_clk0_refclk_i";
- TIMESPEC "TS_q0_clk0_refclk_i" = PERIOD "q0_clk0_refclk_i" 8.138;
+ TIMESPEC "TS_q0_clk0_refclk_i" = PERIOD "q0_clk0_refclk_i" 8.0;
 
     
 # DRP Clock Constraint
@@ -78,16 +78,16 @@ TIMESPEC "TS_drpclk_in_i" = PERIOD "drpclk_in_i" 10.0;
  
 # User Clock Constraints
 NET "gt0_rxusrclk_i" TNM_NET = "gt0_rxusrclk_i";
-TIMESPEC "TS_gt0_rxusrclk_i" = PERIOD "gt0_rxusrclk_i" 6.51;
+TIMESPEC "TS_gt0_rxusrclk_i" = PERIOD "gt0_rxusrclk_i" 3.2;
 
 NET "gt1_rxusrclk_i" TNM_NET = "gt1_rxusrclk_i";
-TIMESPEC "TS_gt1_rxusrclk_i" = PERIOD "gt1_rxusrclk_i" 6.51;
+TIMESPEC "TS_gt1_rxusrclk_i" = PERIOD "gt1_rxusrclk_i" 3.2;
 
 NET "gt2_rxusrclk_i" TNM_NET = "gt2_rxusrclk_i";
-TIMESPEC "TS_gt2_rxusrclk_i" = PERIOD "gt2_rxusrclk_i" 6.51;
+TIMESPEC "TS_gt2_rxusrclk_i" = PERIOD "gt2_rxusrclk_i" 3.2;
 
 NET "gt3_rxusrclk_i" TNM_NET = "gt3_rxusrclk_i";
-TIMESPEC "TS_gt3_rxusrclk_i" = PERIOD "gt3_rxusrclk_i" 6.51;
+TIMESPEC "TS_gt3_rxusrclk_i" = PERIOD "gt3_rxusrclk_i" 3.2;
 
 
 
@@ -95,9 +95,6 @@ TIMESPEC "TS_gt3_rxusrclk_i" = PERIOD "gt3_rxusrclk_i" 6.51;
 
 NET Q0_CLK0_GTREFCLK_PAD_N_IN  LOC=AB13;
 NET Q0_CLK0_GTREFCLK_PAD_P_IN  LOC=AA13;
-
-NET RXP_IN(1) LOC=AE13;
-NET RXN_IN(1) LOC=AF13;
 
 ################################# mgt wrapper constraints #####################
 

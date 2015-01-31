@@ -91,6 +91,8 @@ port
     GT0_DRPEN_IN                            : in   std_logic;
     GT0_DRPRDY_OUT                          : out  std_logic;
     GT0_DRPWE_IN                            : in   std_logic;
+    ------------------------------- Loopback Ports -----------------------------
+    GT0_LOOPBACK_IN                         : in   std_logic_vector(2 downto 0);
     --------------------- RX Initialization and Reset Ports --------------------
     GT0_RXUSERRDY_IN                        : in   std_logic;
     -------------------------- RX Margin Analysis Ports ------------------------
@@ -102,13 +104,14 @@ port
     GT0_RXUSRCLK_IN                         : in   std_logic;
     GT0_RXUSRCLK2_IN                        : in   std_logic;
     ------------------ Receive Ports - RX 8B/10B Decoder Ports -----------------
-    GT0_RXCHARISCOMMA_OUT                   : out  std_logic_vector(1 downto 0);
     GT0_RXCHARISK_OUT                       : out  std_logic_vector(1 downto 0);
     GT0_RXDISPERR_OUT                       : out  std_logic_vector(1 downto 0);
     GT0_RXNOTINTABLE_OUT                    : out  std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX AFE Ports ----------------------
     GT0_GTPRXN_IN                           : in   std_logic;
     GT0_GTPRXP_IN                           : in   std_logic;
+    -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
+    GT0_RXSLIDE_IN                          : in   std_logic;
     -------------------- Receive Ports - RX Equailizer Ports -------------------
     GT0_RXLPMHFHOLD_IN                      : in   std_logic;
     GT0_RXLPMLFHOLD_IN                      : in   std_logic;
@@ -116,6 +119,11 @@ port
     GT0_RXOUTCLK_OUT                        : out  std_logic;
     ------------- Receive Ports - RX Initialization and Reset Ports ------------
     GT0_GTRXRESET_IN                        : in   std_logic;
+    GT0_RXPCSRESET_IN                       : in   std_logic;
+    ------------------ Receive Ports - RX OOB signalling Ports -----------------
+    GT0_RXELECIDLE_OUT                      : out  std_logic;
+    ----------------- Receive Ports - RX Polarity Control Ports ----------------
+    GT0_RXPOLARITY_IN                       : in   std_logic;
     -------------- Receive Ports -RX Initialization and Reset Ports ------------
     GT0_RXRESETDONE_OUT                     : out  std_logic;
     --------------------- TX Initialization and Reset Ports --------------------
@@ -134,6 +142,8 @@ port
     GT1_DRPEN_IN                            : in   std_logic;
     GT1_DRPRDY_OUT                          : out  std_logic;
     GT1_DRPWE_IN                            : in   std_logic;
+    ------------------------------- Loopback Ports -----------------------------
+    GT1_LOOPBACK_IN                         : in   std_logic_vector(2 downto 0);
     --------------------- RX Initialization and Reset Ports --------------------
     GT1_RXUSERRDY_IN                        : in   std_logic;
     -------------------------- RX Margin Analysis Ports ------------------------
@@ -145,13 +155,14 @@ port
     GT1_RXUSRCLK_IN                         : in   std_logic;
     GT1_RXUSRCLK2_IN                        : in   std_logic;
     ------------------ Receive Ports - RX 8B/10B Decoder Ports -----------------
-    GT1_RXCHARISCOMMA_OUT                   : out  std_logic_vector(1 downto 0);
     GT1_RXCHARISK_OUT                       : out  std_logic_vector(1 downto 0);
     GT1_RXDISPERR_OUT                       : out  std_logic_vector(1 downto 0);
     GT1_RXNOTINTABLE_OUT                    : out  std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX AFE Ports ----------------------
     GT1_GTPRXN_IN                           : in   std_logic;
     GT1_GTPRXP_IN                           : in   std_logic;
+    -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
+    GT1_RXSLIDE_IN                          : in   std_logic;
     -------------------- Receive Ports - RX Equailizer Ports -------------------
     GT1_RXLPMHFHOLD_IN                      : in   std_logic;
     GT1_RXLPMLFHOLD_IN                      : in   std_logic;
@@ -159,6 +170,11 @@ port
     GT1_RXOUTCLK_OUT                        : out  std_logic;
     ------------- Receive Ports - RX Initialization and Reset Ports ------------
     GT1_GTRXRESET_IN                        : in   std_logic;
+    GT1_RXPCSRESET_IN                       : in   std_logic;
+    ------------------ Receive Ports - RX OOB signalling Ports -----------------
+    GT1_RXELECIDLE_OUT                      : out  std_logic;
+    ----------------- Receive Ports - RX Polarity Control Ports ----------------
+    GT1_RXPOLARITY_IN                       : in   std_logic;
     -------------- Receive Ports -RX Initialization and Reset Ports ------------
     GT1_RXRESETDONE_OUT                     : out  std_logic;
     --------------------- TX Initialization and Reset Ports --------------------
@@ -177,6 +193,8 @@ port
     GT2_DRPEN_IN                            : in   std_logic;
     GT2_DRPRDY_OUT                          : out  std_logic;
     GT2_DRPWE_IN                            : in   std_logic;
+    ------------------------------- Loopback Ports -----------------------------
+    GT2_LOOPBACK_IN                         : in   std_logic_vector(2 downto 0);
     --------------------- RX Initialization and Reset Ports --------------------
     GT2_RXUSERRDY_IN                        : in   std_logic;
     -------------------------- RX Margin Analysis Ports ------------------------
@@ -188,13 +206,14 @@ port
     GT2_RXUSRCLK_IN                         : in   std_logic;
     GT2_RXUSRCLK2_IN                        : in   std_logic;
     ------------------ Receive Ports - RX 8B/10B Decoder Ports -----------------
-    GT2_RXCHARISCOMMA_OUT                   : out  std_logic_vector(1 downto 0);
     GT2_RXCHARISK_OUT                       : out  std_logic_vector(1 downto 0);
     GT2_RXDISPERR_OUT                       : out  std_logic_vector(1 downto 0);
     GT2_RXNOTINTABLE_OUT                    : out  std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX AFE Ports ----------------------
     GT2_GTPRXN_IN                           : in   std_logic;
     GT2_GTPRXP_IN                           : in   std_logic;
+    -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
+    GT2_RXSLIDE_IN                          : in   std_logic;
     -------------------- Receive Ports - RX Equailizer Ports -------------------
     GT2_RXLPMHFHOLD_IN                      : in   std_logic;
     GT2_RXLPMLFHOLD_IN                      : in   std_logic;
@@ -202,6 +221,11 @@ port
     GT2_RXOUTCLK_OUT                        : out  std_logic;
     ------------- Receive Ports - RX Initialization and Reset Ports ------------
     GT2_GTRXRESET_IN                        : in   std_logic;
+    GT2_RXPCSRESET_IN                       : in   std_logic;
+    ------------------ Receive Ports - RX OOB signalling Ports -----------------
+    GT2_RXELECIDLE_OUT                      : out  std_logic;
+    ----------------- Receive Ports - RX Polarity Control Ports ----------------
+    GT2_RXPOLARITY_IN                       : in   std_logic;
     -------------- Receive Ports -RX Initialization and Reset Ports ------------
     GT2_RXRESETDONE_OUT                     : out  std_logic;
     --------------------- TX Initialization and Reset Ports --------------------
@@ -220,6 +244,8 @@ port
     GT3_DRPEN_IN                            : in   std_logic;
     GT3_DRPRDY_OUT                          : out  std_logic;
     GT3_DRPWE_IN                            : in   std_logic;
+    ------------------------------- Loopback Ports -----------------------------
+    GT3_LOOPBACK_IN                         : in   std_logic_vector(2 downto 0);
     --------------------- RX Initialization and Reset Ports --------------------
     GT3_RXUSERRDY_IN                        : in   std_logic;
     -------------------------- RX Margin Analysis Ports ------------------------
@@ -231,13 +257,14 @@ port
     GT3_RXUSRCLK_IN                         : in   std_logic;
     GT3_RXUSRCLK2_IN                        : in   std_logic;
     ------------------ Receive Ports - RX 8B/10B Decoder Ports -----------------
-    GT3_RXCHARISCOMMA_OUT                   : out  std_logic_vector(1 downto 0);
     GT3_RXCHARISK_OUT                       : out  std_logic_vector(1 downto 0);
     GT3_RXDISPERR_OUT                       : out  std_logic_vector(1 downto 0);
     GT3_RXNOTINTABLE_OUT                    : out  std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX AFE Ports ----------------------
     GT3_GTPRXN_IN                           : in   std_logic;
     GT3_GTPRXP_IN                           : in   std_logic;
+    -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
+    GT3_RXSLIDE_IN                          : in   std_logic;
     -------------------- Receive Ports - RX Equailizer Ports -------------------
     GT3_RXLPMHFHOLD_IN                      : in   std_logic;
     GT3_RXLPMLFHOLD_IN                      : in   std_logic;
@@ -245,6 +272,11 @@ port
     GT3_RXOUTCLK_OUT                        : out  std_logic;
     ------------- Receive Ports - RX Initialization and Reset Ports ------------
     GT3_GTRXRESET_IN                        : in   std_logic;
+    GT3_RXPCSRESET_IN                       : in   std_logic;
+    ------------------ Receive Ports - RX OOB signalling Ports -----------------
+    GT3_RXELECIDLE_OUT                      : out  std_logic;
+    ----------------- Receive Ports - RX Polarity Control Ports ----------------
+    GT3_RXPOLARITY_IN                       : in   std_logic;
     -------------- Receive Ports -RX Initialization and Reset Ports ------------
     GT3_RXRESETDONE_OUT                     : out  std_logic;
     --------------------- TX Initialization and Reset Ports --------------------
@@ -255,12 +287,20 @@ port
 
     --____________________________COMMON PORTS________________________________
     ----------------- Common Block - GTPE2_COMMON Clocking Ports ---------------
+    GT0_GTEASTREFCLK0_IN                    : in   std_logic;
+    GT0_GTEASTREFCLK1_IN                    : in   std_logic;
+    GT0_GTGREFCLK1_IN                       : in   std_logic;
     GT0_GTREFCLK0_IN                        : in   std_logic;
+    GT0_GTREFCLK1_IN                        : in   std_logic;
+    GT0_GTWESTREFCLK0_IN                    : in   std_logic;
+    GT0_GTWESTREFCLK1_IN                    : in   std_logic;
     -------------------------- Common Block - PLL Ports ------------------------
     GT0_PLL0LOCK_OUT                        : out  std_logic;
     GT0_PLL0LOCKDETCLK_IN                   : in   std_logic;
     GT0_PLL0REFCLKLOST_OUT                  : out  std_logic;
-    GT0_PLL0RESET_IN                        : in   std_logic
+    GT0_PLL0RESET_IN                        : in   std_logic;
+    ---------------------------- Common Block - Ports --------------------------
+    GT0_GTGREFCLK0_IN                       : in   std_logic
 
 
 );
@@ -360,6 +400,8 @@ port
     PLL0REFCLK_IN                           : in   std_logic;
     PLL1CLK_IN                              : in   std_logic;
     PLL1REFCLK_IN                           : in   std_logic;
+    ------------------------------- Loopback Ports -----------------------------
+    LOOPBACK_IN                             : in   std_logic_vector(2 downto 0);
     --------------------- RX Initialization and Reset Ports --------------------
     RXUSERRDY_IN                            : in   std_logic;
     -------------------------- RX Margin Analysis Ports ------------------------
@@ -371,13 +413,14 @@ port
     RXUSRCLK_IN                             : in   std_logic;
     RXUSRCLK2_IN                            : in   std_logic;
     ------------------ Receive Ports - RX 8B/10B Decoder Ports -----------------
-    RXCHARISCOMMA_OUT                       : out  std_logic_vector(1 downto 0);
     RXCHARISK_OUT                           : out  std_logic_vector(1 downto 0);
     RXDISPERR_OUT                           : out  std_logic_vector(1 downto 0);
     RXNOTINTABLE_OUT                        : out  std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX AFE Ports ----------------------
     GTPRXN_IN                               : in   std_logic;
     GTPRXP_IN                               : in   std_logic;
+    -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
+    RXSLIDE_IN                              : in   std_logic;
     -------------------- Receive Ports - RX Equailizer Ports -------------------
     RXLPMHFHOLD_IN                          : in   std_logic;
     RXLPMLFHOLD_IN                          : in   std_logic;
@@ -385,6 +428,11 @@ port
     RXOUTCLK_OUT                            : out  std_logic;
     ------------- Receive Ports - RX Initialization and Reset Ports ------------
     GTRXRESET_IN                            : in   std_logic;
+    RXPCSRESET_IN                           : in   std_logic;
+    ------------------ Receive Ports - RX OOB signalling Ports -----------------
+    RXELECIDLE_OUT                          : out  std_logic;
+    ----------------- Receive Ports - RX Polarity Control Ports ----------------
+    RXPOLARITY_IN                           : in   std_logic;
     -------------- Receive Ports -RX Initialization and Reset Ports ------------
     RXRESETDONE_OUT                         : out  std_logic;
     --------------------- TX Initialization and Reset Ports --------------------
@@ -473,6 +521,8 @@ begin
         PLL0REFCLK_IN                   =>      gt0_pll0refclk_i,
         PLL1CLK_IN                      =>      gt0_pll1clk_i,
         PLL1REFCLK_IN                   =>      gt0_pll1refclk_i,
+        ------------------------------- Loopback Ports -----------------------------
+        LOOPBACK_IN                     =>      GT0_LOOPBACK_IN,
         --------------------- RX Initialization and Reset Ports --------------------
         RXUSERRDY_IN                    =>      GT0_RXUSERRDY_IN,
         -------------------------- RX Margin Analysis Ports ------------------------
@@ -484,13 +534,14 @@ begin
         RXUSRCLK_IN                     =>      GT0_RXUSRCLK_IN,
         RXUSRCLK2_IN                    =>      GT0_RXUSRCLK2_IN,
         ------------------ Receive Ports - RX 8B/10B Decoder Ports -----------------
-        RXCHARISCOMMA_OUT               =>      GT0_RXCHARISCOMMA_OUT,
         RXCHARISK_OUT                   =>      GT0_RXCHARISK_OUT,
         RXDISPERR_OUT                   =>      GT0_RXDISPERR_OUT,
         RXNOTINTABLE_OUT                =>      GT0_RXNOTINTABLE_OUT,
         ------------------------ Receive Ports - RX AFE Ports ----------------------
         GTPRXN_IN                       =>      GT0_GTPRXN_IN,
         GTPRXP_IN                       =>      GT0_GTPRXP_IN,
+        -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
+        RXSLIDE_IN                      =>      GT0_RXSLIDE_IN,
         -------------------- Receive Ports - RX Equailizer Ports -------------------
         RXLPMHFHOLD_IN                  =>      GT0_RXLPMHFHOLD_IN,
         RXLPMLFHOLD_IN                  =>      GT0_RXLPMLFHOLD_IN,
@@ -498,6 +549,11 @@ begin
         RXOUTCLK_OUT                    =>      GT0_RXOUTCLK_OUT,
         ------------- Receive Ports - RX Initialization and Reset Ports ------------
         GTRXRESET_IN                    =>      GT0_GTRXRESET_IN,
+        RXPCSRESET_IN                   =>      GT0_RXPCSRESET_IN,
+        ------------------ Receive Ports - RX OOB signalling Ports -----------------
+        RXELECIDLE_OUT                  =>      GT0_RXELECIDLE_OUT,
+        ----------------- Receive Ports - RX Polarity Control Ports ----------------
+        RXPOLARITY_IN                   =>      GT0_RXPOLARITY_IN,
         -------------- Receive Ports -RX Initialization and Reset Ports ------------
         RXRESETDONE_OUT                 =>      GT0_RXRESETDONE_OUT,
         --------------------- TX Initialization and Reset Ports --------------------
@@ -536,6 +592,8 @@ begin
         PLL0REFCLK_IN                   =>      gt1_pll0refclk_i,
         PLL1CLK_IN                      =>      gt1_pll1clk_i,
         PLL1REFCLK_IN                   =>      gt1_pll1refclk_i,
+        ------------------------------- Loopback Ports -----------------------------
+        LOOPBACK_IN                     =>      GT1_LOOPBACK_IN,
         --------------------- RX Initialization and Reset Ports --------------------
         RXUSERRDY_IN                    =>      GT1_RXUSERRDY_IN,
         -------------------------- RX Margin Analysis Ports ------------------------
@@ -547,13 +605,14 @@ begin
         RXUSRCLK_IN                     =>      GT1_RXUSRCLK_IN,
         RXUSRCLK2_IN                    =>      GT1_RXUSRCLK2_IN,
         ------------------ Receive Ports - RX 8B/10B Decoder Ports -----------------
-        RXCHARISCOMMA_OUT               =>      GT1_RXCHARISCOMMA_OUT,
         RXCHARISK_OUT                   =>      GT1_RXCHARISK_OUT,
         RXDISPERR_OUT                   =>      GT1_RXDISPERR_OUT,
         RXNOTINTABLE_OUT                =>      GT1_RXNOTINTABLE_OUT,
         ------------------------ Receive Ports - RX AFE Ports ----------------------
         GTPRXN_IN                       =>      GT1_GTPRXN_IN,
         GTPRXP_IN                       =>      GT1_GTPRXP_IN,
+        -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
+        RXSLIDE_IN                      =>      GT1_RXSLIDE_IN,
         -------------------- Receive Ports - RX Equailizer Ports -------------------
         RXLPMHFHOLD_IN                  =>      GT1_RXLPMHFHOLD_IN,
         RXLPMLFHOLD_IN                  =>      GT1_RXLPMLFHOLD_IN,
@@ -561,6 +620,11 @@ begin
         RXOUTCLK_OUT                    =>      GT1_RXOUTCLK_OUT,
         ------------- Receive Ports - RX Initialization and Reset Ports ------------
         GTRXRESET_IN                    =>      GT1_GTRXRESET_IN,
+        RXPCSRESET_IN                   =>      GT1_RXPCSRESET_IN,
+        ------------------ Receive Ports - RX OOB signalling Ports -----------------
+        RXELECIDLE_OUT                  =>      GT1_RXELECIDLE_OUT,
+        ----------------- Receive Ports - RX Polarity Control Ports ----------------
+        RXPOLARITY_IN                   =>      GT1_RXPOLARITY_IN,
         -------------- Receive Ports -RX Initialization and Reset Ports ------------
         RXRESETDONE_OUT                 =>      GT1_RXRESETDONE_OUT,
         --------------------- TX Initialization and Reset Ports --------------------
@@ -599,6 +663,8 @@ begin
         PLL0REFCLK_IN                   =>      gt2_pll0refclk_i,
         PLL1CLK_IN                      =>      gt2_pll1clk_i,
         PLL1REFCLK_IN                   =>      gt2_pll1refclk_i,
+        ------------------------------- Loopback Ports -----------------------------
+        LOOPBACK_IN                     =>      GT2_LOOPBACK_IN,
         --------------------- RX Initialization and Reset Ports --------------------
         RXUSERRDY_IN                    =>      GT2_RXUSERRDY_IN,
         -------------------------- RX Margin Analysis Ports ------------------------
@@ -610,13 +676,14 @@ begin
         RXUSRCLK_IN                     =>      GT2_RXUSRCLK_IN,
         RXUSRCLK2_IN                    =>      GT2_RXUSRCLK2_IN,
         ------------------ Receive Ports - RX 8B/10B Decoder Ports -----------------
-        RXCHARISCOMMA_OUT               =>      GT2_RXCHARISCOMMA_OUT,
         RXCHARISK_OUT                   =>      GT2_RXCHARISK_OUT,
         RXDISPERR_OUT                   =>      GT2_RXDISPERR_OUT,
         RXNOTINTABLE_OUT                =>      GT2_RXNOTINTABLE_OUT,
         ------------------------ Receive Ports - RX AFE Ports ----------------------
         GTPRXN_IN                       =>      GT2_GTPRXN_IN,
         GTPRXP_IN                       =>      GT2_GTPRXP_IN,
+        -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
+        RXSLIDE_IN                      =>      GT2_RXSLIDE_IN,
         -------------------- Receive Ports - RX Equailizer Ports -------------------
         RXLPMHFHOLD_IN                  =>      GT2_RXLPMHFHOLD_IN,
         RXLPMLFHOLD_IN                  =>      GT2_RXLPMLFHOLD_IN,
@@ -624,6 +691,11 @@ begin
         RXOUTCLK_OUT                    =>      GT2_RXOUTCLK_OUT,
         ------------- Receive Ports - RX Initialization and Reset Ports ------------
         GTRXRESET_IN                    =>      GT2_GTRXRESET_IN,
+        RXPCSRESET_IN                   =>      GT2_RXPCSRESET_IN,
+        ------------------ Receive Ports - RX OOB signalling Ports -----------------
+        RXELECIDLE_OUT                  =>      GT2_RXELECIDLE_OUT,
+        ----------------- Receive Ports - RX Polarity Control Ports ----------------
+        RXPOLARITY_IN                   =>      GT2_RXPOLARITY_IN,
         -------------- Receive Ports -RX Initialization and Reset Ports ------------
         RXRESETDONE_OUT                 =>      GT2_RXRESETDONE_OUT,
         --------------------- TX Initialization and Reset Ports --------------------
@@ -662,6 +734,8 @@ begin
         PLL0REFCLK_IN                   =>      gt3_pll0refclk_i,
         PLL1CLK_IN                      =>      gt3_pll1clk_i,
         PLL1REFCLK_IN                   =>      gt3_pll1refclk_i,
+        ------------------------------- Loopback Ports -----------------------------
+        LOOPBACK_IN                     =>      GT3_LOOPBACK_IN,
         --------------------- RX Initialization and Reset Ports --------------------
         RXUSERRDY_IN                    =>      GT3_RXUSERRDY_IN,
         -------------------------- RX Margin Analysis Ports ------------------------
@@ -673,13 +747,14 @@ begin
         RXUSRCLK_IN                     =>      GT3_RXUSRCLK_IN,
         RXUSRCLK2_IN                    =>      GT3_RXUSRCLK2_IN,
         ------------------ Receive Ports - RX 8B/10B Decoder Ports -----------------
-        RXCHARISCOMMA_OUT               =>      GT3_RXCHARISCOMMA_OUT,
         RXCHARISK_OUT                   =>      GT3_RXCHARISK_OUT,
         RXDISPERR_OUT                   =>      GT3_RXDISPERR_OUT,
         RXNOTINTABLE_OUT                =>      GT3_RXNOTINTABLE_OUT,
         ------------------------ Receive Ports - RX AFE Ports ----------------------
         GTPRXN_IN                       =>      GT3_GTPRXN_IN,
         GTPRXP_IN                       =>      GT3_GTPRXP_IN,
+        -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
+        RXSLIDE_IN                      =>      GT3_RXSLIDE_IN,
         -------------------- Receive Ports - RX Equailizer Ports -------------------
         RXLPMHFHOLD_IN                  =>      GT3_RXLPMHFHOLD_IN,
         RXLPMLFHOLD_IN                  =>      GT3_RXLPMLFHOLD_IN,
@@ -687,6 +762,11 @@ begin
         RXOUTCLK_OUT                    =>      GT3_RXOUTCLK_OUT,
         ------------- Receive Ports - RX Initialization and Reset Ports ------------
         GTRXRESET_IN                    =>      GT3_GTRXRESET_IN,
+        RXPCSRESET_IN                   =>      GT3_RXPCSRESET_IN,
+        ------------------ Receive Ports - RX OOB signalling Ports -----------------
+        RXELECIDLE_OUT                  =>      GT3_RXELECIDLE_OUT,
+        ----------------- Receive Ports - RX Polarity Control Ports ----------------
+        RXPOLARITY_IN                   =>      GT3_RXPOLARITY_IN,
         -------------- Receive Ports -RX Initialization and Reset Ports ------------
         RXRESETDONE_OUT                 =>      GT3_RXRESETDONE_OUT,
         --------------------- TX Initialization and Reset Ports --------------------
@@ -751,13 +831,13 @@ begin
         DRPRDY                          =>      open,
         DRPWE                           =>      tied_to_ground_i,
         ----------------- Common Block - GTPE2_COMMON Clocking Ports ---------------
-        GTEASTREFCLK0                   =>      tied_to_ground_i,
-        GTEASTREFCLK1                   =>      tied_to_ground_i,
-        GTGREFCLK1                      =>      tied_to_ground_i,
+        GTEASTREFCLK0                   =>      GT0_GTEASTREFCLK0_IN,
+        GTEASTREFCLK1                   =>      GT0_GTEASTREFCLK1_IN,
+        GTGREFCLK1                      =>      GT0_GTGREFCLK1_IN,
         GTREFCLK0                       =>      GT0_GTREFCLK0_IN,
-        GTREFCLK1                       =>      tied_to_ground_i,
-        GTWESTREFCLK0                   =>      tied_to_ground_i,
-        GTWESTREFCLK1                   =>      tied_to_ground_i,
+        GTREFCLK1                       =>      GT0_GTREFCLK1_IN,
+        GTWESTREFCLK0                   =>      GT0_GTWESTREFCLK0_IN,
+        GTWESTREFCLK1                   =>      GT0_GTWESTREFCLK1_IN,
         PLL0OUTCLK                      =>      gt0_pll0outclk_i,
         PLL0OUTREFCLK                   =>      gt0_pll0outrefclk_i,
         PLL1OUTCLK                      =>      gt0_pll1outclk_i,
@@ -781,7 +861,7 @@ begin
         PLL1RESET                       =>      tied_to_ground_i,
         ---------------------------- Common Block - Ports --------------------------
         BGRCALOVRDENB                   =>      tied_to_vcc_i,
-        GTGREFCLK0                      =>      tied_to_ground_i,
+        GTGREFCLK0                      =>      GT0_GTGREFCLK0_IN,
         PLLRSVD1                        =>      "0000000000000000",
         PLLRSVD2                        =>      "00000",
         REFCLKOUTMONITOR0               =>      open,

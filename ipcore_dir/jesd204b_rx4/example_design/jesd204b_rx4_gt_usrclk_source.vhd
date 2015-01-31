@@ -79,26 +79,18 @@ port
     GT0_RXUSRCLK_OUT             : out std_logic;
     GT0_RXUSRCLK2_OUT            : out std_logic;
     GT0_RXOUTCLK_IN              : in  std_logic;
-    GT0_RXCLK_LOCK_OUT           : out std_logic;
-    GT0_RX_MMCM_RESET_IN         : in std_logic;
  
     GT1_RXUSRCLK_OUT             : out std_logic;
     GT1_RXUSRCLK2_OUT            : out std_logic;
     GT1_RXOUTCLK_IN              : in  std_logic;
-    GT1_RXCLK_LOCK_OUT           : out std_logic;
-    GT1_RX_MMCM_RESET_IN         : in std_logic;
  
     GT2_RXUSRCLK_OUT             : out std_logic;
     GT2_RXUSRCLK2_OUT            : out std_logic;
     GT2_RXOUTCLK_IN              : in  std_logic;
-    GT2_RXCLK_LOCK_OUT           : out std_logic;
-    GT2_RX_MMCM_RESET_IN         : in std_logic;
  
     GT3_RXUSRCLK_OUT             : out std_logic;
     GT3_RXUSRCLK2_OUT            : out std_logic;
     GT3_RXOUTCLK_IN              : in  std_logic;
-    GT3_RXCLK_LOCK_OUT           : out std_logic;
-    GT3_RX_MMCM_RESET_IN         : in std_logic;
     DRPCLK_IN                          : in  std_logic;
     DRPCLK_OUT                         : out std_logic
 );
@@ -159,18 +151,6 @@ end component;
     signal  gt1_rxusrclk_i                  : std_logic;
     signal  gt2_rxusrclk_i                  : std_logic;
     signal  gt3_rxusrclk_i                  : std_logic;
-    signal  rxoutclk_mmcm0_locked_i         : std_logic;
-    signal  rxoutclk_mmcm0_reset_i          : std_logic;
-    signal  gt0_rxoutclk_to_mmcm_i          : std_logic;
-    signal  rxoutclk_mmcm1_locked_i         : std_logic;
-    signal  rxoutclk_mmcm1_reset_i          : std_logic;
-    signal  gt1_rxoutclk_to_mmcm_i          : std_logic;
-    signal  rxoutclk_mmcm2_locked_i         : std_logic;
-    signal  rxoutclk_mmcm2_reset_i          : std_logic;
-    signal  gt2_rxoutclk_to_mmcm_i          : std_logic;
-    signal  rxoutclk_mmcm3_locked_i         : std_logic;
-    signal  rxoutclk_mmcm3_reset_i          : std_logic;
-    signal  gt3_rxoutclk_to_mmcm_i          : std_logic;
 
 
 begin
@@ -211,99 +191,35 @@ begin
     -- Instantiate a MMCM module to divide the reference clock. Uses internal feedback
     -- for improved jitter performance, and to avoid consuming an additional BUFG
 
-    rxoutclk_mmcm0_reset_i                       <= GT0_RX_MMCM_RESET_IN;
-    rxoutclk_mmcm0_i : JESD204B_RX4_CLOCK_MODULE
-    generic map
-    (
-        MULT                            =>      5.0,
-        DIVIDE                          =>      1,
-        CLK_PERIOD                      =>      8.138,
-        OUT0_DIVIDE                     =>      4.0,
-        OUT1_DIVIDE                     =>      1,
-        OUT2_DIVIDE                     =>      1,
-        OUT3_DIVIDE                     =>      1
-    )
+    rxoutclk_bufg0_i : BUFG
     port map
     (
-        CLK0_OUT                        =>      gt0_rxusrclk_i,
-        CLK1_OUT                        =>      open,
-        CLK2_OUT                        =>      open,
-        CLK3_OUT                        =>      open,
-        CLK_IN                          =>      gt0_rxoutclk_i,
-        MMCM_LOCKED_OUT                 =>      rxoutclk_mmcm0_locked_i,
-        MMCM_RESET_IN                   =>      rxoutclk_mmcm0_reset_i
+        I                               =>      gt0_rxoutclk_i,
+        O                               =>      gt0_rxusrclk_i
     );
 
 
-    rxoutclk_mmcm1_reset_i                       <= GT1_RX_MMCM_RESET_IN;
-    rxoutclk_mmcm1_i : JESD204B_RX4_CLOCK_MODULE
-    generic map
-    (
-        MULT                            =>      5.0,
-        DIVIDE                          =>      1,
-        CLK_PERIOD                      =>      8.138,
-        OUT0_DIVIDE                     =>      4.0,
-        OUT1_DIVIDE                     =>      1,
-        OUT2_DIVIDE                     =>      1,
-        OUT3_DIVIDE                     =>      1
-    )
+    rxoutclk_bufg1_i : BUFG
     port map
     (
-        CLK0_OUT                        =>      gt1_rxusrclk_i,
-        CLK1_OUT                        =>      open,
-        CLK2_OUT                        =>      open,
-        CLK3_OUT                        =>      open,
-        CLK_IN                          =>      gt1_rxoutclk_i,
-        MMCM_LOCKED_OUT                 =>      rxoutclk_mmcm1_locked_i,
-        MMCM_RESET_IN                   =>      rxoutclk_mmcm1_reset_i
+        I                               =>      gt1_rxoutclk_i,
+        O                               =>      gt1_rxusrclk_i
     );
 
 
-    rxoutclk_mmcm2_reset_i                       <= GT2_RX_MMCM_RESET_IN;
-    rxoutclk_mmcm2_i : JESD204B_RX4_CLOCK_MODULE
-    generic map
-    (
-        MULT                            =>      5.0,
-        DIVIDE                          =>      1,
-        CLK_PERIOD                      =>      8.138,
-        OUT0_DIVIDE                     =>      4.0,
-        OUT1_DIVIDE                     =>      1,
-        OUT2_DIVIDE                     =>      1,
-        OUT3_DIVIDE                     =>      1
-    )
+    rxoutclk_bufg2_i : BUFG
     port map
     (
-        CLK0_OUT                        =>      gt2_rxusrclk_i,
-        CLK1_OUT                        =>      open,
-        CLK2_OUT                        =>      open,
-        CLK3_OUT                        =>      open,
-        CLK_IN                          =>      gt2_rxoutclk_i,
-        MMCM_LOCKED_OUT                 =>      rxoutclk_mmcm2_locked_i,
-        MMCM_RESET_IN                   =>      rxoutclk_mmcm2_reset_i
+        I                               =>      gt2_rxoutclk_i,
+        O                               =>      gt2_rxusrclk_i
     );
 
 
-    rxoutclk_mmcm3_reset_i                       <= GT3_RX_MMCM_RESET_IN;
-    rxoutclk_mmcm3_i : JESD204B_RX4_CLOCK_MODULE
-    generic map
-    (
-        MULT                            =>      5.0,
-        DIVIDE                          =>      1,
-        CLK_PERIOD                      =>      8.138,
-        OUT0_DIVIDE                     =>      4.0,
-        OUT1_DIVIDE                     =>      1,
-        OUT2_DIVIDE                     =>      1,
-        OUT3_DIVIDE                     =>      1
-    )
+    rxoutclk_bufg3_i : BUFG
     port map
     (
-        CLK0_OUT                        =>      gt3_rxusrclk_i,
-        CLK1_OUT                        =>      open,
-        CLK2_OUT                        =>      open,
-        CLK3_OUT                        =>      open,
-        CLK_IN                          =>      gt3_rxoutclk_i,
-        MMCM_LOCKED_OUT                 =>      rxoutclk_mmcm3_locked_i,
-        MMCM_RESET_IN                   =>      rxoutclk_mmcm3_reset_i
+        I                               =>      gt3_rxoutclk_i,
+        O                               =>      gt3_rxusrclk_i
     );
 
 
@@ -311,18 +227,14 @@ begin
  
 GT0_RXUSRCLK_OUT                             <= gt0_rxusrclk_i;
 GT0_RXUSRCLK2_OUT                            <= gt0_rxusrclk_i;
-GT0_RXCLK_LOCK_OUT                           <= rxoutclk_mmcm0_locked_i;
  
 GT1_RXUSRCLK_OUT                             <= gt1_rxusrclk_i;
 GT1_RXUSRCLK2_OUT                            <= gt1_rxusrclk_i;
-GT1_RXCLK_LOCK_OUT                           <= rxoutclk_mmcm1_locked_i;
  
 GT2_RXUSRCLK_OUT                             <= gt2_rxusrclk_i;
 GT2_RXUSRCLK2_OUT                            <= gt2_rxusrclk_i;
-GT2_RXCLK_LOCK_OUT                           <= rxoutclk_mmcm2_locked_i;
  
 GT3_RXUSRCLK_OUT                             <= gt3_rxusrclk_i;
 GT3_RXUSRCLK2_OUT                            <= gt3_rxusrclk_i;
-GT3_RXCLK_LOCK_OUT                           <= rxoutclk_mmcm3_locked_i;
 end RTL;
  

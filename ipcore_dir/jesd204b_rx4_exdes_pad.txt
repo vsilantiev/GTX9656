@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Fri Jan 30 16:21:38 2015
+Sat Jan 31 14:31:28 2015
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -109,7 +109,7 @@ Pinout by Pin Number:
 |AC9       |                         |         |MGTAVCC_G10                 |         |           |              |          |         |           |         |         |          |           |                |
 |AC10      |                         |OPAD     |MGTPTXP0_213                |UNUSED   |           |              |          |         |           |         |         |          |           |                |
 |AC11      |                         |         |MGTAVCC_G10                 |         |           |              |          |         |           |         |         |          |           |                |
-|AC12      |RXP_IN<1>                |IPAD     |MGTPRXP0_213                |         |           |              |          |         |           |         |         |          |NO         |                |
+|AC12      |RXP_IN<0>                |IPAD     |MGTPRXP0_213                |         |           |              |          |         |           |         |         |          |NO         |                |
 |AC13      |                         |         |MGTAVCC_G10                 |         |           |              |          |         |           |         |         |          |           |                |
 |AC14      |RXP_IN<2>                |IPAD     |MGTPRXP2_213                |         |           |              |          |         |           |         |         |          |NO         |                |
 |AC15      |                         |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |
@@ -135,7 +135,7 @@ Pinout by Pin Number:
 |AD9       |                         |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |
 |AD10      |                         |OPAD     |MGTPTXN0_213                |UNUSED   |           |              |          |         |           |         |         |          |           |                |
 |AD11      |                         |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |
-|AD12      |RXN_IN<1>                |IPAD     |MGTPRXN0_213                |         |           |              |          |         |           |         |         |          |NO         |                |
+|AD12      |RXN_IN<0>                |IPAD     |MGTPRXN0_213                |         |           |              |          |         |           |         |         |          |NO         |                |
 |AD13      |                         |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |
 |AD14      |RXN_IN<2>                |IPAD     |MGTPRXN2_213                |         |           |              |          |         |           |         |         |          |NO         |                |
 |AD15      |                         |         |MGTAVTT_G10                 |         |           |              |          |         |           |         |         |          |           |                |
@@ -162,7 +162,7 @@ Pinout by Pin Number:
 |AE10      |                         |         |MGTAVTT_G10                 |         |           |              |          |         |           |         |         |          |           |                |
 |AE11      |RXP_IN<3>                |IPAD     |MGTPRXP3_213                |         |           |              |          |         |           |         |         |          |NO         |                |
 |AE12      |                         |         |MGTAVTT_G10                 |         |           |              |          |         |           |         |         |          |           |                |
-|AE13      |RXP_IN<0>                |IPAD     |MGTPRXP1_213                |         |           |              |          |         |           |         |         |LOCATED   |NO         |                |
+|AE13      |RXP_IN<1>                |IPAD     |MGTPRXP1_213                |         |           |              |          |         |           |         |         |LOCATED   |NO         |                |
 |AE14      |                         |         |MGTAVTT_G10                 |         |           |              |          |         |           |         |         |          |           |                |
 |AE15      |                         |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |
 |AE16      |                         |         |PROGRAM_B_0                 |         |           |              |          |         |           |         |         |          |           |                |
@@ -188,7 +188,7 @@ Pinout by Pin Number:
 |AF10      |                         |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |
 |AF11      |RXN_IN<3>                |IPAD     |MGTPRXN3_213                |         |           |              |          |         |           |         |         |          |NO         |                |
 |AF12      |                         |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |
-|AF13      |RXN_IN<0>                |IPAD     |MGTPRXN1_213                |         |           |              |          |         |           |         |         |LOCATED   |NO         |                |
+|AF13      |RXN_IN<1>                |IPAD     |MGTPRXN1_213                |         |           |              |          |         |           |         |         |LOCATED   |NO         |                |
 |AF14      |                         |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |
 |AF15      |                         |         |MGTRREF_213                 |         |           |              |          |         |           |         |         |          |           |                |
 |AF16      |                         |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |

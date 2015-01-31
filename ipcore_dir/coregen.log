@@ -103,13 +103,6 @@ INFO:HDLCompiler:1061 - Parsing VHDL file
    design/jesd204b_rx4_gt_frame_check.vhd" into library work
 INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
 Adding
-/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_desi
-gn/jesd204b_rx4_clock_module.vhd -view all -origin_type created
-INFO:HDLCompiler:1061 - Parsing VHDL file
-   "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_
-   design/jesd204b_rx4_clock_module.vhd" into library work
-INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
-Adding
 /home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4_gt.vhd -view
 all -origin_type created
 INFO:HDLCompiler:1061 - Parsing VHDL file
@@ -147,26 +140,28 @@ gn/ila.ngc -view all -origin_type created
 Checking file
 "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_des
 ign/ila.ngc" for project device match ...
-WARNING:ProjectMgmt - The file
+WARNING:coreutil - WARNING:ProjectMgmt - The file
    "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_
-   design/ila.ngc" device information, 7v585tffg1157-2, does not match the
-   current project device, xc7a200tfbg676-2.
-Adding
-/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_desi
-gn/icon.ngc -view all -origin_type created
-Checking file
-"/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_des
-ign/icon.ngc" for project device match ...
-WARNING:ProjectMgmt - The file
+      design/ila.ngc" device information, 7v585tffg1157-2, does not match the
+      current project device, xc7a200tfbg676-2.
+   Adding
+   /home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_d
+   esign/icon.ngc -view all -origin_type created
+   Checking file
    "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_
-   design/icon.ngc" device information, 7v585tffg1157-2, does not match the
-   current project device, xc7a200tfbg676-2.
-Adding
-/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_desi
-gn/chipscope_vio.ngc -view all -origin_type created
-Checking file
-"/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_des
-ign/chipscope_vio.ngc" for project device match ...
+   des
+   ign/icon.ngc" for project device match ...
+   WARNING:ProjectMgmt - The file
+   "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_
+      design/icon.ngc" device information, 7v585tffg1157-2, does not match the
+      current project device, xc7a200tfbg676-2.
+   Adding
+   /home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_d
+   esign/chipscope_vio.ngc -view all -origin_type created
+   Checking file
+   "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_
+   des
+   ign/chipscope_vio.ngc" for project device match ...
 WARNING:coreutil - WARNING:ProjectMgmt - The file
    "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_
       design/chipscope_vio.ngc" device information, 7vx485tffg1761-2, does not
@@ -177,22 +172,24 @@ gn/chipscope_ila.ngc -view all -origin_type created
 Checking file
 "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_des
 ign/chipscope_ila.ngc" for project device match ...
-WARNING:ProjectMgmt - The file
+WARNING:coreutil - WARNING:ProjectMgmt - The file
    "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_
-   design/chipscope_ila.ngc" device information, 7vx485tffg1761-2, does not
-   match the current project device, xc7a200tfbg676-2.
-Adding
-/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_desi
-gn/chipscope_icon.ngc -view all -origin_type created
-Checking file
-"/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_des
-ign/chipscope_icon.ngc" for project device match ...
-WARNING:ProjectMgmt - The file
+      design/chipscope_ila.ngc" device information, 7vx485tffg1761-2, does not
+      match the current project device, xc7a200tfbg676-2.
+   Adding
+   /home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_d
+   esign/chipscope_icon.ngc -view all -origin_type created
+   Checking file
    "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_
-   design/chipscope_icon.ngc" device information, 7vx485tffg1761-2, does not
-   match the current project device, xc7a200tfbg676-2.
-WARNING: This core does not have a top level called "/jesd204b_rx4"
-WARNING: Top level has been set to "/jesd204b_rx4_TX_STARTUP_FSM"
+   des
+   ign/chipscope_icon.ngc" for project device match ...
+   WARNING:ProjectMgmt - The file
+   "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/tmp/_cg/jesd204b_rx4/example_
+      design/chipscope_icon.ngc" device information, 7vx485tffg1761-2, does not
+      match the current project device, xc7a200tfbg676-2.
+WARNING:coreutil - WARNING: This core does not have a top level called
+   "/jesd204b_rx4"
+   WARNING: Top level has been set to "/jesd204b_rx4_TX_STARTUP_FSM"
 Generating README file...
 Generating FLIST file...
 INFO:sim:948 - Finished FLIST file generation.

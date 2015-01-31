@@ -96,10 +96,8 @@ REM Clock Module
 
 
 
-call xvhdl -work work  ..\..\example_design\jesd204b_rx4_clock_module.vhd 
 call xvhdl -work work  ..\..\example_design\jesd204b_rx4_gt_usrclk_source.vhd
 
-call xvhdl -work work  %SIMPLEX_PARTNER%\tx_jesd204b_rx4\example_design\tx_jesd204b_rx4_clock_module.vhd 
 call xvhdl -work work  %SIMPLEX_PARTNER%\tx_jesd204b_rx4\example_design\tx_jesd204b_rx4_gt_usrclk_source.vhd
 
 

@@ -135,8 +135,8 @@ port
     RXN_IN                                  : in   std_logic_vector(3 downto 0);
     RXP_IN                                  : in   std_logic_vector(3 downto 0);
     TXN_OUT                                 : out  std_logic_vector(3 downto 0);
-    TXP_OUT                                 : out  std_logic_vector(3 downto 0);
-	 RX												  : out  std_logic_vector(15 downto 0)
+    TXP_OUT                                 : out  std_logic_vector(3 downto 0)
+--	 RX												  : out  std_logic_vector(15 downto 0)
 );
 end component jesd204b_rx4_exdes;  
 
@@ -214,8 +214,8 @@ generic map
     RXN_IN                                  => adc_out_n_i,
     RXP_IN                                  => adc_out_p_i,
     TXN_OUT                                 => open,
-    TXP_OUT                                 => open,
-	 RX												  => serdes_out_data(15 downto 0)
+    TXP_OUT                                 => open
+--	 RX												  => serdes_out_data(15 downto 0)
     );
 
   

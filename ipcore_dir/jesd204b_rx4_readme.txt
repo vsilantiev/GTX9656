@@ -28,7 +28,6 @@ Generate EJava outputs:
    Please see the core data sheet.
 
    * jesd204b_rx4/example_design/gt_rom_init_rx.dat
-   * jesd204b_rx4/example_design/jesd204b_rx4_clock_module.vhd
    * jesd204b_rx4/example_design/jesd204b_rx4_exdes.ucf
    * jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd
    * jesd204b_rx4/example_design/jesd204b_rx4_exdes.xcf

@@ -156,9 +156,6 @@ incr fcount
 
 
 
-utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path jesd204b_rx4/example_design/jesd204b_rx4_clock_module.vhd
-utilities_xmdf::xmdfSetData $instance FileSet $fcount type vhdl 
-incr fcount
     
 
    

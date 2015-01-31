@@ -369,3 +369,69 @@ xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn 
 xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 
 ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/jesd204b_rx4/example_design -sd ipcore_dir_ISE13.3 -sd ipcore_dir -nt timestamp -u -uc ABB3_pcie_4_lane_Emu_FIFO_elink.ucf -p xc7a200t-fbg676-2 v6pcieDMA_cs.ngc v6pcieDMA.ngd  
 map -intstyle ise -p xc7a200t-fbg676-2 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o v6pcieDMA_map.ncd v6pcieDMA.ngd v6pcieDMA.pcf 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/jesd204b_rx4/example_design -sd ipcore_dir_ISE13.3 -sd ipcore_dir -nt timestamp -u -uc ABB3_pcie_4_lane_Emu_FIFO_elink.ucf -p xc7a200t-fbg676-2 v6pcieDMA_cs.ngc v6pcieDMA.ngd  
+map -intstyle ise -p xc7a200t-fbg676-2 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o v6pcieDMA_map.ncd v6pcieDMA.ngd v6pcieDMA.pcf 
+par -w -intstyle ise -ol high -xe n -mt off v6pcieDMA_map.ncd v6pcieDMA.ncd v6pcieDMA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml v6pcieDMA.twx v6pcieDMA.ncd -o v6pcieDMA.twr v6pcieDMA.pcf -ucf ABB3_pcie_4_lane_Emu_FIFO_elink.ucf 
+bitgen -intstyle ise -f v6pcieDMA.ut v6pcieDMA.ncd 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/jesd204b_rx4/example_design -sd ipcore_dir_ISE13.3 -sd ipcore_dir -nt timestamp -u -uc ABB3_pcie_4_lane_Emu_FIFO_elink.ucf -p xc7a200t-fbg676-2 v6pcieDMA_cs.ngc v6pcieDMA.ngd  
+map -intstyle ise -p xc7a200t-fbg676-2 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o v6pcieDMA_map.ncd v6pcieDMA.ngd v6pcieDMA.pcf 
+par -w -intstyle ise -ol high -xe n -mt off v6pcieDMA_map.ncd v6pcieDMA.ncd v6pcieDMA.pcf 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/jesd204b_rx4/example_design -sd ipcore_dir_ISE13.3 -sd ipcore_dir -nt timestamp -u -uc ABB3_pcie_4_lane_Emu_FIFO_elink.ucf -p xc7a200t-fbg676-2 v6pcieDMA_cs.ngc v6pcieDMA.ngd  
+map -intstyle ise -p xc7a200t-fbg676-2 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o v6pcieDMA_map.ncd v6pcieDMA.ngd v6pcieDMA.pcf 
+par -w -intstyle ise -ol high -xe n -mt off v6pcieDMA_map.ncd v6pcieDMA.ncd v6pcieDMA.pcf 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/jesd204b_rx4/example_design -sd ipcore_dir_ISE13.3 -sd ipcore_dir -nt timestamp -u -uc ABB3_pcie_4_lane_Emu_FIFO_elink.ucf -p xc7a200t-fbg676-2 v6pcieDMA_cs.ngc v6pcieDMA.ngd  
+map -intstyle ise -p xc7a200t-fbg676-2 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o v6pcieDMA_map.ncd v6pcieDMA.ngd v6pcieDMA.pcf 
+par -w -intstyle ise -ol high -xe n -mt off v6pcieDMA_map.ncd v6pcieDMA.ncd v6pcieDMA.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/jesd204b_rx4/example_design -sd ipcore_dir_ISE13.3 -sd ipcore_dir -nt timestamp -u -uc ABB3_pcie_4_lane_Emu_FIFO_elink.ucf -p xc7a200t-fbg676-2 v6pcieDMA_cs.ngc v6pcieDMA.ngd  
+map -intstyle ise -p xc7a200t-fbg676-2 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o v6pcieDMA_map.ncd v6pcieDMA.ngd v6pcieDMA.pcf 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/jesd204b_rx4/example_design -sd ipcore_dir_ISE13.3 -sd ipcore_dir -nt timestamp -u -uc ABB3_pcie_4_lane_Emu_FIFO_elink.ucf -p xc7a200t-fbg676-2 v6pcieDMA_cs.ngc v6pcieDMA.ngd  
+map -intstyle ise -p xc7a200t-fbg676-2 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o v6pcieDMA_map.ncd v6pcieDMA.ngd v6pcieDMA.pcf 
+par -w -intstyle ise -ol high -xe n -mt off v6pcieDMA_map.ncd v6pcieDMA.ncd v6pcieDMA.pcf 
+par -w -intstyle ise -ol high -xe n -mt off v6pcieDMA_map.ncd v6pcieDMA.ncd v6pcieDMA.pcf 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/jesd204b_rx4/example_design -sd ipcore_dir_ISE13.3 -sd ipcore_dir -nt timestamp -u -uc ABB3_pcie_4_lane_Emu_FIFO_elink.ucf -p xc7a200t-fbg676-2 v6pcieDMA_cs.ngc v6pcieDMA.ngd  
+map -intstyle ise -p xc7a200t-fbg676-2 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o v6pcieDMA_map.ncd v6pcieDMA.ngd v6pcieDMA.pcf 
+par -w -intstyle ise -ol high -xe n -mt off v6pcieDMA_map.ncd v6pcieDMA.ncd v6pcieDMA.pcf 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/jesd204b_rx4/example_design -sd ipcore_dir_ISE13.3 -sd ipcore_dir -nt timestamp -u -uc ABB3_pcie_4_lane_Emu_FIFO_elink.ucf -uc jesd204b_rx4_exdes.ucf -p xc7a200t-fbg676-2 v6pcieDMA_cs.ngc v6pcieDMA.ngd  
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/jesd204b_rx4/example_design -sd ipcore_dir_ISE13.3 -sd ipcore_dir -nt timestamp -u -uc ABB3_pcie_4_lane_Emu_FIFO_elink.ucf -p xc7a200t-fbg676-2 v6pcieDMA_cs.ngc v6pcieDMA.ngd  
+map -intstyle ise -p xc7a200t-fbg676-2 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o v6pcieDMA_map.ncd v6pcieDMA.ngd v6pcieDMA.pcf 
+par -w -intstyle ise -ol high -xe n -mt off v6pcieDMA_map.ncd v6pcieDMA.ncd v6pcieDMA.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/jesd204b_rx4/example_design -sd ipcore_dir_ISE13.3 -sd ipcore_dir -nt timestamp -u -uc ABB3_pcie_4_lane_Emu_FIFO_elink.ucf -p xc7a200t-fbg676-2 v6pcieDMA_cs.ngc v6pcieDMA.ngd  
+map -intstyle ise -p xc7a200t-fbg676-2 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o v6pcieDMA_map.ncd v6pcieDMA.ngd v6pcieDMA.pcf 
+par -w -intstyle ise -ol high -xe n -mt off v6pcieDMA_map.ncd v6pcieDMA.ncd v6pcieDMA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml v6pcieDMA.twx v6pcieDMA.ncd -o v6pcieDMA.twr v6pcieDMA.pcf -ucf ABB3_pcie_4_lane_Emu_FIFO_elink.ucf 
+bitgen -intstyle ise -f v6pcieDMA.ut v6pcieDMA.ncd 
+bitgen -intstyle ise -f v6pcieDMA.ut v6pcieDMA.ncd 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/jesd204b_rx4/example_design -sd ipcore_dir_ISE13.3 -sd ipcore_dir -nt timestamp -u -uc ABB3_pcie_4_lane_Emu_FIFO_elink.ucf -p xc7a200t-fbg676-2 v6pcieDMA_cs.ngc v6pcieDMA.ngd  
+map -intstyle ise -p xc7a200t-fbg676-2 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o v6pcieDMA_map.ncd v6pcieDMA.ngd v6pcieDMA.pcf 
+par -w -intstyle ise -ol high -xe n -mt off v6pcieDMA_map.ncd v6pcieDMA.ncd v6pcieDMA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml v6pcieDMA.twx v6pcieDMA.ncd -o v6pcieDMA.twr v6pcieDMA.pcf -ucf ABB3_pcie_4_lane_Emu_FIFO_elink.ucf 
+bitgen -intstyle ise -f v6pcieDMA.ut v6pcieDMA.ncd 
+xst -intstyle ise -ifn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.xst" -ofn "/home/vladimir/SERGLAST/ad9656/cern/v6pcieDMA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir_ISE13.3 -sd ipcore_dir/jesd204b_rx4/example_design -sd ipcore_dir -nt timestamp -u -uc ABB3_pcie_4_lane_Emu_FIFO_elink.ucf -uc jesd204b_rx4_exdes.ucf -p xc7a200t-fbg676-2 v6pcieDMA_cs.ngc v6pcieDMA.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir_ISE13.3 -sd ipcore_dir/jesd204b_rx4/example_design -sd ipcore_dir -nt timestamp -u -uc ABB3_pcie_4_lane_Emu_FIFO_elink.ucf -p xc7a200t-fbg676-2 v6pcieDMA_cs.ngc v6pcieDMA.ngd  
+map -intstyle ise -p xc7a200t-fbg676-2 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o v6pcieDMA_map.ncd v6pcieDMA.ngd v6pcieDMA.pcf 
+par -w -intstyle ise -ol high -xe n -mt off v6pcieDMA_map.ncd v6pcieDMA.ncd v6pcieDMA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml v6pcieDMA.twx v6pcieDMA.ncd -o v6pcieDMA.twr v6pcieDMA.pcf -ucf ABB3_pcie_4_lane_Emu_FIFO_elink.ucf 
+bitgen -intstyle ise -f v6pcieDMA.ut v6pcieDMA.ncd 

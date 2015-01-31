@@ -87,9 +87,7 @@ vhdlan \
                  ../../../jesd204b_rx4_gt.vhd \
                 $SIMPLEX_PARTNER/tx_jesd204b_rx4.vhd \
                 $SIMPLEX_PARTNER/tx_jesd204b_rx4_gt.vhd \
-               ../../example_design/example_design/jesd204b_rx4_clock_module.vhd \
                ../../example_design/jesd204b_rx4_gt_usrclk_source.vhd \
-               $SIMPLEX_PARTNER/tx_jesd204b_rx4/example_design/tx_jesd204b_rx4_clock_module.vhd  \
                $SIMPLEX_PARTNER/tx_jesd204b_rx4/example_design/tx_jesd204b_rx4_gt_usrclk_source.vhd \
                 $SIMPLEX_PARTNER/tx_jesd204b_rx4/example_design/tx_jesd204b_rx4_gt_frame_gen.vhd \
                 ../../example_design/jesd204b_rx4_gt_frame_check.vhd \

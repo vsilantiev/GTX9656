@@ -173,7 +173,7 @@ architecture RTL of jesd204b_rx4_TX_STARTUP_FSM is
   signal run_phase_alignment_int    : std_logic := '0';
   signal run_phase_alignment_int_s2 : std_logic := '0';
   signal run_phase_alignment_int_s3 : std_logic := '0';
-  constant MAX_WAIT_BYPASS      : integer := 91648; --110000 TXUSRCLK cycles is the max time for Multi lane designs
+  constant MAX_WAIT_BYPASS      : integer := 50688; --110000 TXUSRCLK cycles is the max time for Multi lane designs
  
 
 

@@ -94,6 +94,8 @@ port
     PLL0REFCLK_IN                           : in   std_logic;
     PLL1CLK_IN                              : in   std_logic;
     PLL1REFCLK_IN                           : in   std_logic;
+    ------------------------------- Loopback Ports -----------------------------
+    LOOPBACK_IN                             : in   std_logic_vector(2 downto 0);
     --------------------- RX Initialization and Reset Ports --------------------
     RXUSERRDY_IN                            : in   std_logic;
     -------------------------- RX Margin Analysis Ports ------------------------
@@ -105,13 +107,14 @@ port
     RXUSRCLK_IN                             : in   std_logic;
     RXUSRCLK2_IN                            : in   std_logic;
     ------------------ Receive Ports - RX 8B/10B Decoder Ports -----------------
-    RXCHARISCOMMA_OUT                       : out  std_logic_vector(1 downto 0);
     RXCHARISK_OUT                           : out  std_logic_vector(1 downto 0);
     RXDISPERR_OUT                           : out  std_logic_vector(1 downto 0);
     RXNOTINTABLE_OUT                        : out  std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX AFE Ports ----------------------
     GTPRXN_IN                               : in   std_logic;
     GTPRXP_IN                               : in   std_logic;
+    -------------- Receive Ports - RX Byte and Word Alignment Ports ------------
+    RXSLIDE_IN                              : in   std_logic;
     -------------------- Receive Ports - RX Equailizer Ports -------------------
     RXLPMHFHOLD_IN                          : in   std_logic;
     RXLPMLFHOLD_IN                          : in   std_logic;
@@ -119,6 +122,11 @@ port
     RXOUTCLK_OUT                            : out  std_logic;
     ------------- Receive Ports - RX Initialization and Reset Ports ------------
     GTRXRESET_IN                            : in   std_logic;
+    RXPCSRESET_IN                           : in   std_logic;
+    ------------------ Receive Ports - RX OOB signalling Ports -----------------
+    RXELECIDLE_OUT                          : out  std_logic;
+    ----------------- Receive Ports - RX Polarity Control Ports ----------------
+    RXPOLARITY_IN                           : in   std_logic;
     -------------- Receive Ports -RX Initialization and Reset Ports ------------
     RXRESETDONE_OUT                         : out  std_logic;
     --------------------- TX Initialization and Reset Ports --------------------
@@ -281,9 +289,9 @@ begin
         ALIGN_MCOMMA_VALUE                      =>     ("1010000011"),
         ALIGN_PCOMMA_DET                        =>     ("TRUE"),
         ALIGN_PCOMMA_VALUE                      =>     ("0101111100"),
-        SHOW_REALIGN_COMMA                      =>     ("TRUE"),
+        SHOW_REALIGN_COMMA                      =>     ("FALSE"),
         RXSLIDE_AUTO_WAIT                       =>     (7),
-        RXSLIDE_MODE                            =>     ("OFF"),
+        RXSLIDE_MODE                            =>     ("PCS"),
         RX_SIG_VALID_DLY                        =>     (10),
 
        ------------------RX 8B/10B Decoder Attributes---------------
@@ -370,7 +378,7 @@ begin
         PCS_PCIE_EN                             =>     ("FALSE"),
 
        ---------------------------PCS Attributes----------------------------
-        PCS_RSVD_ATTR                           =>     (x"000000000000"),
+        PCS_RSVD_ATTR                           =>     (x"000000000100"),
 
        -------------RX Buffer Attributes------------
         RXBUF_ADDR_MODE                         =>     ("FAST"),
@@ -401,7 +409,7 @@ begin
        --For GTX only: Display Port, HBR/RBR- set RXCDR_CFG=72'h0380008bff40200008
 
        --For GTX only: Display Port, HBR2 -   set RXCDR_CFG=72'h038C008bff20200010
-        RXCDR_CFG                               =>     (x"0000107FE206001041010"),
+        RXCDR_CFG                               =>     (x"0000107FE406001041010"),
         RXCDR_FR_RESET_ON_EIDLE                 =>     ('0'),
         RXCDR_HOLD_DURING_EIDLE                 =>     ('0'),
         RXCDR_PH_RESET_ON_EIDLE                 =>     ('0'),
@@ -519,10 +527,10 @@ begin
         SATA_PLL_CFG                            =>     ("VCO_3000MHZ"),
 
        ------------------ RX Fabric Clock Output Control Attributes ---------------
-        RXOUT_DIV                               =>     (2),
+        RXOUT_DIV                               =>     (1),
 
        ------------------ TX Fabric Clock Output Control Attributes ---------------
-        TXOUT_DIV                               =>     (2),
+        TXOUT_DIV                               =>     (1),
 
        ------------------ RX Phase Interpolator Attributes---------------
         RXPI_CFG0                               =>     ("000"),
@@ -608,7 +616,7 @@ begin
         PLL1CLK                         =>      PLL1CLK_IN,
         PLL1REFCLK                      =>      PLL1REFCLK_IN,
         ------------------------------- Loopback Ports -----------------------------
-        LOOPBACK                        =>      tied_to_ground_vec_i(2 downto 0),
+        LOOPBACK                        =>      LOOPBACK_IN,
         ----------------------------- PCI Express Ports ----------------------------
         PHYSTATUS                       =>      open,
         RXRATE                          =>      tied_to_ground_vec_i(2 downto 0),
@@ -666,8 +674,7 @@ begin
         ------------------- Receive Ports - Pattern Checker ports ------------------
         RXPRBSCNTRESET                  =>      tied_to_ground_i,
         ------------------ Receive Ports - RX 8B/10B Decoder Ports -----------------
-        RXCHARISCOMMA(3 downto 2)       =>      rxchariscomma_float_i,
-        RXCHARISCOMMA(1 downto 0)       =>      RXCHARISCOMMA_OUT,
+        RXCHARISCOMMA                   =>      open,
         RXCHARISK(3 downto 2)           =>      rxcharisk_float_i,
         RXCHARISK(1 downto 0)           =>      RXCHARISK_OUT,
         RXDISPERR(3 downto 2)           =>      rxdisperr_float_i,
@@ -708,9 +715,9 @@ begin
         RXBYTEREALIGN                   =>      open,
         RXCOMMADET                      =>      open,
         RXCOMMADETEN                    =>      tied_to_vcc_i,
-        RXMCOMMAALIGNEN                 =>      tied_to_vcc_i,
-        RXPCOMMAALIGNEN                 =>      tied_to_vcc_i,
-        RXSLIDE                         =>      tied_to_ground_i,
+        RXMCOMMAALIGNEN                 =>      tied_to_ground_i,
+        RXPCOMMAALIGNEN                 =>      tied_to_ground_i,
+        RXSLIDE                         =>      RXSLIDE_IN,
         ------------------ Receive Ports - RX Channel Bonding Ports ----------------
         RXCHANBONDSEQ                   =>      open,
         RXCHBONDEN                      =>      tied_to_ground_i,
@@ -748,7 +755,7 @@ begin
         RXOUTCLK                        =>      RXOUTCLK_OUT,
         RXOUTCLKFABRIC                  =>      open,
         RXOUTCLKPCS                     =>      open,
-        RXOUTCLKSEL                     =>      "011",
+        RXOUTCLKSEL                     =>      "010",
         ---------------------- Receive Ports - RX Gearbox Ports --------------------
         RXDATAVALID                     =>      open,
         RXHEADER                        =>      open,
@@ -760,7 +767,7 @@ begin
         GTRXRESET                       =>      gtrxreset_out,
         RXLPMRESET                      =>      tied_to_ground_i,
         RXOOBRESET                      =>      tied_to_ground_i,
-        RXPCSRESET                      =>      tied_to_ground_i,
+        RXPCSRESET                      =>      RXPCSRESET_IN,
         RXPMARESET                      =>      tied_to_ground_i,
         ------------------- Receive Ports - RX OOB Signaling ports -----------------
         RXCOMSASDET                     =>      open,
@@ -768,10 +775,10 @@ begin
         ------------------ Receive Ports - RX OOB Signaling ports  -----------------
         RXCOMINITDET                    =>      open,
         ------------------ Receive Ports - RX OOB signalling Ports -----------------
-        RXELECIDLE                      =>      open,
-        RXELECIDLEMODE                  =>      "11",
+        RXELECIDLE                      =>      RXELECIDLE_OUT,
+        RXELECIDLEMODE                  =>      "00",
         ----------------- Receive Ports - RX Polarity Control Ports ----------------
-        RXPOLARITY                      =>      tied_to_ground_i,
+        RXPOLARITY                      =>      RXPOLARITY_IN,
         -------------- Receive Ports -RX Initialization and Reset Ports ------------
         RXRESETDONE                     =>      RXRESETDONE_OUT,
         --------------------------- TX Buffer Bypass Ports -------------------------

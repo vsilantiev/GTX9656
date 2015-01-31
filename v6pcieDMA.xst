@@ -15,7 +15,7 @@ run
 -rtlview Yes
 -glob_opt AllClockNets
 -read_cores YES
--sd {"ipcore_dir/jesd204b_rx4/example_design" "ipcore_dir_ISE13.3" "ipcore_dir"  }
+-sd {"ipcore_dir_ISE13.3" "ipcore_dir/jesd204b_rx4/example_design" "ipcore_dir"  }
 -write_timing_constraints NO
 -cross_clock_analysis NO
 -hierarchy_separator /

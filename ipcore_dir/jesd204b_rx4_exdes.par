@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-ubuntu::  Fri Jan 30 16:20:54 2015
+ubuntu::  Sat Jan 31 14:30:49 2015
 
 par -w -intstyle ise -ol high -mt off jesd204b_rx4_exdes_map.ncd
 jesd204b_rx4_exdes.ncd jesd204b_rx4_exdes.pcf 
@@ -22,35 +22,35 @@ Device speed data version:  "PRODUCTION 1.10 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                   925 out of 269,200    1%
-    Number used as Flip Flops:                 925
-    Number used as Latches:                      0
+  Number of Slice Registers:                 1,167 out of 269,200    1%
+    Number used as Flip Flops:               1,166
+    Number used as Latches:                      1
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        846 out of 134,600    1%
-    Number used as logic:                      731 out of 134,600    1%
-      Number using O6 output only:             435
-      Number using O5 output only:             153
-      Number using O5 and O6:                  143
+  Number of Slice LUTs:                      1,069 out of 134,600    1%
+    Number used as logic:                      864 out of 134,600    1%
+      Number using O6 output only:             517
+      Number using O5 output only:             199
+      Number using O5 and O6:                  148
       Number used as ROM:                        0
-    Number used as Memory:                      68 out of  46,200    1%
+    Number used as Memory:                     125 out of  46,200    1%
       Number used as Dual Port RAM:              0
       Number used as Single Port RAM:            0
-      Number used as Shift Register:            68
-        Number using O6 output only:            68
-        Number using O5 output only:             0
-        Number using O5 and O6:                  0
-    Number used exclusively as route-thrus:     47
-      Number with same-slice register load:     34
-      Number with same-slice carry load:        13
+      Number used as Shift Register:           125
+        Number using O6 output only:           119
+        Number using O5 output only:             1
+        Number using O5 and O6:                  5
+    Number used exclusively as route-thrus:     80
+      Number with same-slice register load:     61
+      Number with same-slice carry load:        19
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   393 out of  33,650    1%
-  Number of LUT Flip Flop pairs used:        1,048
-    Number with an unused Flip Flop:           233 out of   1,048   22%
-    Number with an unused LUT:                 202 out of   1,048   19%
-    Number of fully used LUT-FF pairs:         613 out of   1,048   58%
+  Number of occupied Slices:                   511 out of  33,650    1%
+  Number of LUT Flip Flop pairs used:        1,346
+    Number with an unused Flip Flop:           331 out of   1,346   24%
+    Number with an unused LUT:                 277 out of   1,346   20%
+    Number of fully used LUT-FF pairs:         738 out of   1,346   54%
     Number of slice register sites lost
       to control set restrictions:               0 out of 269,200    0%
 
@@ -69,9 +69,11 @@ IO Utilization:
 
 Specific Feature Utilization:
   Number of RAMB36E1/FIFO36E1s:                  0 out of     365    0%
-  Number of RAMB18E1/FIFO18E1s:                  0 out of     730    0%
-  Number of BUFG/BUFGCTRLs:                      9 out of      32   28%
-    Number used as BUFGs:                        9
+  Number of RAMB18E1/FIFO18E1s:                  1 out of     730    1%
+    Number using RAMB18E1 only:                  1
+    Number using FIFO18E1 only:                  0
+  Number of BUFG/BUFGCTRLs:                     10 out of      32   31%
+    Number used as BUFGs:                       10
     Number used as BUFGCTRLs:                    0
   Number of IDELAYE2/IDELAYE2_FINEDELAYs:        0 out of     500    0%
   Number of ILOGICE2/ILOGICE3/ISERDESE2s:        0 out of     500    0%
@@ -79,7 +81,7 @@ Specific Feature Utilization:
   Number of OLOGICE2/OLOGICE3/OSERDESE2s:        0 out of     500    0%
   Number of PHASER_IN/PHASER_IN_PHYs:            0 out of      40    0%
   Number of PHASER_OUT/PHASER_OUT_PHYs:          0 out of      40    0%
-  Number of BSCANs:                              0 out of       4    0%
+  Number of BSCANs:                              1 out of       4   25%
   Number of BUFHCEs:                             0 out of     120    0%
   Number of BUFRs:                               0 out of      40    0%
   Number of CAPTUREs:                            0 out of       1    0%
@@ -106,33 +108,33 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 17 secs 
-Finished initial Timing Analysis.  REAL time: 17 secs 
+Starting initial Timing Analysis.  REAL time: 19 secs 
+Finished initial Timing Analysis.  REAL time: 19 secs 
 
 Starting Router
 
 
-Phase  1  : 6002 unrouted;      REAL time: 21 secs 
+Phase  1  : 7345 unrouted;      REAL time: 23 secs 
 
-Phase  2  : 3444 unrouted;      REAL time: 22 secs 
+Phase  2  : 4446 unrouted;      REAL time: 25 secs 
 
-Phase  3  : 1072 unrouted;      REAL time: 33 secs 
+Phase  3  : 1200 unrouted;      REAL time: 27 secs 
 
-Phase  4  : 1072 unrouted; (Setup:0, Hold:8278, Component Switching Limit:0)     REAL time: 39 secs 
+Phase  4  : 1200 unrouted; (Setup:0, Hold:14944, Component Switching Limit:0)     REAL time: 34 secs 
 
 Updating file: jesd204b_rx4_exdes.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:6191, Component Switching Limit:0)     REAL time: 42 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:12644, Component Switching Limit:0)     REAL time: 36 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:6191, Component Switching Limit:0)     REAL time: 42 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:12644, Component Switching Limit:0)     REAL time: 36 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:6191, Component Switching Limit:0)     REAL time: 42 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:12644, Component Switching Limit:0)     REAL time: 36 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:6191, Component Switching Limit:0)     REAL time: 42 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:12644, Component Switching Limit:0)     REAL time: 36 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 43 secs 
-Total REAL time to Router completion: 43 secs 
-Total CPU time to Router completion: 43 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 36 secs 
+Total REAL time to Router completion: 36 secs 
+Total CPU time to Router completion: 36 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -150,15 +152,17 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|      gt3_rxusrclk_i | BUFGCTRL_X0Y4| No   |   48 |  0.395     |  1.931      |
+|      gt3_rxusrclk_i | BUFGCTRL_X0Y4| No   |   49 |  0.391     |  1.931      |
 +---------------------+--------------+------+------+------------+-------------+
-|      gt0_rxusrclk_i |BUFGCTRL_X0Y31| No   |   48 |  0.401     |  1.924      |
+|      gt0_rxusrclk_i |BUFGCTRL_X0Y31| No   |   41 |  0.413     |  1.933      |
 +---------------------+--------------+------+------+------------+-------------+
-|      gt1_rxusrclk_i |BUFGCTRL_X0Y30| No   |   43 |  0.398     |  1.933      |
+|      gt1_rxusrclk_i |BUFGCTRL_X0Y30| No   |   45 |  0.396     |  1.924      |
 +---------------------+--------------+------+------+------------+-------------+
-|      gt2_rxusrclk_i | BUFGCTRL_X0Y5| No   |   44 |  0.383     |  1.924      |
+|      gt2_rxusrclk_i | BUFGCTRL_X0Y5| No   |   41 |  0.367     |  1.924      |
 +---------------------+--------------+------+------+------------+-------------+
-|         drpclk_in_i | BUFGCTRL_X0Y6| No   |  162 |  0.522     |  1.931      |
+|         drpclk_in_i | BUFGCTRL_X0Y6| No   |  162 |  0.520     |  1.931      |
++---------------------+--------------+------+------+------------+-------------+
+|    icon_control0<0> |BUFGCTRL_X0Y29| No   |   58 |  0.204     |  1.830      |
 +---------------------+--------------+------+------+------------+-------------+
 |gt0_usrclk_source/rx |              |      |      |            |             |
 |outclk_mmcm0_i/clkin |              |      |      |            |             |
@@ -176,6 +180,8 @@ Generating Clock Report
 |outclk_mmcm2_i/clkin |              |      |      |            |             |
 |                   1 | BUFGCTRL_X0Y3| No   |    1 |  0.000     |  1.661      |
 +---------------------+--------------+------+------+------------+-------------+
+|    q0_clk0_refclk_i |         Local|      |   63 |  1.600     |  1.600      |
++---------------------+--------------+------+------+------------+-------------+
 |gt0_usrclk_source/rx |              |      |      |            |             |
 |outclk_mmcm0_i/clkfb |              |      |      |            |             |
 |                 out |         Local|      |    1 |  0.000     |  0.012      |
@@ -192,7 +198,8 @@ Generating Clock Report
 |outclk_mmcm1_i/clkfb |              |      |      |            |             |
 |                 out |         Local|      |    1 |  0.000     |  0.012      |
 +---------------------+--------------+------+------+------------+-------------+
-|    q0_clk0_refclk_i |         Local|      |    1 |  0.000     |  0.000      |
+|U_icon_pro/U0/iUPDAT |              |      |      |            |             |
+|               E_OUT |         Local|      |    1 |  0.000     |  3.053      |
 +---------------------+--------------+------+------+------------+-------------+
 |gt0_usrclk_source/rx |              |      |      |            |             |
 |outclk_mmcm3_i/clkfb |              |      |      |            |             |
@@ -201,6 +208,8 @@ Generating Clock Report
 |gt0_usrclk_source/rx |              |      |      |            |             |
 |outclk_mmcm2_i/clkfb |              |      |      |            |             |
 |                 out |         Local|      |    1 |  0.000     |  0.012      |
++---------------------+--------------+------+------+------------+-------------+
+|   icon_control0<13> |         Local|      |    4 |  0.000     |  0.534      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -213,7 +222,7 @@ for example SLICE loads not FF loads.
 
 Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
 
-Number of Timing Constraints that were not applied: 1
+Number of Timing Constraints that were not applied: 2
 
 Asterisk (*) preceding a constraint indicates it was not met.
    This may be due to a setup or hold violation.
@@ -222,37 +231,67 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  TS_gt1_rxusrclk_i = PERIOD TIMEGRP "gt1_r | SETUP       |     1.204ns|     5.306ns|       0|           0
-  xusrclk_i" 6.51 ns HIGH 50%               | HOLD        |     0.124ns|            |       0|           0
+  TS_gt3_rxusrclk_i = PERIOD TIMEGRP "gt3_r | SETUP       |     2.855ns|     3.655ns|       0|           0
+  xusrclk_i" 6.51 ns HIGH 50%               | HOLD        |     0.056ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_drpclk_in_i = PERIOD TIMEGRP "drpclk_i | SETUP       |     1.302ns|     8.698ns|       0|           0
-  n_i" 10 ns HIGH 50%                       | HOLD        |     0.050ns|            |       0|           0
+  TS_gt0_rxusrclk_i = PERIOD TIMEGRP "gt0_r | SETUP       |     3.684ns|     2.826ns|       0|           0
+  xusrclk_i" 6.51 ns HIGH 50%               | HOLD        |     0.127ns|            |       0|           0
+                                            | MINPERIOD   |     3.480ns|     3.030ns|       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_gt2_rxusrclk_i = PERIOD TIMEGRP "gt2_r | SETUP       |     2.540ns|     3.970ns|       0|           0
-  xusrclk_i" 6.51 ns HIGH 50%               | HOLD        |     0.114ns|            |       0|           0
+  TS_gt1_rxusrclk_i = PERIOD TIMEGRP "gt1_r | SETUP       |     3.545ns|     2.965ns|       0|           0
+  xusrclk_i" 6.51 ns HIGH 50%               | HOLD        |     0.046ns|            |       0|           0
+                                            | MINPERIOD   |     3.480ns|     3.030ns|       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_gt3_rxusrclk_i = PERIOD TIMEGRP "gt3_r | SETUP       |     2.842ns|     3.668ns|       0|           0
-  xusrclk_i" 6.51 ns HIGH 50%               | HOLD        |     0.223ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  TS_gt0_rxusrclk_i = PERIOD TIMEGRP "gt0_r | SETUP       |     3.347ns|     3.163ns|       0|           0
+  TS_gt2_rxusrclk_i = PERIOD TIMEGRP "gt2_r | SETUP       |     3.600ns|     2.910ns|       0|           0
   xusrclk_i" 6.51 ns HIGH 50%               | HOLD        |     0.125ns|            |       0|           0
+                                            | MINPERIOD   |     3.480ns|     3.030ns|       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_q0_clk0_refclk_i = PERIOD TIMEGRP "q0_ | MINPERIOD   |     6.600ns|     1.538ns|       0|           0
-  clk0_refclk_i" 8.138 ns HIGH 50%          |             |            |            |        |            
+  TS_drpclk_in_i = PERIOD TIMEGRP "drpclk_i | SETUP       |     5.967ns|     4.033ns|       0|           0
+  n_i" 10 ns HIGH 50%                       | HOLD        |     0.076ns|            |       0|           0
+                                            | MINPERIOD   |     4.286ns|     5.714ns|       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_q0_clk0_refclk_i = PERIOD TIMEGRP "q0_ | SETUP       |     4.884ns|     3.254ns|       0|           0
+  clk0_refclk_i" 8.138 ns HIGH 50%          | HOLD        |     0.109ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    11.415ns|     3.585ns|       0|           0
+   TO TIMEGRP "J_CLK" 15 ns                 | HOLD        |     1.245ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    14.103ns|     0.897ns|       0|           0
+   TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.265ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    24.459ns|     5.541ns|       0|           0
+  IGH 50%                                   | HOLD        |     0.152ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_D2_TO_T2_ila_pro_0_path" TIG     | SETUP       |         N/A|     3.042ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J2_TO_D2_ila_pro_0_path" TIG     | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J3_TO_D2_ila_pro_0_path" TIG     | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J4_TO_D2_ila_pro_0_path" TIG     | MAXDELAY    |         N/A|     4.189ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|     5.178ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_D_TO_J_path" TIG                 | SETUP       |         N/A|     2.847ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
 
 
 All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
 
 
 Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 44 secs 
-Total CPU time to PAR completion: 44 secs 
+Total REAL time to PAR completion: 38 secs 
+Total CPU time to PAR completion: 38 secs 
 
-Peak Memory Usage:  1294 MB
+Peak Memory Usage:  1299 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

@@ -152,7 +152,7 @@ architecture RTL of jesd204b_rx4_RX_STARTUP_FSM is
   constant WAIT_TIMEOUT_500us   : integer :=  500000 / STABLE_CLOCK_PERIOD;--500 us time-out
   constant WAIT_TIMEOUT_1us     : integer :=  1000 / STABLE_CLOCK_PERIOD;  --1 us time-out
   constant WAIT_TIMEOUT_100us    : integer := 100000 / STABLE_CLOCK_PERIOD; --100 us time-out
-  constant WAIT_TIME_ADAPT      : integer := (37000000 /integer(3.072))/STABLE_CLOCK_PERIOD;
+  constant WAIT_TIME_ADAPT      : integer := (37000000 /integer(6.25))/STABLE_CLOCK_PERIOD;
     
   signal init_wait_count        : integer range 0 to WAIT_MAX:=0;
   signal init_wait_done         : std_logic := '0';

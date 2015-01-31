@@ -77,8 +77,8 @@ architecture RTL of jesd204b_rx4_TB is
 
 --*************************Parameter Declarations******************************
 
-    constant   TX_REFCLK_PERIOD        :   time :=  8.138 ns;
-    constant   RX_REFCLK_PERIOD        :   time :=  8.138 ns;   
+    constant   TX_REFCLK_PERIOD        :   time :=  8.0 ns;
+    constant   RX_REFCLK_PERIOD        :   time :=  8.0 ns;   
     constant   SYSCLK_PERIOD           :   time :=  10.0 ns;    
     constant   DCLK_PERIOD             :   time :=  10.0 ns;
   

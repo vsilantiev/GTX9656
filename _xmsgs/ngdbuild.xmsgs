@@ -179,6 +179,20 @@
 <msg type="warning" file="NgdBuild" num="931" delta="old" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">LoopBack_FIFO_Off.queue_buffer0/U0_B2H/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM36.ram</arg>&apos; of type <arg fmt="%s" index="2">RAMB36E1</arg> has been changed from &apos;<arg fmt="%s" index="3">VIRTEX6</arg>&apos; to &apos;<arg fmt="%s" index="4">7SERIES</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file. For additional information on retargeting this primitive to 7SERIES, please see http://www.xilinx.com/support/documentation/sw_manuals/ug429_7Series_Migration.pdf.
 </msg>
 
+<msg type="warning" file="ConstraintSystem" num="137" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;clk_200MHz&quot; TNM_NET = &quot;clk_200MHz&quot;;&gt; [ABB3_pcie_4_lane_Emu_FIFO_elink.ucf(232)]</arg>: No appropriate instances for the TNM constraint are driven by &quot;<arg fmt="%s" index="2">clk_200MHz</arg>&quot;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="56" delta="old" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC &quot;TS_clk_200MHz&quot; = PERIOD &quot;clk_200MHz&quot; 200 MHz HIGH 50 %;&gt; [ABB3_pcie_4_lane_Emu_FIFO_elink.ucf(233)]</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TNM&apos; or &apos;TimeGrp&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">clk_200MHz</arg>&apos;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="191" delta="old" >The <arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clk_200MHz</arg>&apos;, does not directly or indirectly drive any flip-flops, latches and/or RAMS and cannot be actively used by the referencing <arg fmt="%s" index="3">Period</arg> constraint &apos;<arg fmt="%s" index="4">TS_clk_200MHz</arg>&apos;. If clock manager blocks are directly or indirectly driven, a new TNM constraint will not be derived even though the referencing constraint is a PERIOD constraint unless an output of the clock manager drives flip-flops, latches or RAMs. This TNM is used in the following user PERIOD specification:
+<arg fmt="%s" index="5">&lt;TIMESPEC &quot;TS_clk_200MHz&quot; = PERIOD &quot;clk_200MHz&quot; 200 MHz HIGH 50 %;&gt; [ABB3_pcie_4_lane_Emu_FIFO_elink.ucf(233)]
+</arg></msg>
+
+<msg type="warning" file="ConstraintSystem" num="197" delta="old" >The following specification is invalid because the referenced TNM constraint was removed:
+<arg fmt="%s" index="1">&lt;TIMESPEC &quot;TS_clk_200MHz&quot; = PERIOD &quot;clk_200MHz&quot; 200 MHz HIGH 50 %;&gt; [ABB3_pcie_4_lane_Emu_FIFO_elink.ucf(233)]</arg>
+</msg>
+
 <msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">cfg_dcommand&lt;15&gt;</arg>&apos; has no driver
 </msg>
 
@@ -1776,42 +1790,6 @@
 </msg>
 
 <msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">make4Lanes.pcieCore/v7_pcie_i/pcie_top_i/pcie_pipe_pipeline_i/pipe_tx_swing_o</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="478" delta="old" >clock net <arg fmt="%s" index="1">cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm3_i/CLK1_OUT</arg> with clock driver <arg fmt="%s" index="2">cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm3_i/clkout1_buf</arg> drives no clock pins
-</msg>
-
-<msg type="warning" file="NgdBuild" num="478" delta="old" >clock net <arg fmt="%s" index="1">cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm3_i/CLK2_OUT</arg> with clock driver <arg fmt="%s" index="2">cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm3_i/clkout2_buf</arg> drives no clock pins
-</msg>
-
-<msg type="warning" file="NgdBuild" num="478" delta="old" >clock net <arg fmt="%s" index="1">cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm3_i/CLK3_OUT</arg> with clock driver <arg fmt="%s" index="2">cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm3_i/clkout3_buf</arg> drives no clock pins
-</msg>
-
-<msg type="warning" file="NgdBuild" num="478" delta="old" >clock net <arg fmt="%s" index="1">cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm2_i/CLK1_OUT</arg> with clock driver <arg fmt="%s" index="2">cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm2_i/clkout1_buf</arg> drives no clock pins
-</msg>
-
-<msg type="warning" file="NgdBuild" num="478" delta="old" >clock net <arg fmt="%s" index="1">cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm2_i/CLK2_OUT</arg> with clock driver <arg fmt="%s" index="2">cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm2_i/clkout2_buf</arg> drives no clock pins
-</msg>
-
-<msg type="warning" file="NgdBuild" num="478" delta="old" >clock net <arg fmt="%s" index="1">cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm2_i/CLK3_OUT</arg> with clock driver <arg fmt="%s" index="2">cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm2_i/clkout3_buf</arg> drives no clock pins
-</msg>
-
-<msg type="warning" file="NgdBuild" num="478" delta="old" >clock net <arg fmt="%s" index="1">cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm1_i/CLK1_OUT</arg> with clock driver <arg fmt="%s" index="2">cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm1_i/clkout1_buf</arg> drives no clock pins
-</msg>
-
-<msg type="warning" file="NgdBuild" num="478" delta="old" >clock net <arg fmt="%s" index="1">cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm1_i/CLK2_OUT</arg> with clock driver <arg fmt="%s" index="2">cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm1_i/clkout2_buf</arg> drives no clock pins
-</msg>
-
-<msg type="warning" file="NgdBuild" num="478" delta="old" >clock net <arg fmt="%s" index="1">cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm1_i/CLK3_OUT</arg> with clock driver <arg fmt="%s" index="2">cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm1_i/clkout3_buf</arg> drives no clock pins
-</msg>
-
-<msg type="warning" file="NgdBuild" num="478" delta="old" >clock net <arg fmt="%s" index="1">cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm0_i/CLK1_OUT</arg> with clock driver <arg fmt="%s" index="2">cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm0_i/clkout1_buf</arg> drives no clock pins
-</msg>
-
-<msg type="warning" file="NgdBuild" num="478" delta="old" >clock net <arg fmt="%s" index="1">cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm0_i/CLK2_OUT</arg> with clock driver <arg fmt="%s" index="2">cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm0_i/clkout2_buf</arg> drives no clock pins
-</msg>
-
-<msg type="warning" file="NgdBuild" num="478" delta="old" >clock net <arg fmt="%s" index="1">cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm0_i/CLK3_OUT</arg> with clock driver <arg fmt="%s" index="2">cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm0_i/clkout3_buf</arg> drives no clock pins
 </msg>
 
 <msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">cmp_fmc_adc_125Ms_core/jesd204b/jesd204b_rx4_init_i/jesd204b_rx4_i/GT0_DRP_BUSY_OUT</arg>&apos; has no driver
