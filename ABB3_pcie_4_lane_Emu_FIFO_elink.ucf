@@ -194,7 +194,12 @@ NET adc_out_n_i<0> LOC="AF13" |IOSTANDARD=LVDS_25 |DIFF_TERM=TRUE;
 # User Clock Constraints
 NET "cmp_fmc_adc_125Ms_core/jesd204b/gt0_rxusrclk_i" TNM_NET = "gt0_rxusrclk_i";
 TIMESPEC "TS_gt0_rxusrclk_i" = PERIOD "gt0_rxusrclk_i" 6.51;
-
+NET "cmp_fmc_adc_125Ms_core/jesd204b/gt1_rxusrclk_i" TNM_NET = "gt1_rxusrclk_i";
+TIMESPEC "TS_gt1_rxusrclk_i" = PERIOD "gt1_rxusrclk_i" 6.51;
+NET "cmp_fmc_adc_125Ms_core/jesd204b/gt2_rxusrclk_i" TNM_NET = "gt2_rxusrclk_i";
+TIMESPEC "TS_gt2_rxusrclk_i" = PERIOD "gt2_rxusrclk_i" 6.51;
+NET "cmp_fmc_adc_125Ms_core/jesd204b/gt3_rxusrclk_i" TNM_NET = "gt3_rxusrclk_i";
+TIMESPEC "TS_gt3_rxusrclk_i" = PERIOD "gt3_rxusrclk_i" 6.51;
 #NET "cmp_fmc_adc_125Ms_core/gt1_rxusrclk_in" TNM_NET = "gt1_rxusrclk_in";
 #TIMESPEC "TS_gt1_rxusrclk_in" = PERIOD "gt1_rxusrclk_in" 6.51;
 
@@ -205,8 +210,10 @@ TIMESPEC "TS_gt0_rxusrclk_i" = PERIOD "gt0_rxusrclk_i" 6.51;
 #TIMESPEC "TS_gt3_rxusrclk_in" = PERIOD "gt3_rxusrclk_in" 6.51;
 
 ##---------- Set placement for gt0_gtp_wrapper_i/GTPE2_CHANNEL ------
-INST cmp_fmc_adc_125Ms_core/jesd204b/jesd204b_rx4_init_i/jesd204b_rx4_i/gt0_jesd204b_rx4_i/gtpe2_i LOC=GTPE2_CHANNEL_X0Y1;
-
+INST cmp_fmc_adc_125Ms_core/jesd204b/jesd204b_rx4_init_i/jesd204b_rx4_i/gt0_jesd204b_rx4_i/gtpe2_i LOC=GTPE2_CHANNEL_X0Y0;
+INST cmp_fmc_adc_125Ms_core/jesd204b/jesd204b_rx4_init_i/jesd204b_rx4_i/gt1_jesd204b_rx4_i/gtpe2_i LOC=GTPE2_CHANNEL_X0Y1;
+INST cmp_fmc_adc_125Ms_core/jesd204b/jesd204b_rx4_init_i/jesd204b_rx4_i/gt2_jesd204b_rx4_i/gtpe2_i LOC=GTPE2_CHANNEL_X0Y2;
+INST cmp_fmc_adc_125Ms_core/jesd204b/jesd204b_rx4_init_i/jesd204b_rx4_i/gt3_jesd204b_rx4_i/gtpe2_i LOC=GTPE2_CHANNEL_X0Y3;
 ##---------- Set placement for gt1_gtp_wrapper_i/GTPE2_CHANNEL ------
 #INST cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/gtpe2_i LOC=GTPE2_CHANNEL_X0Y1;
 

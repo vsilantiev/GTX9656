@@ -1,6 +1,5 @@
 -g spi_opcode:0x6B
 -w
--d
 -g Binary:no
 -g Compress
 -g CRC:Enable

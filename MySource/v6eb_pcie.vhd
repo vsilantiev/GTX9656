@@ -52,8 +52,8 @@ entity v6pcieDMA is
 			 adc_clk_n_i          : in  std_logic;
 			 adc_clk_p_i          : in  std_logic;
 
-			 adc_out_p_i : in std_logic_vector(1 downto 0);  -- ADC CML data 
-			 adc_out_n_i : in std_logic_vector(1 downto 0)
+			 adc_out_p_i : in std_logic_vector(0 downto 0);  -- ADC CML data 
+			 adc_out_n_i : in std_logic_vector(0 downto 0)
 
 
           );                       
@@ -1111,11 +1111,19 @@ cmp_fmc_adc_125Ms_core : fmc_adc_125Ms_core
       adc_clk_p_i  => adc_clk_p_i,
       adc_clk_n_i  => adc_clk_n_i,
 
-      adc_out_p_i(0 downto 0) => adc_out_p_i(0 downto 0),
-      adc_out_p_i(3 downto 1) => "111",
-		adc_out_n_i(0 downto 0) => adc_out_n_i(0 downto 0),
-		adc_out_n_i(3 downto 1) => "111"
+      --adc_out_p_i(3 downto 0) => "1" & "1" & adc_out_p_i(0) & "1",
+		--adc_out_n_i(3 downto 0) => "1" & "1" & adc_out_n_i(0) & "1"
 		
+		adc_out_p_i(0) => '1',
+		adc_out_p_i(1) => adc_out_p_i(0),
+		adc_out_p_i(2) => '1',
+		adc_out_p_i(3) => '1',
+		adc_out_n_i(0) => '1',
+		adc_out_n_i(1) => adc_out_n_i(0),
+		adc_out_n_i(2) => '1',
+		adc_out_n_i(3) => '1'
+
+
       );
 
 

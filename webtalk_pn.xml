@@ -3,16 +3,15 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Fri Jan 30 16:30:57 2015">
+<application name="pn" timeStamp="Sat Jan 31 01:23:01 2015">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="2F64AA255D4543289C50EFE80FFB0AA4" type="project"/>
-<property name="ProjectIteration" value="144" type="project"/>
+<property name="ProjectIteration" value="147" type="project"/>
 <property name="ProjectFile" value="/home/vladimir/SERGLAST/ad9656/cern/v6pcie.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2012-03-26T13:51:49" type="project"/>
 </section>
 <section name="Project Statistics" visible="true">
 <property name="PROP_Enable_Message_Filtering" value="false" type="design"/>
-<property name="PROP_FitterReportFormat" value="HTML" type="process"/>
 <property name="PROP_LastAppliedGoal" value="Balanced" type="design"/>
 <property name="PROP_LastAppliedStrategy" value="Xilinx Default (unlocked)" type="design"/>
 <property name="PROP_ManualCompileOrderImp" value="false" type="design"/>
@@ -23,20 +22,18 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_Top_Level_Module_Type" value="HDL" type="design"/>
 <property name="PROP_UseSmartGuide" value="false" type="design"/>
 <property name="PROP_UserBrowsedStrategyFiles" value="/opt/Xilinx/14.7/ISE_DS/ISE/data/default.xds" type="process"/>
-<property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_bitg_SetSPIConfigBusWidth" value="4" type="process"/>
 <property name="PROP_bitg_UseSPIFallingEdge" value="Yes" type="process"/>
 <property name="PROP_bitg_extMasterClockEnable" value="Divide by 1" type="process"/>
 <property name="PROP_bitgen_otherCmdLineOptions_virtex5" value="-g spi_opcode:0x6B" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2012-03-26T13:51:49" type="design"/>
 <property name="PROP_intWbtProjectID" value="2F64AA255D4543289C50EFE80FFB0AA4" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="144" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="147" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_selectedSimRootSourceNode_behav" value="work.v6pcieDMA" type="process"/>
 <property name="PROP_selectedSimRootSourceNode_translate" value="work.tf64_pcie_trn" type="process"/>
 <property name="PROP_xilxBitgCfg_GenOpt_Compress_virtex5" value="true" type="process"/>
-<property name="PROP_xilxBitgCfg_GenOpt_DRC_virtex5" value="false" type="process"/>
 <property name="PROP_xilxBitgStart_Clk_MatchCycle_virtex5" value="NoWait" type="process"/>
 <property name="PROP_xilxNgdbldUnexpBlks" value="true" type="process"/>
 <property name="PROP_xilxSynthKeepHierarchy" value="Yes" type="process"/>

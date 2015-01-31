@@ -1,67 +1,13 @@
 Release 14.7 - par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Fri Jan 30 14:54:20 2015
+Sat Jan 31 00:58:19 2015
 
 All signals are completely routed.
 
-WARNING:ParHelpers:361 - There are 115 loadless signals in this design. This design will cause Bitgen to issue DRC
+WARNING:ParHelpers:361 - There are 61 loadless signals in this design. This design will cause Bitgen to issue DRC
    warnings.
 
-   cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<0>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<10>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<11>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<12>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<13>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<14>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<15>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<1>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<2>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<3>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<4>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<5>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<6>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<7>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<8>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<9>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPRDY_OUT
-   cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/rxpmaresetdone_t
-   cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<0>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<10>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<11>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<12>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<13>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<14>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<15>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<1>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<2>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<3>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<4>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<5>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<6>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<7>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<8>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<9>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPRDY_OUT
-   cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/rxpmaresetdone_t
-   cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<0>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<10>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<11>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<12>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<13>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<14>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<15>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<1>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<2>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<3>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<4>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<5>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<6>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<7>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<8>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<9>
-   cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPRDY_OUT
-   cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/rxpmaresetdone_t
    make4Lanes.pcieCore/v7_pcie_i/gt_top_i/pipe_wrapper_i/gt_do<11>
    make4Lanes.pcieCore/v7_pcie_i/gt_top_i/pipe_wrapper_i/gt_do<27>
    make4Lanes.pcieCore/v7_pcie_i/gt_top_i/pipe_wrapper_i/gt_do<43>

@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Reading design: v6pcieDMA.prj
@@ -237,21 +237,6 @@ Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_clock_module
 Parsing entity <JESD204B_RX4_CLOCK_MODULE>.
 Parsing architecture <xilinx> of entity <jesd204b_rx4_clock_module>.
 Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir_ISE13.3/v6_sfifo_15x128.vhd" into library work
-Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gt_frame_gen.vhd" into library work
-Parsing entity <jesd204b_rx4_GT_FRAME_GEN>.
-Parsing architecture <RTL> of entity <jesd204b_rx4_gt_frame_gen>.
-Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_recclk_monitor.vhd" into library work
-Parsing entity <jesd204b_rx4_RECCLK_MONITOR>.
-Parsing architecture <RTL> of entity <jesd204b_rx4_recclk_monitor>.
-Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_rxpmarst_seq.vhd" into library work
-Parsing entity <jesd204b_rx4_rxpmarst_seq>.
-Parsing architecture <Behavioral> of entity <jesd204b_rx4_rxpmarst_seq>.
-Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_rxrate_seq.vhd" into library work
-Parsing entity <jesd204b_rx4_rxrate_seq>.
-Parsing architecture <Behavioral> of entity <jesd204b_rx4_rxrate_seq>.
-Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_tx_startup_fsm.vhd" into library work
-Parsing entity <jesd204b_rx4_TX_STARTUP_FSM>.
-Parsing architecture <RTL> of entity <jesd204b_rx4_tx_startup_fsm>.
 Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/v7_pcie_pcie_top.vhd" into library work
 Parsing entity <v7_pcie_pcie_top>.
 Parsing architecture <pcie_7x> of entity <v7_pcie_pcie_top>.
@@ -309,8 +294,8 @@ Parsing entity <Regs_Group>.
 Parsing architecture <Behavioral> of entity <regs_group>.
 Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" into library work
 Parsing entity <jesd204b_rx4_exdes>.
+WARNING:HDLCompiler:685 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 72: Overwriting existing primary unit jesd204b_rx4_exdes
 Parsing architecture <RTL> of entity <jesd204b_rx4_exdes>.
-WARNING:HDLCompiler:686 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 101: Overwriting existing secondary unit rtl
 Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir_ISE13.3/v6_eb_fifo_counted_resized.vhd" into library work
 Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/pcie_axi_trn_bridge.vhd" into library work
 Parsing entity <v6_pcie_v1_7_x4>.
@@ -327,6 +312,21 @@ Parsing architecture <Behavioral> of entity <fmc_adc_125ms_core>.
 Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" into library work
 Parsing entity <v6pcieDMA>.
 Parsing architecture <Behavioral> of entity <v6pciedma>.
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gt_frame_gen.vhd" into library work
+Parsing entity <jesd204b_rx4_GT_FRAME_GEN>.
+Parsing architecture <RTL> of entity <jesd204b_rx4_gt_frame_gen>.
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_recclk_monitor.vhd" into library work
+Parsing entity <jesd204b_rx4_RECCLK_MONITOR>.
+Parsing architecture <RTL> of entity <jesd204b_rx4_recclk_monitor>.
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_rxpmarst_seq.vhd" into library work
+Parsing entity <jesd204b_rx4_rxpmarst_seq>.
+Parsing architecture <Behavioral> of entity <jesd204b_rx4_rxpmarst_seq>.
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_rxrate_seq.vhd" into library work
+Parsing entity <jesd204b_rx4_rxrate_seq>.
+Parsing architecture <Behavioral> of entity <jesd204b_rx4_rxrate_seq>.
+Parsing VHDL file "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_tx_startup_fsm.vhd" into library work
+Parsing entity <jesd204b_rx4_TX_STARTUP_FSM>.
+Parsing architecture <RTL> of entity <jesd204b_rx4_tx_startup_fsm>.
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -344,13 +344,13 @@ WARNING:HDLCompiler:871 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pci
 WARNING:HDLCompiler:871 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" Line 856: Using initial value '0' for dg_running since it is never assigned
 
 Elaborating entity <fmc_adc_125Ms_core> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/fmc_adc_100Ms_core.vhd" Line 179: Assignment to sys_rst ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/fmc_adc_100Ms_core.vhd" Line 181: Assignment to fs_rst ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/fmc_adc_100Ms_core.vhd" Line 180: Assignment to sys_rst ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/fmc_adc_100Ms_core.vhd" Line 182: Assignment to fs_rst ignored, since the identifier is never used
 
 Elaborating entity <jesd204b_rx4_exdes> (architecture <RTL>) with generics from library <work>.
-WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 908: Assignment to tied_to_ground_vec_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 909: Assignment to tied_to_vcc_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 910: Assignment to tied_to_vcc_vec_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 909: Assignment to tied_to_ground_vec_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 910: Assignment to tied_to_vcc_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 911: Assignment to tied_to_vcc_vec_i ignored, since the identifier is never used
 
 Elaborating entity <jesd204b_rx4_GT_USRCLK_SOURCE> (architecture <RTL>) from library <work>.
 WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gt_usrclk_source.vhd" Line 182: Assignment to tied_to_vcc_i ignored, since the identifier is never used
@@ -396,10 +396,10 @@ WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd20
 WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" Line 612: Net <gt1_gttxreset_t> does not have a driver.
 WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" Line 626: Net <gt2_gttxreset_t> does not have a driver.
 WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_init.vhd" Line 640: Net <gt3_gttxreset_t> does not have a driver.
-WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 1199: Assignment to gt0_rxresetdone_r3 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 1211: Assignment to gt1_rxresetdone_r3 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 1223: Assignment to gt2_rxresetdone_r3 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 1235: Assignment to gt3_rxresetdone_r3 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 1200: Assignment to gt0_rxresetdone_r3 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 1212: Assignment to gt1_rxresetdone_r3 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 1224: Assignment to gt2_rxresetdone_r3 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 1236: Assignment to gt3_rxresetdone_r3 ignored, since the identifier is never used
 
 Elaborating entity <jesd204b_rx4_GT_FRAME_CHECK> (architecture <RTL>) with generics from library <work>.
 WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gt_frame_check.vhd" Line 219: Assignment to tied_to_ground_vec_i ignored, since the identifier is never used
@@ -407,51 +407,51 @@ WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd2
 WARNING:HDLCompiler:92 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gt_frame_check.vhd" Line 228: system_reset_r should be on the sensitivity list of the process
 WARNING:HDLCompiler:92 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gt_frame_check.vhd" Line 237: reset_on_error_in_r should be on the sensitivity list of the process
 WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_gt_frame_check.vhd" Line 358: Assignment to rx_chanbond_seq_r3 ignored, since the identifier is never used
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 466: Net <gt0_drpaddr_i[8]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 467: Net <gt0_drpdi_i[15]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 469: Net <gt0_drpen_i> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 471: Net <gt0_drpwe_i> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 473: Net <gt0_rxuserrdy_i> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 489: Net <gt0_rxlpmhfhold_i> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 490: Net <gt0_rxlpmlfhold_i> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 494: Net <gt0_gtrxreset_i> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 498: Net <gt0_gttxreset_i> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 508: Net <gt1_drpaddr_i[8]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 509: Net <gt1_drpdi_i[15]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 511: Net <gt1_drpen_i> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 513: Net <gt1_drpwe_i> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 515: Net <gt1_rxuserrdy_i> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 531: Net <gt1_rxlpmhfhold_i> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 532: Net <gt1_rxlpmlfhold_i> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 536: Net <gt1_gtrxreset_i> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 540: Net <gt1_gttxreset_i> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 550: Net <gt2_drpaddr_i[8]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 551: Net <gt2_drpdi_i[15]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 553: Net <gt2_drpen_i> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 555: Net <gt2_drpwe_i> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 557: Net <gt2_rxuserrdy_i> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 573: Net <gt2_rxlpmhfhold_i> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 574: Net <gt2_rxlpmlfhold_i> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 578: Net <gt2_gtrxreset_i> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 582: Net <gt2_gttxreset_i> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 592: Net <gt3_drpaddr_i[8]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 593: Net <gt3_drpdi_i[15]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 595: Net <gt3_drpen_i> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 597: Net <gt3_drpwe_i> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 599: Net <gt3_rxuserrdy_i> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 615: Net <gt3_rxlpmhfhold_i> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 616: Net <gt3_rxlpmlfhold_i> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 620: Net <gt3_gtrxreset_i> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 624: Net <gt3_gttxreset_i> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 634: Net <gt0_pll0reset_i> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 640: Net <gt0_rx_system_reset_c> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 642: Net <gt1_rx_system_reset_c> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 644: Net <gt2_rx_system_reset_c> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 646: Net <gt3_rx_system_reset_c> does not have a driver.
-WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/fmc_adc_100Ms_core.vhd" Line 300: Assignment to real_strobe_signal ignored, since the identifier is never used
-WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/fmc_adc_100Ms_core.vhd" Line 170: Net <ref_clk> does not have a driver.
-WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" Line 1123: Assignment to dma_host2board_busy ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" Line 1124: Assignment to dma_host2board_done ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 467: Net <gt0_drpaddr_i[8]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 468: Net <gt0_drpdi_i[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 470: Net <gt0_drpen_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 472: Net <gt0_drpwe_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 474: Net <gt0_rxuserrdy_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 490: Net <gt0_rxlpmhfhold_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 491: Net <gt0_rxlpmlfhold_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 495: Net <gt0_gtrxreset_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 499: Net <gt0_gttxreset_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 509: Net <gt1_drpaddr_i[8]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 510: Net <gt1_drpdi_i[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 512: Net <gt1_drpen_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 514: Net <gt1_drpwe_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 516: Net <gt1_rxuserrdy_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 532: Net <gt1_rxlpmhfhold_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 533: Net <gt1_rxlpmlfhold_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 537: Net <gt1_gtrxreset_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 541: Net <gt1_gttxreset_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 551: Net <gt2_drpaddr_i[8]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 552: Net <gt2_drpdi_i[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 554: Net <gt2_drpen_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 556: Net <gt2_drpwe_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 558: Net <gt2_rxuserrdy_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 574: Net <gt2_rxlpmhfhold_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 575: Net <gt2_rxlpmlfhold_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 579: Net <gt2_gtrxreset_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 583: Net <gt2_gttxreset_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 593: Net <gt3_drpaddr_i[8]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 594: Net <gt3_drpdi_i[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 596: Net <gt3_drpen_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 598: Net <gt3_drpwe_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 600: Net <gt3_rxuserrdy_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 616: Net <gt3_rxlpmhfhold_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 617: Net <gt3_rxlpmlfhold_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 621: Net <gt3_gtrxreset_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 625: Net <gt3_gttxreset_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 635: Net <gt0_pll0reset_i> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 641: Net <gt0_rx_system_reset_c> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 643: Net <gt1_rx_system_reset_c> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 645: Net <gt2_rx_system_reset_c> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" Line 647: Net <gt3_rx_system_reset_c> does not have a driver.
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/fmc_adc_100Ms_core.vhd" Line 302: Assignment to real_strobe_signal ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/fmc_adc_100Ms_core.vhd" Line 171: Net <ref_clk> does not have a driver.
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" Line 1131: Assignment to dma_host2board_busy ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" Line 1132: Assignment to dma_host2board_done ignored, since the identifier is never used
 
 Elaborating entity <v6_pcie_v1_7_x4> (architecture <Behavioral>) with generics from library <work>.
 
@@ -758,89 +758,88 @@ WARNING:HDLCompiler:634 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pci
 Synthesizing Unit <v6pcieDMA>.
     Related source file is "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd".
         pcieLanes = 4
-WARNING:Xst:647 - Input <adc_out_p_i<1:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <adc_out_n_i<1:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <trn_fc_cpld> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <trn_fc_cplh> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <trn_fc_npd> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <trn_fc_nph> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <trn_fc_pd> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <trn_fc_ph> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <cfg_do> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <cfg_status> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <cfg_command> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <cfg_dstatus> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <cfg_lcommand> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <cfg_dcommand2> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <cfg_pcie_link_state_n> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <cfg_pmcsr_powerstate> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <pl_initial_link_width> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <pl_lane_reversal_mode> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <pl_ltssm_state> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <pl_sel_link_width> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <trn_tcfg_req_n> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <trn_terr_drop_n> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <cfg_rd_wr_done_n> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <cfg_err_cpl_rdy_n> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <cfg_interrupt_msixenable> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <cfg_interrupt_msixfm> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <cfg_to_turnoff_n> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <cfg_pmcsr_pme_en> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <cfg_pmcsr_pme_status> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <pl_link_gen2_capable> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <pl_link_partner_gen2_supported> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <pl_link_upcfg_capable> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <pl_received_hot_rst> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1233: Output port <pl_sel_link_rate> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <ctl_rd> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <dlm_td> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <debug_in_1i> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <debug_in_2i> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <debug_in_3i> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <debug_in_4i> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <DDR_wr_Mask> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <DDR_wr_din> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <DDR_rdc_din> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <tab_we> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <tab_wa> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <tab_wd> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <trn_Blinker> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <protocol_rst> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <ctl_rv> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <ctl_ttake> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <ctl_tstop> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <ctl_reset> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <dlm_tv> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <eb_FIFO_wsof> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <eb_FIFO_weof> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <pio_reading_status> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <DMA_us_Done> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <DMA_us_Busy> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <DMA_us_Busy_LED> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <DMA_ds_Done> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <DMA_ds_Busy> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <DMA_ds_Busy_LED> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <DDR_wr_sof> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <DDR_wr_eof> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <DDR_wr_v> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <DDR_wr_FA> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <DDR_wr_Shift> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <DDR_rdc_sof> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <DDR_rdc_eof> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <DDR_rdc_v> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <DDR_rdc_FA> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <DDR_rdc_Shift> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <DDR_FIFO_RdEn> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <DG_Reset> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <DG_Mask> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1383: Output port <Format_Shower> of the instance <theTlpControl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1616: Output port <H2B_rd_dout> of the instance <LoopBack_FIFO_Off.queue_buffer0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1616: Output port <H2B_rd_data_count> of the instance <LoopBack_FIFO_Off.queue_buffer0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1616: Output port <B2H_wr_data_count> of the instance <LoopBack_FIFO_Off.queue_buffer0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1616: Output port <H2B_rd_pempty> of the instance <LoopBack_FIFO_Off.queue_buffer0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1616: Output port <H2B_rd_empty> of the instance <LoopBack_FIFO_Off.queue_buffer0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1616: Output port <H2B_rd_valid> of the instance <LoopBack_FIFO_Off.queue_buffer0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1616: Output port <B2H_wr_pfull> of the instance <LoopBack_FIFO_Off.queue_buffer0> is unconnected or connected to loadless signal.
+WARNING:Xst:647 - Input <adc_out_n_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <trn_fc_cpld> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <trn_fc_cplh> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <trn_fc_npd> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <trn_fc_nph> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <trn_fc_pd> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <trn_fc_ph> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <cfg_do> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <cfg_status> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <cfg_command> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <cfg_dstatus> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <cfg_lcommand> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <cfg_dcommand2> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <cfg_pcie_link_state_n> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <cfg_pmcsr_powerstate> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <pl_initial_link_width> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <pl_lane_reversal_mode> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <pl_ltssm_state> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <pl_sel_link_width> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <trn_tcfg_req_n> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <trn_terr_drop_n> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <cfg_rd_wr_done_n> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <cfg_err_cpl_rdy_n> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <cfg_interrupt_msixenable> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <cfg_interrupt_msixfm> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <cfg_to_turnoff_n> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <cfg_pmcsr_pme_en> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <cfg_pmcsr_pme_status> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <pl_link_gen2_capable> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <pl_link_partner_gen2_supported> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <pl_link_upcfg_capable> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <pl_received_hot_rst> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1241: Output port <pl_sel_link_rate> of the instance <make4Lanes.pcieCore> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <ctl_rd> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <dlm_td> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <debug_in_1i> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <debug_in_2i> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <debug_in_3i> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <debug_in_4i> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <DDR_wr_Mask> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <DDR_wr_din> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <DDR_rdc_din> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <tab_we> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <tab_wa> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <tab_wd> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <trn_Blinker> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <protocol_rst> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <ctl_rv> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <ctl_ttake> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <ctl_tstop> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <ctl_reset> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <dlm_tv> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <eb_FIFO_wsof> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <eb_FIFO_weof> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <pio_reading_status> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <DMA_us_Done> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <DMA_us_Busy> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <DMA_us_Busy_LED> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <DMA_ds_Done> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <DMA_ds_Busy> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <DMA_ds_Busy_LED> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <DDR_wr_sof> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <DDR_wr_eof> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <DDR_wr_v> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <DDR_wr_FA> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <DDR_wr_Shift> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <DDR_rdc_sof> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <DDR_rdc_eof> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <DDR_rdc_v> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <DDR_rdc_FA> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <DDR_rdc_Shift> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <DDR_FIFO_RdEn> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <DG_Reset> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <DG_Mask> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1391: Output port <Format_Shower> of the instance <theTlpControl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1624: Output port <H2B_rd_dout> of the instance <LoopBack_FIFO_Off.queue_buffer0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1624: Output port <H2B_rd_data_count> of the instance <LoopBack_FIFO_Off.queue_buffer0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1624: Output port <B2H_wr_data_count> of the instance <LoopBack_FIFO_Off.queue_buffer0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1624: Output port <H2B_rd_pempty> of the instance <LoopBack_FIFO_Off.queue_buffer0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1624: Output port <H2B_rd_empty> of the instance <LoopBack_FIFO_Off.queue_buffer0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1624: Output port <H2B_rd_valid> of the instance <LoopBack_FIFO_Off.queue_buffer0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/v6eb_pcie.vhd" line 1624: Output port <B2H_wr_pfull> of the instance <LoopBack_FIFO_Off.queue_buffer0> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <DDR_FIFO_RdQout> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:2935 - Signal 'dlm_rd', unconnected in block 'v6pcieDMA', is tied to its initial value (00000000000000000000000000000000).
 WARNING:Xst:653 - Signal <DDR_wr_full> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -875,10 +874,10 @@ WARNING:Xst:647 - Input <reg11_tv> is never used. This port will be preserved an
 WARNING:Xst:647 - Input <reg12_tv> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <reg13_tv> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <reg14_tv> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/fmc_adc_100Ms_core.vhd" line 193: Output port <TXN_OUT> of the instance <jesd204b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/fmc_adc_100Ms_core.vhd" line 193: Output port <TXP_OUT> of the instance <jesd204b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/fmc_adc_100Ms_core.vhd" line 193: Output port <TRACK_DATA_OUT> of the instance <jesd204b> is unconnected or connected to loadless signal.
-WARNING:Xst:653 - Signal <serdes_out_data> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/fmc_adc_100Ms_core.vhd" line 194: Output port <TXN_OUT> of the instance <jesd204b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/fmc_adc_100Ms_core.vhd" line 194: Output port <TXP_OUT> of the instance <jesd204b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/fmc_adc_100Ms_core.vhd" line 194: Output port <TRACK_DATA_OUT> of the instance <jesd204b> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <serdes_out_data<63:16>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <reg05_rd> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <reg07_rd> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <reg08_rd> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -914,9 +913,9 @@ WARNING:Xst:653 - Signal <ref_clk> is used but never assigned. This sourceless s
     Found 32-bit register for signal <reg04_rd>.
     Found 1-bit register for signal <resetfifo>.
     Found 32-bit register for signal <reg06_rd>.
-    Found 32-bit adder for signal <reflength_counter[31]_GND_9_o_add_42_OUT> created at line 372.
-    Found 32-bit comparator not equal for signal <reflength_counter[31]_reg01_rd_current_reflength[31]_equal_26_o> created at line 323
-    Found 32-bit comparator equal for signal <fifowasoverflowonvalue[31]_reflength_counter[31]_equal_36_o> created at line 357
+    Found 32-bit adder for signal <reflength_counter[31]_GND_9_o_add_42_OUT> created at line 374.
+    Found 32-bit comparator not equal for signal <reflength_counter[31]_reg01_rd_current_reflength[31]_equal_26_o> created at line 325
+    Found 32-bit comparator equal for signal <fifowasoverflowonvalue[31]_reflength_counter[31]_equal_36_o> created at line 359
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred 387 D-type flip-flop(s).
@@ -925,7 +924,7 @@ WARNING:Xst:653 - Signal <ref_clk> is used but never assigned. This sourceless s
 Unit <fmc_adc_125Ms_core> synthesized.
 
 Synthesizing Unit <jesd204b_rx4_exdes>.
-    Related source file is "/home/vladimir/SERGLAST/ad9656/cern/ipcore_dir/jesd204b_rx4/example_design/jesd204b_rx4_exdes.vhd".
+    Related source file is "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd".
         EXAMPLE_CONFIG_INDEPENDENT_LANES = 1
         STABLE_CLOCK_PERIOD = 10
         EXAMPLE_LANE_WITH_START_CHAR = 0
@@ -952,71 +951,71 @@ Synthesizing Unit <jesd204b_rx4_exdes>.
 WARNING:Xst:647 - Input <GTTX_RESET_IN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <GTRX_RESET_IN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <PLL0_RESET_IN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 921: Output port <GT0_RXUSRCLK2_OUT> of the instance <gt0_usrclk_source> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 921: Output port <GT1_RXUSRCLK2_OUT> of the instance <gt0_usrclk_source> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 921: Output port <GT2_RXUSRCLK2_OUT> of the instance <gt0_usrclk_source> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 921: Output port <GT3_RXUSRCLK2_OUT> of the instance <gt0_usrclk_source> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT0_DRPDO_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT0_RXCHARISCOMMA_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT0_RXDISPERR_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT0_RXNOTINTABLE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT1_DRPDO_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT1_RXCHARISCOMMA_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT1_RXDISPERR_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT1_RXNOTINTABLE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT2_DRPDO_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT2_RXCHARISCOMMA_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT2_RXDISPERR_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT2_RXNOTINTABLE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT3_DRPDO_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT3_RXCHARISCOMMA_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT3_RXDISPERR_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT3_RXNOTINTABLE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT0_TX_FSM_RESET_DONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT0_RX_FSM_RESET_DONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT1_TX_FSM_RESET_DONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT1_RX_FSM_RESET_DONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT2_TX_FSM_RESET_DONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT2_RX_FSM_RESET_DONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT3_TX_FSM_RESET_DONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT3_RX_FSM_RESET_DONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT0_DRPRDY_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT0_EYESCANDATAERROR_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT0_RXCDRLOCK_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT0_RXRESETDONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT1_DRPRDY_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT1_EYESCANDATAERROR_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT1_RXCDRLOCK_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT1_RXRESETDONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT2_DRPRDY_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT2_EYESCANDATAERROR_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT2_RXCDRLOCK_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT2_RXRESETDONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT3_DRPRDY_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT3_EYESCANDATAERROR_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT3_RXCDRLOCK_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT3_RXRESETDONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 965: Output port <GT0_PLL0LOCK_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1269: Output port <ERROR_COUNT_OUT> of the instance <gt0_frame_check> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1269: Output port <RXENPCOMMADET_OUT> of the instance <gt0_frame_check> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1269: Output port <RXENMCOMMADET_OUT> of the instance <gt0_frame_check> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1269: Output port <RX_ENCHAN_SYNC_OUT> of the instance <gt0_frame_check> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1269: Output port <INC_OUT> of the instance <gt0_frame_check> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1306: Output port <ERROR_COUNT_OUT> of the instance <gt1_frame_check> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1306: Output port <RXENPCOMMADET_OUT> of the instance <gt1_frame_check> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1306: Output port <RXENMCOMMADET_OUT> of the instance <gt1_frame_check> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1306: Output port <RX_ENCHAN_SYNC_OUT> of the instance <gt1_frame_check> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1306: Output port <INC_OUT> of the instance <gt1_frame_check> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1343: Output port <ERROR_COUNT_OUT> of the instance <gt2_frame_check> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1343: Output port <RXENPCOMMADET_OUT> of the instance <gt2_frame_check> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1343: Output port <RXENMCOMMADET_OUT> of the instance <gt2_frame_check> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1343: Output port <RX_ENCHAN_SYNC_OUT> of the instance <gt2_frame_check> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1343: Output port <INC_OUT> of the instance <gt2_frame_check> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1380: Output port <ERROR_COUNT_OUT> of the instance <gt3_frame_check> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1380: Output port <RXENPCOMMADET_OUT> of the instance <gt3_frame_check> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1380: Output port <RXENMCOMMADET_OUT> of the instance <gt3_frame_check> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1380: Output port <RX_ENCHAN_SYNC_OUT> of the instance <gt3_frame_check> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1380: Output port <INC_OUT> of the instance <gt3_frame_check> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 922: Output port <GT0_RXUSRCLK2_OUT> of the instance <gt0_usrclk_source> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 922: Output port <GT1_RXUSRCLK2_OUT> of the instance <gt0_usrclk_source> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 922: Output port <GT2_RXUSRCLK2_OUT> of the instance <gt0_usrclk_source> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 922: Output port <GT3_RXUSRCLK2_OUT> of the instance <gt0_usrclk_source> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT0_DRPDO_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT0_RXCHARISCOMMA_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT0_RXDISPERR_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT0_RXNOTINTABLE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT1_DRPDO_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT1_RXCHARISCOMMA_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT1_RXDISPERR_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT1_RXNOTINTABLE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT2_DRPDO_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT2_RXCHARISCOMMA_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT2_RXDISPERR_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT2_RXNOTINTABLE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT3_DRPDO_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT3_RXCHARISCOMMA_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT3_RXDISPERR_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT3_RXNOTINTABLE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT0_TX_FSM_RESET_DONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT0_RX_FSM_RESET_DONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT1_TX_FSM_RESET_DONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT1_RX_FSM_RESET_DONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT2_TX_FSM_RESET_DONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT2_RX_FSM_RESET_DONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT3_TX_FSM_RESET_DONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT3_RX_FSM_RESET_DONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT0_DRPRDY_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT0_EYESCANDATAERROR_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT0_RXCDRLOCK_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT0_RXRESETDONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT1_DRPRDY_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT1_EYESCANDATAERROR_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT1_RXCDRLOCK_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT1_RXRESETDONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT2_DRPRDY_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT2_EYESCANDATAERROR_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT2_RXCDRLOCK_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT2_RXRESETDONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT3_DRPRDY_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT3_EYESCANDATAERROR_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT3_RXCDRLOCK_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT3_RXRESETDONE_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 966: Output port <GT0_PLL0LOCK_OUT> of the instance <jesd204b_rx4_init_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1270: Output port <ERROR_COUNT_OUT> of the instance <gt0_frame_check> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1270: Output port <RXENPCOMMADET_OUT> of the instance <gt0_frame_check> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1270: Output port <RXENMCOMMADET_OUT> of the instance <gt0_frame_check> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1270: Output port <RX_ENCHAN_SYNC_OUT> of the instance <gt0_frame_check> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1270: Output port <INC_OUT> of the instance <gt0_frame_check> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1307: Output port <ERROR_COUNT_OUT> of the instance <gt1_frame_check> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1307: Output port <RXENPCOMMADET_OUT> of the instance <gt1_frame_check> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1307: Output port <RXENMCOMMADET_OUT> of the instance <gt1_frame_check> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1307: Output port <RX_ENCHAN_SYNC_OUT> of the instance <gt1_frame_check> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1307: Output port <INC_OUT> of the instance <gt1_frame_check> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1344: Output port <ERROR_COUNT_OUT> of the instance <gt2_frame_check> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1344: Output port <RXENPCOMMADET_OUT> of the instance <gt2_frame_check> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1344: Output port <RXENMCOMMADET_OUT> of the instance <gt2_frame_check> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1344: Output port <RX_ENCHAN_SYNC_OUT> of the instance <gt2_frame_check> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1344: Output port <INC_OUT> of the instance <gt2_frame_check> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1381: Output port <ERROR_COUNT_OUT> of the instance <gt3_frame_check> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1381: Output port <RXENPCOMMADET_OUT> of the instance <gt3_frame_check> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1381: Output port <RXENMCOMMADET_OUT> of the instance <gt3_frame_check> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1381: Output port <RX_ENCHAN_SYNC_OUT> of the instance <gt3_frame_check> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/jesd204b_rx4_exdes.vhd" line 1381: Output port <INC_OUT> of the instance <gt3_frame_check> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <TXN_OUT> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <TXP_OUT> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <gt0_drpaddr_i> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -5003,8 +5002,8 @@ INFO:Xst:3210 - "/home/vladimir/SERGLAST/ad9656/cern/MySource/rx_dsDMA_Channel.v
     Found 6-bit adder for signal <FC_counter[5]_GND_780_o_add_88_OUT> created at line 737.
     Found 6-bit subtractor for signal <GND_780_o_GND_780_o_sub_90_OUT<5:0>> created at line 739.
     Found 1-bit 6-to-1 multiplexer for signal <cfg_MRS[2]_dsFC_stop_128B_Mux_99_o> created at line 816.
-    WARNING:Xst:2404 -  FFs/Latches <DMA_Status_i<63:8>> (without init value) have a constant value of 0 in block <dsDMA_Transact>.
     WARNING:Xst:2404 -  FFs/Latches <Tag_DMA_dsp<7:7>> (without init value) have a constant value of 0 in block <dsDMA_Transact>.
+    WARNING:Xst:2404 -  FFs/Latches <DMA_Status_i<63:8>> (without init value) have a constant value of 0 in block <dsDMA_Transact>.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred 148 D-type flip-flop(s).
@@ -12286,8 +12285,8 @@ Primitive and Black Box Usage:
 # Clock Buffers                    : 26
 #      BUFG                        : 25
 #      BUFGCTRL                    : 1
-# IO Buffers                       : 25
-#      IBUF                        : 15
+# IO Buffers                       : 24
+#      IBUF                        : 14
 #      IBUFDS_GTE2                 : 2
 #      OBUF                        : 8
 # GigabitIOs                       : 10
@@ -12318,8 +12317,8 @@ Slice Logic Distribution:
    Number of unique control sets:       377
 
 IO Utilization: 
- Number of IOs:                          25
- Number of bonded IOBs:                  23  out of    400     5%  
+ Number of IOs:                          23
+ Number of bonded IOBs:                  22  out of    400     5%  
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:               66  out of    365    18%  
@@ -12365,7 +12364,7 @@ Asynchronous Control Signals Information:
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Control Signal                                                                                                                                                                                                                         | Buffer(FF name)                                                                                                                                                                                                                     | Load  |
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-LoopBack_FIFO_Off.queue_buffer0/U0_B2H/N1(LoopBack_FIFO_Off.queue_buffer0/U0_B2H/XST_GND:G)                                                                                                                                            | NONE(LoopBack_FIFO_Off.queue_buffer0/U0_B2H/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM36.ram)| 228   |
+LoopBack_FIFO_Off.queue_buffer0/U0_B2H/N1(LoopBack_FIFO_Off.queue_buffer0/U0_B2H/XST_GND:G)                                                                                                                                            | NONE(LoopBack_FIFO_Off.queue_buffer0/U0_B2H/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[46].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM36.ram)| 228   |
 make4Lanes.pcieCore/v7_pcie_i/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/REGCEA(make4Lanes.pcieCore/v7_pcie_i/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/XST_GND:G)| NONE(make4Lanes.pcieCore/v7_pcie_i/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/ramb_bl.ramb36_dp_bl.ram36_bl)                                                                                      | 2     |
 make4Lanes.pcieCore/v7_pcie_i/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[1].ram/use_tdp.ramb36/REGCEA(make4Lanes.pcieCore/v7_pcie_i/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[1].ram/use_tdp.ramb36/XST_GND:G)| NONE(make4Lanes.pcieCore/v7_pcie_i/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[1].ram/use_tdp.ramb36/ramb_bl.ramb36_dp_bl.ram36_bl)                                                                                      | 2     |
 make4Lanes.pcieCore/v7_pcie_i/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[2].ram/use_tdp.ramb36/REGCEA(make4Lanes.pcieCore/v7_pcie_i/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[2].ram/use_tdp.ramb36/XST_GND:G)| NONE(make4Lanes.pcieCore/v7_pcie_i/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[2].ram/use_tdp.ramb36/ramb_bl.ramb36_dp_bl.ram36_bl)                                                                                      | 2     |
@@ -12885,15 +12884,15 @@ make4Lanes.pcieCore/v7_pcie_i/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_
 =========================================================================
 
 
-Total REAL time to Xst completion: 94.00 secs
-Total CPU time to Xst completion: 89.96 secs
+Total REAL time to Xst completion: 98.00 secs
+Total CPU time to Xst completion: 93.54 secs
  
 --> 
 
 
-Total memory usage is 679524 kilobytes
+Total memory usage is 679316 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings : 5799 (   0 filtered)
+Number of warnings : 5798 (   0 filtered)
 Number of infos    :  845 (   0 filtered)
 

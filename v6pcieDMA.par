@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-ubuntu::  Fri Jan 30 14:51:11 2015
+ubuntu::  Sat Jan 31 00:48:10 2015
 
 par -w -intstyle ise -ol high -xe n -mt off v6pcieDMA_map.ncd v6pcieDMA.ncd
 v6pcieDMA.pcf 
@@ -22,35 +22,35 @@ Device speed data version:  "PRODUCTION 1.10 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                 7,885 out of 269,200    2%
-    Number used as Flip Flops:               7,884
+  Number of Slice Registers:                 8,594 out of 269,200    3%
+    Number used as Flip Flops:               8,593
     Number used as Latches:                      1
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                      7,840 out of 134,600    5%
-    Number used as logic:                    7,082 out of 134,600    5%
-      Number using O6 output only:           4,910
-      Number using O5 output only:             527
-      Number using O5 and O6:                1,645
+  Number of Slice LUTs:                      8,473 out of 134,600    6%
+    Number used as logic:                    7,559 out of 134,600    5%
+      Number using O6 output only:           5,066
+      Number using O5 output only:             671
+      Number using O5 and O6:                1,822
       Number used as ROM:                        0
-    Number used as Memory:                     379 out of  46,200    1%
+    Number used as Memory:                     453 out of  46,200    1%
       Number used as Dual Port RAM:              0
       Number used as Single Port RAM:            0
-      Number used as Shift Register:           379
-        Number using O6 output only:           363
+      Number used as Shift Register:           453
+        Number using O6 output only:           435
         Number using O5 output only:             1
-        Number using O5 and O6:                 15
-    Number used exclusively as route-thrus:    379
-      Number with same-slice register load:    336
-      Number with same-slice carry load:        43
+        Number using O5 and O6:                 17
+    Number used exclusively as route-thrus:    461
+      Number with same-slice register load:    406
+      Number with same-slice carry load:        55
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 3,357 out of  33,650    9%
-  Number of LUT Flip Flop pairs used:        9,606
-    Number with an unused Flip Flop:         2,877 out of   9,606   29%
-    Number with an unused LUT:               1,766 out of   9,606   18%
-    Number of fully used LUT-FF pairs:       4,963 out of   9,606   51%
+  Number of occupied Slices:                 3,512 out of  33,650   10%
+  Number of LUT Flip Flop pairs used:       10,250
+    Number with an unused Flip Flop:         2,944 out of  10,250   28%
+    Number with an unused LUT:               1,777 out of  10,250   17%
+    Number of fully used LUT-FF pairs:       5,529 out of  10,250   53%
     Number of slice register sites lost
       to control set restrictions:               0 out of 269,200    0%
 
@@ -74,8 +74,8 @@ Specific Feature Utilization:
     Number using RAMB36E1 only:                 66
     Number using FIFO36E1 only:                  1
   Number of RAMB18E1/FIFO18E1s:                  0 out of     730    0%
-  Number of BUFG/BUFGCTRLs:                      9 out of      32   28%
-    Number used as BUFGs:                        8
+  Number of BUFG/BUFGCTRLs:                     15 out of      32   46%
+    Number used as BUFGs:                       14
     Number used as BUFGCTRLs:                    1
   Number of IDELAYE2/IDELAYE2_FINEDELAYs:        0 out of     500    0%
   Number of ILOGICE2/ILOGICE3/ISERDESE2s:        0 out of     500    0%
@@ -91,15 +91,15 @@ Specific Feature Utilization:
   Number of DSP48E1s:                            0 out of     740    0%
   Number of EFUSE_USRs:                          0 out of       1    0%
   Number of FRAME_ECCs:                          0 out of       1    0%
-  Number of GTPE2_CHANNELs:                      7 out of       8   87%
-    Number of LOCed GTPE2_CHANNELs:              5 out of       7   71%
+  Number of GTPE2_CHANNELs:                      8 out of       8  100%
+    Number of LOCed GTPE2_CHANNELs:              5 out of       8   62%
   Number of IBUFDS_GTE2s:                        2 out of       8   25%
     Number of LOCed IBUFDS_GTE2s:                1 out of       2   50%
   Number of ICAPs:                               0 out of       2    0%
   Number of IDELAYCTRLs:                         0 out of      10    0%
   Number of IN_FIFOs:                            0 out of      40    0%
-  Number of MMCME2_ADVs:                         1 out of      10   10%
-    Number of LOCed MMCME2_ADVs:                 1 out of       1  100%
+  Number of MMCME2_ADVs:                         5 out of      10   50%
+    Number of LOCed MMCME2_ADVs:                 1 out of       5   20%
   Number of OUT_FIFOs:                           0 out of      40    0%
   Number of PCIE_2_1s:                           1 out of       1  100%
     Number of LOCed PCIE_2_1s:                   1 out of       1  100%
@@ -115,8 +115,8 @@ Router effort level (-rl):    High
 
 INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more information, see the TSI report.  Please consult the Xilinx
    Command Line Tools User Guide for information on generating a TSI report.
-Starting initial Timing Analysis.  REAL time: 27 secs 
-Finished initial Timing Analysis.  REAL time: 27 secs 
+Starting initial Timing Analysis.  REAL time: 29 secs 
+Finished initial Timing Analysis.  REAL time: 29 secs 
 
 WARNING:Par:288 - The signal trn_reset_n has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal make4Lanes.pcieCore/v7_pcie_i/gt_top_i/pipe_wrapper_i/gt_do<59> has no load.  PAR will not attempt to route
@@ -170,114 +170,6 @@ WARNING:Par:288 - The signal make4Lanes.pcieCore/v7_pcie_i/pcie_top_i/pcie_7x_i/
 WARNING:Par:288 - The signal make4Lanes.pcieCore/v7_pcie_i/pcie_top_i/pcie_7x_i/mim_tx_waddr<12> has no load.  PAR will not attempt to route
    this signal.
 WARNING:Par:288 - The signal make4Lanes.pcieCore/v7_pcie_i/pcie_top_i/pcie_7x_i/mim_tx_waddr<11> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<15> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<14> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<13> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<12> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<11> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<10> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<9> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<8> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<7> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<6> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<5> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<4> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<3> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<2> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<1> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPDO_OUT<0> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/DRPRDY_OUT has no load.  PAR will not attempt to route this
-   signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/rxpmaresetdone_t has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<15> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<14> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<13> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<12> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<11> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<10> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<9> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<8> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<7> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<6> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<5> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<4> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<3> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<2> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<1> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPDO_OUT<0> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/DRPRDY_OUT has no load.  PAR will not attempt to route this
-   signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/rxpmaresetdone_t has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<15> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<14> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<13> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<12> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<11> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<10> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<9> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<8> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<7> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<6> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<5> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<4> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<3> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<2> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<1> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPDO_OUT<0> has no load.  PAR will not attempt to route
-   this signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/DRPRDY_OUT has no load.  PAR will not attempt to route this
-   signal.
-WARNING:Par:288 - The signal cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/rxpmaresetdone_t has no load.  PAR will not attempt to route
    this signal.
 WARNING:Par:288 - The signal theTlpControl/rx_Itf/Downstream_DMA_Engine/dsDMA_PA_Loaded<25> has no load.  PAR will not attempt to route this
    signal.
@@ -350,27 +242,27 @@ WARNING:Par:288 - The signal theTlpControl/rx_Itf/Upstream_DMA_Engine/usDMA_PA_L
 Starting Router
 
 
-Phase  1  : 58834 unrouted;      REAL time: 31 secs 
+Phase  1  : 62474 unrouted;      REAL time: 34 secs 
 
-Phase  2  : 43125 unrouted;      REAL time: 34 secs 
+Phase  2  : 43618 unrouted;      REAL time: 38 secs 
 
-Phase  3  : 8057 unrouted;      REAL time: 59 secs 
+Phase  3  : 9566 unrouted;      REAL time: 1 mins 8 secs 
 
-Phase  4  : 8166 unrouted; (Setup:11070, Hold:56792, Component Switching Limit:0)     REAL time: 2 mins 5 secs 
+Phase  4  : 9801 unrouted; (Setup:11937, Hold:58717, Component Switching Limit:0)     REAL time: 3 mins 54 secs 
 
 Updating file: v6pcieDMA.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:14514, Hold:52634, Component Switching Limit:0)     REAL time: 2 mins 59 secs 
+Phase  5  : 0 unrouted; (Setup:16939, Hold:51822, Component Switching Limit:0)     REAL time: 9 mins 38 secs 
 
-Phase  6  : 0 unrouted; (Setup:14514, Hold:52634, Component Switching Limit:0)     REAL time: 3 mins 2 secs 
+Phase  6  : 0 unrouted; (Setup:16714, Hold:51822, Component Switching Limit:0)     REAL time: 10 mins 1 secs 
 
-Phase  7  : 0 unrouted; (Setup:14514, Hold:52634, Component Switching Limit:0)     REAL time: 3 mins 2 secs 
+Phase  7  : 0 unrouted; (Setup:16714, Hold:51822, Component Switching Limit:0)     REAL time: 10 mins 1 secs 
 
-Phase  8  : 0 unrouted; (Setup:14514, Hold:52634, Component Switching Limit:0)     REAL time: 3 mins 2 secs 
+Phase  8  : 0 unrouted; (Setup:16714, Hold:51822, Component Switching Limit:0)     REAL time: 10 mins 1 secs 
 
-Phase  9  : 0 unrouted; (Setup:14500, Hold:0, Component Switching Limit:0)     REAL time: 3 mins 6 secs 
-Total REAL time to Router completion: 3 mins 6 secs 
-Total CPU time to Router completion: 3 mins 9 secs 
+Phase  9  : 0 unrouted; (Setup:16704, Hold:0, Component Switching Limit:0)     REAL time: 10 mins 6 secs 
+Total REAL time to Router completion: 10 mins 6 secs 
+Total CPU time to Router completion: 10 mins 8 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -388,26 +280,22 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|             trn_clk | BUFGCTRL_X0Y2| No   | 1909 |  0.400     |  1.749      |
+|             trn_clk | BUFGCTRL_X0Y4| No   | 1863 |  0.472     |  1.826      |
 +---------------------+--------------+------+------+------------+-------------+
-|          fifowr_clk | BUFGCTRL_X0Y0| No   |  153 |  0.334     |  1.749      |
+|      ila0_trig0<16> |BUFGCTRL_X0Y30| No   |   46 |  0.395     |  1.924      |
 +---------------------+--------------+------+------+------------+-------------+
-|      ila0_trig0<26> | BUFGCTRL_X0Y1| No   |    3 |  0.000     |  1.921      |
-+---------------------+--------------+------+------+------------+-------------+
-|      ila0_trig0<29> | BUFGCTRL_X0Y6| No   |   16 |  0.495     |  1.915      |
-+---------------------+--------------+------+------+------------+-------------+
-|    icon_control0<0> |BUFGCTRL_X0Y30| No   |   64 |  0.244     |  1.803      |
+|    icon_control0<0> |BUFGCTRL_X0Y28| No   |   72 |  0.273     |  1.801      |
 +---------------------+--------------+------+------+------------+-------------+
 |make4Lanes.pcieCore/ |              |      |      |            |             |
-|  v7_pcie_i/pipe_clk | BUFGCTRL_X0Y3| No   |  394 |  0.425     |  1.792      |
+|  v7_pcie_i/pipe_clk | BUFGCTRL_X0Y5| No   |  380 |  0.427     |  1.792      |
 +---------------------+--------------+------+------+------------+-------------+
 |make4Lanes.pcieCore/ |              |      |      |            |             |
-|  v7_pcie_i/user_clk | BUFGCTRL_X0Y5| No   |   49 |  0.104     |  1.696      |
+|  v7_pcie_i/user_clk | BUFGCTRL_X0Y7| No   |   49 |  0.104     |  1.696      |
 +---------------------+--------------+------+------+------------+-------------+
 |make4Lanes.pcieCore/ |              |      |      |            |             |
 |v7_pcie_i/gt_top_i/p |              |      |      |            |             |
 |ipe_wrapper_i/clk_dc |              |      |      |            |             |
-|                  lk | BUFGCTRL_X0Y4| No   |   60 |  0.426     |  1.792      |
+|                  lk | BUFGCTRL_X0Y6| No   |   61 |  0.425     |  1.792      |
 +---------------------+--------------+------+------+------------+-------------+
 |make4Lanes.pcieCore/ |              |      |      |            |             |
 |v7_pcie_i/gt_top_i/p |              |      |      |            |             |
@@ -415,14 +303,50 @@ Generating Clock Report
 |lock_int.pipe_clock_ |              |      |      |            |             |
 |            i/refclk |BUFGCTRL_X0Y31| No   |    1 |  0.000     |  1.520      |
 +---------------------+--------------+------+------+------------+-------------+
+|cmp_fmc_adc_125Ms_co |              |      |      |            |             |
+|re/jesd204b/gt0_rxus |              |      |      |            |             |
+|              rclk_i | BUFGCTRL_X0Y8| No   |   38 |  0.405     |  1.930      |
++---------------------+--------------+------+------+------------+-------------+
+|cmp_fmc_adc_125Ms_co |              |      |      |            |             |
+|re/jesd204b/gt2_rxus |              |      |      |            |             |
+|              rclk_i | BUFGCTRL_X0Y9| No   |   43 |  0.387     |  1.931      |
++---------------------+--------------+------+------+------------+-------------+
+|cmp_fmc_adc_125Ms_co |              |      |      |            |             |
+|re/jesd204b/gt3_rxus |              |      |      |            |             |
+|              rclk_i |BUFGCTRL_X0Y29| No   |   44 |  0.410     |  1.927      |
++---------------------+--------------+------+------+------------+-------------+
+|cmp_fmc_adc_125Ms_co |              |      |      |            |             |
+|re/jesd204b/drpclk_i |              |      |      |            |             |
+|                 n_i |BUFGCTRL_X0Y27| No   |  165 |  0.512     |  1.934      |
++---------------------+--------------+------+------+------------+-------------+
+|cmp_fmc_adc_125Ms_co |              |      |      |            |             |
+|re/jesd204b/gt0_usrc |              |      |      |            |             |
+|lk_source/rxoutclk_m |              |      |      |            |             |
+|       mcm3_i/clkin1 | BUFGCTRL_X0Y0| No   |    1 |  0.000     |  1.486      |
++---------------------+--------------+------+------+------------+-------------+
+|cmp_fmc_adc_125Ms_co |              |      |      |            |             |
+|re/jesd204b/gt0_usrc |              |      |      |            |             |
+|lk_source/rxoutclk_m |              |      |      |            |             |
+|       mcm2_i/clkin1 | BUFGCTRL_X0Y1| No   |    1 |  0.000     |  1.661      |
++---------------------+--------------+------+------+------------+-------------+
+|cmp_fmc_adc_125Ms_co |              |      |      |            |             |
+|re/jesd204b/gt0_usrc |              |      |      |            |             |
+|lk_source/rxoutclk_m |              |      |      |            |             |
+|       mcm1_i/clkin1 | BUFGCTRL_X0Y2| No   |    1 |  0.000     |  1.665      |
++---------------------+--------------+------+------+------------+-------------+
+|cmp_fmc_adc_125Ms_co |              |      |      |            |             |
+|re/jesd204b/gt0_usrc |              |      |      |            |             |
+|lk_source/rxoutclk_m |              |      |      |            |             |
+|       mcm0_i/clkin1 | BUFGCTRL_X0Y3| No   |    1 |  0.000     |  1.816      |
++---------------------+--------------+------+------+------------+-------------+
 |           sys_clk_c |         Local|      |    1 |  0.000     |  0.000      |
 +---------------------+--------------+------+------+------------+-------------+
-|            ila0_clk |         Local|      |   86 |  0.090     |  1.575      |
+|            ila0_clk |         Local|      |   90 |  1.573     |  1.573      |
++---------------------+--------------+------+------+------------+-------------+
+|   icon_control0<13> |         Local|      |    4 |  0.000     |  0.532      |
 +---------------------+--------------+------+------+------------+-------------+
 |U_icon_pro/U0/iUPDAT |              |      |      |            |             |
-|               E_OUT |         Local|      |    1 |  0.000     |  1.402      |
-+---------------------+--------------+------+------+------------+-------------+
-|   icon_control0<13> |         Local|      |    4 |  0.000     |  0.537      |
+|               E_OUT |         Local|      |    1 |  0.000     |  1.309      |
 +---------------------+--------------+------+------+------------+-------------+
 |make4Lanes.pcieCore/ |              |      |      |            |             |
 |v7_pcie_i/gt_top_i/p |              |      |      |            |             |
@@ -432,22 +356,22 @@ Generating Clock Report
 |make4Lanes.pcieCore/ |              |      |      |            |             |
 |v7_pcie_i/gt_top_i/p |              |      |      |            |             |
 |ipe_wrapper_i/user_o |              |      |      |            |             |
-|            obclk<3> |         Local|      |    1 |  0.000     |  2.144      |
+|            obclk<3> |         Local|      |    1 |  0.000     |  2.473      |
 +---------------------+--------------+------+------+------------+-------------+
 |make4Lanes.pcieCore/ |              |      |      |            |             |
 |v7_pcie_i/gt_top_i/p |              |      |      |            |             |
 |ipe_wrapper_i/user_o |              |      |      |            |             |
-|            obclk<2> |         Local|      |    1 |  0.000     |  3.361      |
+|            obclk<2> |         Local|      |    1 |  0.000     |  2.897      |
 +---------------------+--------------+------+------+------------+-------------+
 |make4Lanes.pcieCore/ |              |      |      |            |             |
 |v7_pcie_i/gt_top_i/p |              |      |      |            |             |
 |ipe_wrapper_i/user_o |              |      |      |            |             |
-|            obclk<1> |         Local|      |    1 |  0.000     |  2.790      |
+|            obclk<1> |         Local|      |    1 |  0.000     |  3.050      |
 +---------------------+--------------+------+------+------------+-------------+
 |make4Lanes.pcieCore/ |              |      |      |            |             |
 |v7_pcie_i/gt_top_i/p |              |      |      |            |             |
 |ipe_wrapper_i/user_o |              |      |      |            |             |
-|            obclk<0> |         Local|      |    1 |  0.000     |  2.781      |
+|            obclk<0> |         Local|      |    1 |  0.000     |  2.461      |
 +---------------------+--------------+------+------+------------+-------------+
 |make4Lanes.pcieCore/ |              |      |      |            |             |
 |v7_pcie_i/gt_top_i/p |              |      |      |            |             |
@@ -456,12 +380,36 @@ Generating Clock Report
 |           i/mmcm_fb |         Local|      |    1 |  0.000     |  0.012      |
 +---------------------+--------------+------+------+------------+-------------+
 |cmp_fmc_adc_125Ms_co |              |      |      |            |             |
-|re/jesd204b/gt0_pll0 |              |      |      |            |             |
-|            outclk_i |         Local|      |    3 |  0.000     |  0.000      |
+|re/jesd204b/gt0_usrc |              |      |      |            |             |
+|lk_source/rxoutclk_m |              |      |      |            |             |
+|     mcm3_i/clkfbout |         Local|      |    1 |  0.000     |  0.012      |
 +---------------------+--------------+------+------+------------+-------------+
 |cmp_fmc_adc_125Ms_co |              |      |      |            |             |
-|re/jesd204b/gt0_pll1 |              |      |      |            |             |
-|            outclk_i |         Local|      |    3 |  0.000     |  0.000      |
+|re/jesd204b/gt0_usrc |              |      |      |            |             |
+|lk_source/rxoutclk_m |              |      |      |            |             |
+|     mcm2_i/clkfbout |         Local|      |    1 |  0.000     |  0.012      |
++---------------------+--------------+------+------+------------+-------------+
+|cmp_fmc_adc_125Ms_co |              |      |      |            |             |
+|re/jesd204b/gt0_usrc |              |      |      |            |             |
+|lk_source/rxoutclk_m |              |      |      |            |             |
+|     mcm1_i/clkfbout |         Local|      |    1 |  0.000     |  0.012      |
++---------------------+--------------+------+------+------------+-------------+
+|cmp_fmc_adc_125Ms_co |              |      |      |            |             |
+|re/jesd204b/gt0_usrc |              |      |      |            |             |
+|lk_source/rxoutclk_m |              |      |      |            |             |
+|     mcm0_i/clkfbout |         Local|      |    1 |  0.000     |  0.012      |
++---------------------+--------------+------+------+------------+-------------+
+|cmp_fmc_adc_125Ms_co |              |      |      |            |             |
+|re/jesd204b/jesd204b |              |      |      |            |             |
+|_rx4_init_i/jesd204b |              |      |      |            |             |
+|_rx4_i/gt0_pll0outcl |              |      |      |            |             |
+|                 k_i |         Local|      |    4 |  0.000     |  0.000      |
++---------------------+--------------+------+------+------------+-------------+
+|cmp_fmc_adc_125Ms_co |              |      |      |            |             |
+|re/jesd204b/jesd204b |              |      |      |            |             |
+|_rx4_init_i/jesd204b |              |      |      |            |             |
+|_rx4_i/gt0_pll1outcl |              |      |      |            |             |
+|                 k_i |         Local|      |    4 |  0.000     |  0.000      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -472,7 +420,7 @@ the minimum and maximum path delays which includes logic delays.
 * The fanout is the number of component pins not the individual BEL loads,
 for example SLICE loads not FF loads.
 
-Timing Score: 14500 (Setup: 14500, Hold: 0, Component Switching Limit: 0)
+Timing Score: 16704 (Setup: 16704, Hold: 0, Component Switching Limit: 0)
 
 WARNING:Par:468 - Your design did not meet timing.  The following are some suggestions to assist you to meet timing in your design.
 
@@ -490,7 +438,7 @@ WARNING:Par:468 - Your design did not meet timing.  The following are some sugge
    TechXclusives->Timing Closure" for tips and suggestions for meeting timing
    in your design.
 
-Number of Timing Constraints that were not applied: 4
+Number of Timing Constraints that were not applied: 3
 
 Asterisk (*) preceding a constraint indicates it was not met.
    This may be due to a setup or hold violation.
@@ -499,12 +447,12 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-* TS_CLK_USERCLK2 = PERIOD TIMEGRP "CLK_USE | SETUP       |    -0.863ns|     4.863ns|      61|       14184
-  RCLK2" TS_SYSCLK * 2.5 HIGH 50%           | HOLD        |     0.116ns|            |       0|           0
+* TS_CLK_USERCLK2 = PERIOD TIMEGRP "CLK_USE | SETUP       |    -1.455ns|     5.455ns|      68|       16600
+  RCLK2" TS_SYSCLK * 2.5 HIGH 50%           | HOLD        |     0.122ns|            |       0|           0
                                             | MINPERIOD   |     0.000ns|     4.000ns|       0|           0
 ----------------------------------------------------------------------------------------------------------
-* TS_CLK_250 = PERIOD TIMEGRP "CLK_250" TS_ | SETUP       |    -0.251ns|     4.251ns|       2|         316
-  SYSCLK * 2.5 HIGH 50% PRIORITY 1          | HOLD        |     0.001ns|            |       0|           0
+* TS_CLK_250 = PERIOD TIMEGRP "CLK_250" TS_ | SETUP       |    -0.104ns|     4.104ns|       1|         104
+  SYSCLK * 2.5 HIGH 50% PRIORITY 1          | HOLD        |     0.004ns|            |       0|           0
                                             | MINPERIOD   |     0.000ns|     4.000ns|       0|           0
 ----------------------------------------------------------------------------------------------------------
   TS_CLK_USERCLK = PERIOD TIMEGRP "CLK_USER | SETUP       |     0.412ns|     3.588ns|       0|           0
@@ -513,41 +461,41 @@ Asterisk (*) preceding a constraint indicates it was not met.
 ----------------------------------------------------------------------------------------------------------
   Pin to Pin Skew Constraint                | MAXDELAY    |     0.039ns|     0.560ns|       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_CLK_125 = PERIOD TIMEGRP "CLK_125" TS_ | SETUP       |     1.138ns|     6.332ns|       0|           0
-  SYSCLK * 1.25 HIGH 50% PRIORITY 2         | HOLD        |     0.009ns|            |       0|           0
+  TS_q0_clk0_refclk_i = PERIOD TIMEGRP "q0_ | SETUP       |     0.712ns|     7.426ns|       0|           0
+  clk0_refclk_i" 8.138 ns HIGH 50%          | HOLD        |     0.015ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_PIPE_RATE = MAXDELAY FROM TIMEGRP "MC_ | SETUP       |     2.236ns|     5.764ns|       0|           0
-  PIPE" TS_CLK_USERCLK * 0.5                | HOLD        |     0.187ns|            |       0|           0
+  TS_CLK_125 = PERIOD TIMEGRP "CLK_125" TS_ | SETUP       |     1.090ns|     5.976ns|       0|           0
+  SYSCLK * 1.25 HIGH 50% PRIORITY 2         | HOLD        |     0.030ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_gt0_rxusrclk_in = PERIOD TIMEGRP "gt0_ | MINPERIOD   |     3.480ns|     3.030ns|       0|           0
-  rxusrclk_in" 6.51 ns HIGH 50%             |             |            |            |        |            
+  TS_gt1_rxusrclk_i = PERIOD TIMEGRP "gt1_r | SETUP       |     3.062ns|     3.448ns|       0|           0
+  xusrclk_i" 6.51 ns HIGH 50%               | HOLD        |     0.152ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_ref_clk = PERIOD TIMEGRP "ref_clk" 8.1 | SETUP       |     3.637ns|     4.501ns|       0|           0
-  38 ns HIGH 50%                            | HOLD        |     0.009ns|            |       0|           0
+  TS_PIPE_RATE = MAXDELAY FROM TIMEGRP "MC_ | SETUP       |     3.650ns|     4.350ns|       0|           0
+  PIPE" TS_CLK_USERCLK * 0.5                | HOLD        |     0.032ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   TS_SYSCLK = PERIOD TIMEGRP "SYSCLK" 100 M | MINPERIOD   |     8.462ns|     1.538ns|       0|           0
   Hz HIGH 50%                               |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    11.919ns|     3.081ns|       0|           0
-   TO TIMEGRP "J_CLK" 15 ns                 | HOLD        |     1.013ns|            |       0|           0
+  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    11.508ns|     3.492ns|       0|           0
+   TO TIMEGRP "J_CLK" 15 ns                 | HOLD        |     1.432ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    14.100ns|     0.900ns|       0|           0
-   TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.268ns|            |       0|           0
+  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    14.103ns|     0.897ns|       0|           0
+   TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.265ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    22.496ns|     7.504ns|       0|           0
-  IGH 50%                                   | HOLD        |     0.201ns|            |       0|           0
+  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    23.344ns|     6.656ns|       0|           0
+  IGH 50%                                   | HOLD        |     0.162ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_D_TO_J_path" TIG                 | SETUP       |         N/A|     3.304ns|     N/A|           0
+  PATH "TS_D_TO_J_path" TIG                 | MAXDELAY    |         N/A|     5.711ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|     5.033ns|     N/A|           0
+  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|     5.240ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_J4_TO_D2_ila_pro_0_path" TIG     | SETUP       |         N/A|     3.926ns|     N/A|           0
+  PATH "TS_J4_TO_D2_ila_pro_0_path" TIG     | SETUP       |         N/A|     4.201ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
   PATH "TS_J3_TO_D2_ila_pro_0_path" TIG     | N/A         |         N/A|         N/A|     N/A|         N/A
 ----------------------------------------------------------------------------------------------------------
   PATH "TS_J2_TO_D2_ila_pro_0_path" TIG     | N/A         |         N/A|         N/A|     N/A|         N/A
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_D2_TO_T2_ila_pro_0_path" TIG     | SETUP       |         N/A|     2.262ns|     N/A|           0
+  PATH "TS_D2_TO_T2_ila_pro_0_path" TIG     | SETUP       |         N/A|     2.577ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -561,12 +509,12 @@ Derived Constraints for TS_SYSCLK
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_SYSCLK                      |     10.000ns|      1.538ns|     12.158ns|            0|           63|            0|        83190|
-| TS_CLK_250                    |      4.000ns|      4.251ns|          N/A|            2|            0|         6926|            0|
-| TS_CLK_125                    |      8.000ns|      6.332ns|          N/A|            0|            0|          959|            0|
-| TS_CLK_USERCLK                |      4.000ns|      4.000ns|      2.882ns|            0|            0|          933|          726|
-|  TS_PIPE_RATE                 |      8.000ns|      5.764ns|          N/A|            0|            0|          726|            0|
-| TS_CLK_USERCLK2               |      4.000ns|      4.863ns|          N/A|           61|            0|        73646|            0|
+|TS_SYSCLK                      |     10.000ns|      1.538ns|     13.638ns|            0|           69|            0|        82588|
+| TS_CLK_250                    |      4.000ns|      4.104ns|          N/A|            1|            0|         7058|            0|
+| TS_CLK_125                    |      8.000ns|      5.976ns|          N/A|            0|            0|          955|            0|
+| TS_CLK_USERCLK                |      4.000ns|      4.000ns|      2.175ns|            0|            0|          933|          726|
+|  TS_PIPE_RATE                 |      8.000ns|      4.350ns|          N/A|            0|            0|          726|            0|
+| TS_CLK_USERCLK2               |      4.000ns|      5.455ns|          N/A|           68|            0|        72916|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 2 constraints not met.
@@ -581,19 +529,19 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-WARNING:Par:283 - There are 115 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+WARNING:Par:283 - There are 61 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 3 mins 9 secs 
-Total CPU time to PAR completion: 3 mins 12 secs 
+Total REAL time to PAR completion: 10 mins 9 secs 
+Total CPU time to PAR completion: 10 mins 11 secs 
 
-Peak Memory Usage:  1551 MB
+Peak Memory Usage:  1608 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
-Timing: Completed - 63 errors found.
+Timing: Completed - 69 errors found.
 
 Number of error messages: 0
-Number of warning messages: 118
+Number of warning messages: 64
 Number of info messages: 1
 
 Writing design to file v6pcieDMA.ncd

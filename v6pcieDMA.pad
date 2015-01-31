@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Fri Jan 30 14:54:20 2015
+Sat Jan 31 00:58:19 2015
 
 
 # NOTE: This file is designed to be imported into a spreadsheet program
@@ -55,9 +55,9 @@ AA7||IOB33S|IO_L19N_T3_VREF_33|UNUSED||33|||||||||
 AA8||IOB33S|IO_L23N_T3_33|UNUSED||33|||||||||
 AA9|||GND||||||||||||
 AA10|||MGTAVCC_G10||||||||||||
-AA11|adc_clk_p_i|IPAD|MGTREFCLK1P_213|||||||||LOCATED|NO||
+AA11||IPAD|MGTREFCLK1P_213|UNUSED|||||||||||
 AA12|||MGTAVCC_G10||||||||||||
-AA13||IPAD|MGTREFCLK0P_213|UNUSED|||||||||||
+AA13|adc_clk_p_i|IPAD|MGTREFCLK0P_213|||||||||LOCATED|NO||
 AA14|||GND||||||||||||
 AA15||IOB33S|IO_L23N_T3_12|UNUSED||12|||||||||
 AA16|||GND||||||||||||
@@ -81,9 +81,9 @@ AB7|||M0_0||||||||||||
 AB8|||GND||||||||||||
 AB9|||GND||||||||||||
 AB10|||GND||||||||||||
-AB11|adc_clk_n_i|IPAD|MGTREFCLK1N_213|||||||||LOCATED|NO||
+AB11||IPAD|MGTREFCLK1N_213|UNUSED|||||||||||
 AB12|||GND||||||||||||
-AB13||IPAD|MGTREFCLK0N_213|UNUSED|||||||||||
+AB13|adc_clk_n_i|IPAD|MGTREFCLK0N_213|||||||||LOCATED|NO||
 AB14|||GND||||||||||||
 AB15|||CFGBVS_0||||||||||||
 AB16||IOB33M|IO_L22P_T3_12|UNUSED||12|||||||||

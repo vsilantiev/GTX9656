@@ -96,16 +96,16 @@ TIMESPEC "TS_gt3_rxusrclk_i" = PERIOD "gt3_rxusrclk_i" 6.51;
 NET Q0_CLK0_GTREFCLK_PAD_N_IN  LOC=AB13;
 NET Q0_CLK0_GTREFCLK_PAD_P_IN  LOC=AA13;
 
-NET RXP_IN(0) LOC=AE13;
-NET RXN_IN(0) LOC=AF13;
+NET RXP_IN(1) LOC=AE13;
+NET RXN_IN(1) LOC=AF13;
 
 ################################# mgt wrapper constraints #####################
 
 ##---------- Set placement for gt0_gtp_wrapper_i/GTPE2_CHANNEL ------
-INST jesd204b_rx4_init_i/jesd204b_rx4_i/gt1_jesd204b_rx4_i/gtpe2_i LOC=GTPE2_CHANNEL_X0Y0;
+INST jesd204b_rx4_init_i/jesd204b_rx4_i/gt0_jesd204b_rx4_i/gtpe2_i LOC=GTPE2_CHANNEL_X0Y0;
 
 ##---------- Set placement for gt1_gtp_wrapper_i/GTPE2_CHANNEL ------
-INST jesd204b_rx4_init_i/jesd204b_rx4_i/gt0_jesd204b_rx4_i/gtpe2_i LOC=GTPE2_CHANNEL_X0Y1;
+INST jesd204b_rx4_init_i/jesd204b_rx4_i/gt1_jesd204b_rx4_i/gtpe2_i LOC=GTPE2_CHANNEL_X0Y1;
 
 ##---------- Set placement for gt2_gtp_wrapper_i/GTPE2_CHANNEL ------
 INST jesd204b_rx4_init_i/jesd204b_rx4_i/gt2_jesd204b_rx4_i/gtpe2_i LOC=GTPE2_CHANNEL_X0Y2;

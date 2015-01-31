@@ -1532,13 +1532,13 @@ gt0_usrclk_source/rxoutclk_mmcm3_i/clkout0|    2.532|         |         |       
 =========================================================================
 
 
-Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 11.04 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.53 secs
  
 --> 
 
 
-Total memory usage is 529980 kilobytes
+Total memory usage is 529964 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  316 (   0 filtered)

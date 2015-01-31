@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-01-30T16:40:08</DateModified>
+  <DateModified>2015-01-31T01:00:55</DateModified>
   <ModuleName>v6pcieDMA</ModuleName>
-  <SummaryTimeStamp>2015-01-30T16:32:32</SummaryTimeStamp>
+  <SummaryTimeStamp>2015-01-31T01:00:55</SummaryTimeStamp>
   <SavedFilePath>/home/vladimir/SERGLAST/ad9656/cern/iseconfig/v6pcieDMA.xreport</SavedFilePath>
   <ImplementationReportsDirectory>/home/vladimir/SERGLAST/ad9656/cern/</ImplementationReportsDirectory>
   <DateInitialized>2014-08-22T11:02:27</DateInitialized>

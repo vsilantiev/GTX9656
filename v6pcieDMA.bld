@@ -654,15 +654,6 @@ Checking Constraint Associations...
 Done...
 
 Checking expanded design ...
-WARNING:NgdBuild:440 - FF primitive
-   'cmp_fmc_adc_125Ms_core/jesd204b/gt2_jesd204b_rx4_i/gtrxreset_seq_i/sync0_RXP
-   MARESETDONE/data_sync_reg' has unconnected output pin
-WARNING:NgdBuild:440 - FF primitive
-   'cmp_fmc_adc_125Ms_core/jesd204b/gt1_jesd204b_rx4_i/gtrxreset_seq_i/sync0_RXP
-   MARESETDONE/data_sync_reg' has unconnected output pin
-WARNING:NgdBuild:440 - FF primitive
-   'cmp_fmc_adc_125Ms_core/jesd204b/gt0_jesd204b_rx4_i/gtrxreset_seq_i/sync0_RXP
-   MARESETDONE/data_sync_reg' has unconnected output pin
 WARNING:NgdBuild:452 - logical net 'cfg_dcommand<15>' has no driver
 WARNING:NgdBuild:452 - logical net 'trn_rsrc_dsc_n' has no driver
 WARNING:NgdBuild:452 - logical net 'trn_rerrfwd_n' has no driver
@@ -1459,12 +1450,78 @@ WARNING:NgdBuild:452 - logical net
 WARNING:NgdBuild:452 - logical net
    'make4Lanes.pcieCore/v7_pcie_i/pcie_top_i/pcie_pipe_pipeline_i/pipe_tx_swing_
    o' has no driver
+WARNING:NgdBuild:478 - clock net
+   cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm3_i/CLK1_OUT
+   with clock driver
+   cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm3_i/clkout1_bu
+   f drives no clock pins
+WARNING:NgdBuild:478 - clock net
+   cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm3_i/CLK2_OUT
+   with clock driver
+   cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm3_i/clkout2_bu
+   f drives no clock pins
+WARNING:NgdBuild:478 - clock net
+   cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm3_i/CLK3_OUT
+   with clock driver
+   cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm3_i/clkout3_bu
+   f drives no clock pins
+WARNING:NgdBuild:478 - clock net
+   cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm2_i/CLK1_OUT
+   with clock driver
+   cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm2_i/clkout1_bu
+   f drives no clock pins
+WARNING:NgdBuild:478 - clock net
+   cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm2_i/CLK2_OUT
+   with clock driver
+   cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm2_i/clkout2_bu
+   f drives no clock pins
+WARNING:NgdBuild:478 - clock net
+   cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm2_i/CLK3_OUT
+   with clock driver
+   cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm2_i/clkout3_bu
+   f drives no clock pins
+WARNING:NgdBuild:478 - clock net
+   cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm1_i/CLK1_OUT
+   with clock driver
+   cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm1_i/clkout1_bu
+   f drives no clock pins
+WARNING:NgdBuild:478 - clock net
+   cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm1_i/CLK2_OUT
+   with clock driver
+   cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm1_i/clkout2_bu
+   f drives no clock pins
+WARNING:NgdBuild:478 - clock net
+   cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm1_i/CLK3_OUT
+   with clock driver
+   cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm1_i/clkout3_bu
+   f drives no clock pins
+WARNING:NgdBuild:478 - clock net
+   cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm0_i/CLK1_OUT
+   with clock driver
+   cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm0_i/clkout1_bu
+   f drives no clock pins
+WARNING:NgdBuild:478 - clock net
+   cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm0_i/CLK2_OUT
+   with clock driver
+   cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm0_i/clkout2_bu
+   f drives no clock pins
+WARNING:NgdBuild:478 - clock net
+   cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm0_i/CLK3_OUT
+   with clock driver
+   cmp_fmc_adc_125Ms_core/jesd204b/gt0_usrclk_source/rxoutclk_mmcm0_i/clkout3_bu
+   f drives no clock pins
 WARNING:NgdBuild:452 - logical net
-   'cmp_fmc_adc_125Ms_core/jesd204b/GT0_DRP_BUSY_OUT' has no driver
+   'cmp_fmc_adc_125Ms_core/jesd204b/jesd204b_rx4_init_i/jesd204b_rx4_i/GT0_DRP_B
+   USY_OUT' has no driver
 WARNING:NgdBuild:452 - logical net
-   'cmp_fmc_adc_125Ms_core/jesd204b/GT1_DRP_BUSY_OUT' has no driver
+   'cmp_fmc_adc_125Ms_core/jesd204b/jesd204b_rx4_init_i/jesd204b_rx4_i/GT1_DRP_B
+   USY_OUT' has no driver
 WARNING:NgdBuild:452 - logical net
-   'cmp_fmc_adc_125Ms_core/jesd204b/GT2_DRP_BUSY_OUT' has no driver
+   'cmp_fmc_adc_125Ms_core/jesd204b/jesd204b_rx4_init_i/jesd204b_rx4_i/GT2_DRP_B
+   USY_OUT' has no driver
+WARNING:NgdBuild:452 - logical net
+   'cmp_fmc_adc_125Ms_core/jesd204b/jesd204b_rx4_init_i/jesd204b_rx4_i/GT3_DRP_B
+   USY_OUT' has no driver
 WARNING:NgdBuild:452 - logical net 'theTlpControl/ctl_rd<31>' has no driver
 WARNING:NgdBuild:452 - logical net 'theTlpControl/ctl_rd<30>' has no driver
 WARNING:NgdBuild:452 - logical net 'theTlpControl/ctl_rd<29>' has no driver
@@ -2937,12 +2994,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings: 1448
+  Number of warnings: 1458
 
-Total memory usage is 608888 kilobytes
+Total memory usage is 614372 kilobytes
 
 Writing NGD file "v6pcieDMA.ngd" ...
-Total REAL time to NGDBUILD completion:  40 sec
-Total CPU time to NGDBUILD completion:   40 sec
+Total REAL time to NGDBUILD completion:  42 sec
+Total CPU time to NGDBUILD completion:   42 sec
 
 Writing NGDBUILD log file "v6pcieDMA.bld"...
